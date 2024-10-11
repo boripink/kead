@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* 
+	�ۼ��� : ������
+	�ۼ��� : 2024.10.07
+	���� : contents ���̾ƿ�
+*/
+
+.sub_container {margin-top:100px; padding:150px 100px 0 100px; color:#333;}
+.sub_container .inner {position:relative;}
+.sub_container .inner:after {content:""; display:block; clear:both;}
+.cont_wrap {padding:4rem 0;}
+/* left menu */
+.snb_wrap {float:left; position:fixed; width:290px; margin-right:40px; z-index:8;}
+.snb_wrap h3 {margin-bottom:20px; padding-bottom:20px; font-size:32px; font-weight:700; border-bottom:2px solid #314BB0;}
+.snb_wrap .snb_list > li:not(:last-of-type) {margin-bottom:20px;}
+.snb_wrap .snb_list > li > a {display:block; font-size:24px; font-size:500;}
+.snb_wrap .snb_list > li.on > a {font-weight:700;}
+
+/* contents */
+.contents {float:right; width:calc(100% - 330px);}
+.cont_wrap.blue_bg {position:relative;}
+.cont_wrap.blue_bg:before {content:""; position:absolute; top:0; left:0; width:200vw; height:100%; margin-left:-100vw; background:#e8effb; z-index:-1;}
+
+/* 타이틀 */
+.cont_tit_wrap {display:flex; justify-content:space-between; align-items:baseline;}
+.cont_tit_wrap .cont_tit {font-size:50px; font-weight:700;}
+.cont_tit_wrap .cont_lct {font-size:18px;}
+.cont_tit_wrap .cont_lct > li {display:inline-block; position:relative; vertical-align:middle;}
+.cont_tit_wrap .cont_lct > li:not(:last-of-type):after {content:""; display:inline-block; width:6px; height:12px; margin:0 3px 0 8px; background:url('../images/icon_wrap.png') -150px -120px no-repeat;}
+.cont_tit_wrap .cont_lct > li.home {overflow:hidden; width:18px; height:18px; margin-right:5px; font-size:0; text-indent:-9999px; background:url('../images/icon_wrap.png') -120px -120px no-repeat;}
+
+/* 인트로 */
+.intro {margin-bottom: 2.5rem;}
+.cont_tit2 {margin-bottom:2rem; font-size:2.5rem; font-weight:600;}
+.cont_txt {font-size:20px; font-weight:500; color:#555; line-height: 1.6;}
+
+/* 리스트 - 공통 */
+.cont_list {display:flex; position:relative; font-size: 1.5rem; line-height: 1.4;}
+.cont_list .num{display: block; font-size: 50px; font-weight: 700; color: #eaeaea;}
+
+/* 리스트 - 고용컨설팅 */
+.cont_list.style01 {gap:50px;}
+.cont_list.style01 .cont_thum {overflow:hidden; width:350px; height:350px; border-radius:70px 10px 70px 10px;}
+.cont_list.style01 .cont_thum img {width:100%;}
+.cont_list.style01 .cont_info {flex:1 0 calc(100% - 400px); padding-top:30px;}
+.cont_list.style01 .cont_info span {display:block; font-size:80px; font-weight:700; color:#eaeaea;}
+.cont_list.style01 .cont_info b {display:block; margin-bottom:30px; font-size:35px; font-weight:500;}
+.cont_list.style01 .cont_info p {max-width:340px; font-size:24px; line-height:1.4; word-break:keep-all;}
+
+/* 리스트 - 고용역량진단 */
+.cont_list.list4, .cont_list.step4  {gap: 30px;}
+.cont_list.list4 .img {margin-bottom: 10px;}
+.cont_list.step4 li {wi}
+
+/* 
+.cont_list.style02 li {width: 245px;}
+.cont_list.style02 li .img {display: block; height: 220px; margin-bottom: 10px; background: url(../images/sub/sub02-step1.png) no-repeat;}
+.cont_list.style02 li:nth-child(2) .img {background-image: url(../images/sub/sub02-step2.png);}
+.cont_list.style02 li:nth-child(3) .img {background-image: url(../images/sub/sub02-step3.png);}
+.cont_list.style02 li:nth-child(4) .img {background-image: url(../images/sub/sub02-step4.png);} */
+
+
+/* ����ΰ���������-�����������̶� */
+/* ��� */
+.consult_user {display:flex; justify-content:space-between; font-size:20px; text-align:center; word-break:keep-all;}
+.consult_user > li {width:320px;}
+.consult_user > li:nth-of-type(1) .cst_img {background:url('../images/img_consult02-1.png') no-repeat;}
+.consult_user > li:nth-of-type(2) .cst_img {background:url('../images/img_consult02-2.png') no-repeat;}
+.consult_user > li:nth-of-type(3) .cst_img {background:url('../images/img_consult02-3.png') no-repeat;}
+.consult_user .cst_img {position:relative; width:100%; height:190px;}
+.consult_user .cst_img span {display:block; position:absolute; top:35px; left:50%; width:200px; transform:translateX(-50%);}
+.consult_user .cst_tit {margin-top:40px; font-size:24px; color:#014897;}
+/* ��� */
+.consult_sample {display:flex;  justify-content:space-between; font-size:24px; text-align:center; word-break:keep-all;}
+.consult_sample > li {overflow:hidden; position:relative; width:320px; height:340px;}
+.consult_sample a {display:block; height:100%; padding:50px; border:1px solid #dcdcdc; border-radius:70px 10px 70px 10px; transition:all .5s;}
+.consult_sample .cst_base > p {position:relative; margin-bottom:20px; font-size:30px; color:#236cdb;}
+.consult_sample .cst_base > p:before {content:""; display:block; width:80px; height:80px; margin:0 auto 10px auto; background:url('../images/img_consult03.png') no-repeat;}
+.consult_sample > li:nth-of-type(2) .cst_base > p:before {background-position-y:-80px;}
+.consult_sample > li:nth-of-type(3) .cst_base > p:before {background-position-y:-160px;}
+.consult_sample .cst_base > span {font-size:26px;}
+.consult_sample .cst_hover {position:absolute; top:50%; left:50%; width:220px; height:auto; transform:translate(-200%, -50%); transition:all .5s; box-sizing:border-box;}
+.consult_sample .cst_hover > p {position:relative;}
+.consult_sample .cst_hover > p:after {content:""; display:block; width:39px; height:39px; margin:10px auto; background:url('../images/icon_wrap.png') -210px -180px no-repeat;}
+.consult_sample .cst_hover > b {font-weight:400;}
+.consult_sample a:hover, .consult_sample a:focus, .consult_sample a:active {border:4px solid #0f298f;}
+.consult_sample a:hover .cst_base, .consult_sample a:focus .cst_base, .consult_sample a:active .cst_base {display:none;}
+.consult_sample a:hover .cst_hover, .consult_sample a:focus .cst_hover, .consult_sample a:active .cst_hover {transform:translate(-50%, -50%);}
+
+/* 고용 역량 진단 */
+
+
+
+
+

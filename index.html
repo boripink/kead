@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="asset/aos/aos.css">
+	<link rel="stylesheet" href="asset/slick/slick.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="asset/jquery/jquery-3.7.1.min.js"></script>
+	<script src="asset/aos/aos.js"></script>
+	<script src="asset/slick/slick.js"></script>
+	<script src="js/common.js"></script>
+	<title>한국장애인고용공단 장애인고용컨설팅</title>
+</head>
+<body>
+	<header class="header">
+		<div class="inner">
+			<h1 class="logo"><a href="#">한국장애인고용공단 장애인고용컨설팅</a></h1>
+			<h2 class="hidden">대메뉴</h2>
+			<ul class="gnb">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="#">고용컨설팅이란?</a></li>
+						<li><a href="#">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="#">고용역량 진단이란?</a></li>
+						<li><a href="#">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="#">장애인 채용사례란?</a></li>
+						<li><a href="#">사례 맞춤 검색</a></li>
+						<li><a href="#">고용성공 스토리</a></li>
+						<li><a href="#">ESG 경영의 길</a></li>
+						<li><a href="#">직무개발 갤러리</a></li>
+						<li><a href="#">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="#">장애인 인구구조</a></li>
+						<li><a href="#">기관유형별 고용현황</a></li>
+						<li><a href="#">규모/업종별 고용현황</a></li>
+						<li><a href="#">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="#">고용가이드란?</a></li>
+						<li><a href="#">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="#">공지사항/오늘의뉴스</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user_wrap">
+				<div class="user_info">
+					<!-- [D] 로그인 전에 안보이게 처리 -->
+					<div class="user">
+						<span class="neme"><b>홍길동</b> 님</spanclass="neme"> <span class="time">09:33</span>
+						<button class="btn_time" type="button">연장</button>
+					</div>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<button type="button" class="btn_menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="mob_wrap">
+			<div class="user_mob">
+				<h1 class="logo"><a href="#">한국장애인고용공단 장애인고용컨설팅</a></h1>
+				<div class="user">
+					<span class="neme"><b>홍길동</b> 님</span>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<ul class="gnb_mob">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="#">고용컨설팅이란?</a></li>
+						<li><a href="#">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="#">고용역량 진단이란?</a></li>
+						<li><a href="#">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="#">장애인 채용사례란?</a></li>
+						<li><a href="#">사례 맞춤 검색</a></li>
+						<li><a href="#">고용성공 스토리</a></li>
+						<li><a href="#">ESG 경영의 길</a></li>
+						<li><a href="#">직무개발 갤러리</a></li>
+						<li><a href="#">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="#">장애인 인구구조</a></li>
+						<li><a href="#">기관유형별 고용현황</a></li>
+						<li><a href="#">규모/업종별 고용현황</a></li>
+						<li><a href="#">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="#">고용가이드란?</a></li>
+						<li><a href="#">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="#">공지사항/오늘의뉴스</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container">
+		<div class="idx_wrap video">
+			<iframe style="background:url(images/@thum.png)"></iframe>
+			<p class="scroll">Scroll<br/>Down</p>
+		</div>
+		<div class="idx_wrap task" data-aos="fade-up">
+			<a href="#" class="idx_cont test">
+				<div class="task_tit">
+					<h4>장애인 고용 역량 진단</h4>
+					<p>기업의 장애인 고용 역량을<br/>진단하고 고용역량을<br/>향상시킬 개선 방안을<br/>제안합니다.</p>
+					<ul class="task_info">
+						<li>
+							<span>STEP1</span>
+							<p>기본정보 입력</p>
+						</li>
+						<li>
+							<span>STEP2</span>
+							<p>진단문항 응답</p>
+						</li>
+						<li>
+							<span>STEP3</span>
+							<p>진단결과 보고서 확인</p>
+						</li>
+						<li>
+							<span>STEP4</span>
+							<p>현장컬설팅 신청</p>
+						</li>
+					</ul>
+				</div>
+			</a>
+			<a href="#" class="idx_cont chart">
+				<div class="task_tit">
+					<ul class="task_info">
+						<li>
+							<span>MODEL CASE 1</span>
+							<p>채용 사례</p>
+						</li>
+						<li>
+							<span>MODEL CASE 2</span>
+							<p>우수 사례</p>
+						</li>
+						<li>
+							<span>MODEL CASE 3</span>
+							<p>ESG경영 사례</p>
+						</li>
+						<li>
+							<span>MODEL CASE 4</span>
+							<p>직무개발 사례</p>
+						</li>
+					</ul>
+					<h4>고용사례·통계</h4>
+					<p>장애인 고용을 통해 더 좋은<br/>혜택과 기회를 누리는<br/>기업의 대표적인 사례를<br/>모았습니다.</p>
+				</div>
+			</a>
+			<a href="#" class="idx_cont guide">
+				<div class="task_tit">
+					<h4>고용 가이드</h4>
+					<p>채영계획 수립부터<br/>고용관리까지 장애인 고용업무<br/>전과정을 효율적으로 진행하기<br/>위한 가이드입니다.</p>
+					<ul class="task_info">
+						<li>
+							<span>STEP 1</span>
+							<p>채용수요 조사</p>
+						</li>
+						<li>
+							<span>STEP 2</span>
+							<p>적합직무 개발</p>
+						</li>
+						<li>
+							<span>STEP 3</span>
+							<p>채용계획 수립</p>
+						</li>
+						<li>
+							<span>STEP 4</span>
+							<p>채용방법 확정</p>
+						</li>
+						<li>
+							<span>STEP 5</span>
+							<p>근로조건 확정</p>
+						</li>
+					</ul>
+				</div>
+			</a>
+		</div>
+		<div class="idx_wrap story" data-aos="fade-up">
+			<div class="inner">
+				<div class="idx_tit">
+					<h3>장애인 고용공단 스토리</h3>
+					<p>채용된 장애인과 함께 일하는 따뜻한 참여를 만들어 갑니다.</p>
+				</div>
+				<div class="idx_list">
+					<a href="#" class="idx_cont">
+						<div class="idx_thum"><img src="images/@img_thum01.png" alt="" /></div>
+						<div class="idx_info">
+							<b class="idx_tit2">2023년 공익광고</b>
+							<p class="idx_txt">2023년 한국장애인고용공단 공익광고</p>
+							<span class="date">Youtube 2023.12.08.</span>
+							<span class="view">조회수 177만</span>
+						</div>
+					</a>
+					<a href="#" class="idx_cont">
+						<div class="idx_thum"><img src="images/@img_thum02.png" alt="" /></div>
+						<div class="idx_info">
+							<b class="idx_tit2">한국장애인고용공단...</b>
+							<p class="idx_txt">"익숙한 일상 익숙한 시선" - 박병찬 선생님편</p>
+							<span class="date">Youtube 2024.01.26.</span>
+							<span class="view">조회수 107만</span>
+						</div>
+					</a>
+					<a href="#" class="idx_cont">
+						<div class="idx_thum"><img src="images/@img_thum03.png" alt="" /></div>
+						<div class="idx_info">
+							<b class="idx_tit2">한국장애인고용공단...</b>
+							<p class="idx_txt">"익숙한 일상 익숙한 시선" - 혜주씨편</p>
+							<span class="date">Youtube 2024.01.26.</span>
+							<span class="view">조회수 57</span>
+						</div>
+					</a>
+					<a href="#" class="idx_cont">
+						<div class="idx_thum"><img src="images/@img_thum04.png" alt="" /></div>
+						<div class="idx_info">
+							<b class="idx_tit2">거리두기 프로젝트</b>
+							<p class="idx_txt">장애인고용에 대한 우령, 한길의 생각, 공익 광고 캠페인 80초</p>
+							<span class="date">Youtube 2021.09.01.</span>
+							<span class="view">조회수 4,528</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="idx_wrap sample" data-aos="fade-up">
+			<div class="inner">
+				<div class="idx_tit">
+					<h3>우수사례</h3>
+					<p>채용된 장애인과 함께 일하느 일터는 따뜻한 참여를 만들어 갑니다.</p>
+				</div>
+				<div class="idx_list">
+					<a href="#" class="idx_cont">
+						<div class="idx_thum"><img src="images/@img_thum05.png" alt="" /></div>
+						<div class="idx_info">
+							<b class="idx_tit2">메가존클라우드</b>
+							<p class="idx_txt">밝은 모습으로 업무에 임하고 있는 모습</p>
+						</div>
+					</a>
+					<a href="#" class="idx_cont">
+						<div class="idx_thum"><img src="images/@img_thum06.png" alt="" /></div>
+						<div class="idx_info">
+							<b class="idx_tit2">오씨아이드림</b>
+							<p class="idx_txt">열심히 업무 중인 직원들의 모습</p>
+						</div>
+					</a>
+					<a href="#" class="idx_cont">
+						<div class="idx_thum"><img src="images/@img_thum07.png" alt="" /></div>
+						<div class="idx_info">
+							<b class="idx_tit2">한국동그라미성장사</b>
+							<p class="idx_txt">밝게 고객을 맞이하고 있는 직원</p>
+						</div>
+					</a>
+					<a href="#" class="idx_cont">
+						<div class="idx_thum"><img src="images/@img_thum08.png" alt="" /></div>
+						<div class="idx_info">
+							<b class="idx_tit2">OCI Dream</b>
+							<p class="idx_txt">완성된 작업물을 선보이는 직원들</p>
+						</div>
+					</a>
+				</div>
+				<a href="#" class="sample_more">더보기</a>
+			</div>
+		</div>
+		<div class="idx_wrap news" data-aos="fade-up">
+			<div class="inner">
+				<div class="idx_tit"><h3>이달의 소식</h3></div>
+				<div class="idx_list">
+					<a href="#" class="idx_cont">
+						<div class="idx_info">
+							<span class="idx_type">KEAD Culture</span><span class="date">2024.08.05</span>
+							<b class="idx_tit2">발달장애인을 위한 '알기 쉬운 마음건강'</b>
+							<p class="idx_txt">발달장애인의 사회 참여와 안정적인 직장생활 유지를 돕기 위해 한국장애인고용공단 고용개발원(이해 고용개발원)</p>
+						</div>
+						<div class="idx_thum"><img src="images/@img_thum09.png" alt="" /></div>
+					</a>
+					<a href="#" class="idx_cont">
+						<div class="idx_info">
+							<span class="idx_type">KEAD News</span><span class="date">2024.06.05</span>
+							<b class="idx_tit2">소통과 혁시 위한 제6기 KEAD 주니어</b>
+							<p class="idx_txt">한국장애인고용공단은 지난 6월 5일 '제19회 대한민국 보조공학기기 박람회'에서 제6기 'KEAD 주니어보드'의</p>
+						</div>
+						<div class="idx_thum"><img src="images/@img_thum10.png" alt="" /></div>
+					</a>
+					<a href="#" class="idx_cont">
+						<div class="idx_info">
+							<span class="idx_type">KEAD Culture</span><span class="date">2024.06.05</span>
+							<b class="idx_tit2">철도역 네일케어 매장 대전역점 개소</b>
+							<p class="idx_txt">중증 장애인 일자리 창출을 위한 철도역 네일케어 매장 '섬섬옥수' 대전역점 개소식이 지난 1월 19일에 열렸다.</p>
+						</div>
+						<div class="idx_thum"><img src="images/@img_thum11.png" alt="" /></div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="idx_wrap brd" data-aos="fade-up">
+			<div class="inner">
+				<div class="idx_tit"><h3>공지 & 안내</h3></div>
+				<div class="idx_list">
+					<div class="idx_brd">
+						<a href="#">
+							<span class="idx_stat">공지사항</span>
+							<div class="idx_info">
+								<b class="idx_tit2">장애인 고용컨설팅 사용자 매뉴얼 V2.0</b>
+								<p class="idx_txt">장애인 고용에 적합한 맞춤 고용방안 제시를 위한 장애인 고용컨설팅 사용자 매뉴얼 업데이트</P>
+								<span class="date">2024.07.26. | 0.1KB</span>
+							</div>
+						</a>
+						<a href="#">
+							<span class="idx_stat fap">자주 묻는 질문</span>
+							<div class="idx_info">
+								<b class="idx_tit2">장애인 고용컨설팅 절차</b>
+								<p class="idx_txt">고용역량진단에서 컨설팅, 서비스 연계, 사후관리까지 장애인 고용 과정에 대한 안내</P>
+								<span class="date">2024.07.26. | 0.1KB</span>
+							</div>
+						</a>
+					</div>
+					<div class="idx_qna">
+						<a href="#">
+							<b class="idx_tit2">문의 사항</b>
+							<p class="idx_txt">장애인 고용 컨설팅에 대하여 궁금한 점을 문의 하고 답변을 받아보세요.</P>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="inner">
+			<div class="f_left">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li class="pnt_cr1"><a href="#"><b>개인정보처리방침</b></a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<a href="#" target="_blank" title="새창이동">
+					<img src="images/img_watch.png" alt="" class="watch">
+				</a>
+				<div class="f_info">
+					<p class="f_logo">한국장애인고용공단</p>
+					<div>
+						<p>주소 (13619)경기도 성남시 분당구 구미로 173번길 59(구미동)</p>
+						<p>전화번호 031-728-7001~3</p>
+						<p class="f_copy">COPYRIGHT © 2024 KEAD RIGHT RESERVED.</p>
+					</div>
+				</div>
+			</div>
+			<div class="f_right">
+				<div class="rel_wrap">
+					<a href="#">관련사이트</a>
+					<ul>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+					</ul>
+				</div>
+				<div>
+					<p class="f_number">전국대표번호<b>1588-1519</b></p>
+					<p class="f_time"><span>운영시간</span>평일 09:00 ~ 18:00</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+
+		var idx = {
+			//header color change event
+			header: function(){
+				$(window).on('scroll', function(){
+					var scroll = $(window).scrollTop() >= 50;
+					$('.header').toggleClass('act', scroll);
+				});
+			}
+		}
+
+		$(document).ready(function(){
+			AOS.init();
+			idx.header()
+
+			$(window).on("resize", function(){
+				if (window.innerWidth > 1400) {
+					//메인 focus
+					$(document).on("mouseenter focusin",".idx_cont",function(){
+						$(this).closest('.idx_wrap').addClass("on");
+						$(this).siblings().removeClass("on");
+						$(this).addClass("on");
+						return false;
+					}).on("mouseleave",".idx_cont",function(){
+						$(this).closest('.idx_wrap').removeClass("on");
+						$(this).removeClass("on");
+						return false;
+					});
+				} else {
+					$(document).off("mouseenter focusin",".idx_cont");
+				}
+			}).resize();
+		})
+	</script>
+</body>
+</html>

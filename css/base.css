@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 /* 
-	ÀÛ¼ºÀÚ : ÀÌÇØÀÎ
-	ÀÛ¼ºÀÏ : 2024.10.07
-	³»¿ë : reset/font/Àü¿ª class
+	ï¿½Û¼ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½Û¼ï¿½ï¿½ï¿½ : 2024.10.07
+	ï¿½ï¿½ï¿½ï¿½ : reset/font/ï¿½ï¿½ï¿½ï¿½ class
 */
 
 /*font-face*/
@@ -25,44 +25,44 @@ a:link, a:visited {color:inherit; text-decoration: none;}
 a:hover, a:active, a:focus {text-decoration:none;}
 button:hover, button:active, button:focus {text-decoration:none;}
 
-/* img */
+/* img 1*/
 img {border:0; vertical-align:top;}
 
-/* ¸ñ·Ï */
+/* ï¿½ï¿½ï¿½ */
 ol, ul, dl {list-style:none;}
 
-/* ÅØ½ºÆ® °ü·Ã ¿ä¼Ò ÃÊ±âÈ­ */
+/* ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­ */
 address, caption, em, cite, var {font-weight:normal; font-style:normal;}
 
-/* Å×µÎ¸® ¾ø¾Ö±â */
+/* ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½Ö±ï¿½ */
 fieldset, img, abbr, acronym {border:none; margin:0; padding:0;}
 
-/* Å×ÀÌºí - ¸¶Å©¾÷¿¡ 'cellspacing="0"' ÁöÁ¤ ÇÔ²² ÇÊ¿ä */
+/* ï¿½ï¿½ï¿½Ìºï¿½ - ï¿½ï¿½Å©ï¿½ï¿½ï¿½ï¿½ 'cellspacing="0"' ï¿½ï¿½ï¿½ï¿½ ï¿½Ô²ï¿½ ï¿½Ê¿ï¿½ */
 table {border-collapse:collapse; border-spacing:0;}
 
-/* ¼öÆò¼±*/
+/* ï¿½ï¿½ï¿½ï¿½*/
 hr {display:none;}
 
-/* º¼µå */
+/* ï¿½ï¿½ï¿½ï¿½ */
 b, strong {font-weight:600;}
 
-/* À­Ã·ÀÚ ¾Æ·¡Ã·ÀÚ */
+/* ï¿½ï¿½Ã·ï¿½ï¿½ ï¿½Æ·ï¿½Ã·ï¿½ï¿½ */
 sup, sub {font-size:10px !important;}
 
-/* input ÃÊ±âÈ­ */
+/* input ï¿½Ê±ï¿½È­ */
 input {vertical-align:middle;}
 a[href^="tel"] {font-style:normal;}
 input, textarea, select{vertical-align:middle; letter-spacing:normal;}
-textarea {resize:none;} /*  resize: horizontal; // °¡·ÎÅ©±â¸¸ Á¶Àý°¡´É resize: vertical;  ¼¼·ÎÅ©±â¸¸ Á¶Àý°¡´É */
+textarea {resize:none;} /*  resize: horizontal; // ï¿½ï¿½ï¿½ï¿½Å©ï¿½â¸¸ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ resize: vertical;  ï¿½ï¿½ï¿½ï¿½Å©ï¿½â¸¸ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 
-/* button ÃÊ±âÈ­ */
+/* button ï¿½Ê±ï¿½È­ */
 button {border:0; vertical-align:middle; cursor:pointer; color:inherit; font-size:inherit; font-family:inherit; padding:0;}
 button::-moz-focus-inner {padding:0; border:0;}
 
-/* select ie ÃÊ±âÈ­ */
+/* select ie ï¿½Ê±ï¿½È­ */
 select:focus::-ms-value {background:none; color:inherit;}
 
-/* Àü¿ªÅ¬·¡½º */
+/* ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ */
 .hidden {overflow:hidden; position:absolute; top:-1px !important; left:-1px !important; width:0px !important; height:0px !important;}
 .clear_box:after{content:''; display:block; clear:both;}
 .fl {float:left;}

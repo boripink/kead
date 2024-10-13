@@ -6,10 +6,20 @@
 	���� : contents ���̾ƿ�
 */
 
-.sub_container {margin-top:100px; padding:150px 100px 0 100px; color:#333;}
+/* 공통 */
+.fc-blue {color: #236cdb;}
+span.fs-18 {font-size: 18px;}
+/* 아이콘 */
+.icon_care {display: inline-block; width: 34px; height: 34px; position: relative; margin-right: 20px; background: url(../images/sub/svg_icon_care.svg); background-size: contain;}
+/* 정렬 */
+.fl_center {display: flex; align-items: center;}
+
+/* 레이아웃 */
+.sub_container {margin:3rem 0 5rem; padding:150px 100px 0 100px; color:#333;}
 .sub_container .inner {position:relative;}
 .sub_container .inner:after {content:""; display:block; clear:both;}
-.cont_wrap {padding:4rem 0;}
+.cont_wrap {}
+
 /* left menu */
 .snb_wrap {float:left; position:fixed; width:290px; margin-right:40px; z-index:8;}
 .snb_wrap h3 {margin-bottom:20px; padding-bottom:20px; font-size:32px; font-weight:700; border-bottom:2px solid #314BB0;}
@@ -17,13 +27,20 @@
 .snb_wrap .snb_list > li > a {display:block; font-size:24px; font-size:500;}
 .snb_wrap .snb_list > li.on > a {font-weight:700;}
 
+.snb_wrap .snb_sub {padding: 16px 24px; background-color: #F8F8F8; border-radius: 0.8rem;}
+.snb_wrap .snb_sub ul {display: flex; flex-direction: column; gap: 1.2rem; }
+.snb_wrap .snb_sub ul > li > a {font-size: 20px; }
+.snb_wrap .snb_sub ul > li.on a {color: #236cdb; font-weight: 600;}
+
+
+
 /* contents */
-.contents {float:right; width:calc(100% - 330px);}
-.cont_wrap.blue_bg {position:relative;}
+.contents {float:right; width:calc(100% - 330px); display: flex; flex-direction: column; gap: 4rem;}
+.cont_wrap.blue_bg {position:relative; padding: 4rem 0;}
 .cont_wrap.blue_bg:before {content:""; position:absolute; top:0; left:0; width:200vw; height:100%; margin-left:-100vw; background:#e8effb; z-index:-1;}
 
 /* 타이틀 */
-.cont_tit_wrap {display:flex; justify-content:space-between; align-items:baseline;}
+.cont_tit_wrap {display:flex; justify-content:space-between; align-items:baseline; }
 .cont_tit_wrap .cont_tit {font-size:50px; font-weight:700;}
 .cont_tit_wrap .cont_lct {font-size:18px;}
 .cont_tit_wrap .cont_lct > li {display:inline-block; position:relative; vertical-align:middle;}
@@ -31,13 +48,15 @@
 .cont_tit_wrap .cont_lct > li.home {overflow:hidden; width:18px; height:18px; margin-right:5px; font-size:0; text-indent:-9999px; background:url('../images/icon_wrap.png') -120px -120px no-repeat;}
 
 /* 인트로 */
-.intro {margin-bottom: 2.5rem;}
-.cont_tit2 {margin-bottom:2rem; font-size:2.5rem; font-weight:600;}
-.cont_txt {font-size:20px; font-weight:500; color:#555; line-height: 1.6;}
+.intro {margin-bottom: 4rem;}
+.cont_tit2 {font-size:40px; font-weight:600; margin-bottom:2.5rem;}
+.cont_txt {font-size:20px; font-weight:500; line-height: 1.6;}
 
-/* 리스트 - 공통 */
-.cont_list {display:flex; position:relative; font-size: 1.5rem; line-height: 1.4;}
+/* 리스트, 스텝 - 공통 */
+.cont_list {display:flex; position:relative; font-size: 1.5rem; line-height: 1.4; word-break:keep-all;}
 .cont_list .num{display: block; font-size: 50px; font-weight: 700; color: #eaeaea;}
+.cont_list.list4, .cont_list.step4   {gap: 30px;}
+.cont_list.list4 li, .cont_list.step4 li  {width:240px;}
 
 /* 리스트 - 고용컨설팅 */
 .cont_list.style01 {gap:50px;}
@@ -46,19 +65,7 @@
 .cont_list.style01 .cont_info {flex:1 0 calc(100% - 400px); padding-top:30px;}
 .cont_list.style01 .cont_info span {display:block; font-size:80px; font-weight:700; color:#eaeaea;}
 .cont_list.style01 .cont_info b {display:block; margin-bottom:30px; font-size:35px; font-weight:500;}
-.cont_list.style01 .cont_info p {max-width:340px; font-size:24px; line-height:1.4; word-break:keep-all;}
-
-/* 리스트 - 고용역량진단 */
-.cont_list.list4, .cont_list.step4  {gap: 30px;}
-.cont_list.list4 .img {margin-bottom: 10px;}
-.cont_list.step4 li {wi}
-
-/* 
-.cont_list.style02 li {width: 245px;}
-.cont_list.style02 li .img {display: block; height: 220px; margin-bottom: 10px; background: url(../images/sub/sub02-step1.png) no-repeat;}
-.cont_list.style02 li:nth-child(2) .img {background-image: url(../images/sub/sub02-step2.png);}
-.cont_list.style02 li:nth-child(3) .img {background-image: url(../images/sub/sub02-step3.png);}
-.cont_list.style02 li:nth-child(4) .img {background-image: url(../images/sub/sub02-step4.png);} */
+.cont_list.style01 .cont_info p {max-width:340px; font-size:24px; }
 
 
 /* ����ΰ���������-�����������̶� */
@@ -88,9 +95,104 @@
 .consult_sample a:hover .cst_base, .consult_sample a:focus .cst_base, .consult_sample a:active .cst_base {display:none;}
 .consult_sample a:hover .cst_hover, .consult_sample a:focus .cst_hover, .consult_sample a:active .cst_hover {transform:translate(-50%, -50%);}
 
-/* 고용 역량 진단 */
+
+/* sub02 - 고용역량진단이란? */
+
+/* 이용방법 */
+.cont_list.step4 li {height: 310px; background: #fff; border-radius: 30px; text-align: center; padding-top: 30px; font-size: 24px;}
+.cont_list.step4 li .step {display: inline-flex; align-items: center; justify-content: center; text-align: center; width: 100px; height: 40px; border-radius: 20px; border: 1px solid #236cdb; font-size: 18px; font-weight: 500; color: #236cdb;}
+.cont_list.step4 li .img {width: 100%; height: 130px; background: url(../images/sub/sub02-stepico1.png) no-repeat center;}
+.cont_list.step4 li:nth-child(2) .img {background-image: url(../images/sub/sub02-stepico2.png);}
+.cont_list.step4 li:nth-child(3) .img {background-image: url(../images/sub/sub02-stepico3.png);}
+.cont_list.step4 li:nth-child(4) .img {background-image: url(../images/sub/sub02-stepico4.png);}
+.cont_list.step4 li .txt > span {display: block;}
+ 
+/* 진단보고서 */
+.cont_list.style02 {flex-direction: column; }
+.cont_list.style02 li {display: flex; justify-content: space-between; align-items: end; }
+.cont_list.style02 li:not(:first-child) {margin-top: 20px;}
+.cont_list.style02 li:nth-child(odd) {flex-direction: row-reverse;} 
+.cont_list.style02 .cont_thum {width: 420px; height: 230px;}
+.cont_list.style02 .cont_thum img {width:100%;}
+.cont_list.style02 .cont_info {display: flex; border-bottom: 1px solid #eaeaea; padding-bottom: 30px; padding-right: 50px;}
+.cont_list.style02 .cont_info .num {font-size:80px; margin-right: 30px;}
+.cont_list.style02 .cont_info .txt {margin-top: 20px;}
+.cont_list.style02 .cont_info .txt b {display:block; margin-bottom:20px; font-size:35px; font-weight:500;}
+.cont_list.style02 .cont_info .txt p {max-width: 425px; font-size:24px; line-height:1.4; word-break:keep-all;}
+
+
+/* 고용역량진단 */
+.cont_list.step5 {justify-content: space-between; gap: 15px;}
+.cont_list.step5 li {background-color: #f4f6f8; border-radius: 30px; width: calc((100% - 60px)/5); text-align: center; padding: 60px 20px 40px;}
+.cont_list.step5 li .svg_icon {display: inline-block; width: 40px; height: 40px; background: url(../images/sub/svg_step01.svg) no-repeat center top; background-size:contain;}
+.cont_list.step5 li:nth-child(2) .svg_icon {background-image: url(../images/sub/svg_step02.svg);}
+.cont_list.step5 li:nth-child(3) .svg_icon {background-image: url(../images/sub/svg_step03.svg);}
+.cont_list.step5 li:nth-child(4) .svg_icon {background-image: url(../images/sub/svg_step04.svg);}
+.cont_list.step5 li:nth-child(5) .svg_icon {background-image: url(../images/sub/svg_step05.svg);}
+.cont_list.step5 li:nth-child(6) .svg_icon {background-image: url(../images/sub/svg_step06.svg);}
+
+.cont_list.step5 li b {font-size: 30px; margin-bottom: 16px; display: inline-block;}
+.cont_list.step5 li p {font-size: 20px; }
+
+/* 진단 유의사항 */
+.cont_txt.txt2 {display: flex; align-items: end;} 
+.cont_txt.txt2 > ul {margin-right: 20px;}
+
+/* 진단실시 - 기본정보 */
+.cont_form {margin-top: 4rem;}
+.cont_form h6 {font-size: 30px; font-weight: 400; margin-bottom: 20px;}
+/* .cont_form .form_box {border-top:2px solid #236cdb; padding: 20px 10px 0; border-bottom:2px solid #236cdb; } */
+.cont_form .form_box {display: flex; flex-direction: column; gap: 10px;background-color: #f8f8f8; border-radius: 10px; padding: 20px; padding-left: 30px;}
+
+.cont_form .form_box > li {display: flex; }
+.cont_form .form_label {min-width: 200px; height: 40px; font-size: 18px; font-weight: 500; display: inline-flex; align-items: center;}
+.cont_form .form_box.style02 .form_label {min-width: 300px;}
+.cont_form .form_compt {width: 100%; height: 40px;}
+.cont_form .radio_col {display: flex; flex-direction: column; gap: 10px; margin: 4px 0;}
+.cont_form .radio_col li {display: flex; align-items: center; gap: 10px; height: 30px;}
+
+.cont_form input[type='radio'] {width: 20px; height: 20px; }
+.cont_form .form_add {display: flex; flex-direction: column; gap: 10px;width: 100%;}
+.cont_form .form_add .add_search {position: relative;}
+.cont_form .form_add button.zip {position: absolute; right: 0; top: 0;}
+
+/*  알림박스  */
+.system_box {border: 1px solid #d4e1ff; background-color: #e9f0ff; margin-top: 10px; border-radius: 8px; padding: 12px;}
+.system_box > p { padding-left: 40px; font-size: 18px; }
+
+.info {color: #1f53cc; position: relative;}
+.info::before {content: ''; display: block; width: 18px; height: 18px; position: absolute; top: 14px; left: 24px; background: url(../../images/sub/sys_info.png);}
+.care {font-size: 14px; position: relative; color: #d50136; padding-left: 22px;}
+.care::before {content: ''; display: block; width: 18px; height: 18px; position: absolute; top: 1px; left: 0; background: url(../../images/sub/sys_care.png);}
+.warn {font-size: 14px; position: relative; color: #98690a; padding-left: 22px;}
+.warn::before {content: ''; display: block; width: 18px; height: 18px; position: absolute; top: 1px; left: 0; background: url(../../images/sub/sys_warn.png);}
+.succ {font-size: 14px; position: relative; color: #1f53cc; padding-left: 22px;}
+.succ::before {content: ''; display: block; width: 18px; height: 18px; position: absolute; top: 1px; left: 0; background: url(../../images/sub/sys_succ.png);}
+
+/* .system_box.warn {border: 1px solid #ffeac1; padding: 4px 8px; background: #fff8e9; padding-left: 40px;}
+.system_box.warn > ul li::before {content: ''; width: 2px; height: 2px; background-color: #98690a; position: absolute; top: 50%; transform: translateY(-50%); left: 0;} */
+
+
+/* 진단실시 - 상단스텝 */
+.top_step .cont_list.step5 li {padding: 20px;}
+.top_step .cont_list.step5 li .svg_icon {width: 32px; height: 32px;}
+.top_step .cont_list .num {font-size: 40px; font-weight: 500;}
+.top_step .cont_list.step5 li b {margin-bottom: 0;}
+
+.top_step .cont_list.step5 li 
 
 
 
 
 
+
+
+@media (max-width:1400px) {
+	.snb_wrap {display: none;}
+	.contents {width: 100%;}
+}
+@media (max-width:1024px) {
+	.cont_form .form_box {padding: 20px 0;}
+	.cont_form .form_box > li {flex-direction: column;}
+	.cont_form input[type='text'] {width:100%; }
+}

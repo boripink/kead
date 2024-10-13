@@ -161,7 +161,7 @@ span.fs-18 {font-size: 18px;}
 .system_box > p { padding-left: 40px; font-size: 18px; }
 
 .info {color: #1f53cc; position: relative;}
-.info::before {content: ''; display: block; width: 18px; height: 18px; position: absolute; top: 14px; left: 24px; background: url(../images/sub/sys_info.png);}
+.info::before {content: ''; display: block; width: 18px; height: 18px; position: absolute; top: 13px; left: 24px; background: url(../images/sub/sys_info.png);}
 .care {font-size: 14px; position: relative; color: #d50136; padding-left: 22px;}
 .care::before {content: ''; display: block; width: 18px; height: 18px; position: absolute; top: 1px; left: 0; background: url(../images/sub/sys_care.png);}
 .warn {font-size: 14px; position: relative; color: #98690a; padding-left: 22px;}

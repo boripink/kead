@@ -124,12 +124,18 @@ span.fs-18 {font-size: 18px;}
 /* 고용역량진단 */
 .cont_list.step5 {justify-content: space-between; gap: 15px;}
 .cont_list.step5 li {background-color: #f4f6f8; border-radius: 30px; width: calc((100% - 60px)/5); text-align: center; padding: 60px 20px 40px;}
-.cont_list.step5 li .svg_icon {display: inline-block; width: 40px; height: 40px; background: url(../images/sub/svg_step01.svg) no-repeat center top; background-size:contain;}
-.cont_list.step5 li:nth-child(2) .svg_icon {background-image: url(../images/sub/svg_step02.svg);}
-.cont_list.step5 li:nth-child(3) .svg_icon {background-image: url(../images/sub/svg_step03.svg);}
-.cont_list.step5 li:nth-child(4) .svg_icon {background-image: url(../images/sub/svg_step04.svg);}
-.cont_list.step5 li:nth-child(5) .svg_icon {background-image: url(../images/sub/svg_step05.svg);}
-.cont_list.step5 li:nth-child(6) .svg_icon {background-image: url(../images/sub/svg_step06.svg);}
+.cont_list.step5 li.on {background-color: #E8EFFB; color: #0F298F}
+.cont_list.step5 li.on .num {color: #fff;}
+
+.cont_list.step5 li .svg_icon {display: inline-block; width: 40px; height: 40px; background: url(../images/sub/svg_step02.svg) no-repeat center top; background-size:contain;}
+.cont_list.step5 li:nth-child(2) .svg_icon {background-image: url(../images/sub/svg_step03.svg);}
+.cont_list.step5 li:nth-child(3) .svg_icon {background-image: url(../images/sub/svg_step04.svg);}
+.cont_list.step5 li:nth-child(4) .svg_icon {background-image: url(../images/sub/svg_step05.svg);}
+.cont_list.step5 li:nth-child(5) .svg_icon {background-image: url(../images/sub/svg_step06.svg);}
+.cont_list.step5 li:nth-child(6) .svg_icon {background-image: url(../images/sub/svg_step07.svg);}
+
+.diag_wrap {}
+
 
 .cont_list.step5 li b {font-size: 30px; margin-bottom: 16px; display: inline-block;}
 .cont_list.step5 li p {font-size: 20px; }

@@ -206,7 +206,7 @@ span.fs-18 {font-size: 18px;}
 
 .cont_result .sheet1 {border:1px solid #D9E0EF; border-radius: 10px; padding: 20px;}
 .cont_result .sheet2 {display: flex; flex-direction: column; gap: 20px;}
-.cont_result .section-hide {display: block;}
+.cont_result .section-hide {display: none;}
 
 /* 막대그래프 */
 .graph_container {display: flex; align-items: flex-end; height: 120px; width: 60px; position: relative;}

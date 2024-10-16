@@ -10,8 +10,8 @@
 .fc-blue {color: #236cdb;}
 span.fs-18 {font-size: 18px;}
 [class$="_box"] {border-radius: 10px;}
-.line_box {border: 1px solid #D9E0EF;}
-.gray_box {background-color: #F7F8F9;}
+.line_box {border: 1px solid #d9e0ef;}
+.gray_box {background-color: #f7f8f9;}
 
 /* 아이콘 */
 .icon_care {display: inline-block; width: 34px; height: 34px; position: relative; margin-right: 20px; background: url(../images/sub/svg_icon_care.svg); background-size: contain;}
@@ -142,7 +142,6 @@ span.fs-18 {font-size: 18px;}
 .cont_list.step5 li:nth-child(5) .svg_icon {background-image: url(../images/sub/svg_step06.svg);}
 .cont_list.step5 li:nth-child(6) .svg_icon {background-image: url(../images/sub/svg_step07.svg);}
 
-.diag_wrap {}
 
 
 .cont_list.step5 li b {font-size: 30px; margin-bottom: 16px; display: inline-block;}
@@ -231,8 +230,8 @@ span.fs-18 {font-size: 18px;}
 .cont_result .box_top .line_box .sec1_chart1 .tit {padding: 8px 0; text-align: center;}
 .cont_result .box_top .line_box .sec1_chart1 .chart {width: 100%; height: 100%; background: url(../images/sub/sample-chart01.png) center / cover no-repeat;}
 .cont_result .box_btm {display: flex; justify-content: space-between; margin-top: 20px;}
-
 .cont_result .result_description .txt {font-size:20px; line-height: 1.6; }
+.cont_result .result_description .zoom_btn {text-align: right; margin-bottom: 10px;}
 .cont_result .result_solution {margin-top: 50px;}
 .cont_result .result_solution .line_box {padding: 50px;}
 .cont_result .result_solution .solution_head {display: flex; justify-content: space-around; margin-bottom: 26px;}
@@ -245,59 +244,46 @@ span.fs-18 {font-size: 18px;}
 /* flex-grow(여백설정) flex-shrink(0은 줄지않겠다) flex-basis(고정크기) */
 .solution_body .number {flex: 0 0 60px; font-size: 30px; font-weight: 700; text-align: left;}
 .solution_body .level {flex: 0 0 80px; text-align: center;}
-.solution_body .category {flex: 1;  padding-left: 30px; display: flex; justify-content: space-between;}
-.solution_body .category .t {background: #fff;}
-.solution_body .category .bg_dot{background: url(../images/sub/report_bg_dot.png) repeat-x center;}
+.solution_body .category {flex: 1; position: relative; margin-left: 20px; background: url(../images/sub/report_bg_dot.png) repeat-x center; }
+.solution_body .category .t {position: relative; background-color: #fff; z-index: 1; display: inline-block; padding: 0 10px; }
 .solution_body .row > .level {padding: 6px 16px; }
-.solution_body .solution.level {padding: 10px 20px; border: none; background-color: #e9f0ff; color: #0f298f; font-weight: 500; display: blocks;}
-.solution_body .solution {flex: 1; }
+.solution_body .solution.level {padding: 10px 20px; border: none; background-color: #e9f0ff; color: #0f298f; font-weight: 500; display: block; border: 2px solid #e9f0ff; text-decoration: none; transition: color 0.3s ease, transform 0.3s ease;}
+.solution_body .solution {flex: 1; margin-left: 10px;}
+.solution_body .solution.level:hover {border-color: #0f298f; transform: scale(1.05);}
+.zoom_btn button {height: 30px; width: 90px; font-size: 15px; }
 
 /* 레이어 팝업 */
-.popup_layer { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); } 
-.popup_content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 30px 20px 30px 30px; border-radius: 40px; width: 1000px; height: 700px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } 
-.close_btn {position: absolute; top: 30px; right: 40px; font-size: 40px; font-weight: 200; cursor: pointer; width:30px; heig} 
-.popup_header h2 { font-size: 24px; margin-bottom: 20px; } 
-.popup_body { font-size: 16px; line-height: 1.6; margin-bottom: 10px; height: 500px; overflow-y: auto; } 
-.tag { display: inline-block; background-color: #D6E4FF; color: #236CDB; padding: 5px 10px; border-radius: 5px; font-size: 14px; margin-bottom: 15px; } 
-.recommendation { margin-top: 20px; border-top: 1px solid #E0E0E0; padding-top: 20px; } 
-.recommendation h3 { font-size: 18px; margin-bottom: 10px; } 
-.recommendation .case { font-size: 14px; line-height: 1.6; background-color: #F5F5F5; padding: 15px; border-radius: 5px; } 
-.guide_button { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); background-color: #236CDB; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
-
-/* {svg_btn_X} */
-
-
-/* 
-.cont_result .plan_list .list_body li {display: flex; align-items: center; margin: 10px 0; }
-.cont_result .plan_list .list_body li > div:nth-child(1) {flex: 1.2;background: url(../images/sub/report_bg_dot.png) repeat-x center;}
-.cont_result .plan_list .list_body li > div {display: flex; align-items: center; gap: 10px; }
-.cont_result .plan_list .list_body span {display: inline-block; background-color: #fff;}
-.cont_result .plan_list .no {font-size: 30px; font-weight: 700; width: 40px;}
-.cont_result .plan_list .level {padding: 6px 20px;}
-.cont_result .plan_list .plan {width: 400px;} */
-
-/* 진단결과 - 솔루션 박스 
-.solution_list .level {padding: 6px 20px;}
-.list_body {max-width: 100%; }
-.row {display: flex;  flex-wrap: wrap; justify-content: space-between; padding: 10px 0;}
-.number, .category, .row .level, .solution { padding: 10px; text-align: left; }
-.number {flex: 1; font-size: 30px; font-weight: 700; max-width: 50px;}
-.category {flex: 4; background: url(../images/sub/report_bg_dot.png) repeat-x center;}
-.solution { flex: none;  width: 400px; }
-.row > .level {flex: 1;
-    max-width: 100px; 
-    text-align: center;}
-    */
-    /* solution_list의 요소들이 Flexbox로 제대로 정렬되도록 수정 */
+.popup_layer {display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); } 
+.popup_content {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 50px 20px 40px 40px; border-radius: 40px; width: 1000px; height: 750px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } 
+.popup_content .close_btn {position: absolute; top: 30px; right: 40px; font-size: 40px; font-weight: 200; cursor: pointer; width: 30px; height: 30px; background:url(../images/sub/svg_btn_X.svg) no-repeat center/30px 30px; } 
+.popup_header {padding-bottom: 4rem; position: relative;}
+.popup_tag {display: inline-block; background-color: #e8effb; color: #236cdb; padding: 7px 20px; border-radius: 20px; font-size: 18px; font-weight: 500; margin-bottom: 20px; }
+.popup_header h2 {font-size: 30px; font-weight: 600;} 
+.popup_header::before {content: ''; width: 142px; height: 92px; position: absolute; bottom: 20px; right: 30px; background: url(../images/sub/pop_bg1.svg) no-repeat center/130px; }
+.popup_body {font-size: 16px; line-height: 1.6; margin-bottom: 10px; max-height: 430px; overflow-y: auto; } 
+.popup_body .bg_box {background-color: #f7f8f9; border-radius: 20px; padding: 30px;}
+.popup_body .strong {font-size: 20px; font-weight: 500; margin: 10px 20px;}
+.recommendation {margin-top: 20px; } 
+.recommendation h3 {font-size: 24px; font-weight: 500; color: #0f298f; margin: 10px 20px; } 
+.recommendation .case_box { font-size: 18px; background-color: #fff; padding: 20px 24px; border: 1px solid #0f298f;} 
+.popup_layer .bt_btn { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); }
 
 
-
+/* 버튼 */
+button {border-radius: 4px; position: relative; transition:all .5s;}
+button.line {border: 1px solid #0f298f; color: #0f298f;}
+button.full {background: #0f298f; color: #fff;}
+.zoom_btn button {height: 30px; width: 90px; font-size: 15px; padding-left: 20px;}
+.zoom_btn button.line::before {content: ''; width: 14px; height: 1.5px; background-color: #0f298f; position: absolute; top: 14px; left: 21px;}
+.zoom_btn button.full::before {content: ''; width: 14px; height: 1.5px; background-color: #fff; position: absolute; top: 13px; left: 21px;}
+.zoom_btn button.full::after {content: ''; width: 14px; height: 1.5px; background-color: #fff; position: absolute; top: 13px; left: 21px; transform: rotate(90deg);}
+.zoom_btn button.line:hover {background: #e9f0ff; font-size: 17px;}
+.zoom_btn button.full:hover {background: #00104f; font-size: 17px;}
 
 
 
   @media (max-width: 768px) {
-    .row {
-      flex-direction: column;
+    .row {flex-direction: column;}
     }
 
     .number, .category, .solution {

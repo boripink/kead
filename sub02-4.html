@@ -229,10 +229,10 @@
 								<div class="section-hide" id="bottomSection">
 									<div class="sheet2">
 										<div  class="result_description">
-											<!-- <div class="">
+											<div class="">
 												<button type="button">축소</button>
 												<button type="button">확대</button>
-											</div> -->
+											</div>
 											<p class="txt">
 											귀사의 장애인 고용역량 수준을 진단한 결과, 전 영역에 걸쳐 대체로 양호하나 개선해야 할 부분이 있다고 진단되었습니다. 귀사는 장애인 채용에 대해 수용적인 편입니다. 귀사에는 장애인이 수행할 수 있는 일부 직무가 마련되어 있으며, 장애인 근로자를 위한 편의시설과 장비 등 장애인 근로자의 건강과 안전을 위해 필요한 지원을 제공하고자 노력하고 있습니다. 향후에는 장애인 고용률을 높이기 위한 다양한 노력이 요구되며, 법적 의무사항 외에도 장애인 근로자를 지원할 수 있는 설비 및 제도를 마련할 필요가 있습니다.
 											</p>
@@ -243,8 +243,8 @@
 											<div class="tit3">우리 기업의 고용확대방안은?</div>
 											<div class="line_box">
 												<div class="solution_head">
-													<span>개선 필요 영역</span>
-													<span>해결 방안</span>
+													<div>개선 필요 영역</div>
+													<div>해결 방안</div>
 												</div>
 												<div class="solution_body">
 													<div class="row">
@@ -254,34 +254,35 @@
 															<span class="t">장애인 건강관리 작업장 환경</span>
 															<span class="bg_dot"></span>
 														</div>
-														<div class="solution"><span class="level1">장애유형에 따른 건강관련 제도 및 교육 도입</span></div>
+														<a href="#" class="solution level" data-popup="popup1">장애유형에 따른 건강관련 제도 및 교육 도입</a>
 													</div>
 													<div class="row">
 														<div class="number">02</div>
 														<div class="level">우수</div>
 														<div class="category">장애인 고용에 대한 인식 및 조직문화</div>
-														<div class="solution"><span class="level1">직무개발 워크숍 실시</span></div>
+														<a href="#" class="solution level" data-popup="popup1">직무개발 워크숍 실시</a>
 													</div>
 													<div class="row">
 														<div class="number">03</div>
 														<div class="level">보통</div>
 														<div class="category">장애인 직무관리 진단</div>
-														<div class="solution"><span class="level1">직무개발 워크숍 실시</span></div>
+														<a href="#" class="solution level" data-popup="popup1">직무개발 워크숍 실시</a>
 													</div>
 													<div class="row">
 														<div class="number">04</div>
 														<div class="level">미흡</div>
 														<div class="category">장애인 채용노력</div>
-														<div class="solution"><span class="level1">직무개발 워크숍 실시</span></div>
+														<a href="#" class="solution level" data-popup="popup1">직무개발 워크숍 실시</a>
 													</div>
 													<div class="row">
 														<div class="number">05</div>
 														<div class="level">미흡</div>
 														<div class="category">장애인 고용유지관리 역량</div>
-														<div class="solution"><span class="level1">직무개발 워크숍 실시</span></div>
+														<a href="#" class="solution level" data-popup="popup1">직무개발 워크숍 실시</a>
 													</div>
 												</div>
 											</div>
+											<p class="info2 mt20">해결방안을 클릭하시면 자세한 내용을 보실 수 있습니다.</p>
 										</div>		
 									</div>
 									<div class="bt_btn">
@@ -335,19 +336,30 @@
 	</footer>
 	<script>
 	$(document).ready(function(){
-		AOS.init();
-		// 하단 섹션 펼침
-		let isSectionVisible = false; // 하단 섹션이 열려 있는지 추적
-		$('#toggleButton').on('click', function() {
-			if (!isSectionVisible) {
-				$('#bottomSection').slideDown(); // 하단 섹션을 펼침
-				isSectionVisible = true;
-			} else {
-				$('#bottomSection').slideUp(); // 하단 섹션을 닫음
-				isSectionVisible = false;
-			}
-		});
+		AOS.init();		
 	})
 	</script>
+	<!-- Layer Popup -->
+	<div id="popup1" class="popup_layer">
+		<div class="popup_content">
+			<a class="close_btn" title="팝업창 닫기버튼"></a>
+			<div class="popup_header">
+				<span class="tag">장애인 건강관리와 작업장 환경</span>
+				<h2>장애유형에 따른 건강관련 제도 및 교육 도입</h2>
+			</div>
+			<div class="popup_body">
+				<p>장애인 근로자에게 건강하고 행복한 일터를 만들기 위해 장애유형에 맞는 건강관리제도를 도입하거나 건강관련 프로그램을 실시할 수 있습니다.</p>
+				<p>이를 통해 건강문제로 인한 근로능력 저하와 고용 불안전성을 해소할 수 있으며, 장애인 근로자의 장기근속을 도모할 수 있습니다.</p>
+			</div>			
+			<div class="recommendation">
+				<h3>추천 사례</h3>
+				<div class="case">
+					<p><strong>효성ITX 자회사형 표준사업장 “행복두드리미”</strong>는 장애인공단 고용개발원과 함께 발달장애 근로자를 위한 건강증진 프로그램을 실시했습니다.</p>
+					<p>프로그램은 발달장애인 12명을 대상으로 16회에 걸쳐 진행되었으며, 전문 장애인스포츠지도사의 지도하에 운동능력 향상을 촉진하는 운동을 실시하고, 인지기능과 스트레스 대응력, 사회성 향상을 위한 다양한 활동을 실시하였습니다.</p>
+				</div>
+			</div>
+			<button class="guide_button">고용가이드 바로가기</button>
+		</div>
+	</div>
 </body>
 </html>

@@ -197,7 +197,8 @@ span.fs-18 {font-size: 18px;}
 .top_step .cont_list.step5 li b {margin-bottom: 0;}
 
 /* 진단결과 */
-.cont_result .section-hide {display: none;}
+.cont_result .section-hide {display: block;}
+.cont_result .bt_btn {margin: 0;}
 .cont_result .bg_box {background-color: #E8EFFB; }
 .cont_result .level{padding: 2px 14px; border: 1px solid #236CDB; border-radius: 20px; color: #236CDB; display: inline-flex; justify-content: center; align-items: center; text-align: center;}
 
@@ -230,25 +231,78 @@ span.fs-18 {font-size: 18px;}
 .cont_result .result_solution .line_box {padding: 50px;}
 .cont_result .result_solution .solution_head {display: flex; justify-content: space-around; margin-bottom: 26px;}
 
-/* row 한 줄로 정렬 */
-.solution_body {display: flex; flex-direction: column; gap: 20px;}
-.solution_body .row {
-    display: flex;
-    justify-content: space-between; /* 요소 사이를 균등하게 배치 */
-    align-items: center; /* 수직 정렬 */
-    width: 100%; /* 전체 너비 설정 */
+
+
+
+.solution_list .solution_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-/* flex-grow(여백설정) flex-shrink(0은 줄지않겠다) flex-basis(고정크기) */
-.solution_body .number {flex: 0 0 60px; font-size: 30px; font-weight: 700; text-align: left;}
-.solution_body .level {flex: 0 0 80px; text-align: center;}
-.solution_body .category {flex: 1;  padding-left: 30px; display: flex; justify-content: space-between;}
-.solution_body .category .t {background: #fff;}
-.solution_body .category .bg_dot{background: url(../images/sub/report_bg_dot.png) repeat-x center;}
-.solution_body .row > .level {padding: 6px 16px; }
-.solution_body .solution {flex: 1; }
-.solution_body .solution .level1 {padding: 8px 20px; border: none; font-weight: 500; color: #236CDB;}
+.solution_list .solution_description {
+    font-size: 16px;
+    color: #333;
+}
 
+    .row {
+        display: flex;
+    flex-direction: row; /* 가로로 배치 */
+    justify-content: space-between; /* 요소 간의 공간을 균등하게 배치 */
+    align-items: center; /* 요소들을 수직으로 가운데 정렬 */
+    width: 100%; /* 전체 너비 설정 */
+    flex-wrap: nowrap; /* 한 줄로만 나타나도록 설정 */
+    margin-bottom: 20px; /* 각 row 간의 간격 설정 */
+      }
+  
+      .row:last-child {
+        border-bottom: none;
+      }
+  
+      .number, .level, .category, .solution {
+        padding: 10px;
+        text-align: left;
+      }
+  
+      .number {
+        flex: 1;
+        font-weight: bold;
+        color: #3366cc;
+        max-width: 50px;
+      }
+  
+      .row .level {
+        flex: 1;
+        max-width: 100px; /* 적당한 고정 너비 설정 */
+        text-align: center;
+        color: #333;
+      }
+  
+      .category {
+        flex: 4;
+        color: #333;
+      }
+  
+      .solution {
+        flex: none;
+        width: 300px; /* 고정된 넓이 설정 */
+        color: #3366cc;
+        text-align: left; /* 텍스트 왼쪽 정렬 */
+      }
+  
+      @media (max-width: 768px) {
+        .row {
+          flex-direction: column;}
+        }
+  
+        .number, .row .level, .category, .solution {
+          text-align: left;
+          max-width: 100%;
+        }
+  
+        .solution {
+          width: 100%; /* 작은 화면에서는 solution이 전체 넓이를 차지 */
+        }
 
 
 /* 

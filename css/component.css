@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* input */
-input::placeholder {font-weight:400; color:#666;}
+input::placeholder {font-weight:400; color: #b4b7c6; font-size: 18px;}
 label {position:relative; display:inline-block; vertical-align:middle;}
 input[type="text"], input[type="password"], input[type="number"], input[type="date"], input[type="month"], input[type="time"], 
 select, .datalist, textarea, input[type="radio"], input[type="checkbox"], input[type="file"] 
@@ -115,6 +115,10 @@ input[type="number"]:autofill, input[type="number"]:autofill:hover, input[type="
 .link_btn a.print {padding-right: 40px;}
 .link_btn a.print::before {width: 16px; height: 16px; background-image: url(../images/sub/svg-btn-print.svg); background-size: contain;}
 
+.line_btn, .line_btn a {display: inline-block; border: 1px solid #0f298f; border-radius: 8px; background-color: #fff; color: #0f298f; font-size: 18px; padding: 7px 18px 6px 18px; }
+
+
+button:disabled {color:#cfd1d9 !important; border-color:#cfd1d9 !important; cursor:unset;}
 
 
 

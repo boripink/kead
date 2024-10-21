@@ -11,7 +11,8 @@
 @import url("component.css");
 
 /* ���� */
-.inner {position:relative; width:100%; max-width:1400px; margin:0 auto;}
+.inner {position:relative; width:100%; max-width:1400px; margin:0 auto; }
+.inner:after {content:""; display:block; clear:both;}
 /* header */
 .header {position:fixed; top:0; left:0; width:100%; padding-top:20px; z-index:10; border-bottom: 1px solid #ddd;}
 .header:before {content:""; position:absolute; top:100%; left:0; width:100%; height:0; background:rgba(0,0,0,0.6); transition:all 0.4s;}
@@ -67,6 +68,11 @@
 .footer .f_number > b {display:block; font-size:35px; font-weight:800;}
 .footer .f_time > span {display:inline-block; margin-right:10px; padding:6px 12px; border-radius:50px; background:#111;}
 /* quick */
+
+
+
+
+
 
 @media (max-width:1600px) {
 	.header, .footer {padding:0 20px;}

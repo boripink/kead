@@ -1,16 +1,16 @@
 @charset "utf-8";
 
 /* 
-	�ۼ��� : ������
-	�ۼ��� : 2024.10.07
-	���� : header/footer ���� ���̾ƿ�
+	작성자 : 이해인
+	작성일 : 2024.10.07
+	내용 : header/footer 공통 레이아웃
 */
 
 /* css import */
 @import url("base.css");
 @import url("component.css");
 
-/* ���� */
+/* 공통 */
 .inner {position:relative; width:100%; max-width:1400px; margin:0 auto; }
 .inner:after {content:""; display:block; clear:both;}
 /* header */

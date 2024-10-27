@@ -189,9 +189,9 @@ button:disabled {color:#cfd1d9 !important; border-color:#cfd1d9 !important; curs
 #realgrid {width:100%;}
 
 /* 테이블 */
-.tb_base {width:100%; table-layout:fixed; border-top:1px solid #333; border-collapse:collapse; box-sizing:border-box;}
-.tb_base th, .tb_base td {position:relative; color:#555; line-height:1.4; text-align:left; word-break:keep-all;}
-.tb_base th {color:#333; background:#e5e7f3;}
+.tb_base {width:100%; table-layout:fixed; border-top:1px solid #314bb0; border-collapse:collapse; box-sizing:border-box;}
+.tb_base th, .tb_base td {position:relative; color:#555; line-height:1.4; text-align:left; word-break:keep-all; } 
+.tb_base th {color:#2b3459; background:#e8effb; font-weight: 600;}
 .tb_base.tb_list thead > tr > th {border-bottom:none;}
 .tb_base.tb_list tbody > tr:hover {background:#f5f7f9;}
 .tb_base.tb_list tbody > tr:hover a {text-decoration:underline; text-underline-position:under;}
@@ -203,6 +203,13 @@ button:disabled {color:#cfd1d9 !important; border-color:#cfd1d9 !important; curs
 .tb_base.tb_view th.req:after {content:"*"; display:inline-block; margin-left:3px; font-size:15px; color:#f14b4b; vertical-align:middle;}
 .tb_base.tb_view .tb_list th, .tb_base.tb_view .tb_list td {border-right:1px solid #ccd4df;}
 .tb_base.tb_view .tb_list th:first-of-type, .tb_base.tb_view .tb_list td:first-of-type {border-left:1px solid #ccd4df;}
+
+
+/* 테이블 추가 */
+.pop_table .tb_base {font-size: 16px;}
+.tb_base .left {text-align: left !important; padding-left: 6px;}
+.tb_base .right {text-align: right !important; }
+
 
 /* 페이징 */
 .pagenation {position:relative; margin-top:30px; text-align:center;}

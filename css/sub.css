@@ -251,7 +251,8 @@
 
 /* 진단결과 - 탭2 */
 .sheet2 {position: relative; padding-bottom: 5rem;} 
-.sheet2 > .analysis {display: flex; gap: 20px;}
+.sheet2 .analysis {display: flex; gap: 20px;}
+
 
 .benefit_box {flex: 1; max-width: 300px; padding: 30px; line-height: 1.6; background-color: #e5f1ed ; border-radius: 10px; position: relative;} 
 .benefit_box::after {content: ''; display: block; width: 40px; height: 38px; background: url(../images/sub/svg_icon_sub2_tab2.svg) no-repeat center / contain; position: absolute; right: 20px; bottom: 20px;}

@@ -64,6 +64,7 @@ select:focus::-ms-value {background:none; color:inherit;}
 
 /* 전역클래스 */
 .hidden {overflow:hidden; position:absolute; top:-1px !important; left:-1px !important; width:0px !important; height:0px !important;}
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .clear_box:after{content:''; display:block; clear:both;}
 .fl {float:left;}
 .fr {float:right;}

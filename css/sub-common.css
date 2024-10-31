@@ -1,15 +1,20 @@
 @charset "utf-8";
 
 /* 공통 */
-.fc-blue {color: #236cdb;}
+.fc-blue   {color: #236cdb;}
+.fc-red    {color: #a90000;}
 span.fs-18 {font-size: 18px;}
 [class$="_box"] {border-radius: 10px;}
 .line_box {border: 1px solid #d9e0ef;}
 .gray_box {background-color: #f7f8f9;}
+.bg_box   {background-color: #e8effb;}
+.level    {padding: 2px 14px; border: 1px solid #236cdb; border-radius: 50px; color: #236cdb; display: inline-flex; justify-content: center; align-items: center; text-align: center;}
+.bg_tag   {background-color: #e8effb; color: #236cdb; font-size: 18px; font-weight: 500; display: inline-block; padding: 7px 30px; border-radius: 30px;}
+
 #bottomSection {display: none; margin-top: 50px;}
 /* 그림자 box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
 /* 트렌지션 transition: all 0.3s; */
-.bg_tag {background-color: #e8effb; color: #236cdb; font-size: 18px; font-weight: 500; display: inline-block; padding: 7px 30px; border-radius: 30px;}
+
 
 
 .elli2 {
@@ -30,7 +35,7 @@ span.fs-18 {font-size: 18px;}
 /* 레이아웃 */
 .sub_container {
     margin-top:100px; /* 해드영역의 값 */
-    padding:5rem 100px 0 100px;     color:#333;}
+    padding:5rem 100px 0 100px;     color:#222;}
 
 
 /* left menu */
@@ -140,7 +145,6 @@ button.full {background: #0f298f; color: #fff;}
 .recommendation h3 {font-size: 24px; font-weight: 500; color: #0f298f; margin: 10px 20px; } 
 .recommendation .case_box { font-size: 18px; background-color: #fff; padding: 20px 24px; border: 1px solid #0f298f;} 
 .popup_layer .bt_btn { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); }
-
 
 
 

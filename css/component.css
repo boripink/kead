@@ -121,12 +121,18 @@ input[type="number"]:autofill, input[type="number"]:autofill:hover, input[type="
 .btn_reset:before {content:""; display:inline-block; width:13px; height:13px; margin:-2px 5px 0 0; background:url('../images/icon_wrap.png') -270px 0 no-repeat; vertical-align:middle;}
 
 /* 버튼 추가 - 전경아 */
-.link_btn a {display: inline-block; border: 1px solid #0f298f; border-radius: 8px; background-color: #fff; color: #0f298f; font-size: 18px; padding: 7px 38px 6px 18px; position: relative;}
+.link_btn a {display: inline-block; border: 1px solid #0f298f; border-radius: 4px; background-color: #fff; color: #0f298f; font-size: 18px; padding: 7px 38px 6px 18px; position: relative;}
 .link_btn a::before {content: ''; display: block; width: 8px; height: 16px; position: absolute; top: 50%; transform: translateY(-50%); background: url(../images/sub/svg-btn-go.svg) no-repeat center; right: 18px;} 
 .link_btn a.print {padding-right: 40px;}
 .link_btn a.print::before {width: 16px; height: 16px; background-image: url(../images/sub/svg-btn-print.svg); background-size: contain;}
 .line_btn, .line_btn a {display: inline-block; border: 1px solid #0f298f; border-radius: 8px; background-color: #fff; color: #0f298f; font-size: 18px; padding: 7px 18px 6px 18px; }
 button:disabled {color:#cfd1d9 !important; border-color:#cfd1d9 !important; cursor:unset;}
+.link_btn a.btn-detail {background: #0f298f; color: #fff; padding: 7px 18px 6px 18px;}
+.link_btn a.btn-detail::before {display: none;}
+
+
+
+
 
 
 /* layer pop */

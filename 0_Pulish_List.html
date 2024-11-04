@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko" class="fp-enabled" style="">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">		
+		<meta http-equiv="X-UA-Compatiable" content="IF=edge">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <link rel="stylesheet" href="css/borad.css"> -->
+		<title>파일목록</title>
+	</head>
+    <style>
+        /*기본테이블 (세로타이틀 테이블)*/
+        .section {width: 100%; margin: 0 auto; max-width: 1600px;}
+        .pageTitle {color:#333; font-size:20px;font-weight:600;padding: 20px 0;}
+        .subTitle {color:#333; font-size:24px; margin:40px 0 20px 0; font-weight:500; }
+        .subTitle_h3 {color:#333; font-size:20px; margin:20px 0 10px 0; font-weight:500; }
+
+        .table_list {  width: 100%; }
+        .table_list table { border-collapse: collapse; width: 100%; border-top:1px solid #D5DBEF; font-size:16px; table-layout: fixed; }
+        .table_list thead { border-bottom: 1px solid #D5DBEF;}
+        .table_list thead tr { height: 40px;}
+        .table_list  th { vertical-align: middle; background:#F7F9FF; font-weight:500;color:#666B82;  padding:4px 10px; text-align:center;}
+        .table_list  th.divLine { border-right:solid 1px #E3E7F0}
+        .table_list th a {cursor:pointer; }
+        .table_list tbody a { color:#236cdb; }
+        .table_list tbody { color:#666; }
+        .table_list tbody tr {  height: 40px; border-bottom: 1px solid #E3E7F0; } 
+        .table_list tbody tr:hover { background-color:#F7FCFF;} 
+        .table_list tbody td { vertical-align: middle; padding: 4px 8px; line-height:24px;}
+        .table_list tbody .td_number { text-align: center; }
+        .table_list tbody .td_center { text-align: center; }
+        .table_list tbody .td_regist_date { text-align: center }
+        .table_list tbody .td_readnumber  { text-align: center }
+        .table_list tbody .td_depart { text-align: center; }
+        .table_list tbody .td_headline { padding-left:68px;}
+        .table_list tbody .td_headline a { width: 100%; display: block;  overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-break: break-all;}
+    </style>
+
+    <body>
+        <div class="section">		
+        
+            <h1 class="pageTitle">고용컨설팅 포털 파일목록</h1>
+            <!-- 결과 테이블 -->
+            <div class="table_list">
+                <table>                    
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 220px;">
+                        <col style="">
+                        <col style="width:200px;">
+                        <col style="width:200px;">
+                        <col style="width:200px;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>대분류</th>
+                            <th>중분류</th>
+                            <th>소분류</th>
+                            <th>파일명</th>
+                            <th>완료여부</th>
+                            <th>비고</th>
+                            <th>최초완료일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td class="td_number">1</td>
+                            <td class="">메뉴/화면 레이아웃</td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class=""><a href="#" target="_blank"></a></td> 
+                            <td class="td_center"></td>
+                            <td class=""></td>
+                            <td class="td_center"></td>
+                        </tr> -->
+                        <tr>
+                            <td class="td_number">1</td>
+                            <td class="">메인</td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class=""><a href="index.html" target="_blank">index.html</a></td> 
+                            <td class="td_center"></td>  
+                            <td class="">이해인</td>                          
+                            <td class="td_center"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_number">2</td>
+                            <td class="">로그인</td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class=""><a href="login.html" target="_blank">login.html</a></td> 
+                            <td class="td_center">완료</td>
+                            <td class=""></td>
+                            <td class="td_center">10/22</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number">3</td>
+                            <td class="">장애인고용컨설팅</td>
+                            <td class="">고용컨설팅 안내</td>
+                            <td class=""></td>
+                            <td class=""><a href="" target="_blank">sub01-1.html</a></td> 
+                            <td class="td_center">완료</td>
+                            <td class=""></td>
+                            <td class="td_center">10/27</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number">4</td>
+                            <td class=""></td>
+                            <td class="">신청방법</td>
+                            <td class=""></td>
+                            <td class=""><a href="sub01-2.html" target="_blank">sub01-2.html</a></td> 
+                            <td class="td_center">완료</td>
+                            <td class=""></td>
+                            <td class="td_center">10/27</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number">5</td>
+                            <td class="">고용역량진단</td>
+                            <td class="">고용역량진단이란?</td>
+                            <td class=""></td>
+                            <td class=""><a href="sub02-1.html" target="_blank">sub02-1.html</a></td> 
+                            <td class="td_center">완료</td>
+                            <td class=""></td>
+                            <td class="td_center">10/27</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number">6</td>
+                            <td class=""></td>
+                            <td class="">고용역량진단</td>
+                            <td class=""></td>
+                            <td class=""><a href="sub02-2.html" target="_blank">sub02-2.html</a></td> 
+                            <td class="td_center">완료</td>
+                            <td class=""></td>
+                            <td class="td_center">10/27</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number">7</td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">진단실시 - 기본정보</td>
+                            <td class=""><a href="sub02-3.html" target="_blank">sub02-3.html</a></td> 
+                            <td class="td_center">완료</td>
+                            <td class=""></td>
+                            <td class="td_center">10/27</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number">8</td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">진단실시 - 문항(조직문화)</td>
+                            <td class=""><a href="sub02-3-1.html" target="_blank">sub02-3-1.html</a></td> 
+                            <td class="td_center">완료</td>
+                            <td class=""></td>
+                            <td class="td_center">10/27</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number">9</td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">진단실시 - 문항(마지막섹션)</td>
+                            <td class=""><a href="sub02-3-2.html" target="_blank">sub02-3-2.html</a></td> 
+                            <td class="td_center">완료</td>
+                            <td class=""></td>
+                            <td class="td_center">10/27</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number">10</td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">진단결과 - 탭1</td>
+                            <td class=""><a href="sub02-4.html" target="_blank">sub02-4.html</a></td> 
+                            <td class="td_center">완료</td>
+                            <td class=""></td>
+                            <td class="td_center">10/27<br>10/31수정</td>
+                        </tr>
+                       <tr>
+                            <td class="td_number">11</td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">진단결과 - 탭2</td>
+                            <td class=""><a href="" target="_blank"></a></td> 
+                            <td class="td_center">디자인 컨펌중</td>
+                            <td class="">11/04 코딩 완료</td>
+                            <td class="td_center">10/31</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number">12</td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">진단결과 - 탭3</td>
+                            <td class=""><a href="" target="_blank"></a></td> 
+                            <td class="td_center">완료</td>
+                            <td class=""></td>
+                            <td class="td_center">10/31</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number">13</td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">진단결과 - 탭4</td>
+                            <td class=""><a href="" target="_blank"></a></td> 
+                            <td class="td_center">완료</td>
+                            <td class=""></td>
+                            <td class="td_center">10/31</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number">14</td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">고용 컨설팅 신청하기</td>
+                            <td class=""><a href="" target="_blank"></a></td> 
+                            <td class="td_center">디자인 컨펌중</td>
+                            <td class="">11/04 디자인 완료</td>
+                            <td class="td_center"></td>
+                        </tr>
+                         <!-- 
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류"><a href="" target="_blank">sub0.html</a></td> 
+                            <td class="td_center"></td>
+                            <td class=""></td>
+                            <td class="td_center"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류"><a href="" target="_blank">sub0.html</a></td> 
+                            <td class="td_center"></td>
+                            <td class=""></td>
+                            <td class="td_center"></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- //결과 테이블 -->
+        
+        </div>
+   
+    </body></html>

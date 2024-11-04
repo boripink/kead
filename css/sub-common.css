@@ -1,20 +1,28 @@
 @charset "utf-8";
 
 /* 공통 */
-.fc-blue   {color: #236cdb;}
-.fc-red    {color: #a90000;}
-span.fs-18 {font-size: 18px;}
-[class$="_box"] {border-radius: 10px;}
+.fc-blue    {color: #236cdb;}
+.fc-blue2   {color: #1953c2;}
+.fc-red     {color: #a90000;}
+.fs-18      {font-size: 18px;}
+
 .line_box {border: 1px solid #d9e0ef;}
 .gray_box {background-color: #f7f8f9;}
 .bg_box   {background-color: #e8effb;}
+          [class$="_box"] {border-radius: 10px;}
+.bg_tag   {background-color: #e8effb; color: #236cdb; font-size: 18px; font-weight: 500; display: inline-block; padding: 7px 30px; border-radius: 30px;}
+
 .level    {padding: 2px 14px; border: 1px solid #236cdb; border-radius: 50px; color: #236cdb; display: inline-flex; justify-content: center; align-items: center; text-align: center;}
+.level.excellent   {border: none; background-color: #0095ff; color: #fff;}
+.level.fair        {border: none; background-color: #339933; color: #fff;}
+.level.substandard {border: none; background-color: #f23b3b; color: #fff;}
+
 .bg_tag   {background-color: #e8effb; color: #236cdb; font-size: 18px; font-weight: 500; display: inline-block; padding: 7px 30px; border-radius: 30px;}
 
 #bottomSection {display: none; margin-top: 50px;}
 /* 그림자 box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
 /* 트렌지션 transition: all 0.3s; */
-
+/* flex-grow(여백설정) flex-shrink(0은 줄지않겠다) flex-basis(고정크기) */
 
 
 .elli2 {
@@ -33,10 +41,7 @@ span.fs-18 {font-size: 18px;}
 .fl_center {display: flex; align-items: center;}
 
 /* 레이아웃 */
-.sub_container {
-    margin-top:100px; /* 해드영역의 값 */
-    padding:5rem 100px 0 100px;     color:#222;}
-
+.sub_container {margin-top:100px; /* 해드영역의 값 */ padding: 120px 100px 0 100px; color:#222;}
 
 /* left menu */
 .snb_wrap {float:left; position:fixed; width:290px; margin-right:40px; z-index:8;}
@@ -53,8 +58,8 @@ span.fs-18 {font-size: 18px;}
 
 /* contents */
 .contents {float:right; width:calc(100% - 330px); }
-.cont_wrap {padding: 4rem 0; }
-.cont_wrap.blue_bg {position:relative; padding: 4rem 0;}
+.cont_wrap {padding: 100px 0; }
+.cont_wrap.blue_bg {position:relative;}
 .cont_wrap.blue_bg:before {content:""; position:absolute; top:0; left:0; width:200vw; height:100%; margin-left:-100vw; background:#e8effb; z-index:-1;}
 
 /* 타이틀 */
@@ -65,14 +70,13 @@ span.fs-18 {font-size: 18px;}
 .cont_tit_wrap .cont_lct > li.home {overflow:hidden; width:18px; height:18px; margin-right:5px; font-size:0; text-indent:-9999px; background:url('../images/icon_wrap.png') -120px -120px no-repeat;}
 
 .cont_tit  {font-size:50px; font-weight:700;}
-.cont_tit2 {font-size:36px; font-weight:700;}
-.tit3 {font-size:30px; font-weight:400; margin-bottom: 20px;}
-.tab_cont .tit3 {margin-top: 60px;}
+.cont_tit2 {font-size:40px; font-weight:700;}
+.cont_tit3 {font-size:30px; font-weight:500; margin-bottom: 20px;}
 
 
 /* 인트로 */
-.intro {margin-bottom: 4rem;}
-.intro .cont_tit2 { margin-bottom:2.5rem;}
+.intro {margin-bottom: 60px;}
+.intro .cont_tit2 { margin-bottom:30px;}
 .intro .cont_txt {font-size:20px; font-weight:500; line-height: 1.6;}
 
 /* 리스트, 스텝 - 공통 */
@@ -129,13 +133,13 @@ button.full {background: #0f298f; color: #fff;}
 
 /* 레이어 팝업 */
 .popup_layer {display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); } 
-.popup_content {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 50px 20px 40px 40px; border-radius: 40px; width: 1000px; height: 750px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } 
+.popup_content {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 50px 10px 40px 40px; border-radius: 40px; width: 1000px; height: 750px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } 
 .popup_content .close_btn {position: absolute; top: 30px; right: 40px; font-size: 40px; font-weight: 200; cursor: pointer; width: 30px; height: 30px; background:url(../images/sub/svg_btn_X.svg) no-repeat center/30px 30px; } 
 .popup_header {padding-bottom: 4rem; position: relative;}
-.popup_badge {display: inline-block; background-color: #e8effb; color: #236cdb; padding: 7px 20px; border-radius: 20px; font-size: 18px; font-weight: 500; margin-bottom: 20px; }
-.popup_header h2 {font-size: 30px; font-weight: 600;} 
+.popup_badge {display: inline-block; background-color: #e8effb; color: #236cdb; padding: 7px 20px; border-radius: 20px; font-size: 18px; font-weight: 500; margin-bottom: 12px; }
+.popup_header h2 {font-size: 40px; font-weight: 600; line-height: 1.2;} 
 .popup_header::before {content: ''; width: 142px; height: 92px; position: absolute; bottom: 20px; right: 30px; background: url(../images/sub/pop_bg1.svg) no-repeat center/130px; }
-.popup_body {font-size: 16px; line-height: 1.6; margin-bottom: 10px; max-height: 430px; overflow-y: auto; } 
+.popup_body {font-size: 16px; line-height: 1.6; max-height: 600px; overflow-y: auto; padding-right: 30px;} 
 .popup_body .bg_box {background-color: #f7f8f9; border-radius: 20px; padding: 30px;}
 .popup_body .strong {font-size: 20px; font-weight: 500; margin: 10px 20px;}
 .popup_body .list li {font-size: 20px; font-weight: 500; margin: 10px 20px; padding-left: 16px; position: relative;}
@@ -145,6 +149,8 @@ button.full {background: #0f298f; color: #fff;}
 .recommendation h3 {font-size: 24px; font-weight: 500; color: #0f298f; margin: 10px 20px; } 
 .recommendation .case_box { font-size: 18px; background-color: #fff; padding: 20px 24px; border: 1px solid #0f298f;} 
 .popup_layer .bt_btn { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); }
+
+
 
 
 

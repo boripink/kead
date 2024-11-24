@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* 고용가이드 */
+
+.checklist-container { padding: 20px; border: 1px solid #f0802b; border-radius: 10px; background-color: #fff8f3; }
+.checklist-title { font-size: 18px; font-weight: bold; color: #f0802b; margin-bottom: 10px; }
+.checklist-description { font-size: 14px; color: #555; margin-bottom: 20px; }
+.checklist-section { margin-bottom: 20px; }
+.section-title { font-size: 16px; font-weight: bold; color: #f0802b; margin-bottom: 10px; }
+.checklist-items { list-style: none; padding: 0; margin: 0; }
+.checklist-item { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #f3c6a5; padding: 10px 0; }
+.item-number { font-size: 14px; font-weight: bold; color: #f0802b; margin-right: 10px; }
+.item-question { font-size: 14px; color: #333; flex: 1; }
+.item-options { display: flex; gap: 10px; }
+.item-options label { display: flex; align-items: center; gap: 5px; font-size: 14px; color: #333; }
+
+.top_step.type2 .cont_list {gap: 15px;}
+.top_step.type2 .cont_list li {padding:20px 30px; border-radius:4px; }
+.top_step.type2 .cont_list li .svg_icon{display: none;}
+.top_step.type2 .cont_list li .num{display: none;}
+.top_step.type2 .cont_list li.on {background-color: #3e8bff; color:#fff;}

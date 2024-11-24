@@ -15,9 +15,9 @@
 @font-face {font-family:'Pretendard'; font-weight:800; src:url(font/Pretendard-ExtraBold.woff2) format('woff2')}
 
 html {-webkit-text-size-adjust:none;}
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure, figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{word-wrap:break-word; margin:0; padding:0; border:0; box-sizing:border-box;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure, figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{word-wrap:break-word; margin:0; padding:0; border:0; box-sizing:border-box; word-break:keep-all;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-body {overflow-x:hidden; font-family:'Pretendard', Sans-serif; font-size:20px; font-weight:400; color:#222; letter-spacing:-0.5px; line-height:1.2;}
+body {overflow-x:hidden; font-family:'Pretendard', Sans-serif; font-size:20px; font-weight:400; color:#222; letter-spacing:-0.5px; line-height:1.2; }
 
 /* link */
 a, button {display:inline-block; vertical-align:middle; border:none; background:none; box-sizing:border-box;}
@@ -39,6 +39,7 @@ fieldset, img, abbr, acronym {border:none; margin:0; padding:0;}
 
 /* 테이블 - 마크업에 'cellspacing="0"' 지정 함께 필요 */
 table {border-collapse:collapse; border-spacing:0;}
+
 
 /* 수평선*/
 hr {display:none;}
@@ -64,7 +65,7 @@ select:focus::-ms-value {background:none; color:inherit;}
 
 /* 전역클래스 */
 .hidden {overflow:hidden; position:absolute; top:-1px !important; left:-1px !important; width:0px !important; height:0px !important;}
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.sr-only, caption { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .clear_box:after{content:''; display:block; clear:both;}
 .fl {float:left;}
 .fr {float:right;}
@@ -80,7 +81,13 @@ select:focus::-ms-value {background:none; color:inherit;}
 .ellp {overflow:hidden; word-break:keep-all; white-space:nowrap; text-overflow:ellipsis;}
 .ellp2 {overflow:hidden; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; line-height:1.4; word-break:keep-all; text-overflow:ellipsis;}
 
-.pt0{padding-top: 0 !important;}
+.pt0  {padding-top: 0 !important;}
+.pr10 {padding-right: 10px !important;}
+.pl10 {padding-left: 10px !important;}
+.pl20 {padding-left: 20px !important;}
+.pd0  {padding: 0px !important;}
+.pd10 {padding: 10px;}
+.pd20 {padding: 20px;}
 
 
 .wd1{width:1% !important;} .wd2{width:2% !important;} .wd3{width:3% !important;} .wd4{width:4% !important;} .wd5{width:5% !important;} .wd6{width:6% !important;} .wd7{width:7% !important;} .wd8{width:8% !important;} .wd9{width:9% !important;} .wd10{width:10% !important;} .wd11{width:11% !important;} .wd12{width:12% !important;} .wd13{width:13% !important;} .wd14{width:14% !important;} .wd15{width:15% !important;} .wd16{width:16% !important;} .wd17{width:17% !important;} .wd18{width:18% !important;} .wd19{width:19% !important;} .wd20{width:20% !important;} .wd21{width:21% !important;} .wd22{width:22% !important;} .wd23{width:23% !important;} .wd24{width:24% !important;} .wd25{width:25% !important;} .wd26{width:26% !important;} .wd27{width:27% !important;} .wd28{width:28% !important;} .wd29{width:29% !important;} .wd30{width:30% !important;} .wd31{width:31% !important;} .wd32{width:32% !important;} .wd33{width:33% !important;} .wd34{width:34% !important;} .wd35{width:35% !important;} .wd36{width:36% !important;} .wd37{width:37% !important;} .wd38{width:38% !important;} .wd39{width:39% !important;} .wd40{width:40% !important;} .wd41{width:41% !important;} .wd42{width:42% !important;} .wd43{width:43% !important;} .wd44{width:44% !important;} .wd45{width:45% !important;} .wd46{width:46% !important;} .wd47{width:47% !important;} .wd48{width:48% !important;} .wd49{width:49% !important;} .wd50{width:50% !important;} .wd51{width:51% !important;} .wd52{width:52% !important;} .wd53{width:53% !important;} .wd54{width:54% !important;} .wd55{width:55% !important;} .wd56{width:56% !important;} .wd57{width:57% !important;} .wd58{width:58% !important;} .wd59{width:59% !important;} .wd60{width:60% !important;} .wd61{width:61% !important;} .wd62{width:62% !important;} .wd63{width:63% !important;} .wd64{width:64% !important;} .wd65{width:65% !important;} .wd66{width:66% !important;} .wd67{width:67% !important;} .wd68{width:68% !important;} .wd69{width:69% !important;} .wd70{width:70% !important;} .wd71{width:71% !important;} .wd72{width:72% !important;} .wd73{width:73% !important;} .wd74{width:74% !important;} .wd75{width:75% !important;} .wd76{width:76% !important;} .wd77{width:77% !important;} .wd78{width:78% !important;} .wd79{width:79% !important;} .wd80{width:80% !important;} .wd81{width:81% !important;} .wd82{width:82% !important;} .wd83{width:83% !important;} .wd84{width:84% !important;} .wd85{width:85% !important;} .wd86{width:86% !important;} .wd87{width:87% !important;} .wd88{width:88% !important;} .wd89{width:89% !important;} .wd90{width:90% !important;} .wd91{width:91% !important;} .wd92{width:92% !important;} .wd93{width:93% !important;} .wd94{width:94% !important;} .wd95{width:95% !important;} .wd96{width:96% !important;} .wd97{width:97% !important;} .wd98{width:98% !important;} .wd99{width:99% !important;} .wd100{width:100% !important;}

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="asset/aos/aos.css">
+	<link rel="stylesheet" href="asset/slick/slick.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="asset/jquery/jquery-3.7.1.min.js"></script>
+	<script src="asset/aos/aos.js"></script>
+	<script src="asset/slick/slick.js"></script>
+	<script src="js/common.js"></script>
+	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
+	<title>장애인 채용사례 | 장애인 고용컨설팅 | 한국장애인고용공단 장애인고용컨설팅</title>
+</head>
+<body>
+	<header class="header act">
+		<div class="inner">
+			<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+			<h2 class="hidden">대메뉴</h2>
+			<ul class="gnb">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user_wrap">
+				<div class="user_info">
+					<!-- [D] 로그인 전에 안보이게 처리 -->
+					<div class="user">
+						<span class="neme"><b>홍길동</b> 님</spanclass="neme"> <span class="time">09:33</span>
+						<button class="btn_time" type="button">연장</button>
+					</div>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<button type="button" class="btn_menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="mob_wrap">
+			<div class="user_mob">
+				<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+				<div class="user">
+					<span class="neme"><b>홍길동</b> 님</span>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<ul class="gnb_mob">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container sub_container">
+		<div class="inner">
+			<div class="snb_wrap">
+				<h3>장애인 채용사례</h3>
+				<ul class="snb_list">
+					<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+					<li class="on"><a href="sub03-2.html">사례 맞춤 검색</a></li>
+					<li><a href="sub03-3.html">고용 성공 스토리</a></li>
+					<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+					<li><a href="sub03-5.html">직무 개발 갤러리</a></li>
+					<li><a href="sub03-6.html">미디어 채용사례</a></li>
+				</ul>
+			</div>
+			<div class="contents">
+				<!-- 타이틀 -->
+				<div class="cont_tit_wrap">
+					<h4 class="cont_tit">사례 맞춤 검색</h4>
+					<ul class="cont_lct">
+						<li class="home">홈</li>
+						<li>장애인 채용사례</li>
+						<li class="pnt_cr02"><b>사례 맞춤 검색</b></li>
+					</ul>
+				</div>
+
+				<div class="cont_wrap search_container">
+					<!-- 검색바 -->	
+					<div class="search_bg_box">
+						<div class="search_bar">
+							<input class="search_input" type="text" placeholder="검색어를 입력해주세요." />
+							<button class="search_del">
+								<img src="images/sub/svg-btn-del.svg" alt="검색어 삭제" />
+							</button>
+							<button class="search_btn">
+								<img src="images/sub/svg-btn-search.svg" alt="검색" />
+							</button>
+						</div>
+					</div>	
+					<!-- 필터링 -->
+					<div class="category_filter line_box">						
+						<div class="filter">
+							<dl class="category_item company_type" >
+								<dt>기업 형태</dt>
+								<dd>
+									<ul class="item_list" >
+										<li class="active">전체</li>
+										<li>공공</li>
+										<li>민간</li>
+									</ul>
+								</dd>
+							</dl>
+
+							<dl class="category_item industry">
+								<dt>업종</dt>
+								<dd>
+									<ul class="item_list" >
+										<li class="active">전체</li>
+										<li>농업, 임업 및 어업</li>
+										<li>광업</li>
+										<li>제조업</li>
+										<li>전기, 가스, 증기 및 공기조절 공급업</li>
+										<li>수도, 하수 및 폐기물처리, 원료재생업</li>
+										<li>도매 및 소매업</li>
+										<li>운수 및 창고업</li>
+										<li>건설업</li>
+										<li>숙박 및 음식점업</li>
+										<li>정보통신업</li>
+										<li>금융 및 보험업</li>
+										<li>부동산업</li>
+										<li>전문, 과학 및 기술 서비스업</li>
+										<li>사업시설관리, 사업지원 및 임대서비스스업</li>
+										<li>공공행정, 국방 및 사회보장행정</li>
+										<li>교육 서비스업</li>
+										<li>보건업 및 사회복지 서비스업</li>
+										<li>예술, 스포츠 및 여가관련 서비스업</li>
+										<li>협회 및 단체, 수리 및 기타 개인 서비스업/국제 및 외국기관</li>
+									</ul>
+								</dd>
+							</dl>
+
+							<dl class="category_item location" >
+								<dt>지역</dt>
+								<dd>
+									<ul class="item_list" >
+										<li class="active">전체</li>
+										<li>서울</li>
+										<li>경기</li>
+										<li>인천</li>
+										<li>강원</li>
+										<li>대전</li>
+										<li>세종.충남</li>
+										<li>충북</li>
+										<li>광주</li>
+										<li>전남</li>
+										<li>전북</li>
+										<li>대구</li>
+										<li>경남</li>
+										<li>경북</li>
+										<li>부산</li>
+									</ul>
+								</dd>
+							</dl>
+
+							<dl class="category_item company_size" >
+								<dt>규모</dt>
+								<dd>
+									<ul class="item_list" >
+										<li class="active">전체</li>
+										<li>100인미만</li>
+										<li>100~299명</li>
+										<li>300~499명</li>
+										<li>500~699명</li>
+										<li>1,000명 이상</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>						
+						<div class="filter_detail section-hide" id="bottomSection">
+							<dl class="category_item" >
+								<dt>근무 형태</dt>
+								<dd>
+									<ul class="item_list" >
+										<li class="active">전체</li>
+										<li>전일제</li>
+										<li>시간제</li>
+								</dd>
+							</dl>
+							<dl class="category_item" >
+								<dt>근무 유형</dt>
+								<dd>
+									<ul class="item_list" >
+										<li class="active">전체</li>
+										<li>정규직</li>
+										<li>비정규직</li>
+								</dd>
+							</dl>
+							<dl class="category_item" >
+								<dt>근무조건</dt>								
+								<dd>
+									<div class="inp_chk">
+										<input type="checkbox" id="remote" name="" value="" class="sr-only">
+										<label for="remote" class="inp_chk_label first">재택근무</label>									
+										<input type="checkbox" id="job_developmen" name="" value="" class="sr-only">
+										<label for="job_developmen" class="inp_chk_label">직무개발</label>
+									</div>	
+								</dd>								
+							</dl>
+						</div> 							
+					</div>
+					<!-- 버튼영역 -->
+					<div class="filter_btn">
+						<button type="button" class="btn_detail" id="toggleButton">상세조검 검색</button>
+						<div>
+							<button type="button" class="mr8">검색 초기화</button>
+							<button type="button" class="btn_crud">검색</button>
+						</div>
+					</div>
+				</div>
+				
+				<div class="cont_wrap result_container">
+					<div class="intro">
+						<h5 class="cont_tit2">사례 맞춤 검색 결과</h5>
+					</div>
+					<p class="condition_info">위 조건으로 <strong>100</strong>개의 기업이 <strong>33</strong>개의 직무로 고용사례가 검색되었습니다.</p>
+				
+					<div class="stats line_box">
+						<div class="top_job">
+							<div class="chart_tit">최다직무</div>
+							<ul>
+								<li class="job_box">비품관리원 <span><b>77</b>건</span></li>
+								<li class="job_box">외부신체기능장애 <span><b>55</b>명</span></li>
+								<li class="job_box">건축도장공 <span><b>15</b>명</span></li>
+							</ul>
+						</div>
+						<div class="employment_type">
+							<div class="chart_tit">근무 유형&amp;형태</div>
+							<!-- 그래프 구현 부분 -->
+							<div class="chart">
+								<img src="images/sub/sample-chart06.png" alt="">
+							</div>
+						</div>
+						<div class="avg_distribution line_box">
+							<div class="chart_tit">평균연봉</div>
+							<!-- 원형 차트 구현 부분 -->
+							<div class="chart">
+								<img src="images/sub/sample-chart07.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="tab_wrap tap_table_wrap">
+						<span class="table_info_count">
+							검색결과 <strong class="count">총 100건</strong>
+						</span>
+						<ul class="tab_list">
+							<li class="list on"><a href="#list_type" ><span class="sr-only">리스트타입</span></a></li>
+							<li class="card"><a href="#card_type" ><span class="sr-only">카드타입</span></a></li>
+						</ul>
+						<div class="tab_cont">	 						
+							<div id="list_type" class="table_container">							
+								<table class="tb_base tb_list tb_tab">
+									<caption>문서 정보</caption>
+									<colgroup>
+										<col style="width:15%">
+										<col style="width:15%">
+										<col style="width:12%">
+										<col style="width:10%">
+										<col style="width:15%">
+										<col style="width:auto">
+										<col style="width:80px">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">직무</th>
+											<th scope="col">업종</th>
+											<th scope="col">기업유형</th>
+											<th scope="col">규모</th>
+											<th scope="col">소재지</th>
+											<th scope="col">장애유형</th>										
+											<th scope="col"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>비품관리원비품관리원비품관리원</td>
+											<td>공항운영공항운영공항운영</td>
+											<td>민간기업</td>
+											<td>0~99</td>
+											<td>경기도 성남시 분당구 구미로 173번길 59</td>
+											<td>지적장애, 자폐성장애, 지적장애, 자폐성장애</td>	
+											<td><button type="button" class="btn_icon_add" aria-label="상세보기 팝업 열기"><span class="sr-only">상세보기 팝업 열기</span></button></td>
+										</tr>
+										<tr>
+											<td>비품관리원</td>
+											<td>공항운영</td>
+											<td>민간기업</td>
+											<td>0~99</td>
+											<td>경기 안산시</td>
+											<td>지적장애, 자폐성장애</td>	
+											<td><button type="button" class="btn_icon_add" aria-label="상세보기 팝업 열기"><span class="sr-only">상세보기 팝업 열기</span></button></td>
+										</tr>
+									</tbody>
+								</table>							
+								<div class="bt_btn">
+									<button type="button" class="btn_crud">더보기</button>
+								</div>
+							</div>
+	
+							<div id="card_type">
+								<ul class="card_list list3">
+									<li class="btn_layer type1" tabindex="0" data-id="pop">									
+										<span class="job-title">비품관리원</span>
+										<div class="">
+											<span class="industry-type">공항운영</span>
+											<span class="company-type">민간기업</span>
+											<span class="company-size">0~99</span>
+										</div>								
+										<span class="work-location ellp">경기도 성남시 분당구 구미로 173번길 59 </span>
+										<span class="disability-type ellp">지적장애, 자폐성장애, 지적장애, 자폐성장애</span>
+										<span class="sr-only">팝업열기</span>
+									</li>
+									<li class="btn_layer type1" tabindex="0">									
+										<span class="job-title">비품관리원</span>
+										<div class="">
+											<span class="industry-type">공항운영</span>
+											<span class="company-type">민간기업</span>
+											<span class="company-size">0~99</span>
+										</div>							
+										<span class="work-location ellp">경기 안산시</span>
+										<span class="disability-type ellp">지적장애, 자폐성장애</span>
+										<span class="sr-only">팝업열기</span>
+									</li>
+									<li class="btn_layer type1" tabindex="0">									
+										<span class="job-title">비품관리원</span>
+										<div class="">
+											<span class="industry-type">공항운영</span>
+											<span class="company-type">민간기업</span>
+											<span class="company-size">0~99</span>
+										</div>						
+										<span class="work-location ellp">경기 안산시</span>
+										<span class="disability-type ellp">지적장애, 자폐성장애</span>
+										<span class="sr-only">팝업열기</span>
+									</li>
+									<li class="btn_layer type1" tabindex="0">									
+										<span class="job-title">비품관리원</span>
+										<div class="">
+											<span class="industry-type">공항운영</span>
+											<span class="company-type">민간기업</span>
+											<span class="company-size">0~99</span>
+										</div>						
+										<span class="work-location ellp">경기 안산시</span>
+										<span class="disability-type ellp">지적장애, 자폐성장애</span>
+										<span class="sr-only">팝업열기</span>
+									</li>
+									<li class="btn_layer type1" tabindex="0">									
+										<span class="job-title">비품관리원</span>
+										<div class="">
+											<span class="industry-type">공항운영</span>
+											<span class="company-type">민간기업</span>
+											<span class="company-size">0~99</span>
+										</div>						
+										<span class="work-location ellp">경기 안산시</span>
+										<span class="disability-type ellp">지적장애, 자폐성장애</span>
+										<span class="sr-only">팝업열기</span>
+									</li>
+									<li class="btn_layer type1" tabindex="0">									
+										<span class="job-title">비품관리원</span>
+										<div class="">
+											<span class="industry-type">공항운영</span>
+											<span class="company-type">민간기업</span>
+											<span class="company-size">0~99</span>
+										</div>						
+										<span class="work-location ellp">경기 안산시</span>
+										<span class="disability-type ellp">지적장애, 자폐성장애</span>
+										<span class="sr-only">팝업열기</span>
+									</li>
+								</ul>
+								<div class="bt_btn">
+									<button type="button" class="btn_crud">더보기</button>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="inner">
+			<div class="f_left">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li class="pnt_cr1"><a href="#"><b>개인정보처리방침</b></a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<a href="#" target="_blank" title="새창이동">
+					<img src="images/img_watch.png" alt="" class="watch">
+				</a>
+				<div class="f_info">
+					<p class="f_logo">한국장애인고용공단</p>
+					<div>
+						<p>주소 (13619)경기도 성남시 분당구 구미로 173번길 59(구미동)</p>
+						<p>전화번호 031-728-7001~3</p>
+						<p class="f_copy">COPYRIGHT © 2024 KEAD RIGHT RESERVED.</p>
+					</div>
+				</div>
+			</div>
+			<div class="f_right">
+				<div class="rel_wrap">
+					<a href="#">관련사이트</a>
+					<ul>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+					</ul>
+				</div>
+				<div>
+					<p class="f_number">전국대표번호<b>1588-1519</b></p>
+					<p class="f_time"><span>운영시간</span>평일 09:00 ~ 18:00</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+    <div class="layer_wrap pop layer_open">
+        <div class="popup_content recruit_case">
+			<p class="recruit_info">                
+				<strong>충청남도</strong>에서 <strong>금융서비스업</strong>을 영위하는 <strong>100~150</strong> 규모의 한 <strong> 민간기업</strong>은 이렇게 채용했어요.                
+			</p> 	
+            <div class="box popup_body">                
+                <ul class="card_list list3 case-board">                
+                    <li class="recruit-status">
+                        <h2 class="pop_tit3">채용현황</h2>
+                        <div class="line_box">
+                            <dl>
+                                <dt>채용직무</dt>
+                                <dd class="tag green">직무개발</dd>
+                            </dl>
+                            <div class="recruit-job">
+                                <span class="">운영지원팀</span> 
+                                <span class="title tag sky">비품관리원</span>
+                                <span class="tooltip-icon" aria-label="도움말 아이콘" role="button" aria-expanded="false"></span>
+                                <div class="tooltip-box">  
+									<h3 class="tooltip_tit">비품 관리원</h3>                                  
+                                    <p>사무실 내 컴퓨터, 인쇄기, 파쇄기 등의 기기를 정리, 관리하거나 종이컵, 휴지, 토너등의 비품을 채워넣는 등의 업무를 수행</p>                                    
+                                    <div class="bg_box mt10">
+										<h4 class="tooltip_tit2">직무수행을 위한 기업의 지원사항</h4>
+                                        <p>작업보조기기 지원(보조공학기기 지원)작업보조기기 지원(보조공학기기 지원)</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <dl>
+                                <dt>직무수행 장애인</dt>
+                                <dd><span class="tag sky num">10</span>명</dd>
+                            </dl>
+                            <div class="bg_box disability-level">
+                                <dl>
+									<dt>외부신체기능장애</dt>
+                                    <dd>
+										<span class="tag mild">경증</span>
+										<span class="tag severe">중증</span>										
+                                   </dd>
+                                </dl>
+								<dl>
+									<dt>정신적장애</dt>
+                                    <dd>
+										<span class="tag mild">경증</span>
+										<span class="tag severe">중증</span>										
+                                   </dd>
+                                </dl>
+								<dl>
+									<dt>내부신체장애</dt>
+                                    <dd>
+										<span class="tag mild">경증</span>
+										<span class="tag severe">중증</span>									
+                                   </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="working-conditions">
+						<h2 class="pop_tit3">근로조건</h2>
+                        <div class="line_box">
+							<dl>
+                                <dt>근무형태</dt>
+								<dd class="tag">전일제</dd>
+								<dd class="tag">재택근무</dd>
+                            </dl>
+							<dl>
+                                <dt>연봉</dt>
+                                <dd><span class="tag num">2,500~3,000</span>만원</dd>
+                            </dl>
+							<div class="benefit">
+                                <h3 class="tit">장애인 근로자 복리후생</h3>
+                                <ul class="bg_box">
+									<li>복리후생 내용1</li>
+									<li>복리후생 내용3</li>
+								</ul>
+								<button type="button" class="icon-add" aria-label="펼쳐보기">
+									<span class="sr-only">펼쳐보기</span>
+								</button> 								
+                            </div> 
+							                          
+                        </div>
+                    </li>
+                    <li class="recruit-method">
+                        <h2 class="pop_tit3">채용방식</h2>						
+                        <div class="line_box">
+							<dl>
+                                <dt>채용절차</dt>
+                                <dd class="tag mint">공개경쟁</dd>
+                            </dl>
+							<ol class="recruit-step">
+								<li class="step-documents"><span class="icon" aria-hidden="true"></span>서류</li>
+								<li class="step-written"><span class="icon" aria-hidden="true"></span>필기</li>
+								<li class="step-practical"><span class="icon" aria-hidden="true"></span>실기</li>
+								<li class="step-interview"><span class="icon" aria-hidden="true"></span>면접</li>
+								<li class="step-medical"><span class="icon" aria-hidden="true"></span>채용검진</li>
+								<li class="step-aptitude"><span class="icon" aria-hidden="true"></span>인적성</li>
+							</ol>
+                            <div class="agency">
+                                <h3 class="tit">채용 도움기관</h3>
+                                <ul class="bg_box">
+									<li>도움기관 명칭1</li>
+									<li>도움기관 명칭2</li>
+									<li>도움기관 명칭3</li>
+								</ul>								
+                            </div> 
+                        </div>
+                    </li>                                   
+                </ul>               
+
+                <div class="solution-board">
+                	<p> 장애인 고용 이렇게 해결했어요</p>
+					<div class="container recruitment">
+						<dl class="issue">
+							<dt class="title">채용과정에서 어려웠던 점</dt>
+							<dd class="summary">장애인 적합직무의 부재</dd>
+							<dd class="description">장애인에게 적합한 직무를 찾을 수 없었어요.</dd>
+						</dl>
+						<dl class="solution">
+							<dt class="title">해결방안</dt>
+							<dd class="summary">공단 직무개발컨설팅 활용</dd>
+							<dd class="description">기존업무의 업무량, 업무범위 조정을 통한 적합 직무 개발 실시</dd>
+						</dl>
+						<dl class="tip">
+							<dt class="title">채용 Tip</dt>
+							<dd class="summary">타 기업의 채용사례 벤치마킹</dd>
+							<dd class="description">기존업무의 업무량, 업무범위 조정을 통한 적합 직무 개발 실시</dd>
+						</dl>
+					</div>
+					
+					<div class="container employment">
+						<dl class="issue">
+							<dt class="title">고용과정에서 어려웠던 점</dt>
+							<dd class="summary">장애인 적합직무의 부재</dd>
+							<dd class="description">장애인에게 적합한 직무를 찾을 수 없었어요.</dd>
+						</dl>
+						<dl class="solution">
+							<dt class="title">해결방안</dt>
+							<dd class="summary">공단 직무개발컨설팅 활용</dd>
+							<dd class="description">기존업무의 업무량, 업무범위 조정을 통한 적합 직무 개발 실시</dd>
+						</dl>
+						<dl class="tip">
+							<dt class="title">채용 Tip</dt>
+							<dd class="summary">타 기업의 채용사례 벤치마킹</dd>
+							<dd class="description">기존업무의 업무량, 업무범위 조정을 통한 적합 직무 개발 실시</dd>
+						</dl>
+					</div>           
+                </div>
+            </div>
+            <a class="close_btn btn_close" title="팝업창 닫기버튼"></a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            AOS.init();    
+        })
+
+        $(document).ready(function() {
+			$(".tooltip-icon").click(function() {				
+				var $tooltipBox = $(this).siblings(".tooltip-box");
+				var iconPosition = $(this).offset();				
+				
+				// 다른 툴팁 박스 숨기기
+				$(".tooltip-box").not($tooltipBox).hide();
+				// 클릭한 요소의 툴팁 박스 열기/닫기
+				$tooltipBox.toggle();				
+				// 접근성 속성 업데이트
+				var expanded = $(this).attr("aria-expanded") === "true";
+				$(this).attr("aria-expanded", !expanded);
+			});
+
+			// 클릭 외부 시 툴팁 닫기
+			$(document).click(function(event) {
+				if (!$(event.target).closest(".tooltip-box, .tooltip-icon").length) {
+					$(".tooltip-box").hide();
+					$(".tooltip-icon").attr("aria-expanded", "false");
+				}
+			});
+		});
+
+		$(".icon-add").click(function () {
+		// 현재 상태 확인
+		var expanded = $(this).attr("aria-expanded") === "true";
+		// 상태 토글
+		$(this).attr("aria-expanded", !expanded);
+		// 화살표 회전 적용
+		if (!expanded) {
+			$(this).css("transform", "rotate(270deg)"); // 펼쳐진 상태
+		} else {
+			$(this).css("transform", "rotate(0deg)"); // 닫힌 상태
+		}
+	});
+
+    
+    
+    </script>
+
+</body>
+</html>

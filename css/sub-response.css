@@ -1,17 +1,6 @@
 @charset "utf-8";
 
-@media (max-width: 768px) {
-  .row {flex-direction: column;}
-  }
 
-  .number, .category, .solution {
-    text-align: left;
-    max-width: 100%;
-  }
-
-  .solution {
-    text-align: left;
-  }
 
 
 
@@ -19,54 +8,16 @@
 
 @media (max-width:1400px) {
 	.snb_wrap {display: none;}
-	.contents {width: 100%;}
+	.contents {width: 100%; float: unset;}
 }
-@media (max-width:1024px) {
+
+
+@media (max-width:1070px) {
 	.cont_form .form_box {padding: 20px 0;}
 	.cont_form .form_box > li {flex-direction: column;}
 	.cont_form input[type='text'] {width:100%; }
+  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 768px) {
   .row {flex-direction: column;}
@@ -84,16 +35,92 @@
 
 
 
+/* Tablet & Mobile */
+@media (max-width: 768px) {  
+  .sub_container {padding: 40px 30px;}  
+  .cont_wrap {padding: 60px 0 100px;}
 
-@media (max-width:1400px) {
-	.snb_wrap {display: none;}
-	.contents {width: 100%;}
+  .cont_tit_wrap {flex-direction: column; }
+  .cont_tit_wrap .cont_lct {margin-top: 20px;}
+
+  .intro {margin-bottom: 4rem;}
+
+
+  .search-container { flex-wrap: wrap; }
+  .search-container > select, .search-container .search-btn {width: 100%;}
+
+  
+
+
+  }
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  
 }
-@media (max-width:1024px) {
-	.cont_form .form_box {padding: 20px 0;}
-	.cont_form .form_box > li {flex-direction: column;}
-	.cont_form input[type='text'] {width:100%; }
+
+
+
+
+
+
+/* 모바일용 테이블 스타일 */
+@media (max-width: 768px) {
+  colgroup { display: none; }
+  .tb_base, .tb_list, .tb_notice { display: block; width: 100%; }
+  .tb_base.tb_list thead { display: none; } /* 테이블 헤더 숨김 */
+  .tb_base.tb_list tbody tr { display: flex; flex-direction: column; padding: 10px ; gap: 5px;}
+  .tb_base.tb_list tbody td { display: flex; border-bottom: none; position: relative; text-align: left; padding: 0;}
+  .tb_base.tb_list tbody td::before { content: attr(data-label); margin-left: 10px; min-width: 100px;}
+  .tb_base.tb_list tbody tr:nth-child(even) { background-color: #f0f4f8; }
+  .tb_base.tb_list .ta_l {padding: 0;}
+  .tb_notice .badge::after {content: attr(aria-label); margin-left: 32px;}
+
+  /* .tb_base.tb_view tr { margin-bottom: 10px; border-bottom: 1px solid #ddd; } */
+  .tb_base.tb_view th { display: none; } /* 헤더 숨김 */
+  .tb_base.tb_view td { display: block; padding: 0; }
+  .tb_base td::before {content: attr(data-label); display: block;}
+ 
+ 
+
+
+
 }
+
+/*로그인*/
+@media (max-width: 1070px) {
+  
+  .login_wrap {flex-direction: column; align-items: center; gap: 80px;}
+  .login_btn {width: 100%; }
+  .login_box {width: 100%; max-width: 700px;}
+
+
+}
+
+
+@media (max-width: 768px) {
+  .login_container {padding: 50px; padding-top: 150px;}
+  .login_tit .login_description {flex-direction: column;}
+  
+  
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -158,10 +158,13 @@
 				</div>	
 				<!-- 진단 결과 -->	
 				<div class="cont_result" data-aos="fade-up">
-					<div class="link_btn ta_r">
+					<div class="btn_wrap link_btn">
 						<form id="cnslRegForm" name="cnslRegForm" target="_blank" action="/diag/empm/rptpADwnld.do" method="post">
-							<a href="#" type="submit" class="print" aria-label="새창열림" role="button" onclick="document.cnslRegForm.submit();">인쇄하기</a>
-							<a href="#" class="btn-detail" aria-label="상페페이지로 이동">컨설팅신청</a>
+							<a href="#" type="submit" class="print" aria-label="진단결과 인쇄화면 새창열림" role="button" onclick="document.cnslRegForm.submit();">인쇄하기</a>							
+						</form>						
+						<form id="cnslAplyForm" name="cnslAplyForm" action="/diag/empm/cnslAply.do" method="post">
+							<input name="diagnsRsltNo" type="hidden" value="E202411040019"> 
+							<a href="#" class="crud" aria-label="컨설팅 신청페이지로 이동">컨설팅신청</a>
 						</form>
 					</div>
 					<div class="user_info">
@@ -252,7 +255,6 @@
 												<div class="solution_body">
 													<div class="row">
 														<div class="number">01</div>
-														<div class="level substandard">미흡</div>
 														<div class="category">
 															<span class="t">장애인 건강관리 작업장 환경</span>
 														</div>
@@ -260,7 +262,6 @@
 													</div>
 													<div class="row">
 														<div class="number">02</div>
-														<div class="level excellent">우수</div>
 														<div class="category">
 															<span class="t">장애인 고용에 대한 인식 및 조직문화</span>
 														</div>
@@ -268,7 +269,6 @@
 													</div>
 													<div class="row">
 														<div class="number">03</div>
-														<div class="level fair">보통</div>
 														<div class="category">
 															<span class="t">장애인 직무관리 진단</span>
 														</div>
@@ -276,7 +276,6 @@
 													</div>
 													<div class="row">
 														<div class="number">04</div>
-														<div class="level substandard">미흡</div>
 														<div class="category">
 															<span class="t">장애인 채용노력</span>
 														</div>
@@ -284,7 +283,6 @@
 													</div>
 													<div class="row">
 														<div class="number">05</div>
-														<div class="level substandard">미흡</div>
 														<div class="category">
 															<span class="t">장애인 고용유지관리 역량</span>
 														</div>
@@ -378,7 +376,7 @@
 										</div>
 										<div class="benefit_table line_box">
 											<ul>
-												<li>
+												<li class="first">
 													<div class="th">의무고용률</div>
 													<div class="before">3.1%</div>
 													<div class="after">3.1%</div>
@@ -403,7 +401,7 @@
 													<div class="before">18명</div>
 													<div class="after">13명</div>
 												</li>
-												<li>
+												<li class="last">
 													<div class="th">고용이행수준</div>
 													<div class="before">3단계</div>
 													<div class="after">2단계</div>
@@ -486,7 +484,7 @@
 										<span class="level excellent">우수</span>
 										<div class="list_tit">연계고용 부담금 감면제도</div>
 										<p>연계 고용대상 사업장과 생산품 납품 등의 도움을 통해 부담금을 감면 받는 제도</p>
-										<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
+										<div class="more_bt_btn" aria label="자세히보기"></div>
 									</a>
 									<a class="service_list  btn_layer layer2" href="#" title="팝업 열기">
 										<span class="badge">장애인 직무관리 진단</span>
@@ -494,7 +492,7 @@
 										<div class="list_tit">직업영역개발</div>
 										<p>일반 고용시장에서 상대적 취약 계층인 중증, 여성, 장년 장애인을 위한 새로운 전략직무를 발굴, 고용가능성을 향상시키는 모델 개발
 										</p>
-										<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
+										<div class="more_bt_btn" aria label="자세히보기"></div>
 									</a>
 									<a class="service_list  btn_layer layer3" href="#" title="팝업 열기">
 										<span class="badge">장애인 채용노력</span>
@@ -502,7 +500,7 @@
 										<div class="list_tit">자회사형 표준사업장 설립지원</div>
 										<p>일정 요건을 갖춘 자회사를 설립하고 장애인을 고용할 경우 모회사에서 고용한 것으로 간주하여 고용부담금을 감면해 주는 제도
 										</p>
-										<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
+										<div class="more_bt_btn" aria label="자세히보기"></div>
 									</a>
 									<a class="service_list  btn_layer layer4" href="#" title="팝업 열기">
 										<span class="badge">장애인 고용유지관리 역량</span>
@@ -510,7 +508,7 @@
 										<div class="list_tit">근로지원인 지원</div>
 										<p>장애인 의 직업생활 안정성 및 적응을 돕기위한 인적지원 
 											사업</p>
-										<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
+										<div class="more_bt_btn" aria label="자세히보기"></div>
 									</a>
 									<a class="service_list  btn_layer layer5" href="#" title="팝업 열기">
 										<span class="badge">장애인 고용유지관리 역량</span>
@@ -518,7 +516,7 @@
 										<div class="list_tit">장애인 고용 장려금 지원</div>
 										<p>사업체가 장애인 고용 의무를 초과 달성하는 경우, 
 											초과하는 고용인원에 대한 지원금</p>
-										<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
+										<div class="more_bt_btn" aria label="자세히보기"></div>
 									</a>
 									<a class="service_list  btn_layer layer5" href="#" title="팝업 열기">
 										<span class="badge">장애인 건강관리 작업장 환경</span>
@@ -526,7 +524,7 @@
 										<div class="list_tit">장애인 고용 장려금 지원</div>
 										<p>사업체가 장애인 고용 의무를 초과 달성하는 경우, 
 											초과하는 고용인원에 대한 지원금</p>
-										<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
+										<div class="more_bt_btn" aria label="자세히보기"></div>
 									</a>
 								</div>								
 							</div>
@@ -552,69 +550,100 @@
 											</div>
 										</div>
 										<div class="avg_distribution line_box">
-											<div class="tab_tit3" role="heading" aria-level="3">평균연봉</div>
+											<div class="tab_tit3" role="heading" aria-level="3">임금수준</div>
 											<!-- 원형 차트 구현 부분 -->
 											<div class="chart">
 												<img src="images/sub/sample-chart07.png" alt="">
 											</div>
 										</div>
 									</div>
+									<div class="system_box info">
+										<p>공단에서 수집한 사례 데이터 기준이며, 실제 고용현황과 다를 수 있습니다.</p>
+									</div>
 								</section>
 								
 								<section class="excellent_cases">
 									<h6 class="tab_tit1" role="heading" aria-level="2">우수사례</h6>
-									<ul class="cases card_list list4">										
-										<li class="company_card">
-											<a class="btn_layer" href="#" aria-label="상페페이지로 이동">
-												<div class="company_logo"><img src="images/sub/sample_logo1.png" alt="" aria-sr-only ="true"></div>
-												<div class="company_title">SK쉴더스</div>
-												<div class="company_desc elli2">SIAT, ICT전문가 프로그램, 섬섬옥수</div>
-												<ul class="company_info">
-													<li class="item1"><span>업종</span>정보통신업</li>
-													<li class="item2"><span>지역</span>경기도</li>
-													<li class="item3"><span>규모</span>1,000인 이상</li>
-												</ul>
-												<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
-											</a>
+									<ul class="cases card_list list4">
+										<li class="btn_layer2 company_card" tabindex="0">
+											<div class="company_logo"><img src="images/sub/sample_logo1.png" alt="" aria-hidden="true"></div>
+											<div class="company_title">SK쉴더스</div>
+											<div class="company_desc elli2">SIAT, ICT전문가 프로그램, 섬섬옥수</div>
+											<ul class="company_info">
+												<li class="info-item">
+													<span class="info-label">업종</span>
+													<span class="info-value">정보통신업</span>
+												</li>
+												<li class="info-item">
+													<span class="info-label">지역</span>
+													<span class="info-value">경기도</span>
+												</li>
+												<li class="info-item">
+													<span class="info-label">규모</span>
+													<span class="info-value">1,000인 이상</span>
+												</li>
+											</ul>
+											<span class="sr-only">상세페이지 이동</span>
 										</li>
-										<li class="company_card">
-											<a class="btn_layer" href="#" aria-label="상페페이지로 이동">
-												<div class="company_logo"><img src="images/sub/sample_logo2.png" alt="" aria-sr-only ="true"></div>
-												<div class="company_title">구글 GOOGLE</div>
-												<div class="company_desc elli2">장애인커뮤니티, gReach Program, 엑셀러레이터프로그램</div>
-												<ul class="company_info">
-													<li class="item1"><span>업종</span>정보통신업</li>
-													<li class="item2"><span>지역</span>경기도</li>
-													<li class="item3"><span>규모</span>1,000인 이상</li>
-												</ul>
-												<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
-											</a>
+										<li class="btn_layer2 company_card" tabindex="0">
+											<div class="company_logo"><img src="images/sub/sample_logo2.png" alt="" aria-hidden="true"></div>
+											<div class="company_title">구글 GOOGLE</div>
+											<div class="company_desc elli2">장애인커뮤니티, gReach Program, 엑셀러레이터프로그램</div>
+											<ul class="company_info">
+												<li class="info-item">
+													<span class="info-label">업종</span>
+													<span class="info-value">정보통신업</span>
+												</li>
+												<li class="info-item">
+													<span class="info-label">지역</span>
+													<span class="info-value">경기도</span>
+												</li>
+												<li class="info-item">
+													<span class="info-label">규모</span>
+													<span class="info-value">1,000인 이상</span>
+												</li>
+											</ul>
+											<span class="sr-only">상세페이지 이동</span>
 										</li>
-										<li class="company_card">
-											<a class="btn_layer" href="#" aria-label="상페페이지로 이동">
-												<div class="company_logo"><img src="images/sub/sample_logo3.png" alt="" aria-sr-only ="true"></div>
-												<div class="company_title">넥슨코리아</div>
-												<div class="company_desc elli2">자회사형 표준사업장 설립, 장애인 맞춤훈련</div>
-												<ul class="company_info">
-													<li class="item1"><span>업종</span>정보통신업</li>
-													<li class="item2"><span>지역</span>경기도</li>
-													<li class="item3"><span>규모</span>1,000인 이상</li>
-												</ul>
-												<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
-											</a>
+										<li class="btn_layer2 company_card" tabindex="0">
+											<div class="company_logo"><img src="images/sub/sample_logo3.png" alt="" aria-hidden="true"></div>
+											<div class="company_title">넥슨코리아</div>
+											<div class="company_desc elli2">자회사형 표준사업장 설립, 장애인 맞춤훈련</div>
+											<ul class="company_info">
+												<li class="info-item">
+													<span class="info-label">업종</span>
+													<span class="info-value">정보통신업</span>
+												</li>
+												<li class="info-item">
+													<span class="info-label">지역</span>
+													<span class="info-value">경기도</span>
+												</li>
+												<li class="info-item">
+													<span class="info-label">규모</span>
+													<span class="info-value">1,000인 이상</span>
+												</li>
+											</ul>
+											<span class="sr-only">상세페이지 이동</span>
 										</li>
-										<li class="company_card">
-											<a class="btn_layer" href="#" aria-label="상페페이지로 이동">
-												<div class="company_logo"><img src="images/sub/sample_logo1.png" alt="" aria-sr-only ="true"></div>
-												<div class="company_title">SK쉴더스</div>
-												<div class="company_desc elli2">SIAT, ICT전문가 프로그램, 섬섬옥수</div>
-												<ul class="company_info">
-													<li class="item1"><span>업종</span>정보통신업</li>
-													<li class="item2"><span>지역</span>경기도</li>
-													<li class="item3"><span>규모</span>1,000인 이상</li>
-												</ul>
-												<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
-											</a>
+										<li class="btn_layer2 company_card" tabindex="0">
+											<div class="company_logo"><img src="images/sub/sample_logo1.png" alt="" aria-hidden="true"></div>
+											<div class="company_title">SK쉴더스</div>
+											<div class="company_desc elli2">SIAT, ICT전문가 프로그램, 섬섬옥수</div>
+											<ul class="company_info">
+												<li class="info-item">
+													<span class="info-label">업종</span>
+													<span class="info-value">정보통신업</span>
+												</li>
+												<li class="info-item">
+													<span class="info-label">지역</span>
+													<span class="info-value">경기도</span>
+												</li>
+												<li class="info-item">
+													<span class="info-label">규모</span>
+													<span class="info-value">1,000인 이상</span>
+												</li>
+											</ul>
+											<span class="sr-only">상세페이지 이동</span>
 										</li>
 									</ul>
 								</section>
@@ -633,7 +662,7 @@
 													<li class="item2">#프로젝트</li>
 													<li class="item3">#장애인고용공단</li>
 												</ul>
-												<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
+												<div class="more_bt_btn" aria label="자세히보기"></div>
 											</a>
 										</li>
 										<li class="video_card">
@@ -645,7 +674,7 @@
 													<li class="item2">#프로젝트</li>
 													<li class="item3">#장애인고용공단</li>
 												</ul>
-												<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
+												<div class="more_bt_btn" aria label="자세히보기"></div>
 											</a>
 										</li>
 										<li class="video_card">
@@ -657,7 +686,7 @@
 													<li class="item2"></li>
 													<li class="item3"></li>
 												</ul>
-												<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
+												<div class="more_bt_btn" aria label="자세히보기"></div>
 											</a>
 										</li>
 										<li class="video_card">
@@ -669,7 +698,7 @@
 													<li class="item2"></li>
 													<li class="item3"></li>
 												</ul>
-												<div class="more_bt_btn"><span class="sr-only ">자세히보기</span></div>
+												<div class="more_bt_btn" aria label="자세히보기"></div>
 											</a>
 										</li>
 									</ul>
@@ -772,46 +801,54 @@
 
 	<div class="layer_wrap tab3_pop">
 		<div class="popup_content">	
+			<span class="popup_badge">장애인 고용유지관리 역량</span>
 			<div class="popup_body">
-				<div class="popup_header">
-					<span class="popup_badge">장애인 고용유지관리 역량</span>
+				<div class="popup_header">					
 					<h2>장애인 고용  장려금 지원</h2>
 				</div>
 				<div class="bg_box">
 					<ul class="list">
 						<li>사업체가 장애인 고용 의무를 초과 달성하는 경우, 초과하는 고용인원에 대한 지원금</li>
 						<li>지원 : 성별, 장애정도에 따라 월 35~90만원(또는 월 임금액의 60% 중 낮은 단가)</li>
+						<li>지원 : 성별, 장애정도에 따라 월 35~90만원(또는 월 임금액의 60% 중 낮은 단가)</li>
+						<li>지원 : 성별, 장애정도에 따라 월 35~90만원(또는 월 임금액의 60% 중 낮은 단가)</li>
 					</ul>
 					<ul class="process_flow">
 						<li class="step_box">
 							<div class="badge">신청</div>
+							<span class="icon"></span>
 							<p>관할 지역본부<br>및 지사로 신청</p>
 							<span class="role">사업주</span>
 						</li>						
 						<li class="step_box">
 							<div class="badge">접수</div>
-							<p>접수</p>
+							<span class="icon"></span>
+							<p class="mt10">접수</p>
 							<span class="role">관할 지역본부 및 지사</span>
 						</li>						
 						<li class="step_box">
 							<div class="badge">심사</div>
-							<p>서류심사, 현지실사</p>
+							<span class="icon"></span>
+							<p>서류심사,<br>현지실사</p>
 							<span class="role">관할 지역본부 및 지사</span>
 						</li>						
 						<li class="step_box">
 							<div class="badge">결정</div>
-							<p>지급결정 및 본부로 지급요청</p>
+							<span class="icon"></span>
+							<p><span class="fc-blue">지급결정*</span> 및 본부로 지급요청</p>
 							<span class="role">관할 지역본부 및 지사</span>
 						</li>						
 						<li class="step_box">
 							<div class="badge">지급</div>
-							<p>고용장려금 지급</p>
+							<span class="icon"></span>
+							<p>고용장려금<br>지급</p>
 							<span class="role">공단본부</span>
 						</li>
-					</ul>					
+					</ul>									
 				</div>
+				
 			</div>
-			<div class="system_box info">
+			<div class="system_box info mr30">
 				<p>지급결정 처리기간은 신청일로부터 30일 이내(공휴일, 토요일 제외)</p>
 			</div>
 			<a class="close_btn btn_close" title="팝업창 닫기버튼"></a>

@@ -178,13 +178,25 @@
 									</span>
 								</li>
 								<li class="">
-									<span class="form_label"><label for="">사업체 유형</label></span>
-									<ul class="radio_col">
-										<li><input type="radio" class="radio_btn"><label>국가 및 지자체(공무원)</label></li>     
-										<li><input type="radio" class="radio_btn"><label>국가 및 지자체(비공무원)</label></li>     
-										<li><input type="radio" class="radio_btn"><label>공공기관</label></li>     
-										<li><input type="radio" class="radio_btn"><label>민간기업</label></li>     
-									</ul>
+									<span class="form_label"><label for="">사업체 유형</label></span>									
+									<div class="radio-group" role="radiogroup" aria-labelledby="business-type">
+										<label class="radio-button" role="radio" aria-checked="false" tabindex="0">
+											<input type="radio" name="business_type" value="public_official" hidden>
+											국가 및 지자체 (공무원)
+										</label>
+										<label class="radio-button" role="radio" aria-checked="false" tabindex="0">
+											<input type="radio" name="business_type" value="non_public_official" hidden>
+											국가 및 지자체 (비공무원)
+										</label>
+										<label class="radio-button" role="radio" aria-checked="false" tabindex="0">
+											<input type="radio" name="business_type" value="public_institution" hidden>
+											공공기관
+										</label>
+										<label class="radio-button" role="radio" aria-checked="false" tabindex="0">
+											<input type="radio" name="business_type" value="private_company" hidden>
+											민간기업
+										</label>
+									</div>									
 								</li>
 								<li class="">
 									<span class="form_label"><label for="">사업체 업종</label></span>
@@ -295,6 +307,28 @@
 	$(document).ready(function(){
 		AOS.init();
 	})
+
+	// 접근성 있는 라디오 버튼 기능 추가
+	$(document).ready(function() {
+		$('.radio-button').on('click', function() {
+			// 모든 라디오 버튼을 선택 해제
+			$('.radio-button').attr('aria-checked', 'false').find('input').prop('checked', false);
+
+			// 클릭한 라디오 버튼을 선택 상태로 설정
+			$(this).attr('aria-checked', 'true').find('input').prop('checked', true);
+		});
+
+		// 키보드 접근성 지원
+		$('.radio-button').on('keydown', function(e) {
+			if (e.key === 'Enter' || e.key === ' ') {
+				e.preventDefault();
+				$(this).click();
+			}
+		});
+	});
+
+
+
 	</script>
 </body>
 </html>

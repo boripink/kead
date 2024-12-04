@@ -23,8 +23,8 @@
         .status {display: flex; justify-content: space-between; align-items: center;}
         .status span { display: inline-block; margin-left: 10px; }
         .status-dot { display: inline-flex; align-items: center; font-weight: bold; }
-        .status-dot.u::before { content: '○'; color: #ff9800; margin-right: 5px; } /* 컨텐츠 미확정 - 작업 중 */
-        .status-dot.c::before { content: '◐'; color: #ff9800; margin-right: 5px; } /* 주황색 - 컨펌 중 */
+        .status-dot.u::before { content: '○'; color: #da0202; margin-right: 5px; } /* 컨텐츠 미확정 - 작업 중 */
+        .status-dot.c::before { content: '◐'; color: #da0202; margin-right: 5px; } /* 주황색 - 컨펌 중 */
         .status-dot.w::before { content: '◐'; color: #007bff; margin-right: 5px; } /* 주황색 - 작업 중 */
         .status-dot.e::before { content: '●'; color: #4caf50; margin-right: 5px; } /* 초록색 - 완료 */
         /*  status-dot.working / status-dot.confirming / status-dot.completed */
@@ -54,6 +54,9 @@
         counter-increment: row-number; /* 번호 증가 */
         content: counter(row-number); /* 번호 표시 */
         }
+
+        .red, .today {color: #da0202;}
+        tr.line td {border-top: 1px solid #222;}
     </style>
 
     <body>
@@ -95,9 +98,9 @@
                     <colgroup>
                         <col style="width: 60px"  aria-label="번호 열">
                         <col style="width: 230px" aria-label="대분류 열">
-                        <col style="width: 230px" aria-label="소분류 열">
-                        <col style="width: 280px" aria-label="중분류 열">
-                        <col style="width: 200px" aria-label="파일명 열">
+                        <col style="width: 230px" aria-label="중분류 열">
+                        <col style="width: 250px" aria-label="소분류 열">
+                        <col style="width: 250px" aria-label="파일명 열">
                         <col style="width: 100px" aria-label="디자인 열">
                         <col style="width: 100px" aria-label="코딩 열">
                         <col style="width: 100px" aria-label="반응형 열">
@@ -129,7 +132,7 @@
                             <td class="td_center"></td>
                             <td class="">이해인</td>   
                         </tr>
-                        <tr>
+                        <tr class="line">
                             <td class="td_number"></td>
                             <td class="">로그인</td>
                             <td class=""></td>
@@ -138,13 +141,141 @@
                             <td class="td_center"><span class="status-dot e"></span></td>                            
                             <td class="td_center"><span class="status-dot e"></span></td>
                             <td class="td_center"></td>
-                            <td class="">10/22<br>11/14 추가 수정건 완료</td>
+                            <td class="">
+                                10/22<br>
+                                11/14 추가 수정건 완료<br>
+                                <span class="today">탭버튼-tabindex=0 추가</span>
+                            </td>
                         </tr>
-                        <!-- 장애인 고용컨설팅 -->
                         <tr>
                             <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class="">로그인 팝업1</td>
+                            <td class=""></td>
+                            <td class=""><a href="login.html" target="_blank"></a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>                            
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"></td>
+                            <td class="">11/29 추가</td>
+                        </tr>
+                        <!-- 마이페이지 -->
+                        <tr class="line">
+                            <td class="td_number"></td>
+                            <td class="">마이페이지-대시보드</td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class=""><a href="my-dashboard.html" target="_blank">my-dashboard.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>                            
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="">
+                                12/03 디자인 완료<br>
+                            </td>
+                        </tr>                        
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class="">고용역량 진단조회<br>(assessment_view)</td>
+                            <td class=""></td>
+                            <td class=""><a href="my1-assessment.html" target="_blank">my1-assessment.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>                            
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="">12/2 완료</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="">만족도 조사 팝업</td>
+                            <td class=""><a href="my1-assessment-팝업.html" target="_blank">my1-assessment-팝업.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>                            
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="">12/2 완료</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class="">고용컨설팅 진행상황<br>(consulting_status)</td>
+                            <td class=""></td>
+                            <td class=""><a href="my2-consulting.html" target="_blank">my2-consulting.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>                            
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="">12/2 완료</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="">상세</td>
+                            <td class=""><a href="my2-consulting-상세.html" target="_blank">my2-consulting-상세.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>                            
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="">12/2 완료</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class="">명단공표 진행상황<br>(publication_status)</td>
+                            <td class=""></td>
+                            <td class=""><a href="my3-publication.html" target="_blank">my3-publication.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>                            
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="">12/2 완료</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="">상세</td>
+                            <td class=""><a href="my3-publication-상세.html" target="_blank">my3-publication-상세.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>                            
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="">12/2 완료</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class="">나의 문의<br>(my_inquir)</td>
+                            <td class=""></td>
+                            <td class=""><a href="my4-inquir.html" target="_blank">my4-inquir.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>                            
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="">12/2 완료</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="">상세</td>
+                            <td class=""><a href="my4-inquir-상세.html" target="_blank">my4-inquir-상세.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>                            
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="">12/2 완료</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class="">즐겨찾기<br>(my_favor)</td>
+                            <td class=""></td>
+                            <td class=""><a href="my5-favor.hjtml" target="_blank">my5-favor.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>                            
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="">12/2 완료</td>
+                        </tr>
+                        <!-- 장애인 고용컨설팅 -->
+                        <tr class="line">
+                            <td class="td_number"></td>
                             <td class="">장애인고용컨설팅(employment_consulting)</td>
-                            <td class="">고용컨설팅 안내(consulting_intro)</td>
+                            <td class="">고용컨설팅이란?(consulting_intro)</td>
                             <td class=""></td>
                             <td class=""><a href="sub01-1.html" target="_blank">sub01-1.html</a></td> 
                             <td class="td_center"><span class="status-dot e"></span></td>
@@ -164,7 +295,7 @@
                             <td class="">10/27 완료</td>                         
                         </tr>
                         <!-- 고용역량진단 -->
-                        <tr>
+                        <tr class="line">
                             <td class="td_number"></td>
                             <td class="">고용역량진단(employment_assessment)</td>
                             <td class="">고용역량진단이란?(assessment_intro)</td>
@@ -184,7 +315,29 @@
                             <td class="td_center"><span class="status-dot e"></span></td>
                             <td class="td_center"><span class="status-dot e"></td>
                             <td class="td_center"></td>
-                                <td class="">10/27 완료</td>
+                            <td class="">10/27 완료</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="">안내 팝업</td>
+                            <td class=""><a href="sub02-2-팝업1.html" target="_blank">sub02-2-팝업1.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot e"></td>
+                            <td class="td_center"></td>
+                            <td class="">11/27 완료</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="">데이터 테이블 팝업</td>
+                            <td class=""><a href="sub02-2-팝업2.html" target="_blank">sub02-2-팝업2.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot e"></td>
+                            <td class="td_center"></td>
+                            <td class="">11/27 완료</td>
                         </tr>
                         <tr>
                             <td class="td_number"></td>
@@ -225,11 +378,12 @@
                             <td class="td_center"></td>
                                 <td class="">10/27 완료</td>
                         </tr>
+                        <!-- 진단결과 탭 -->
                         <tr>
                             <td class="td_number"></td>
                             <td class=""></td>
                             <td class=""></td>
-                            <td class="소분류">진단결과 - 탭1<br>(assessment_result)</td>
+                            <td class="소분류">진단결과 - 탭1 - 진단요약<br>(assessment_result)</td>
                             <td class=""><a href="sub02-4.html" target="_blank">sub02-4.html</a></td> 
                             <td class="td_center"><span class="status-dot e"></span></td>                            
                             <td class="td_center"><span class="status-dot e"></span></td>
@@ -238,13 +392,23 @@
                                 10/27 완료<br>
                                 11/11 html 수정
                             </td>
-                        </tr>
-                        <!-- 진단결과 탭2 -->
+                        </tr>                         
                         <tr>
                             <td class="td_number"></td>
                             <td class=""></td>
                             <td class=""></td>
-                            <td class="소분류">진단결과 - 탭2</td>
+                            <td class="소분류">진단결과 - 탭1 - 팝업<br></td>
+                            <td class=""><a href="sub02-4-탭1-팝업.html" target="_blank">sub02-4-탭1-팝업.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>                            
+                            <td class="td_center"><span class="status-dot w"></span></td>
+                            <td class="td_center"></td>
+                            <td class="red">팝업 영역별 아이콘 추가 및 수정 필요</td>
+                        </tr>                       
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">진단결과 - 탭2 - 고용현황 편익분석</td>
                             <td class=""><a href="" target="_blank"></a></td> 
                             <td class="td_center"><span class="status-dot c"></span></td>                            
                             <td class="td_center"><span class="status-dot w"></span></td>
@@ -252,14 +416,14 @@
                             <td class="">
                                 11/11 코드 수정<br>
                                 11/13 디자인 수정(컨텐츠변경)<br>
-                                디자인 컨펌중
+                                <span class="red">디자인 컨펌중</span>
                             </td>
                         </tr>
                         <tr>
                             <td class="td_number"></td>
                             <td class=""></td>
                             <td class=""></td>
-                            <td class="소분류">진단결과 - 탭3</td>
+                            <td class="소분류">진단결과 - 탭3 - 추천서비스</td>
                             <td class=""><a href="" target="_blank"></a></td> 
                             <td class="td_center"><span class="status-dot e"></span></td>
                             <td class="td_center"><span class="status-dot e"></td>
@@ -270,7 +434,7 @@
                             <td class="td_number"></td>
                             <td class=""></td>
                             <td class=""></td>
-                            <td class="소분류">진단결과 - 탭4</td>
+                            <td class="소분류">진단결과 - 탭4 - 추천사례</td>
                             <td class=""><a href="" target="_blank"></a></td> 
                             <td class="td_center"><span class="status-dot e"></span></td>
                             <td class="td_center"><span class="status-dot e"></span></td>
@@ -309,7 +473,7 @@
                             </td>
                         </tr>
                         <!-- 장애인 채용사례 -->
-                        <tr>
+                        <tr class="line">
                             <td class="td_number"></td>
                             <td class="">장애인 채용사례(employment_cases)</td>
                             <td class="">장애인 채용사례란?(cases_intro)</td>
@@ -336,7 +500,7 @@
                             <td class=""></td>
                             <td class=""></td>
                             <td class="소분류">사례 맞춤 결과(팝업)</td>
-                            <td class=""><a href="" target="_blank"></a></td> 
+                            <td class=""><a href="sub03-2-팝업.html" target="_blank">sub03-2-팝업.html</a></td> 
                             <td class="td_center"><span class="status-dot e"></td>
                             <td class="td_center"><span class="status-dot e"></span></td>
                             <td class="td_center"></td>
@@ -374,7 +538,8 @@
                             <td class="td_center"><span class="status-dot u"></span></td>
                             <td class="td_center"></td>
                             <td class="">
-                                11/15 신규 메뉴 추가
+                                11/15 신규 메뉴 추가<br>
+                                <span class="red">컨텐츠 필요</span>
                             </td>
                         </tr>
                         <tr>
@@ -388,8 +553,9 @@
                             <td class="td_center"></td>
                             <td class="">
                                 11/15 1차 디자인 컨펌<br>
-                                24년도 자료 재취합후 리디자인 필요<br>
-                                표,절차등 시각화 자료 포함예정</td>
+                                24년도 자료 재취합후 리디자인<br>
+                                <span class="red">컨텐츠 필요</span>
+                            </td>
                         </tr>                         
                         <tr>
                             <td class="td_number"></td>
@@ -439,27 +605,38 @@
                             </td>
                         </tr>
                         <!-- 고용현황 리포트 -->
-                        <tr>
+                        <tr class="line">
                             <td class="td_number"></td>
                             <td class="">고용현황 리포트(employment_report)</td>
                             <td class="">장애인 인구구조(population_structure)</td>
                             <td class="소분류"></td>
-                            <td class=""><a href="" target="_blank"></a></td> 
+                            <td class=""><a href="sub04-1.html" target="_blank">sub04-1.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot e"></span></td>
                             <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
+                            <td class="">11/25 완료</td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
                             <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">고용현황 팝업</td>
+                            <td class=""><a href="sub04-1-팝업.html" target="_blank">sub04-1-팝업.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"></td>
+                            <td class="">11/28 완료</td>
                         </tr>
                         <tr>
                             <td class="td_number"></td>
                             <td class=""></td>
                             <td class="">기관유형별 고용현황(institution_employment)</td>
                             <td class="소분류"></td>
-                            <td class=""><a href="" target="_blank"></a></td> 
+                            <td class=""><a href="sub04-2.html" target="_blank">sub04-2.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot e"></span></td>
                             <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class=""></td>
+                            <td class="">11/25 완료</td>
                         </tr> 
                         <!-- <tr>
                             <td class="td_number"></td>
@@ -484,86 +661,153 @@
                             <td class=""></td>
                         </tr> -->
                         <!-- 고용가이드 -->
-                        <tr>
+                        <tr class="line">
                             <td class="td_number"></td>
                             <td class="">고용 가이드(employment_guide)</td>
                             <td class="">장애인 고용가이드란?(guide_intro)</td>
                             <td class="소분류"></td>
-                            <td class=""><a href="" target="_blank"></a>sub05-1.html</td> 
-                            <td class="td_center"><span class="status-dot w"></span></td>
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class="">11/27 디자인 완료예정</td>
+                            <td class=""><a href="sub05-1.html" target="_blank">sub05-1.html</a></td> 
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot e"></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="">
+                                11/28 완료<br>
+                                <span class="red">이미지 변경 필요</span>
+                            </td>
                         </tr>
                         <tr>
                             <td class="td_number"></td>
                             <td class=""></td>
                             <td class="">단계별 고용 GUIDE</td>
-                            <td class="소분류">고용 과정 체크리스트</td>
+                            <td class="소분류"></td>
                             <td class=""><a href="" target="_blank"></a>sub05-2.html</td> 
-                            <td class="td_center"><span class="status-dot w"></span></td>
+                            <td class="td_center"><span class="status-dot c"></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
                             <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class="">11/27 디자인 완료예정</td>
+                            <td class="">
+                                11/28 디자인 완료<br>                                
+                            </td>
                         </tr>
                         <tr>
                             <td class="td_number"></td>
                             <td class=""></td>
                             <td class=""></td>
-                            <td class="소분류">채용계획 수립 탭1</td>
-                            <td class=""><a href="" target="_blank"></a>sub05-3-1.html</td> 
-                            <td class="td_center"><span class="status-dot w"></span></td>
+                            <td class="소분류">고용 과정 체크리스트</td>
+                            <td class=""><a href="sub05-2-1체크리스트.html" target="_blank">sub05-2-1체크리스트.html</a></td> 
+                            <td class="td_center"><span class="status-dot c"></span></td>
+                            <td class="td_center"><span class="status-dot e"></span></td>
                             <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class="">11/27 디자인 완료예정</td>
+                            <td class="">
+                                11/28 완료<br>                                
+                            </td>
+                        </tr>
+                        <!-- 단계결 고용가이드 > 채용계획 수립 -->
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">채용계획 수립-탭1</td>
+                            <td class=""><a href="" target="_blank"></a>sub05-2-2채용계획-탭1.html</td> 
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="">12/05 디자인 완료예정</td>
                         </tr>
                         <tr>
                             <td class="td_number"></td>
                             <td class=""></td>
                             <td class=""></td>
-                            <td class="소분류">채용계획 수립 탭2</td>
-                            <td class=""><a href="" target="_blank"></a>sub05-3-2.html</td> 
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class=""></td>
-                        </tr>
-                        <tr>
-                            <td class="td_number"></td>
-                            <td class=""></td>
-                            <td class=""></td>
-                            <td class="소분류">채용계획 수립 탭3</td>
-                            <td class=""><a href="" target="_blank"></a>sub05-3-3.html</td> 
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class=""></td>
-                        </tr>
-                        <tr>
-                            <td class="td_number"></td>
-                            <td class=""></td>
-                            <td class=""></td>
-                            <td class="소분류">채용계획 수립 탭4</td>
-                            <td class=""><a href="" target="_blank"></a>sub05-3-4.html</td> 
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
+                            <td class="소분류">채용계획 수립-탭2</td>
+                            <td class=""><a href="" target="_blank"></a>sub05-2-2채용계획-탭2.html</td> 
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
                             <td class=""></td>
                         </tr>
                         <tr>
                             <td class="td_number"></td>
                             <td class=""></td>
                             <td class=""></td>
-                            <td class="소분류">채용계획 수립 탭5</td>
-                            <td class=""><a href="" target="_blank"></a>sub05-3-5.html</td> 
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
+                            <td class="소분류">채용계획 수립-탭3</td>
+                            <td class=""><a href="" target="_blank"></a>sub05-2-2채용계획-탭3.html</td> 
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
                             <td class=""></td>
                         </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">채용계획 수립-탭4</td>
+                            <td class=""><a href="" target="_blank"></a>sub05-2-2채용계획-탭4.html</td> 
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class=""></td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">채용계획 수립-탭5</td>
+                            <td class=""><a href="" target="_blank"></a>sub05-2-2채용계획-탭5.html</td> 
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class=""></td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">모집 및 채용</td>
+                            <td class=""><a href="" target="_blank"></a>sub05-2-3모집채용-탭1.html</td> 
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class=""></td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="소분류">고용관리</td>
+                            <td class=""><a href="" target="_blank"></a>sub05-2-4고용관리-탭1.html</td> 
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class=""></td>
+                        </tr>                        
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class="">함께 일하기 GUIDE</td>
+                            <td class="소분류"></td>
+                            <td class=""><a href="" target="_blank"></a></td> 
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class=""></td>
+                        </tr>
+                        <tr>
+                            <td class="td_number"></td>
+                            <td class=""></td>
+                            <td class="">장애인 고용서비스 GUIDE</td>
+                            <td class="소분류"></td>
+                            <td class=""><a href="" target="_blank"></a></td> 
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class="td_center"><span class="status-dot "></span></td>
+                            <td class=""></td>
+                        </tr>
+                        
+
+
+
 
                         <!-- 알림마당 -->
-                        <tr>
+                        <tr class="line">
                             <td class="td_number"></td>
                             <td class="">알림마당<br>(notifications)</td>
                             <td class="">공지사항/오늘의 뉴스(notice_news)</td>
@@ -616,48 +860,11 @@
                             <td class="td_center"><span class="status-dot e"></td> 
                             <td class="td_center"><span class="status-dot e"></td>
                             <td class="td_center"></td>
-                            <td class="">11/12 완료</td>
+                            <td class="">
+                                11/12 완료<br>
+                                <span class="today">12/03 html 소스 변경</span>
+                            </td>
                         </tr>
-
-
-                        <!-- 고용현황 리포트 -->
-
-                        <!-- <tr>
-                            <td class="td_number"></td>
-                            <td class=""></td>
-                            <td class=""></td>
-                            <td class="소분류"></td>
-                            <td class=""><a href="" target="_blank"></a></td> 
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class=""></td>
-                        </tr> 
-                        -->
-                        
-                        <!-- <tr>
-                            <td class="td_number"></td>
-                            <td class="">고용현황 리포트</td>
-                            <td class="">장애인 인구구조</td>
-                            <td class="소분류"></td>
-                            <td class=""><a href="" target="_blank"></a></td> 
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class=""></td>
-                        </tr>
-                        <tr>
-                            <td class="td_number"></td>
-                            <td class=""></td>
-                            <td class="">기관유형별 고용현황</td>
-                            <td class="소분류"></td>
-                            <td class=""><a href="" target="_blank"></a></td> 
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class="td_center"></td>
-                            <td class=""></td>
-                        </tr> -->
-
 
                          <!--
                         <tr>

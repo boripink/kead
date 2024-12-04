@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="asset/aos/aos.css">
 	<link rel="stylesheet" href="asset/slick/slick.css">
@@ -13,7 +13,7 @@
 	<script src="asset/slick/slick.js"></script>
 	<script src="js/common.js"></script>
 	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
-	<title>알림마당 | 장애인 고용컨설팅 | 한국장애인고용공단 장애인고용컨설팅</title>
+	<title>고용현황 리포트 | 장애인 고용컨설팅 | 한국장애인고용공단 장애인고용컨설팅</title>
 </head>
 <body>
 	<header class="header act">
@@ -69,7 +69,7 @@
 				<div class="user_info">
 					<!-- [D] 로그인 전에 안보이게 처리 -->
 					<div class="user">
-						<span class="neme"><b>홍길동</b> 님</spanclass="neme"> <span class="time">09:33</span>
+						<span class="name"><b>홍길동</b> 님</span"><span class="time">09:33</span>
 						<button class="btn_time" type="button">연장</button>
 					</div>
 					<button type="button" class="btn_login">로그아웃</button>
@@ -139,37 +139,122 @@
 	<div class="container sub_container">
 		<div class="inner">
 			<div class="snb_wrap">
-				<h3>알림마당</h3>
+				<h3>고용현황 리포트</h3>
 				<ul class="snb_list">
-					<li><a href="sub06-1.html">공지사항/오늘의 뉴스</a></li>
-					<li><a href="sub06-2.html">FAQ</a></li>
-					<li class="on"><a href="sub06-3.html">문의사항</a></li>
+					<li><a href="sub04-1.html">장애인 인구구조</a></li>
+					<li class="on"><a href="sub04-2.html">기관유형별 고용현황</a></li>
 				</ul>
 			</div>
 			<div class="contents">
 				<!-- 타이틀 -->
 				<div class="cont_tit_wrap">
-					<h4 class="cont_tit">문의사항</h4>
+					<h4 class="cont_tit">기관유형별 고용현황</h4>
 					<ul class="cont_lct">
 						<li class="home">홈</li>
-						<li>알림마당</li>
-						<li class="pnt_cr02"><b>문의사항</b></li>
+						<li>고용현황 리포트</li>
+						<li class="pnt_cr02"><b>기관유형별 고용현황</b></li>
 					</ul>
 				</div>
-                <!-- 콘텐츠 -->
-				<div class="cont_wrap2">  
-                    <div class="completion">
-						<div class="complet_txt">						
-							<p data-aos="fade-up">감사합니다.</p>
-							<p data-aos="fade-up" data-aos-delay="200">빠른 시일 내에 답변 드리겠습니다.</p>
-							<p class="small" data-aos="fade-up" data-aos-delay="400">문의사항과 답변은 마이페이지에서 확인하실 수 있습니다.</p>
-						</div>
-						<div class="bt_btn">
-							<a hrf="#" class="btn_ln_def">문의사항 확인</a>
-							<a hrf="#" class="btn_cr_def">홈으로 이동</a>
-						</div>
-                    </div>
-				</div>
+				<div class="cont_wrap institution_employment">
+					<ul class="company_filter">
+						<li tabindex="0">전체</li>
+						<li class="gov active" tabindex="0">
+							<span>정부부문</span>
+							<ul class="sub_filter">
+								<li class="active" tabindex="0">공무원</li>
+								<li tabindex="0">공무직</li>
+							</ul>
+						</li>
+						<li tabindex="0">공공기관</li>
+						<li tabindex="0">민간기업</li>
+					</ul>
+					<div class="form_box right">
+						<select name="searchCondition" id="searchYear" title="" class="select_category">
+							<option value="2023">2024년 기준</option>
+							<option value="2023">2023년 기준</option>
+						</select>
+					</div>
+					<ul class="report_chart list3 institution">
+						<li>
+							<div class="line_box">
+								<p class="chart_tit">사업체 수</p>
+								<div class="chart_graph">
+									<img src="images/sub/ctEx_06.png" >
+								</div>
+								<div class="chart_info">
+									<span class="tag">정부기관 수</span>
+									총 <strong class="fc-blue">715</strong>개
+								</div>
+								<button type="button" aria-expanded="false" aria-controls="popup-id" id="popup-button" class="detail_btn">더보기</button>	
+							</div>							
+						</li>
+						<li>
+							<div class="line_box">
+								<p class="chart_tit">상시근로자 수</p>
+								<div class="chart_graph">
+									<img src="images/sub/ctEx_06.png" >
+								</div>
+								<div class="chart_info">
+									<span class="tag">총 근로자</span>
+									<strong class="fc-blue">1,715</strong>명
+								</div>
+								<button type="button" aria-expanded="false" aria-controls="popup-id" id="popup-button" class="detail_btn">더보기</button>	
+							</div>							
+						</li>
+						<li>
+							<div class="line_box">
+								<p class="chart_tit">장애인 근로자 수</p>
+								<div class="chart_graph">
+									<img src="images/sub/ctEx_06.png" >
+								</div>
+								<div class="chart_info">
+									<span class="tag">총 장애인 근로자</span>
+									<strong class="fc-blue">1,715</strong>명
+								</div>
+								<button type="button" aria-expanded="false" aria-controls="popup-id" id="popup-button" class="detail_btn">더보기</button>	
+							</div>							
+						</li>
+						<li>
+							<div class="line_box">
+								<p class="chart_tit">장애인 고용률</p>
+								<div class="chart_graph">
+									<img src="images/sub/ctEx_03.png" style="width: 270px;">
+								</div>
+								<div class="chart_info">
+									<span class="tag">전체 고용률</span>
+									<strong class="fc-blue">5</strong>%
+								</div>
+								<button type="button" aria-expanded="false" aria-controls="popup-id" id="popup-button" class="detail_btn">더보기</button>	
+							</div>							
+						</li>
+						<li>
+							<div class="line_box">
+								<p class="chart_tit">장애인 근로자 유형</p>
+								<div class="chart_graph">
+									<img src="images/sub/ctEx_07.png" style="width: 270px;">
+								</div>
+								<div class="chart_info">
+									<span class="tag">최다 유형</span>
+									<strong class="fc-blue">지체</strong>장애
+								</div>
+								<button type="button" aria-expanded="false" aria-controls="popup-id" id="popup-button" class="detail_btn">더보기</button>	
+							</div>							
+						</li>
+						<li>
+							<div class="line_box">
+								<p class="chart_tit">역량 진단 평균</p>
+								<div class="chart_graph">
+									<img src="images/sub/ctEx_16.png" style="width: 270px;" >
+								</div>
+								<div class="chart_info">
+									<span class="tag">종합 형균</span>
+									<strong class="fc-blue">보통 (75점)</strong>수준
+								</div>
+								<button type="button" aria-expanded="false" aria-controls="popup-id" id="popup-button" class="detail_btn">더보기</button>	
+							</div>							
+						</li>
+					</ul>
+				</div>				
 			</div>
 		</div>
 	</div>
@@ -214,15 +299,7 @@
 	<script>
 	$(document).ready(function(){
 		AOS.init();
-
-	});
-
-   
-	
-
-
-
+	})
 	</script>
-
 </body>
 </html>

@@ -13,7 +13,7 @@
 	<script src="asset/slick/slick.js"></script>
 	<script src="js/common.js"></script>
 	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
-	<title>알림마당 | 장애인 고용컨설팅 | 한국장애인고용공단 장애인고용컨설팅</title>
+	<title>마이페이지 | 장애인 고용컨설팅 | 한국장애인고용공단 장애인고용컨설팅</title>
 </head>
 <body>
 	<header class="header act">
@@ -139,36 +139,141 @@
 	<div class="container sub_container">
 		<div class="inner">
 			<div class="snb_wrap">
-				<h3>알림마당</h3>
+				<h3>마이페이지</h3>
 				<ul class="snb_list">
-					<li><a href="sub06-1.html">공지사항/오늘의 뉴스</a></li>
-					<li><a href="sub06-2.html">FAQ</a></li>
-					<li class="on"><a href="sub06-3.html">문의사항</a></li>
+					<!-- <li class="on"><a href="sub0.html">대시보드</a></li> -->
+					<li class="on"><a href="my1-assessment.html">고용역량 진단조회</a></li>
+					<li><a href="my2-consulting.html">고용컨설팅 진행상황</a></li>
+					<li><a href="my3-publication.html">명단공표 진행상황</a></li>
+					<li><a href="my4-inquir.html">나의 문의</a></li>
+					<li><a href="my5-favor.html">즐겨찾기</a></li>
 				</ul>
 			</div>
 			<div class="contents">
 				<!-- 타이틀 -->
 				<div class="cont_tit_wrap">
-					<h4 class="cont_tit">문의사항</h4>
+					<h4 class="cont_tit">고용역량 진단조회</h4>
 					<ul class="cont_lct">
 						<li class="home">홈</li>
-						<li>알림마당</li>
-						<li class="pnt_cr02"><b>문의사항</b></li>
+						<li>마이페이지</li>
+						<li class="pnt_cr02"><b>고용역량 진단조회</b></li>
 					</ul>
 				</div>
-                <!-- 콘텐츠 -->
-				<div class="cont_wrap2">  
-                    <div class="completion">
-						<div class="complet_txt">						
-							<p data-aos="fade-up">감사합니다.</p>
-							<p data-aos="fade-up" data-aos-delay="200">빠른 시일 내에 답변 드리겠습니다.</p>
-							<p class="small" data-aos="fade-up" data-aos-delay="400">문의사항과 답변은 마이페이지에서 확인하실 수 있습니다.</p>
-						</div>
-						<div class="bt_btn">
-							<a hrf="#" class="btn_ln_def">문의사항 확인</a>
-							<a hrf="#" class="btn_cr_def">홈으로 이동</a>
-						</div>
+				<!-- 콘텐츠 -->
+				<div class="cont_wrap assessment_view">
+					<div class="search-container">
+                        <select class="filter w-200" aria-label="검색 필터 선택">
+                            <option>선택</option>
+                            <option>진단번호</option>
+                            <option>진단일자</option>
+                            <option>사업체담당자</option>
+                        </select>                        
+						<div class="search-input"><input type="text" placeholder="검색어를 입력해주세요" /></div>                        
+                        <button class="search-btn">검색</button>
                     </div>
+                    <div class="table-container">
+						<p class="table_info_count">
+							검색결과 <strong class="count">총 100건</strong>
+						</p>
+                        <table class="tb_base tb_list">
+							<caption>문서 정보</caption>
+                            <colgroup>
+                                <col style="width:8%">
+                                <col style="width:17%">
+                                <col style="width:14%">
+                                <col style="width:12%">
+                                <col style="width:10%">
+                                <col style="width:auto">
+                                <col style="width:13%">
+                              </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">진단번호</th>
+                                    <th scope="col">진단일자</th>
+                                    <th scope="col">사업체 담당자</th>
+                                    <th scope="col">진단결과</th>
+                                    <th scope="col">고용역량 진단보고서</th>
+                                    <th scope="col">진행상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="auto-number"></td>
+                                    <td>E202411040019</td>
+                                    <td>2024-12-12</td>
+                                    <td>김은영</td>
+                                    <td>보통</td>
+                                    <td>
+										<div class="td_list">
+											<a href="" class="td_btn print">인쇄하기</a>
+											<a href="" class="td_btn preview">미리보기</a>
+										</div>
+									</td>
+                                    <td><a href="" class="td_btn link">상세보기</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-number"></td>
+                                    <td>E202411040019</td>
+                                    <td>2024-12-12</td>
+                                    <td>김은영</td>
+                                    <td>보통</td>
+                                    <td>
+										<div class="td_list">
+											<a href="" class="td_btn print">인쇄하기</a>
+											<a href="" class="td_btn preview">미리보기</a>
+										</div>
+									</td>
+                                    <td><a href="" class="td_btn link">상세보기</a></td>
+                                </tr>
+								<tr>
+                                    <td class="auto-number"></td>
+                                    <td>E202411040019</td>
+                                    <td>2024-12-12</td>
+                                    <td>김은영</td>
+                                    <td>보통</td>
+                                    <td>
+										<div class="td_list">
+											<a href="" class="td_btn print">인쇄하기</a>
+											<a href="" class="td_btn preview">미리보기</a>
+										</div>
+									</td>
+                                    <td><a href="" class="td_btn link">상세보기</a></td>
+                                </tr>
+								<tr>
+                                    <td class="auto-number"></td>
+                                    <td>E202411040019</td>
+                                    <td>2024-12-12</td>
+                                    <td>김은영</td>
+                                    <td>보통</td>
+                                    <td>
+										<div class="td_list">
+											<a href="" class="td_btn print">인쇄하기</a>
+											<a href="" class="td_btn preview">미리보기</a>
+										</div>
+									</td>
+                                    <td><a href="" class="td_btn link">상세보기</a></td>
+                                </tr>
+								<tr>
+                                    <td class="auto-number"></td>
+                                    <td>E202411040019</td>
+                                    <td>2024-12-12</td>
+                                    <td>김은영</td>
+                                    <td>보통</td>
+                                    <td>
+										<div class="td_list">
+											<a href="" class="td_btn print">인쇄하기</a>
+											<a href="" class="td_btn preview">미리보기</a>
+										</div>
+									</td>
+                                    <td><a href="" class="td_btn link">상세보기</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+					<div class="bt_btn">
+						<button type="button" class="btn_crud">더보기</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -214,14 +319,7 @@
 	<script>
 	$(document).ready(function(){
 		AOS.init();
-
-	});
-
-   
-	
-
-
-
+	})
 	</script>
 
 </body>

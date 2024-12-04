@@ -2,20 +2,38 @@
 
 /* 고용가이드 */
 
-.checklist-container { padding: 20px; border: 1px solid #f0802b; border-radius: 10px; background-color: #fff8f3; }
-.checklist-title { font-size: 18px; font-weight: bold; color: #f0802b; margin-bottom: 10px; }
-.checklist-description { font-size: 14px; color: #555; margin-bottom: 20px; }
-.checklist-section { margin-bottom: 20px; }
-.section-title { font-size: 16px; font-weight: bold; color: #f0802b; margin-bottom: 10px; }
-.checklist-items { list-style: none; padding: 0; margin: 0; }
-.checklist-item { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #f3c6a5; padding: 10px 0; }
-.item-number { font-size: 14px; font-weight: bold; color: #f0802b; margin-right: 10px; }
-.item-question { font-size: 14px; color: #333; flex: 1; }
-.item-options { display: flex; gap: 10px; }
-.item-options label { display: flex; align-items: center; gap: 5px; font-size: 14px; color: #333; }
+/* 고용가이드 - 장애인 고용 가이드란? */
 
-.top_step.type2 .cont_list {gap: 15px;}
-.top_step.type2 .cont_list li {padding:20px 30px; border-radius:4px; }
-.top_step.type2 .cont_list li .svg_icon{display: none;}
-.top_step.type2 .cont_list li .num{display: none;}
-.top_step.type2 .cont_list li.on {background-color: #3e8bff; color:#fff;}
+.employment_guide {}
+.employment_guide .tab_style02 .tab_list {top: 0;}
+.employment_guide .tab_style02 .cont_info {position: relative; top: -50px;}
+.employment_guide .tab_style02 .ul_dot {margin-top: 30px;}
+.employment_guide .cont_list.style01 .cont_thum {border-radius: 70px 10px; background: url(../images/img_sec02-1.png) no-repeat ; background-size: cover;}
+
+
+
+
+/* 고용가이드 - 고용 과정 체크리스트 */
+.employment_checklist{border-top: 1px solid #236cdb; border-bottom: 1px solid #236cdb;}
+.employment_checklist > li {padding: 30px 0 ; position: relative; display: flex; justify-content: space-between; align-items: center;}
+.employment_checklist > li:not(:last-child) {border-bottom: 1px solid #d9e0ef;}
+.employment_checklist > li > div {display: flex; align-items: center;}
+.employment_checklist .number {margin-right: 8px; font-weight: 600; }
+.employment_checklist .question {flex-grow: 1; }
+
+.list-chk-radio { display: flex; align-items: center; }
+.list-chk-radio label {margin-left: 20px; position: relative; padding-right: 30px;}
+.list-chk-radio label:after {content: ''; display: block; width: 22px; height:22px; background: url(../images/sub/radio_sq.png); position: absolute; top: 0; right: 0;}
+.list-chk-radio input:checked + label:after {background-image: url(../images/sub/radio_sq_chk.png);}
+.list-chk-radio input[type="radio"] {position: absolute; opacity: 0; width: 0; height: 0; }
+
+.recommendation-btn {position: absolute;  display: flex; gap: 5px; right: -240px; }
+.recommendation-btn button {border: 2px solid #236cdb; border-radius: 20px; padding: 6px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);}
+.recommendation-btn button.recommend {padding: 6px 30px 6px 8px; background: url(../images/sub/chk_list_icon.png) no-repeat 46px center;}
+
+
+
+
+
+
+

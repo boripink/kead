@@ -13,7 +13,7 @@
 	<script src="asset/slick/slick.js"></script>
 	<script src="js/common.js"></script>
 	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
-	<title>알림마당 | 장애인 고용컨설팅 | 한국장애인고용공단 장애인고용컨설팅</title>
+	<title>마이페이지 | 장애인 고용컨설팅 | 한국장애인고용공단 장애인고용컨설팅</title>
 </head>
 <body>
 	<header class="header act">
@@ -139,36 +139,169 @@
 	<div class="container sub_container">
 		<div class="inner">
 			<div class="snb_wrap">
-				<h3>알림마당</h3>
+				<h3>마이페이지</h3>
 				<ul class="snb_list">
-					<li><a href="sub06-1.html">공지사항/오늘의 뉴스</a></li>
-					<li><a href="sub06-2.html">FAQ</a></li>
-					<li class="on"><a href="sub06-3.html">문의사항</a></li>
+					<!-- <li class="on"><a href="sub0.html">대시보드</a></li> -->
+					<li><a href="my1-assessment.html">고용역량 진단조회</a></li>
+					<li><a href="my2-consulting.html">고용컨설팅 진행상황</a></li>
+					<li class="on"><a href="my3-publication.html">명단공표 진행상황</a></li>
+					<li><a href="my4-inquir.html">나의 문의</a></li>
+					<li><a href="my5-favor.html">즐겨찾기</a></li>
 				</ul>
 			</div>
 			<div class="contents">
 				<!-- 타이틀 -->
 				<div class="cont_tit_wrap">
-					<h4 class="cont_tit">문의사항</h4>
+					<h4 class="cont_tit">명단공표 진행상황</h4>
 					<ul class="cont_lct">
 						<li class="home">홈</li>
-						<li>알림마당</li>
-						<li class="pnt_cr02"><b>문의사항</b></li>
+						<li>마이페이지</li>
+						<li class="pnt_cr02"><b>명단공표 진행상황</b></li>
 					</ul>
 				</div>
-                <!-- 콘텐츠 -->
-				<div class="cont_wrap2">  
-                    <div class="completion">
-						<div class="complet_txt">						
-							<p data-aos="fade-up">감사합니다.</p>
-							<p data-aos="fade-up" data-aos-delay="200">빠른 시일 내에 답변 드리겠습니다.</p>
-							<p class="small" data-aos="fade-up" data-aos-delay="400">문의사항과 답변은 마이페이지에서 확인하실 수 있습니다.</p>
-						</div>
-						<div class="bt_btn">
-							<a hrf="#" class="btn_ln_def">문의사항 확인</a>
-							<a hrf="#" class="btn_cr_def">홈으로 이동</a>
-						</div>
-                    </div>
+				<!-- 콘텐츠 -->
+				<div class="cont_wrap consulting_status">
+					<div class="table-container">
+						<section>
+							<h5 class="table_tit">기본정보</h5>
+							<table class="tb_base tb_view">
+								<caption>문서 정보</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:auto">
+									<col style="width:20%">
+									<col style="width:auto">
+								</colgroup>                            
+								<tbody>
+									<tr>
+										<th scope="row" class="fc-red">신청구분</th>
+										<td></td>
+										<th scope="row" class="fc-red">신청유형</th>
+										<td>2024-11-04</td>
+									</tr>
+									<tr>
+										<th scope="row" class="fc-red">접수번호</th>
+										<td></td>
+										<th scope="row" class="fc-red">접수일자</th>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">사업체명</th>
+										<td colspan="3">(주)에니아소프트</td>
+									</tr>
+									<tr>
+										<th scope="row">사업체 담당자</th>
+										<td>김은영</td>
+										<th scope="row">전화번호</th>
+										<td>010-8865-9515</td>
+									</tr>
+									<tr>
+										<th scope="row">소속 및 직위</th>
+										<td></td>
+										<th scope="row">이메일</th>
+										<td>p829@eniasoft.com</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+						<section class="">
+							<h5 class="table_tit">명단공표 진행상황</h5>
+							<table class="tb_base tb_view">
+								<caption>문서 정보</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:auto">
+									<col style="width:20%">
+									<col style="width:auto">
+								</colgroup>                            
+								<tbody>									
+									<tr>
+										<th scope="row">진행상태</th>
+										<td colspan="3">
+											<div class="tooltip-container">
+												<span class="status_icon status1" aria-label="미신청"></span>
+												<div class="tooltip-div">
+													<span class="tooltip-icon" aria-label="도움말 아이콘" role="button" aria-expanded="true"></span>
+													<div class="tooltip-box my-consulting" > 
+														<ul class="status_list">
+															<li>
+																<span class="status_icon status1"></span>
+																<span class="status_txt">1. 신청이 미신청된 상태 </span>
+															</li>
+															<li>
+																<span class="status_icon status2"></span>
+																<span class="status_txt">2. 신청이 접수된 상태</span>
+															</li>
+															<li>
+																<span class="status_icon status3"></span>
+																<span class="status_txt">3. 신청이 완료된 상태</span>
+															</li>
+															<li>
+																<span class="status_icon status4"></span>
+																<span class="status_txt">4. 신청을 취소한 상태</span>
+															</li>
+															<li>
+																<span class="status_icon status5"></span>
+																<span class="status_txt">5. 컨설팅이 진행중인 상태</span>
+															</li>
+															<li>
+																<span class="status_icon status6"></span>
+																<span class="status_txt">6. 컨설팅 모니터링을 진행중인 상태</span>
+															</li>
+															<li>
+																<span class="status_icon status7"></span>
+																<span class="status_txt">7. 컨설팅이 종료된 상태</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</td>
+									  </tr>
+									<tr>
+									  <th scope="row" class="fc-red">공단 담당자</th>
+									  <td></td>
+									  <th scope="row" class="fc-red">관할지사</th>
+									  <td></td>
+									</tr>
+									<tr>
+									  <th scope="row" class="fc-red">신청일자</th>
+									  <td></td>
+									  <th scope="row" class="fc-red">완료일자</th>
+									  <td></td>
+									</tr>
+								  </tbody>
+							</table>
+						</section>
+						<section class="">
+							<h5 class="table_tit">관련 파일</h5>
+							<table class="tb_base tb_view">
+								<caption>문서 정보</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:auto">
+								</colgroup>                            
+								<tbody>
+									<tr>
+										<th scope="row" class="fc-red">계약서류</th>
+		                				<td>
+											<div class="file-info">
+												<span class="file_name">계약서류.pdf</span>
+												<div>
+													<button class="line_btn download">다운로드</button>
+													<button class="line_btn preview ">미리보기</button>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+					</div>
+					<div class="bt_btn">
+						<button type="button" class="line">신청취소</button>
+						<button type="button" class="full">목록</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -215,13 +348,32 @@
 	$(document).ready(function(){
 		AOS.init();
 
+		$(document).ready(function() {
+			$(".tooltip-icon").click(function() {				
+				var $tooltipBox = $(this).siblings(".tooltip-box");
+				var iconPosition = $(this).offset();				
+				
+				// 다른 툴팁 박스 숨기기
+				$(".tooltip-box").not($tooltipBox).hide();
+				// 클릭한 요소의 툴팁 박스 열기/닫기
+				$tooltipBox.toggle();				
+				// 접근성 속성 업데이트
+				var expanded = $(this).attr("aria-expanded") === "true";
+				$(this).attr("aria-expanded", !expanded);
+			});
+
+			// 클릭 외부 시 툴팁 닫기
+			$(document).click(function(event) {
+				if (!$(event.target).closest(".tooltip-box, .tooltip-icon").length) {
+					$(".tooltip-box").hide();
+					$(".tooltip-icon").attr("aria-expanded", "false");
+				}
+			});
+		});
+
+
+
 	});
-
-   
-	
-
-
-
 	</script>
 
 </body>

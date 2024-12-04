@@ -28,8 +28,9 @@
 .list-chk-radio input[type="radio"] {position: absolute; opacity: 0; width: 0; height: 0; }
 
 .recommendation-btn {position: absolute;  display: flex; gap: 5px; right: -240px; }
-.recommendation-btn button {border: 2px solid #236cdb; border-radius: 20px; padding: 6px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);}
-.recommendation-btn button.recommend {padding: 6px 30px 6px 8px; background: url(../images/sub/chk_list_icon.png) no-repeat 46px center;}
+.recommendation-btn button {border: 2px solid #236cdb; border-radius: 20px; padding: 6px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+.recommendation-btn button.recommend {padding: 6px 30px 6px 8px; background: #fff url(../images/sub/chk_list_icon.png) no-repeat 46px center;}
+.recommendation-btn button.demand-survey {background-color: #236cdb; color: #fff;}
 
 
 

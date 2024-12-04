@@ -975,7 +975,28 @@ position: absolute; top: 4px; right: -14px;}
 .apply_date {font-weight: 600; border-radius: 20px; padding: 4px 10px; padding-left: 30px; background: #f7f8f9 url(../images/icon/task-edit-01-apply.svg) no-repeat left 10px center; background-size: 18px;}
 .apply_date > b {font-weight: 400; margin-left: 2px;}
 
-.my-consulting.tooltip-box {width: 400px;}
+
+.progress_bar {display: flex; align-items: center; }
+.progress_step {position: relative; display: flex; flex-direction: column; align-items: center; padding: 0 10px;}
+.progress_step::before {content: ''; position: absolute; top: 8px; left: 0; right: 0; height: 2px; background-color: #d6d8db; z-index: 0; }
+.progress_icon {width: 17px; height: 17px; border-radius: 50%; background-color: #d6d8db; z-index: 1;}
+.progress_step.active .progress_icon {background-color: #9fbbf5; }
+.progress_label { font-size: 14px; color: #555; margin-top: 6px; white-space: nowrap; }
+.progress_step.active .progress_label {color: #1953c2; font-weight: 500; }
+
+
+/* 반응형 스타일 
+@media (max-width: 768px) {
+    .progress { flex-direction: column; align-items: flex-start; }
+    .progress::before { content: ''; left: 16px; height: calc(100% - 32px); width: 2px; }
+    .progress_step { flex-direction: row; align-items: center; margin-bottom: 20px; }
+    .progress_icon { margin-right: 10px; margin-bottom: 0; }
+}
+*/
+
+
+
+
 
 .status_list {display: flex; flex-direction: column; gap: 8px; }
 .status_list li {display: flex; align-items: center; gap: 14px;  font-size: 16px; }

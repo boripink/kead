@@ -101,6 +101,7 @@
 .cont_wrap > section {padding-top: 100px;}
 .cont_wrap .cont_sub {margin-top: 40px;}
 .cont_wrap2 {padding: 60px 0 100px; position: relative;}
+.cont_form {margin-top: 80px;}
 
 
 /* 타이틀 */
@@ -120,7 +121,7 @@
 .pop_tit3  {font-size:20px; font-weight:500; margin-bottom: 6px;}
 
 .chart_tit {font-size:24px; font-weight:500; margin-bottom: 36px;}
-
+.form_tit  {font-size: 30px; font-weight: 400; margin-bottom: 20px;}
 
 /* 인트로 */
 .intro {margin-bottom: 4rem;}

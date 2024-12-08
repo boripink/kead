@@ -122,11 +122,17 @@
 
 .chart_tit {font-size:24px; font-weight:500; margin-bottom: 36px;}
 .form_tit  {font-size: 30px; font-weight: 400; margin-bottom: 20px;}
+.guide_tit {font-size:40px; font-weight:600; }
+
+
 
 /* 인트로 */
 .intro {margin-bottom: 4rem;}
 .intro .cont_tit2 { margin-bottom:30px;}
 .intro .cont_txt {font-size:24px; font-weight:500; line-height: 1.6;}
+
+
+
 
 /* 리스트, 스텝 - 공통 */
 .cont_list {display:flex; position:relative; font-size: 1.5rem; line-height: 1.4; word-break:keep-all;}
@@ -164,7 +170,7 @@
 .system_box.warn > ul li::before {content: ''; width: 2px; height: 2px; background-color: #98690a; position: absolute; top: 50%; transform: translateY(-50%); left: 0;} */
 
 
-/* 카드형 링크 리스트 */
+/* 카드형 링크 리스트 
 li.btn_layer {border: 1px solid #c3d8ff; border-radius: 18px; position: relative; transition: all 0.3s; display: block; overflow: hidden; cursor: pointer;}
 li.btn_layer .more_bt_btn {display: inline-block; width: 56px; height: 45px; padding: 12px; background: #fff url(../images/sub/svg-btn-more.svg) no-repeat center; background-size: 24px; border-radius: 18px 0; position: absolute;  bottom: 0; right: 0; transition: all 0.3s;}
 li.btn_layer:hover, li.btn_layer:focus{border-color: #236cdb; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
@@ -172,7 +178,7 @@ li.btn_layer:hover .more_bt_btn {background-color: #236cdb; background-image: ur
 li.btn_layer .more_bt_btn.type_bg {background-color: #e9f0fb;}
 li.btn_layer:hover .more_bt_btn.type_bg {background-color: #236cdb; background-image: url(../images/sub/svg-btn-more-white.svg);}
 li.btn_layer::before {content: ''; width: 60px; height: 50px; background: url(../images/btn_wrap.png) no-repeat -185px 10px; border-radius: 20px 0; position: absolute; right: 0; bottom: 0;}
-li.btn_layer:hover::before {background-color: #e8effb;}
+li.btn_layer:hover::before {background-color: #e8effb;}*/
 
 
 .btn_layer2 {border: 1px solid #c3d8ff; border-radius: 18px; position: relative; transition: all 0.3s; display: block; overflow: hidden; cursor: pointer;}
@@ -185,14 +191,14 @@ li.btn_layer:hover::before {background-color: #e8effb;}
 
 
 /* 사례 맞춤 검색 */
-.btn_layer.type1 {padding: 25px 30px 55px; display: flex; flex-direction: column; position: relative;}
-.btn_layer.type1 .recruit-job {font-size: 30px; font-weight: 500; color: #1953c2; }
-.btn_layer.type1 span {position: relative; font-size: 19px;}
-.btn_layer.type1 div {margin: 12px 0 18px;}
-.btn_layer.type1 div > span {font-size: 18px; display: inline-block; margin-right: 21px; }
-.btn_layer.type1 div > span:not(:first-child)::after {content: ''; width: 2px; height: 12px; background-color: #ddd; position: absolute; left: -13px; top: 3px;}
-.btn_layer.type1 .work-location {padding: 10px 0 8px 46px; background: url(../images/sub/icon_map2.png) no-repeat left center; }
-.btn_layer.type1 .disability-type {padding: 10px 0 8px 46px; background: url(../images/sub/icon_user2.png) no-repeat left center; }
+.btn_layer2.type1 {padding: 25px 30px 55px; display: flex; flex-direction: column; position: relative;}
+.btn_layer2.type1 .recruit-job {font-size: 30px; font-weight: 500; color: #1953c2; }
+.btn_layer2.type1 span {position: relative; font-size: 19px;}
+.btn_layer2.type1 div {margin: 12px 0 18px;}
+.btn_layer2.type1 div > span {font-size: 18px; display: inline-block; margin-right: 21px; }
+.btn_layer2.type1 div > span:not(:first-child)::after {content: ''; width: 2px; height: 12px; background-color: #ddd; position: absolute; left: -13px; top: 3px;}
+.btn_layer2.type1 .work-location {padding: 10px 0 8px 46px; background: url(../images/sub/icon_map2.png) no-repeat left center; }
+.btn_layer2.type1 .disability-type {padding: 10px 0 8px 46px; background: url(../images/sub/icon_user2.png) no-repeat left center; }
 
 
 /* layer pop - 기본 */

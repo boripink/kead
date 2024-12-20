@@ -136,6 +136,16 @@
 		</div>
 	</header>
 	<div class="container">
+		<div class="quick_wrap">
+			<button type="button" class="quick_tit">KEAD SERVICE</button>
+			<div class="quick_layer">
+				<ul>
+					<li><a href="#">고용컨설팅<br/>신청</a></li>
+					<li><a href="javascript:void(0);" class="btn_layer" data-id="popSample">맞춤사례<br/>검색</a></li>
+					<li><a href="javascript:void(0);" class="btn_layer" data-id="popSample2">기업유형<br/>검사</a></li>
+				</ul>
+			</div>
+		</div>
 		<div class="idx_wrap video">
 			<iframe style="background:url(images/@thum.png)"></iframe>
 			<p class="scroll">Scroll<br/>Down</p>
@@ -404,8 +414,246 @@
 			</div>
 		</div>
 	</footer>
-	<script>
+	<!-- 맞춤사례검색 팝업 -->
+	<div class="layer_wrap popSample">
+		<div class="layer_cont">
+			<div class="pop_head">
+				<p class="pop_tit">맞춤 사례 검색</p>
+				<button type="button" class="btn_close">닫기</button>
+			</div>
+			<div class="pop_body">
+				<div class="idx_pop">
+					<div class="pop_select wd42">
+						<p>장애인 고용에 어떤 어려움이 있나요?</p>
+						<ul class="pop_list">
+							<li><button type="button"><span>01</span>우리 기업엔 장애인 근로자를 채용할만한 직무가 없어요.</button></li>
+							<li><button type="button"><span>02</span>매년 납부하는 장애인 고용부담금을 줄이고 싶어요.</button></li>
+							<li><button type="button"><span>03</span>장애인 고용에 대한 직원들의 반대가 심해요.</button></li>
+							<li><button type="button"><span>04</span>채용은 하고 싶은데 지원자가 없어요.</button></li>
+							<li><button type="button"><span>05</span>채용은 했는데, 장애인 근로자가 적응을 잘 하지 못해요.</button></li>
+						</ul>
+					</div>
+					<p class="btn_result"><span class="hidden">결과 보기</span></p>
+					<ul class="pop_result wd51">
+						<li>
+							<p class="result_stat"><span>#직무개발</span><b class="ellp">코리아세븐</b></p>
+							<ul class="result_sample">
+								<li>
+									<a href="">
+										<span>추천 사례</span>
+										<p class="result_name">코리아세븐</p>
+										<img src="images/@result_logo1.png" alt="7-ELEVEN" />
+										<p class="result_info">점포관리 보조 지원고용, 장애대학생 채용 설명회</p>
+									</a>
+								</li>
+								<li class="on">
+									<span>추천 서비스</span>
+									<p class="result_name">지원고용</p>
+									<p class="result_info">채용 전 현장 훈련으로 직장-직무 적응지원 사전훈련(6일), 현장훈련(3주 ~ 7주)</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p class="result_stat"><span>#민관협력</span><b class="ellp">한국산림복지진흥원</b></p>
+							<ul class="result_sample">
+								<li>
+									<a href="">
+										<span>추천 사례</span>
+										<p class="result_name">한국산림복지진흥원</p>
+										<img src="images/@result_logo2.png" alt="한국산림복지진흥원" />
+										<p class="result_info">발달장애인 맞춤직무, 멘토링, 장애유형별편의지원</p>
+									</a>
+								</li>
+								<li class="on">
+									<span>추천 서비스</span>
+									<p class="result_name">맞춤훈련</p>
+									<p class="result_info">기업 수요에 맞는 훈련 방법, 내용을 설계하여 맞춤형 훈련 실시 후 채용으로 연계하는 프로그램</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p class="result_stat"><span>#고용컨설팅</span><b class="ellp">동아위드</b></p>
+							<ul class="result_sample">
+								<li>
+									<a href="">
+										<span>추천 사례</span>
+										<p class="result_name">동아위드</p>
+										<img src="images/@result_logo3.png" alt="(주)동아위드 연계고용장애인표준사업장" />
+										<p class="result_info">연계고용 표준사업장, 개인 맞춤형 직무 개발</p>
+									</a>
+								</li>
+								<li class="on">
+									<span>추천 서비스</span>
+									<p class="result_name">장애인고용장려금지원</p>
+									<p class="result_info">장애인 의무고용률을 초과(민간기업 3.1%, 국가 및 지자체/공공기관 3.8%)하여 장애인을 고용한 사업주에게 지원금을 지급하는 제도</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 기업유형검사 팝업 -->
+	<div class="layer_wrap popSample2">
+		<div class="layer_cont">
+			<div class="pop_head">
+				<div class="pop_tit">기업 유형 검사
+					<div class="tooltip_wrap tooltip_list">
+						<button type="button" class="pop_tooltip">기업분석유형</button>
+						<div class="tooltip_cont">
+							<span>16가지 기업 분석 유형</span>
+							<ul>
+								<li>
+									<b>SEHB</b>
+									<p>안정성을 추구하며, 외부 성장 전략을 통해 수직적 구조를 가진 B2B기업</p>
+								</li>
+								<li>
+									<b>SEFB</b>
+									<p>안정성을 추구하며, 외부 성장 전략을 통해 수평적 구조를 가진 B2B기업</p>
+								</li>
+								<li>
+									<b>SDFB</b>
+									<p>안정성을 추구하며, 내부 성장 전략을 통해 수평적 구조를 가진 B2B기업업</p>
+								</li>
+								<li>
+									<b>SDHB</b>
+									<p>안정성을 추구하며, 내부 성장 전략을 통해 수직적 구조를 가진 B2B기업</p>
+								</li>
+								<li>
+									<b>SEHC</b>
+									<p>안정성을 추구하며, 외부 성장 전략을 통해 수직적 구조를 가진 B2C기업</p>
+								</li>
+								<li>
+									<b>SDFC</b>
+									<p>안정성을 추구하며, 외부 성장 전략을 통해 수평적 구조를 가진 B2C기업</p>
+								</li>
+								<li>
+									<b>SDFC</b>
+									<p>안정성을 추구하며, 내부 성장 전략을 통해 수평적 구조를 가진 B2C기업</p>
+								</li>
+								<li>
+									<b>SDHC</b>
+									<p>안정성을 추구하며, 내부 성장 전략을 통해 수직적 구조를 가진 B2C기업</p>
+								</li>
+								<li>
+									<b>IEHC</b>
+									<p>혁신을 추구하며, 외부 성장 전략을 통해 수직적 구조를 가진 B2C기업</p>
+								</li>
+								<li>
+									<b>IEFC</b>
+									<p>혁신을 추구하며, 외부 성장 전략을 통해 수평적 구조를 가진 B2C기업</p>
+								</li>
+								<li>
+									<b>IDFC</b>
+									<p>혁신을 추구하며, 내부 성장 전략을 통해 수평적 구조를 가진 B2C기업</p>
+								</li>
+								<li>
+									<b>IDHC</b>
+									<p>혁신을 추구하며, 내부 성장 전략을 통해 수직적 구조를 가진 B2C기업</p>
+								</li>
+								<li>
+									<b>IEHB</b>
+									<p>혁신을 추구하며, 외부 성장 전략을 통해 수직적 구조를 가진 B2B기업</p>
+								</li>
+								<li>
+									<b>IEFB</b>
+									<p>혁신을 추구하며, 외부 성장 전략을 통해 수평적 구조를 가진 B2B기업</p>
+								</li>
+								<li>
+									<b>IDFB</b>
+									<p>혁신을 추구하며, 내부 성장 전략을 통해 수평적 구조를 가진 B2B기업</p>
+								</li>
+								<li>
+									<b>IDHB</b>
+									<p>혁신을 추구하며, 내부 성장 전략을 통해 수직적 구조를 가진 B2B기업</p>
+								</li>
+							</ul>
+							<button type="button" class="tooltip_close">닫기</button>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="btn_close">닫기</button>
+			</div>
+			<div class="pop_body">
+				<div class="idx_pop">
+					<div class="pop_select wd52">
+						<p>우리회사는 어떤 유형이고, 어떤 서비스가 필요한지 알아보세요.</p>
+						<ul class="pop_list pop_list_check">
+							<li>
+								<dl class="pop_list_tit">
+									<dt>경영목표</dt>
+									<dd>우리회사의 주된 목표는 무엇인가요?</dd>
+								</dl>
+								<div class="pop_list_btn">
+									<button type="button"><b>S 안정성</b>(Stability)</button>
+									<button type="button"><b>I 혁신</b>(Innovation)</button>
+								</div>
+							</li>
+							<li>
+								<dl class="pop_list_tit">
+									<dt>성장방향</dt>
+									<dd>우리회사는 주로 어떤 방식으로 성정하나요?</dd>
+								</dl>
+								<div class="pop_list_btn">
+									<button type="button"><b>E 외부성장성</b>(Expansion)</button>
+									<button type="button"><b>D 내부성장</b>(Development)</button>
+								</div>
+							</li>
+							<li>
+								<dl class="pop_list_tit">
+									<dt>경영목표</dt>
+									<dd>우리회사의 조직은 어떻게 구성되어 있나요?</dd>
+								</dl>
+								<div class="pop_list_btn">
+									<button type="button"><b>H 수직적</b>(Hierarchy)</button>
+									<button type="button"><b>F 수평적</b>(Flat)</button>
+								</div>
+							</li>
+							<li>
+								<dl class="pop_list_tit">
+									<dt>주 고객</dt>
+									<dd>우리회사의 주된 거래 상대는 누구인가요?</dd>
+								</dl>
+								<div class="pop_list_btn">
+									<button type="button"><b>B 기업</b>(B2B)</button>
+									<button type="button"><b>C 소비자</b>(B2C)</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="btn_result">결과 보기</button>
+					<div class="pop_result pop_result_check wd40">
+						<div class="result_category">
+							<span class="result_stat">기업유형 : <b>안정추구형</b></span>
+							<h4 class="result_tit">SDFC</h4>
+							<img src="images/img_sdfc.png" alt="" />
+							<p>안정성을 추구하며 내부 성장 전략을 통해 수평적 구조를 가진 B2C 기업</p>
+						</div>
+						<ul class="result_sample">
+							<li class="on">
+								<span>추천 서비스</span>
+								<p class="result_name">지원고용</p>
+								<p class="result_info">채용 전 현장 훈련으로 직장-직무 적응지원 사전훈련(6일), 현장훈련(3주 ~ 7주)</p>
+							</li>
+							<li>
+								<a href="">
+									<span>추천 사례</span>
+									<p class="result_name">코리아세븐</p>
+									<img src="images/@result_logo1.png" alt="7-ELEVEN" />
+									<p class="result_info">점포관리 보조 지원고용, 장애대학생 채용 설명회</p>
+								</a>
+							</li>
+						</ul>
+						<!--[D] 선택하지 않았을 때 보여주세요. -->
+						<p class="result_none" style="display:none">우리기업 유형은?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<script>
 		var idx = {
 			//header color change event
 			header: function(){
@@ -413,12 +661,38 @@
 					var scroll = $(window).scrollTop() >= 50;
 					$('.header').toggleClass('act', scroll);
 				});
+			},
+			quickMenu: function() {
+				$(document).on("mouseenter focusin",".quick_wrap",function(){
+					$(this).find('.quick_tit').addClass("on");
+					$(this).addClass("on");
+					return false;
+				}).on("mouseleave focusout",".quick_wrap",function(){
+					$(this).removeClass('on');
+					$('.gnb').find('li').removeClass("on");
+					return false;
+				});
+			},
+			popBtn: function(){
+				$(document).on("click",".pop_list_btn button",function(){
+					$(this).addClass("on").siblings().removeClass('on');
+					return false;
+				})
+			},
+			tooltip: function(){
+				$(document).on("click",".pop_tooltip, .tooltip_close",function(){
+					$(this).closest('.tooltip_wrap').find('.tooltip_cont').toggle();
+					return false;
+				})
 			}
 		}
 
 		$(document).ready(function(){
 			AOS.init();
-			idx.header()
+			idx.header();
+			idx.quickMenu();
+			idx.popBtn();
+			idx.tooltip();
 
 			$(window).on("resize", function(){
 				if (window.innerWidth > 1400) {

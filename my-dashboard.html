@@ -160,9 +160,215 @@
 					</ul>
 				</div>
                 <!-- 콘텐츠 -->
-				<div class="cont_wrap">                    
-                    
-				</div>
+				<div class="cont_wrap dashboard_wrap">
+					<!-- 상단 -->
+					<div class="dashboard dashbd-top">
+						<div class="bg_box welcome">
+							<h5 class="name">한국공항공사</h5>
+							<p class="txt">담당자님, 환영합니다.</p>
+						</div>
+						<div class="bg_box employment">
+							<h6>장애인 고용현황</h6>
+							<p class="rate">장애인 고용률 <span>2.1%</span></p>
+							<p class="status">의무이행현황 <span>미이행</span></p>
+						</div>
+						<div class="bg_box assessment">
+							<h6>고용역량 진단수준 <span class="date">24.10.28</span></h6>
+							<p class="score">60점 <span>미흡</span></p>
+							<p class="status">개선필요영역 <span>조직문화</span></p>
+							<a class="dash_btn" href="#" aria-label="페이지 이동">진단 목록 보기</a>
+						</div>
+						<div class="bg_box consulting">
+							<h6>컨설팅 진행상황 <span class="date">24.10.28</span></h6>
+							<div class="progress_bar">
+								<div class="progress_step">
+									<span class="progress_icon" aria-label="hidden"></span>
+									<span class="progress_label">대기</span>
+								</div>
+								<div class="progress_step active">
+									<span class="progress_icon" aria-label="hidden"></span>
+									<span class="progress_label">접수</span>
+								</div>
+								<div class="progress_step">
+									<span class="progress_icon" aria-label="hidden"></span>
+									<span class="progress_label">진행</span>
+								</div>
+								<div class="progress_step">
+									<span class="progress_icon" aria-label="hidden"></span>
+									<span class="progress_label">종료</span>
+								</div>
+							</div>
+							<a class="dash_btn" href="#" aria-label="페이지 이동">신청 목록 보기</a>
+						</div>
+					</div>
+					<!-- 미들 -->
+					<div class="dashboard dashbd-mid">
+						<div class="line_box chart-box progress">
+							<div class="box-head">
+								<h6>장애인 고용 이행</h6>
+								<p>목표달성까지 <strong class="fc-blue">81%</strong> 남았어요.</p>
+							</div>							
+							<div class="circle-chart" data-percentage="81">
+								<div class="circle-content">
+									<span class="percentage">81%</span>
+									<span class="label">목표달성</span>
+								</div>
+							</div>
+							<div class="chart-info progress">
+								<div class="info-item">
+									<span class="info-title">고용 의무인원</span>
+									<span class="info-value">20명</span>
+								</div>
+								<div class="info-item">
+									<span class="info-title">장애인 근로자</span>
+									<span class="info-value fc-blue">5명</span>
+								</div>
+								<div class="info-item">
+									<span class="info-title">고용 필요인원</span>
+									<span class="info-value fc-red">15명</span>
+								</div>
+							</div>
+						</div>
+						<script>
+							$(document).ready(function () {
+								$('.circle-chart').each(function () {
+									// data-percentage 속성 값 가져오기
+									const percentage = $(this).data('percentage');							
+									// 차트 배경 업데이트
+									$(this).css('background', `conic-gradient(#007bff 0% ${percentage}%, #d9e0ef ${percentage}% 100%)`);							
+									// 텍스트 업데이트
+									$(this).find('.percentage').text(`${percentage}%`);
+								});
+							});							
+						</script>
+						<!-- 막대그래프 -->
+						<div class="line_box chart-box comparison">
+							<div class="box-head">
+								<h6>장애인 고용 수준</h6>
+								<p>동종업계 평균보다 <strong class="fc-blue">20점</strong> 낮아요.</p>
+							</div>
+							<!-- 막대 높이 3단계 low,medium,hight  -->
+							<div class="bar-chart">
+								<div class="bar-item low">
+									<span class="label">미흡</span>
+									<div class="bar"></div>
+								</div>
+								<div class="bar-item medium">
+									<span class="label">보통</span>
+									<div class="bar"></div>
+								</div>
+							</div>							
+							<div class="chart-info">
+								<div class="info-item">
+									<span class="info-title">우리기업</span>
+									<span class="info-value">50점</span>
+								</div>
+								<div class="info-item">
+									<span class="info-title">동종업계(평균)</span>
+									<span class="info-value fc-blue">70점</span>
+								</div>
+							</div>
+						</div>
+						<!-- 그래프 -->
+						<div class="line_box burden-reduction">
+							<div class="box-head">
+								<h6>추가 채용 시 고용 편익</h6>
+								<p>장애인 고용을 하면 부담금이 얼마나 감면될까요?</p>
+							</div>
+							<div class="chart-placeholder">[그래프 영역]</div>
+							<div class="chart-info">
+								<div class="info-item">
+									<span class="info-title">추가고용인원</span>
+									<span class="info-value">5명</span>
+								</div>
+								<div class="info-item">
+									<span class="info-title">부담금 감면액</span>
+									<span class="info-value fc-blue">175,159,200원</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 하단 -->
+					<div class="dashboard dashbd-foot">
+						<div class="line_box example">
+							<div class="box-head">
+								<h6>추천 사례</h6>
+								<p>동종(유사) 업종의 다른기업은 이렇게 고용하고 있어요.</p>
+							</div>
+							<div class="company-logo">
+								<a class="logo-box" href="#">
+									<div class="logo">
+										<img src="images/best_company/53/ec_logo.png" alt="SK 로고" aria-hidden="true">
+									</div>
+									<div class="name">SK 쉘더스</div>
+								</a>
+								<a class="logo-box" href="#">
+									<div class="logo">
+										<img src="images/best_company/56/ec_logo.png" alt="Google 로고">
+									</div>
+									<div class="name">구글 GOOGLE</div>
+								</a>
+							</div>
+							<a class="dash_btn" href="#" aria-label="페이지 이동">사례 더보기</a>
+						</div>
+						<div class="line_box guide">
+							<div class="box-head">
+								<h6>추천 가이드</h6>
+								<p>장애인 고용을 위한 길잡이가 되어드립니다.</p>
+							</div>
+							<ul class="guide-list">
+								<li>
+									<a href="#" aria-label="페이지 이동">고용단계별 유의사항이 궁금하다면? 
+									<span class="arr"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#" aria-label="페이지 이동">장애인 기준과 유형별 특성이 궁금하다면? <span class="arr"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#" aria-label="페이지 이동">공단 지원서비스가 궁금하다면? <span class="arr"></span>
+									</a>
+								</li>
+							</ul>							
+							<a class="dash_btn" href="#" aria-label="페이지 이동">사례 더보기</a>
+						</div>
+						<div class="small_box">
+							<div class="bg_box">
+								<div class="box-head">
+									<h6>나의 문의사항</h6>
+								</div>
+								<div class="inquiry">
+									<div class="wh-box">
+										<div class="label"><span class="qu"></span>문의</div>
+										<div class="value">10건</div>
+									</div>
+									<div class="wh-box">
+										<span class="label an"><span class="qu"></span>답변</span>
+										<span class="value">10건</span>
+									</div>
+								</div>
+								<a class="btn_icon_plus" href="#"><span class="sr-only">문의사항 바로가기</span></a>
+							</div>
+							<div class="bg_box mbti">
+								<div class="box-head">
+									<h6>기업 MBTI</h6>
+									<p>우리기업 유형은?</p>
+								</div>
+								<div class="mbti-box">
+									<!-- <div class="wh-box">
+										<div class="mbti-type">MBTI 형</div>
+										<span class="mbti-value">(000000형)</span>
+									</div> -->
+									<a class="dash_btn" href="#" aria-label="페이지 이동">MBTI 바로가기</a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					
+				</div>  
 			</div>
 		</div>
 	</div>

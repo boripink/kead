@@ -173,94 +173,85 @@
 						<li class="pnt_cr02"><b>고용과정 체크리스트</b></li>
 					</ul>
 				</div>
-				<!-- 스텝 -->
-				<div class="top_step">
-					<div class="intro">
-						<p class="cont_txt">단계별 체크리스트를 통해 장애인 고용과정에서 필요한 사항을 사전에 점검해 보세요.</p>
+				<!-- 가이드 콘텐츠 -->
+				<div class="guide_wrap recruitment-process">
+					<!-- 가이드 상단 -->				
+					<div class="guide_header">
+						<div class="btn_favor">
+							<button type="button" aria-label="즐겨찾기"></button>
+						</div> 					                   
+						<div class="title_box guide">
+							<h5 class="cont_tit2"><span class="tit-icon"></span>고용과정 체크리스트</h5>						
+							<p class="cont_txt">장애인 고용과정에서 필요한 사항을 사전에 점검해 보세요.</p>
+						</div>
+						<ul class="guide_step step6">
+							<li>
+								<a href="sub05-2-3모집채용-1채용공고작성.html" class="step_list active">
+									<span class="step">STEP1</span>
+									<span class="txt">채용계획</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-2구인신청.html" class="step_list">
+									<span class="step">STEP2</span>
+									<span class="txt">모집준비</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-3서류전형.html" class="step_list">
+									<span class="step">STEP3</span>
+									<span class="txt">채용실시</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-4필기전형.html" class="step_list">
+									<span class="step">STEP4</span>
+									<span class="txt">직무배치</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-5면접전형.html" class="step_list">
+									<span class="step">STEP5</span>
+									<span class="txt">면접전형</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-6근로계약.html" class="step_list last">
+									<span class="step">STEP5</span>
+									<span class="txt">채용결정</span>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<ul class="cont_list step5">
-						<li class="on">
-							<a href="#">
-								<span class="svg_icon"></span>
-								<span class="num">01</span>
-								<b>채용계획수립</b>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="svg_icon"></span>
-								<span class="num">02</span>
-								<b>모집준비</b>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="svg_icon"></span>
-								<span class="num">03</span>
-								<b>채용실시</b>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="svg_icon"></span>
-								<span class="num">04</span>
-								<b>직무배치</b>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="svg_icon"></span>
-								<span class="num">05</span>
-								<b>고용관리</b>
-							</a>
-						</li>
-					</ul>
+					<!-- 체크리스트 -->
+					<div class="cont_wrap">									
+						<ul class="employment_checklist">
+							<li>
+								<div class="list-item">
+									<div class="list-question">
+										<span class="number">01.</span>
+										<span class="question">부서별로 채용할 인원을 산정하였나요?</span>
+									</div>  
+									<div class="list-chk-radio">
+										<input type="radio" name="question1" id="yes1" value="yes">
+										<label for="yes1">Yes</label>
+										<input type="radio" name="question1" id="no1" value="no">
+										<label for="no1">No</label>
+									</div> 
+								</div>           
+								<div class="recommendation-btn hidden">
+									<button type="button" class="recommend">추천</button>
+									<button type="button" class="demand-survey">채용수요조사</button>
+								</div>              
+							</li>
+						</ul>
+						
+						<!-- 영역별 문항 완료일 때 다음 단계로 진행 버튼 show -->
+						<!-- <div class="bt_btn">						
+							<a href="sub02-3-2.html" class="btn_cr_def surv_result">다음 단계</a>
+						</div> -->
+					</div>
 				</div>
-				<!-- 체크리스트 -->
-                <div class="cont_wrap">									
-                    <ul class="employment_checklist">
-						<li>
-							<div class="list-question">
-								<span class="number">01.</span>
-								<span class="question">부서별로 채용할 인원을 산정하였나요?</span>
-							</div>  
-							<div class="list-chk-radio">
-								<input type="radio" name="question1" id="yes1" value="yes">
-								<label for="yes1">Yes</label>
-								<input type="radio" name="question1" id="no1" value="no">
-								<label for="no1">No</label>
-							</div>            
-							<div class="recommendation-btn hidden">
-								<button type="button" class="recommend">추천</button>
-								<button type="button" class="demand-survey">채용수요조사</button>
-							</div>              
-						</li>
-						<li>
-							<div class="list-question">
-								<span class="number">02.</span>
-								<span class="question">채용예정 직무에 관한 분석을 하였나요 ?</span>
-							</div>  
-							<div class="list-chk-radio">								
-								<input type="radio" name="question2" id="yes2" value="yes">
-								<label for="yes2">Yes</label>
-								<input type="radio" name="question2" id="no2" value="no">
-								<label for="no2">No</label>
-							</div>            
-							<div class="recommendation-btn hidden">
-								<button type="button" class="recommend">추천</button>
-								<button type="button" class="demand-survey">채용수요조사</button>
-							</div>              
-						</li>
-					</ul>
-					  
-					
-
-					
-					<!-- 영역별 문항 완료일 때 다음 단계로 진행 버튼 show -->
-					<!-- <div class="bt_btn">						
-						<a href="sub02-3-2.html" class="btn_cr_def surv_result">다음 단계</a>
-					</div> -->
-                </div>
 			</div><!-- //contents-->
 		</div><!-- //inner -->
 	</div>
@@ -303,21 +294,20 @@
 		</div>
 	</footer>
 	<script>
-	$(document).ready(function(){
-		AOS.init();
-	});
+	$(document).ready(function () {
+    // 라디오 버튼 변경 시 동작
+    $('input[type="radio"]').on('change', function () {
+        // 해당 질문에 대한 No 선택 여부 확인
+        if ($(this).val() === 'no') {
+            // 현재 라디오 버튼의 부모 요소에서 recommendation-btn을 찾아 표시
+            $(this).closest('li').find('.recommendation-btn').removeClass('hidden');
+        } else {
+            // Yes를 선택했을 때는 숨김 처리
+            $(this).closest('li').find('.recommendation-btn').addClass('hidden');
+        }
+    });
+});
 
-	$(document).ready(function() {
-		$('.list-chk-radio input[type="radio"]').on('change', function() {
-			var $recommendationButtons = $(this).closest('.list-chk-radio').next('.recommendation-btn');
-
-			if ($(this).val() === 'no' && $(this).is(':checked')) {
-			$recommendationButtons.removeClass('hidden');
-			} else {
-			$recommendationButtons.addClass('hidden');
-			}
-		});
-	});
 
 
 

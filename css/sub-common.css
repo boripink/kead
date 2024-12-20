@@ -8,21 +8,6 @@
 .required   {color: red; } /*  필수라벨<span class="required">*</span> */
 .hover-line:hover {text-decoration: underline;}
 
-/* 컬러 참고 사항 - 마이페이지 - 진행상황 컬러 */
-.status1 { border-color: #898989; color: #898989; }
-.status2 { border-color: #0ba1ae; color: #0ba1ae; }
-.status3 { border-color: #5da1c9; color: #036fb0; }
-.status4 { border-color: #ff967c; color: #ff7c5b; }
-.status5 { border-color: #ee74b2; color: #e63c9c; }
-.status6 { border-color: #afaaf8; color: #4d46c5; }
-.status7 { border: 0; background: #898989; color: #fff; }
-.status1:before { content: "미신청"; }
-.status2:before { content: "접수대기"; }
-.status3:before { content: "접수완료"; }
-.status4:before { content: "신청취소"; }
-.status5:before { content: "컨설팅 진행중"; }
-.status6:before { content: "컨설팅 모니터링"; }
-.status7:before { content: "컨설팅 종료"; }
 
 
 /* 박스 스타일 */
@@ -35,6 +20,8 @@
 .message_box {line-height: 1.6; border: 1px solid #d9e0ef; padding: 30px; border-radius: 30px; }
 
 /* 배지 스타일 */
+.tag      {background-color: #e8effb; padding: 5px 20px; border-radius: 50px; }
+.tag.red  {background-color: #fadfe2;}
 .bg_tag   {background-color: #e8effb; color: #236cdb; font-size: 18px; font-weight: 500; display: inline-block; padding: 7px 30px; border-radius: 30px;}
 
 
@@ -50,14 +37,13 @@
 /* flex-grow(여백설정) flex-shrink(0은 줄지않겠다) flex-basis(고정크기) */
 
 
-.elli2 {
-    display: -webkit-box; /* Flexbox-like 속성으로 상자 설정 */
-    -webkit-box-orient: vertical; /* 세로 방향으로 정렬 */
-    -webkit-line-clamp: 2; /* 최대 줄 수 지정 (여기서는 2줄) */
-    overflow: hidden; /* 넘치는 텍스트 숨기기 */
-    text-overflow: ellipsis; /* '...' 표시 */
+.increment {counter-reset: row-number; /* 번호 초기화 */}
+.increment .incre-num::before {
+counter-increment: row-number; /* 번호 증가 */
+content: counter(row-number); /* 번호 표시 */
+display: inline-block;
 }
-
+/*.incre-num::before {content: counter(row-number, decimal-leading-zero); }*/
 
 /* 아이콘 */
 .icon_care {display: inline-block; width: 34px; height: 34px; position: relative; margin-right: 20px; background: url(../images/sub/svg_icon_care.svg) no-repeat; background-size: contain;}
@@ -67,6 +53,7 @@
 .fl_c_center {display: flex; align-items: center; justify-content: center;}
 .inp_list  {display: flex; align-items: center; gap: 8px;}
 .td_list {display: flex; align-items: center; justify-content: center; gap: 4px;}
+
 
 /* 크기 */
 .w-200 {width: 200px !important;}
@@ -80,7 +67,7 @@
 
 /* left menu */
 .snb_wrap {float:left; position:fixed; width:290px; margin-right:40px; z-index:8;}
-.snb_wrap h3 {margin-bottom:20px; padding-bottom:20px; font-size:32px; font-weight:700; border-bottom:2px solid #246BEB; }
+.snb_wrap h3 {margin-bottom:20px; padding-bottom:20px; font-size:32px; font-weight:700; border-bottom:2px solid #0f298f; }
 .snb_wrap .snb_list > li:not(:last-of-type) {margin-bottom:20px;}
 .snb_wrap .snb_list > li > a {display:block; font-size:24px; position: relative;}
 .snb_wrap .snb_list > li.on > a {font-weight:700; margin-bottom: 10px; }
@@ -90,7 +77,7 @@
 .snb_wrap .snb_depth3 {padding: 15px 20px; background-color: #F8F8F8; border-radius: 10px; flex-direction: column; gap: 15px; display: none;}
 .snb_wrap .snb_list > li.on .snb_depth3 {display: flex;}
 .snb_wrap .snb_depth3 > li > a {display:block; font-size: 20px; }
-.snb_wrap .snb_depth3 > li.on a {color: #246BEB; font-weight: 600; }
+.snb_wrap .snb_depth3 > li.on a {color: #0f298f; font-weight: 600; }
 
 
 /* contents */
@@ -122,7 +109,7 @@
 
 .chart_tit {font-size:24px; font-weight:500; margin-bottom: 36px;}
 .form_tit  {font-size: 30px; font-weight: 400; margin-bottom: 20px;}
-.guide_tit {font-size:40px; font-weight:600; }
+
 
 
 

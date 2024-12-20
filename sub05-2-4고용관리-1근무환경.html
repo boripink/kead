@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="asset/aos/aos.css">
+	<link rel="stylesheet" href="asset/slick/slick.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="asset/jquery/jquery-3.7.1.min.js"></script>
+	<script src="asset/aos/aos.js"></script>
+	<script src="asset/slick/slick.js"></script>
+	<script src="js/common.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
+	<title>고용관리 | 고용가이드 | 한국장애인고용공단 장애인고용컨설팅</title>
+	
+</head>
+<body>
+	<header class="header act">
+		<div class="inner">
+			<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+			<h2 class="hidden">대메뉴</h2>
+			<ul class="gnb">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user_wrap">
+				<div class="user_info">
+					<!-- [D] 로그인 전에 안보이게 처리 -->
+					<div class="user">
+						<span class="neme"><b>홍길동</b> 님</spanclass="neme"> <span class="time">09:33</span>
+						<button class="btn_time" type="button">연장</button>
+					</div>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<button type="button" class="btn_menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="mob_wrap">
+			<div class="user_mob">
+				<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+				<div class="user">
+					<span class="neme"><b>홍길동</b> 님</span>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<ul class="gnb_mob">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+						<li><a href="sub05-2.html">단계별 고용 GUIDE</a></li>
+						<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+						<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container sub_container">
+		<div class="inner">
+			<div class="snb_wrap">
+				<h3>고용 가이드</h3>
+				<ul class="snb_list">
+					<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+					<li class="snb_depth2 on">
+						<a href="sub05-2-1체크리스트.html">단계별 고용 GUIDE</a>
+						<ul class="snb_depth3">
+							<li><a href="sub05-2-1체크리스트.html">고용 과정 체크리스트</a></li>
+							<li><a href="sub05-2-2채용계획-1채용수요조사.html">채용 계획 수립</a></li>
+							<li><a href="sub05-2-3모집채용-1채용공고작성.html">모집 및 채용</a></li>
+							<li class="on"><a href="sub05-2-4고용관리-1근무환경조성.html">고용 관리</a></li>
+						</ul>
+					</li>
+					<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+					<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+				</ul>
+			</div>
+			<div class="contents">
+				<!-- 타이틀 -->
+				<div class="cont_tit_wrap">
+					<h4 class="cont_tit">단계별 고용 GUIDE</h4>
+					<ul class="cont_lct">
+						<li class="home">홈</li>
+						<li>고용 가이드</li>
+						<li>단계별 고용 GUIDE</li>						
+						<li class="pnt_cr02"><b>고용 관리</b></li>
+					</ul>
+				</div>
+				<!-- 가이드 콘텐츠 -->
+				<div class="guide_wrap employment-management">
+					<!-- 가이드 상단 -->				
+					<div class="guide_header">
+						<div class="btn_favor">
+							<button type="button" aria-label="즐겨찾기"></button>
+						</div> 					                   
+						<div class="title_box guide">
+							<h5 class="cont_tit2"><span class="tit-icon"></span>고용 관리</h5>						
+							<p class="cont_txt">장애인 근로자들응 위한 고용 유자관리 노하우를 알아봅시다.</p>
+						</div>
+						<ul class="guide_step step8">
+							<li>
+								<a href="sub05-2-4고용관리-1근무환경.html" class="step_list active">
+									<span class="step">STEP1</span>
+									<span class="txt">근무환경조성</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-4고용관리-2직무배치.html" class="step_list">
+									<span class="step">STEP2</span>
+									<span class="txt">직무배치</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-4고용관리-3임금책정.html" class="step_list">
+									<span class="step">STEP3</span>
+									<span class="txt">임금책정 및 성과평가</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-4고용관리-4휴직관리.html" class="step_list last">
+									<span class="step">STEP4</span>
+									<span class="txt">휴가및휴직관리</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-4고용관리-5교육훈련.html" class="step_list">
+									<span class="step">STEP5</span>
+									<span class="txt">교육훈련</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-4고용관리-6갈등관리.html" class="step_list">
+									<span class="step">STEP6</span>
+									<span class="txt">근로자 갈등관리</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-4고용관리-7안전관리.html" class="step_list">
+									<span class="step">STEP7</span>
+									<span class="txt">재난안전관리</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-4고용관리-8해고와퇴직.html" class="step_list last">
+									<span class="step">STEP8</span>
+									<span class="txt">해고와퇴직</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 가이드 콘텐츠 -->										
+                    <div class="guide_conts_wrap employment-work">
+						<div class="guide_title" >
+							<h5>근무환경 조성</h5>
+							<p class="title_txt">장애인 근로자가 함께 일하기 위한 근무 환경을 조성하기 위해서는 어떤 노력이 필요할까요?</p>
+						</div>
+						<section class="guide_conts sec1">
+							<h6 class="guide_tit2"><span class="num">1.</span>정당한 편의제공</h6>
+							<ul class="sec_cont guide_text">
+								<li>정당한 편의 제공이란 장애인이 직무를 수행할 때 비장애인과 동등한 근로조건에서 일할 수 있도록 여러 수단과 조치를 제공하는 것을 말합니다.</li>
+								<li>「장애인차별금지 및 권리구제 등에 관한 법률」 에 따르면 정당한 사유 없이 장애인에게 편의 제공을 거부하는 것은 차별에 해당됩니다. 따라서 채용단계에서뿐 아니라 고용의 전 과정에서 기업은 장애인에게 정당한 편의를 제공하여야 합니다.</li>
+							</ul>
+						</section>
+						<section class="guide_conts sec2">
+							<h6 class="guide_tit2"><span class="num">2.</span>정당한 편의제공의 유형</h6>
+							<div class="sec_cont tab_wrap tab_style_gd">	
+								<ul class="tab_list" role="tablist">
+									<li role="presentation">
+										<a href="#tab1" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="true">	시설,시설,장비 설치 및 개조</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab2" role="tab" id="tab2-tab" aria-controls="tab2" aria-selected="false">	직무조정</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab3" role="tab" id="tab3-tab" aria-controls="tab3" aria-selected="false">	인적 지원</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab4" role="tab" id="tab4-tab" aria-controls="tab4" aria-selected="false">	제도 개선</a>
+									</li>
+								</ul>							
+								<div class="tab_cont">
+									<div id="tab1" class="tab-panel" role="tabpanel" aria-labelledby="tab1-tab">
+										<ul class="txt">
+											<li>건물 입구 경사로 설치, 턱 조정</li>
+											<li>복사기, 회의실, 휴게실 등 시설 접근가능 통행로 설치</li>
+											<li>휠체어 이용자 접근성 확보를 위한 주차 공간 제공</li>
+											<li>변기, 세면대 높낮이 조정 등 화장실 접근성 확보</li>
+											<li>보조공학기기 지원 등</li>
+										</ul>										
+									</div>
+									<div id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-tab">
+										<ul class="txt">
+											<li>작업시간 및 일정 변경, 자리 재배치 등</li>
+											<li>재활, 치료 등을 위한 근로시간 조정 등</li>
+										</ul>										
+									</div>
+									<div id="tab3" class="tab-panel" role="tabpanel" aria-labelledby="tab3-tab">
+										<ul class="txt">
+											<li>수화통역사 등 보조인 배치</li>
+											<li>중증장애인이 업무에 어려움을 겪을 경우 근로지원인이나 작업지도원 배치</li>
+											<li>필요한 경우 훈련보조인력 배치 등</li>
+										</ul>										
+									</div>
+									<div id="tab4" class="tab-panel" role="tabpanel" aria-labelledby="tab4-tab">
+										<ul class="txt">
+											<li>필요한 경우 장애 유형별 면접 및 시험방식 변경 등</li>
+										</ul>										
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="guide_conts sec3">
+							<h6 class="guide_tit2"><span class="num">3.</span>근무환경 조성을 위한 공단의 지원제도</h6>
+							<div class="sec_cont">
+								<ul class="guide_text">
+									<li>지원 내용, 신청방법 등 지원 관련 구체 사항은 공단지원서비스 메뉴에서 확인할 수 있습니다.</li>
+								</ul>								
+							</div>
+							<div class="sec_cont">
+								<ul class="employ_list">
+									<li>
+										<span class="icon"></span>
+										<h7 class="tit">비용지원</h7>
+										<dl>
+											<dt>편의시설 구축 비용 및<br>작업지도원 인건비 지원</dt>
+											<dd>장애인 고용시설 설치비용 융자 지원 제도</dd>
+											<dd>시설장비 무상 지원 제도</dd>
+											<dd>고용관리비용 지원 제도</dd>
+										</dl>
+									</li>
+									<li>
+										<span class="icon"></span>
+										<h7 class="tit">인적지원</h7>
+										<dl>
+											<dt>장애인고용관련<br>전문인력 지원</dt>
+											<dd>근로지원인 지원제도</dd>
+										</dl>
+									</li>
+									<li>
+										<span class="icon"></span>
+										<h7 class="tit">물적지원</h7>
+										<dl>
+											<dt>효율적 작업수행을<br>위한 기기 지원</dt>
+											<dd>보조공학기기 지원제도</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</section>
+						<section class="guide-comp-case">
+							<h6>다른 기업은 이렇게 하고 있어요.</h6>
+							<ul>
+								<li data-aos="fade-up" class="aos-init">
+								  <dl class="industCls10">
+									<dt><img src="/images/emp_guide/logo_comp17.png" alt="행복모아(주)"></dt>
+									<dd>
+									  <strong>시설물 설치/개조를 통한 장애친화적 환경조성</strong>
+									  <p>SK하이닉스의 자회사형 표준사업장인 행복모아(주)는 휠체어 경사로 설치, 문턱 제거, 장애인 전용 주차구역 등 다양한 시설물을 설치 및 개조하여 장애인 근로자들이 편안하게 일할 수 있는 작업환경을 조성했습니다. 특히 장애인들을 위한 편의 공간을 별도로 마련하여 개인별 맞춤형 환경을 제공하였고, 휴식 공간을 안전하고 쾌적하게 확보하였습니다. 이를 통해 청주와 이천 사업장은 한국장애인고용공단이 장애물 없는 근무환경을 인증하는 BF 최우수 인증을 받았습니다.</p>
+									</dd>
+								  </dl>
+								  <p class="refer_mk">출처 : 2019 장애인고용 우수사례집, 2019, 한국장애인고용공단</p>
+								</li>
+								<li data-aos="fade-up" class="aos-init">
+								  <dl class="industCls11">
+									<dt><img src="/images/emp_guide/logo_comp18.png" alt="벗이미술관"></dt>
+									<dd>
+									  <strong>배리어프리 환경 조성</strong>
+									  <p>벗이미술관은 관내 전 구간이 장애물 없이 이동할 수 있도록 전 구간 문턱 없는 공간으로 조성되어 있습니다. 건물 내 모든 시설물이 교통약자 및 장애인 등 내방고객의 안전한 이동과 편안한 관람을 목적으로 설계되어 있습니다. 벗이미술관은 배리어 프리 건축물로 유명해져 지자체 및 다른 기업과 단체에서 벤치마킹하는 우수사례가 되었습니다.</p>
+									</dd>
+								  </dl>
+								  <p class="refer_mk">출처 : 2022 장애인고용 우수사례집, 2022, 한국장애인고용공단</p>
+								</li>
+								<li data-aos="fade-up" class="aos-init">
+								  <dl class="industCls">
+									<dt><img src="/images/emp_guide/logo_comp19.png" alt="넷마블"></dt>
+									<dd>
+									  <strong>손잡이/경사로 등 시설물 설치를 통한 안전 환경 조성</strong>
+									  <p>넷마블은 장애인 및 교통약자가 편리하면서도 최단 거리로 이동할 수 있는 시설을 설치해 접근성을 제고하고 있습니다. 지타워 내에는 휠체어 및 보조기구 사용자, 고령자, 어린이 등 다양한 방문자들이 안전하고 자유롭게 시설을 이용할 수 있도록 안전 손잡이 및 여러 도움 시설이 마련되어 있습니다.<br>2022년에는 사옥인 지타워와 주택밀집지역 경계 통행 시 교통약자 및 휠체어 장애인의 이동에 불편함이 있어 기존 수목과 잔디 일부를 이식 후 장애인 경사로와 안전 손잡이를 추가 설치했습니다. 이를 통해 넷마블은 누구나 이용 가능한 통행로를 제공하였으며, 직원뿐만 아니라 지역 주민들 또한 사옥 인근을 보다 편리하고 안전하게 통행할 수 있게 되었습니다.</p>
+									</dd>
+								  </dl>
+								  <p class="refer_mk">출처 : 넷마블 ESG보고서, 2023, 한국ESG포털</p>
+								</li>
+								<li data-aos="fade-up" class="aos-init">
+								  <dl class="industCls11">
+									<dt><img src="/images/emp_guide/logo_comp20.png" alt="풀무원투게더"></dt>
+									<dd>
+									  <strong>안전한 장애인 근무 환경 조성</strong>
+									  <p>풀무원투게더는 모회사인 풀무원푸드앤컬처의 자회사형 장애인 표준사업장입니다. 풀무원 투게더의 작업장엔 문턱이 없으며, 화장실 출입문을 여는 버튼은 0.8m 높이로 낮은 편입니다. 다양한 장애 유형의 근로자들이 작업과 휴식에 어려움이 없도록 설계된 장애물 없는 배리어 프리 공간을 도입하였습니다. </p>
+									</dd>
+								  </dl>
+								  <p class="refer_mk">출처 : 직원 80%, 장애인’ 풀무원투게더 “목표는 케어 아닌 자립” 2023.08.09, 해럴드경제</p>
+								</li>
+							  </ul>
+						</section>
+					</div>
+				</div><!-- //guide_wrap -->
+			</div><!-- //contents-->
+		</div><!-- //inner -->
+	</div>
+	<footer class="footer">
+		<div class="inner">
+			<div class="f_left">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li class="pnt_cr1"><a href="#"><b>개인정보처리방침</b></a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<a href="#" target="_blank" title="새창이동">
+					<img src="images/img_watch.png" alt="" class="watch">
+				</a>
+				<div class="f_info">
+					<p class="f_logo">한국장애인고용공단</p>
+					<div>
+						<p>주소 (13619)경기도 성남시 분당구 구미로 173번길 59(구미동)</p>
+						<p>전화번호 031-728-7001~3</p>
+						<p class="f_copy">COPYRIGHT © 2024 KEAD RIGHT RESERVED.</p>
+					</div>
+				</div>
+			</div>
+			<div class="f_right">
+				<div class="rel_wrap">
+					<a href="#">관련사이트</a>
+					<ul>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+					</ul>
+				</div>
+				<div>
+					<p class="f_number">전국대표번호<b>1588-1519</b></p>
+					<p class="f_time"><span>운영시간</span>평일 09:00 ~ 18:00</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+	$(document).ready(function(){
+		AOS.init();
+	});
+
+	$(document).ready(function() {
+		$('.list-chk-radio input[type="radio"]').on('change', function() {
+			var $recommendationButtons = $(this).closest('.list-chk-radio').next('.recommendation-btn');
+
+			if ($(this).val() === 'no' && $(this).is(':checked')) {
+			$recommendationButtons.removeClass('hidden');
+			} else {
+			$recommendationButtons.addClass('hidden');
+			}
+		});
+	});
+
+
+
+
+
+
+	</script>
+</body>
+</html>

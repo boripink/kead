@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="asset/aos/aos.css">
+	<link rel="stylesheet" href="asset/slick/slick.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="asset/jquery/jquery-3.7.1.min.js"></script>
+	<script src="asset/aos/aos.js"></script>
+	<script src="asset/slick/slick.js"></script>
+	<script src="js/common.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
+	<title>모집 및 채용 | 고용가이드 | 한국장애인고용공단 장애인고용컨설팅</title>
+	
+</head>
+<body>
+	<header class="header act">
+		<div class="inner">
+			<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+			<h2 class="hidden">대메뉴</h2>
+			<ul class="gnb">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user_wrap">
+				<div class="user_info">
+					<!-- [D] 로그인 전에 안보이게 처리 -->
+					<div class="user">
+						<span class="neme"><b>홍길동</b> 님</spanclass="neme"> <span class="time">09:33</span>
+						<button class="btn_time" type="button">연장</button>
+					</div>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<button type="button" class="btn_menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="mob_wrap">
+			<div class="user_mob">
+				<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+				<div class="user">
+					<span class="neme"><b>홍길동</b> 님</span>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<ul class="gnb_mob">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+						<li><a href="sub05-2.html">단계별 고용 GUIDE</a></li>
+						<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+						<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container sub_container">
+		<div class="inner">
+			<div class="snb_wrap">
+				<h3>고용 가이드</h3>
+				<ul class="snb_list">
+					<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+					<li class="snb_depth2 on">
+						<a href="sub05-2-1체크리스트.html">단계별 고용 GUIDE</a>
+						<ul class="snb_depth3">
+							<li><a href="sub05-2-1체크리스트.html">고용과정 체크리스트</a></li>
+							<li><a href="sub05-2-2채용계획-1채용수요조사.html">채용계획 수립</a></li>
+							<li class="on"><a href="sub05-2-3모집채용-1채용공고작성.html">모집 및 채용</a></li>
+							<li><a href="sub05-2-4고용관리-1근무환경조성.html">고용관리</a></li>
+						</ul>
+					</li>
+					<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+					<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+				</ul>
+			</div>
+			<div class="contents">
+				<!-- 타이틀 -->
+				<div class="cont_tit_wrap">
+					<h4 class="cont_tit">모집 및 채용</h4>
+					<ul class="cont_lct">
+						<li class="home">홈</li>
+						<li>고용 가이드</li>
+						<li>단계별 고용 GUIDE</li>						
+						<li class="pnt_cr02"><b>모집 및 채용</b></li>
+					</ul>
+				</div>
+				<!-- 가이드 콘텐츠 -->
+				<div class="guide_wrap recruitment-process">
+					<!-- 가이드 상단 -->				
+					<div class="guide_header">
+						<div class="btn_favor">
+							<button type="button" aria-label="즐겨찾기"></button>
+						</div> 					                   
+						<div class="title_box guide">
+							<h5 class="cont_tit2"><span class="tit-icon"></span>모집 및 채용</h5>						
+							<p class="cont_txt">원활한 모집을 위해서는 장애인이 쉽게 접할 수 있도록 채용 공고를 작성해야 합니다.</p>
+						</div>
+						<ul class="guide_step step6">
+							<li>
+								<a href="sub05-2-3모집채용-1채용공고작성.html" class="step_list">
+									<span class="step">STEP1</span>
+									<span class="txt">공고작성</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-2구인신청.html" class="step_list">
+									<span class="step">STEP2</span>
+									<span class="txt">구인신청</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-3서류전형.html" class="step_list">
+									<span class="step">STEP3</span>
+									<span class="txt">서류전형</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-4필기전형.html" class="step_list">
+									<span class="step">STEP4</span>
+									<span class="txt">필기전형</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-5면접전형.html" class="step_list">
+									<span class="step">STEP5</span>
+									<span class="txt">면접전형</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-6근로계약.html" class="step_list last active">
+									<span class="step">STEP5</span>
+									<span class="txt">채용결정</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 가이드 콘텐츠 -->										
+                    <div class="guide_conts_wrap interview-process">
+						<div class="guide_title" >
+							<h5>합격자 결정 및 근로계약</h5>
+							<p class="title_txt">장애인 근로계약 시 유의해야 할 사항을 확인해 봅시다.</p>
+						</div>						 						
+						<section class="guide_conts">
+							<h6 class="guide_tit2"><span class="num">1.</span>합격자 결정 개요</h6>
+							<ul class="sec_cont guide_text">
+								<li>모든 합격 결정 요소가 정확히 반영되었는지, 보안관리 원칙에 따라 진행되었는지 확인해야 합니다.</li>
+								<li>채용계획 수립 시 마련한 합격자 결정 방법에 따라 절차를 진행하고 채용단계 중 임의로 변경하지 않습니다.</li>
+								<li>동점자 처리 규정 마련 및 예비합격자 순번을 부여해야 합니다. 
+									<P class="refer_mk mt0">(예비합격자 명단은 최종 전형 합격자 발표 시 별도 공지합니다.)</P></li>	
+								<li>채사전에 공지된 날짜 및 방법으로 응시자에게 합격 여부를 공지합니다.</li>
+								<li>응시자의 민원 혹은 이의제기 절차를 안내해야 합니다.</li>
+							</ul>
+						</section>
+						<section class="guide_conts">
+							<h6 class="guide_tit2"><span class="num">2.</span>근로계약 체결</h6>
+							<div class="sec_cont ">
+								<ul class="guide_text">
+									<li>장애인 근로자의 근로계약은 비장애인과 다르지 않아, 정규직, 계약직, 아르바이트 등 다양한 형태로 근로계약을 체결할 수 있습니다. </li>
+									<li>회사 내부의 취업규칙 등에 따라 근로계약서를 작성하고, 그에 따라 고용관계를 유지하면 됩니다.</li>
+								</ul>
+							</div>						
+						</section>
+						<section class="guide_conts">
+							<h6 class="guide_tit2"><span class="num">3.</span>근로 계약서 작성법</h6>
+							<div class="sec_cont ">
+								<ul class="guide_text">
+									<li>근로기준법 제17조에 따라 근로조건을 구체적으로 명시한 근로계약서를 작성해야 하며, 장애인 직무를 특정하는 등 별도 근로계약 조건이 있는 경우 기재하여 근로자에게 교부합니다.</li>
+									<li>계약직, 체험형 인턴 등 기간제 고용 형태의 근로계약 체결 시에도 근로계약서를 작성 및 교부해야 합니다.</li>
+									<li>근로계약은 장애인 당사자와 하는 것이 원칙이나, 발달장애인은 스스로 의사결정을 하는 데 어려움이 있을 수 있으므로 쉽게 작성한 근로계약서를 활용하거나 보호자의 입회하에 근로계약서를 작성할 수 있습니다.</li>
+									<li>근로계약서는 근로가 시작되기 전 또는 입사 즉시 작성되어야 하며, 근로시작 이후 근로계약서를 작성할 시 근로계약서 미작성으로 인한 처벌을 받을 수 있으니 주의하여야 합니다.</li>
+									<li>근로기준법 제 54조에 따라 사용자는 근로시간이 4시간인 경우에는 30분 이상, 8시간인 경우에는 1시간 이상의 휴게시간을 근로시간 도중에 주어야 합니다. </li>
+									<li>휴게시간은 근로자가 자유롭게 이용할 수 있어야 하고, 일하는 중간에 주어야 하므로 근로시간의 시작과 끝에는 줄 수 없습니다.</li>
+								</ul>
+							</div>
+							<div class="sec_cont">								
+								
+							</div>	
+						</section>
+						<section class="guide_conts">
+							<h6 class="guide_tit2"><span class="num">4.</span>4대보험 가입</h6>
+							<div class="sec_cont">
+								<ul class="guide_text">	
+									<li>월 60시간 이상 근로자로 장애인을 고용했다면 4대 보험(국민연금, 건강보험, 고용보험, 산재보험)에 가입해야 합니다.</li>
+									<li>장애인 근로자라고 해서 4대보험을 가입하지 않아도 된다거나, 보험료를 할인해주지는 않습니다.</li>
+								</ul>
+							</div>
+						</section>
+						
+					</div>
+				</div><!-- //guide_wrap -->
+			</div><!-- //contents-->
+		</div><!-- //inner -->
+	</div>
+	<footer class="footer">
+		<div class="inner">
+			<div class="f_left">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li class="pnt_cr1"><a href="#"><b>개인정보처리방침</b></a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<a href="#" target="_blank" title="새창이동">
+					<img src="images/img_watch.png" alt="" class="watch">
+				</a>
+				<div class="f_info">
+					<p class="f_logo">한국장애인고용공단</p>
+					<div>
+						<p>주소 (13619)경기도 성남시 분당구 구미로 173번길 59(구미동)</p>
+						<p>전화번호 031-728-7001~3</p>
+						<p class="f_copy">COPYRIGHT © 2024 KEAD RIGHT RESERVED.</p>
+					</div>
+				</div>
+			</div>
+			<div class="f_right">
+				<div class="rel_wrap">
+					<a href="#">관련사이트</a>
+					<ul>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+					</ul>
+				</div>
+				<div>
+					<p class="f_number">전국대표번호<b>1588-1519</b></p>
+					<p class="f_time"><span>운영시간</span>평일 09:00 ~ 18:00</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+	$(document).ready(function(){
+		AOS.init();
+	});
+
+	$(document).ready(function() {
+		$('.list-chk-radio input[type="radio"]').on('change', function() {
+			var $recommendationButtons = $(this).closest('.list-chk-radio').next('.recommendation-btn');
+
+			if ($(this).val() === 'no' && $(this).is(':checked')) {
+			$recommendationButtons.removeClass('hidden');
+			} else {
+			$recommendationButtons.addClass('hidden');
+			}
+		});
+	});
+
+
+
+
+
+
+	</script>
+</body>
+</html>

@@ -224,7 +224,7 @@
 						</ul>
 					</div>
 					<!-- 가이드 콘텐츠 -->										
-                    <div class="guide_conts_wrap">
+                    <div class="guide_conts_wrap recruitment-application">
 						<div class="guide_title" >
 							<h5>구인 신청</h5>
 							<p class="title_txt">한국장애인고용공단 관할 소속기관 혹은 장애인 고용 포털 워크투게더(Work Together)를 통해<br class="only-pc">장애인 채용을 위한 도움을 받을 수 있습니다.</p>
@@ -234,16 +234,53 @@
 							<ul class="sec_cont guide_text">
 								<li>공단은 장애인을 채용하고자 하는 사업주에게 다양한 고용 정보를 제공하고, 적합 인력 추천 및 모집 대행 서비스를 제공하고 있습니다.</li>
 							</ul>
+							<div class="sec_cont">
+								<ul class="application-list">
+									<li class="application-item item1">
+										<div class="app-header">01. 구인 신청</div>
+										<div class="app-description">
+											<p class="badge"><span>사업주</span> → <span class="kead">공단</span></p>
+											<p class="icon"><img src="/images/sub/gd_img4.png">구인신청 제출</p>
+										</div>
+									</li>
+									<li class="application-item item2">
+										<div class="app-header">02. 채용협의 및 계획수립</div>
+										<div class="app-description">
+											<p class="badge"><span>사업주</span> → <span class="kead">공단</span></p>
+											<p>채용직종 및 규모 협의</p>
+											<p class="fc-red">(필요 시 직무분석 및 고용컨설팅 실시)</p>
+											<p>채용직종 및 일정 확정</p>
+										</div>
+									</li>
+									<li class="application-item item3">
+										<div class="app-header">03. 모집홍보 및 인력추천</div>
+										<div class="app-description">
+											<p class="badge"><span class="kead">공단</span></p>
+											<p>공단 홈페이지, 워크투게더, 장애인 유관기관 등을 활용하여 홍보</p>
+											<p>구직장애인 상담을 통해 적합 인력 추천</p>
+										</div>
+									</li>
+								</ul>						
+							</div>
 						</section>
 						<section class="guide_conts">
 							<h6 class="guide_tit2"><span class="num">2.</span>채용 포털 사이트 온라인 구인 신청</h6>
 							<div class="sec_cont">
-								<div>워크투게더</div>
-								<ul class="guide_text">								
-									<li>워크투게더(Work Together)는 장애인, 사업주, 공단 직원뿐만 아니라 장애인 고용에 관심을 가지고 있는 장애인 가족과 비장애인들까지 이용 가능한 장애인 고용 전문포털입니다.</li>
-									<li>기업에서는 장애인 접근성이 높은 워크투게더 사이트에 구인 신청을 진행함으로써 장애인 지원자를 효과적으로 모집할 수 있습니다</li>
-								</ul>
-							</div>							
+								<dl class="worktogether-box">
+									<dt class="box-header">
+										<img src="images/emp_guide/logo_worktogether.png" alt="장애인고용포탈">
+									</dt>
+									<dd class="box-description">
+										<ul class="">								
+											<li>워크투게더(Work Together)는 장애인, 사업주, 공단 직원뿐만 아니라 장애인 고용에 관심을 가지고 있는 장애인 가족과 비장애인들까지 이용 가능한 장애인 고용 전문포털입니다.</li>
+											<li>기업에서는 장애인 접근성이 높은 워크투게더 사이트에 구인 신청을 진행함으로써 장애인 지원자를 효과적으로 모집할 수 있습니다</li>
+										</ul>
+									</dd>
+									<dd class="link_btn">
+										<a href="http://www.worktogether.or.kr" target="_blank" aria-label="장애인고용포탈 홈페이지 이동">바로가기</a>
+									</dd>
+								</dl>
+							</div>													
 						</section>
 						<section class="guide-comp-case">
 							<h6>다른 기업은 이렇게 하고 있어요.</h6>
@@ -304,27 +341,10 @@
 		</div>
 	</footer>
 	<script>
-	$(document).ready(function(){
-		AOS.init();
-	});
-
-	$(document).ready(function() {
-		$('.list-chk-radio input[type="radio"]').on('change', function() {
-			var $recommendationButtons = $(this).closest('.list-chk-radio').next('.recommendation-btn');
-
-			if ($(this).val() === 'no' && $(this).is(':checked')) {
-			$recommendationButtons.removeClass('hidden');
-			} else {
-			$recommendationButtons.addClass('hidden');
-			}
+		$(document).ready(function(){
+			AOS.init();
 		});
-	});
-
-
-
-
-
-
-	</script>
+		</script>
+	
 </body>
 </html>

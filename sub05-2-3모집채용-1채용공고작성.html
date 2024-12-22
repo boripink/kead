@@ -238,8 +238,8 @@
 								<li>공고 시 해당 모집 분야의 작업환경에 대해 명시하는 것도 효과적인 방법입니다.</li>
 							</ul>
 							<div class="sec_cont">
-								<a href="#" class="btn_layer gd-btn" data-id="gd-pop-posting1">장애인 근로자 채용공고 예시 보기</a>
-								<a href="#" class="btn_layer gd-btn" data-id="gd-pop-posting2">장애인 근로자 채용공고 예시 보기</a>
+								<a href="#" class="btn_layer gd-btn" data-id="pop-posting1">장애인 근로자 채용공고 작성 예시 보기<span class="arr"></span></a>
+								<a href="#" class="btn_layer gd-btn" data-id="pop-posting2">작업환경 명시 작성 예시 보기<span class="arr"></span></a>
 							</div>
 						</section>
 						<section class="guide_conts sec2">
@@ -270,9 +270,9 @@
 								<li>채용시험 불합격자의 이의제기 기간 및 그 절차를 공고</li>
 							</ul>
 							<div class="sec_cont sec3">
-								<dl class="gd-line-box">
+								<dl class="worktogether-box">
 									<dt class="box-header">
-										<img src="images/emp_guide/logo_worktogether.png">
+										<img src="images/emp_guide/logo_worktogether.png" alt="장애인고용포탈">
 									</dt>
 									<dd class="box-description">
 										기업의 채용 사이트는 장애인 접근성이 낮기 때문에,<br>
@@ -283,6 +283,32 @@
 										<a href="http://www.worktogether.or.kr" target="_blank" aria-label="장애인고용포탈 홈페이지 이동">바로가기</a>
 									</dd>
 								</dl>
+							</div>
+						</section>
+						<section class="guide_conts sec4">
+							<h6 class="guide_tit2"><span class="num">3.</span>장애인 차별법 위반 사례</h6>
+							<div class="sec_cont violation-case">
+								<div class="violation-header">
+									<p>채용 공고 시 장애인 차별에 해당하는 문구입니다.</p>
+								</div>
+								<div class="violation-content">
+									<ul>
+										<li>
+											장애와 관련하여 적절하지 않은 표현이 포함된 경우
+											<div class="example">(예: 장애우, 정신지체, 정상인, 일반인 등 장애와 관련하여 부적절한 표현 사용)</div>
+										</li>
+										<li>
+											장애에 대한 선입견과 편견이 담긴 경우
+											<div class="example">(예: 장애를 극복 또는 도전의 대상으로 표현하는 경우 등)</div>
+										</li>
+										<li>
+											사람보다 장애를 먼저 부각하는 경우
+											<div class="example">(예: 지체 장애인 근로자, 여성장애인)</div>
+										</li>
+										<li>장애인을 배제하는 문구나 신체 또는 외모에 대한 조건을 명시하는 경우</li>
+										<li>‘신체 건강한 자’, ‘남자’ 등 간접적으로 응시 자격을 제한하는 경우</li>
+									</ul>
+								</div>
 							</div>
 						</section>
 					</div>
@@ -329,27 +355,204 @@
 		</div>
 	</footer>
 	<script>
-	$(document).ready(function(){
-		AOS.init();
-	});
-
-	$(document).ready(function() {
-		$('.list-chk-radio input[type="radio"]').on('change', function() {
-			var $recommendationButtons = $(this).closest('.list-chk-radio').next('.recommendation-btn');
-
-			if ($(this).val() === 'no' && $(this).is(':checked')) {
-			$recommendationButtons.removeClass('hidden');
-			} else {
-			$recommendationButtons.addClass('hidden');
-			}
+		$(document).ready(function(){
+			AOS.init();
 		});
-	});
+		</script>
+	<div class="layer_wrap gd-pop-posting pop-posting1" >
+		<div class="layer_cont layer_lg ">	
+			<!-- <div class="pop_head">
+				<span class="popup_badge">장애인 근로자 채용공고 작성 예시</span>
+				<h2 class="pop_tit">장애유형에 따른 건강관련 제도 및 교육 도입</h2>
+			</div>	 -->
+			<span class="popup_badge">장애인 근로자 채용공고 작성 예시</span>
+			<div class="board-layout">				
+				<ul class="cont-board scrollbar">
+					<li>
+						<dl>
+							<dt>기업명</dt>
+							<dd>(주)OO산업</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>근무지</dt>
+							<dd>경기도 성남시 분당구 OO동 OO - OO</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>채용 직무</dt>
+							<dd>플라스틱 부품을 단계별로 조립하고, 조립이 잘 완료되었는지 검수</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>채용 직급 및 인원</dt>
+							<dd>사원 / OO명</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>급여 조건</dt>
+							<dd>월 OO만원</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>응시 조건</dt>
+							<dd>학력 및 전공 무관, 성별 연령 제한 없음 등</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>고용 형태 및 근로조건</dt>
+							<dd>정규직, 전일제</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>작업 환경</dt>
+							<dd>
+								<ul class="td_list">
+									<li><img src="/images/emp_guide/empExImg01.png" alt="작업환경 이미지01"></li>
+									<li><img src="/images/emp_guide/empExImg02.png" alt="작업환경 이미지02"></li>
+									<li><img src="/images/emp_guide/empExImg03.png" alt="작업환경 이미지03"></li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>지원 방법</dt>
+							<dd>OO산업 이메일지원 및 사이트 온라인 접수</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>공고 기간</dt>
+							<dd>2023. 09.01 ~ 2023. 09.28</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>마감 기한</dt>
+							<dd>2023. 09.28. 18시</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>채용 절차</dt>
+							<dd>서류 - 필기 - 면접</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>기타 안내</dt>
+							<dd>채용전형 중 장애유형에 따라 정당한 편의 제공이 가능합니다.</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>문의처</dt>
+							<dd>031- OOO - OOOO</dd>
+						</dl>
+					</li>
+				</ul>
+				
+			</div>			
+			<a class="btn_close btn_X" title="팝업창 닫기버튼"></a>
+		</div>
+	</div>
+	<div class="layer_wrap gd-pop-posting pop-posting2" >
+		<div class="layer_cont">	
+			<span class="popup_badge">작업환경 명시 작성 예시</span>	
+			<div class="board-layout">				
+				<div class="cont-board scrollbar">
+					<h3 class="pop_tit3">행정지원직</h3>
+					<ul class="">
+						<li>
+							<dl>
+								<dt>드는 힘</dt>
+								<dd>5Kg 이내의 물건을 다룸</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>서거나 걷기</dt>
+								<dd>일부 서서하는 작업</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>듣고 말하기</dt>
+								<dd>듣고 말하기 중요</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>시력</dt>
+								<dd>비교적 큰 인쇄물을 읽을 수 있음</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>손 작업</dt>
+								<dd>큰 물품 조립 작업</dd>
+							</dl>
+						</li>
+						<li class="gray_line"></li>
+					</ul>				
+					<h3 class="pop_tit3 mt20">기술지원직</h3>
+					<ul class="">
+						<li>
+							<dl>
+								<dt>양 손 사용</dt>
+								<dd>양손으로 작업</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>드는 힘</dt>
+								<dd>5~20Kg 이내의 물건을 다룸</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>서거나 걷기</dt>
+								<dd>일부 서서하는 작업</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>듣고 말하기</dt>
+								<dd>듣고 말하기 중요</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>시력</dt>
+								<dd>비교적 큰 인쇄물을 읽을 수 있음</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>손 작업</dt>
+								<dd>작은 물품 조립 작업</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>양 손 사용</dt>
+								<dd>양손으로 작업</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>				
+			</div>			
+			<a class="btn_close btn_X" title="팝업창 닫기버튼"></a>
+		</div>
+	</div>
 
-
-
-
-
-
-	</script>
 </body>
 </html>

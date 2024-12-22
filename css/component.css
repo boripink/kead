@@ -386,13 +386,12 @@ tbody {counter-reset: row-number; /* 번호 초기화 */}
 .layer_cont .pop_head .pop_tit {font-size:30px; font-weight:500; color:#222;}
 .layer_cont .pop_head .btn_close {overflow:hidden; position:absolute; top:0; right:0; width:30px; height:30px; text-indent:-9999px; background:url('../images/icon_wrap.png') -90px -120px no-repeat;}
 .layer_cont .pop_body {overflow-y:auto; max-height:calc(100vh - 180px); padding:25px 35px; box-sizing:border-box;}
-.layer_cont .pop_body .bt_btn {position:absolute; left:50%; bottom:20px; width:100%; background:#fff; transform:translateX(-50%);}
+.layer_cont .pop_body .bt_btn {position:absolute; left:50%; bottom:20px; width:100%; background:#fff; transform:translateX(-50%);} 
 /* layer pop size */
 .layer_cont.layer_xl {max-width:1400px;}
 .layer_cont.layer_lg {max-width:1000px;}
 .layer_cont.layer_sm {max-width:600px;}
-
-
 /* tooltip */
 .tooltip_wrap {position:relative; display:inline-block; z-index:9;}
 .tooltip_wrap .tooltip_close {overflow:hidden; position:absolute; top:20px; right:20px; width:20px; height:20px; text-indent:-9999px; background:url('../images/icon_wrap.png') -150px -210px no-repeat;}
+

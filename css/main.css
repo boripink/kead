@@ -202,6 +202,10 @@
 .tooltip_list .tooltip_cont > ul > li:nth-last-child(-n+4) {padding-bottom:0; border-bottom:none;}
 .tooltip_list .tooltip_cont > ul > li b {display:block; margin-bottom:10px; font-size:25px; font-weight:700; color:#0f298f;}
 
+
+
+
+
 @media (max-width:1600px) {
 	.idx_wrap .inner {padding-left:30px; padding-right:30px;}
 	/* task */

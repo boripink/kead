@@ -217,19 +217,21 @@
 							</li>
 						</ul>
 					</div>
-					<!-- 가이드 콘텐츠 -->										
+					
                     <div class="guide_conts_wrap">
 						<div class="guide_title" >
 							<h5></h5>
 							<p class="title_txt"></p>
 						</div>
+						<!-- 가이드 콘텐츠 : 텍스트 리스트 -->
 						<section class="guide_conts">
 							<h6 class="guide_tit2"><span class="num">1.</span></h6>
 							<ul class="sec_cont guide_text">
 								<li>서류전형은 내규에 맞추어 진행하면 됩니다. 비장애인 채용과 마찬가지로 장애인 채용 역시 응시자가 제출한 서류가 적정한지 검증을 하여야 합니다.</li>
 								<li>제출 서류 등에 대한 검증(조회)절차를 거쳐 자격 부적격 시에는 불합격 처리하고, 서류전형 후보자 중 우선 순위자를 합격자로 결정합니다.</li>
 							</ul>
-						</section>						
+						</section>	
+						<!-- 가이드 콘텐츠 : 테이블 -->					
 						<section class="guide_conts">
 							<h6 class="guide_tit2"><span class="num">2.</span></h6>
 							<table class="sec_cont tb_base tb_guide">
@@ -245,6 +247,7 @@
 								</tbody>
 							</table>
 						</section>
+						<!-- 가이드 콘텐츠 : 프로세스 리스트트 -->
 						<section class="guide_conts">
 							<h6 class="guide_tit2"><span class="num">3.</span></h6>
 							<div class="sec_cont">
@@ -280,6 +283,41 @@
 						<section class="guide_conts guide-comp-case">
 							<h6>다른 기업은 이렇게 하고 있어요.</h6>
 							
+						</section>
+						<!-- 탭 -->
+						<section class="guide_conts">
+							<div class="sec_cont tab_wrap tab_style00">
+								<ul class="tab_list" role="tablist">
+									<li role="presentation"><a href="#tab1" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="true"></a></li>
+									<li role="presentation"><a href="#tab2" role="tab" id="tab2-tab" aria-controls="tab2" aria-selected="false"></a></li>
+									<li role="presentation"><a href="#tab3" role="tab" id="tab3-tab" aria-controls="tab3" aria-selected="false"></a></li>
+									<li role="presentation"><a href="#tab4" role="tab" id="tab4-tab" aria-controls="tab4" aria-selected="false"></a></li>
+									<li role="presentation"><a href="#tab5" role="tab" id="tab5-tab" aria-controls="tab5" aria-selected="false"></a></li>
+									<li role="presentation"><a href="#tab6" role="tab" id="tab6-tab" aria-controls="tab6" aria-selected="false"></a></li>
+								</ul>
+								<div class="tab_cont">
+									<div id="tab1" class="tab-panel" role="tabpanel" aria-labelledby="tab1-tab">
+										<ul>
+											<li></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- 가이드 콘텐츠 : 차별법 위반 사례 -->
+						<section class="guide_conts">
+							<h6 class="guide_tit2"><span class="num">4.</span>장애인 차별법 위반 사례</h6>
+							<div class="sec_cont violation-case">
+								<div class="violation-header">
+									<p>필기 전형 시 위반 사례입니다.</p>
+								</div>
+								<div class="violation-content">
+									<p class="tit">공공기관 장애인 채용 시 편의 제공 미흡</p>
+									<p class="txt">
+										중증 시각장애인 A씨는 ○○공사의 신입사원 채용에 장애인 전형으로 지원하였습니다. 공고 상에 장애인을 위한 시험시 간 연장에 관한 편의제공 내용이 없어 기관에 연장 가능 여부를 문의했으나, 불가하다는 답변을 받았습니다. 이에 인권위 에 진정서를 제출하였고 인권위는 해당 사항을 장애인차별금지법 제 10조, 제 11조를 위반한 차별행위에 해당한다고 판단 하여 ○○공사에 장애인 대상 시험 시간 연장 관련 세부 지침을 마련할 것을 권고하였습니다.
+									</p>	
+								</div>
+							</div>
 						</section>
 					</div>
 				</div><!-- //guide_wrap -->
@@ -328,24 +366,6 @@
 	$(document).ready(function(){
 		AOS.init();
 	});
-
-	$(document).ready(function() {
-		$('.list-chk-radio input[type="radio"]').on('change', function() {
-			var $recommendationButtons = $(this).closest('.list-chk-radio').next('.recommendation-btn');
-
-			if ($(this).val() === 'no' && $(this).is(':checked')) {
-			$recommendationButtons.removeClass('hidden');
-			} else {
-			$recommendationButtons.addClass('hidden');
-			}
-		});
-	});
-
-
-
-
-
-
 	</script>
 </body>
 </html>

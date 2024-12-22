@@ -727,7 +727,7 @@ position: absolute; top: 4px; right: -14px;}
 .company-info .info-head .meta {padding-right: 35px; display: flex; align-items: center; }
 .company-info .info-head .meta > span {font-size: 18px; font-weight: 500; display: flex; align-items: center; position: relative; margin-left: 24px;}
 .company-info .info-head .meta > span::before {content: ''; width: 32px; height: 32px; background: #cdddf5 url(../images/icon/calendar-03.svg) no-repeat center; display: inline-block; margin-right: 8px; border-radius: 30px; background-size: 20px;}
-.company-info .info-head .meta > span.type::before {background-image: url(../images/icon/office.svg);}
+.company-info .info-head .meta > span.type::before {background-image: url(../images/svg/office.svg);}
 
 .company-keyword    {display: flex; flex-wrap: wrap; gap: 6px; margin: 20px 0; padding-right: 35px;}
 .company-keyword li {display: inline-block; border: 1px solid #cdddf5; border-radius: 10px; padding: 6px 12px; font-size: 16px; background-color: #fff; }
@@ -1204,7 +1204,7 @@ position: absolute; top: 4px; right: -14px;}
 
 .dashbd-foot .guide-list {display: flex; flex-direction: column; gap: 10px; margin-bottom: 10px;}
 .dashbd-foot .guide-list a {display: flex; align-items: center; justify-content: center;  padding: 10px 0; background-color: #e8effb; border-radius: 4px; font-size: 16px; letter-spacing: -1px; box-shadow: 0 2px 3px rgba(1,49,94,0.1);}
-.dashbd-foot .guide-list .arr { display: inline-block; background: url(../images/icon/arrow-up-right.svg) no-repeat center; background-size: 16px; width: 20px; height: 20px; margin-left: 4px;}
+.arr { display: inline-block; background: url(../images/icon/arrow-up-right.svg) no-repeat center; background-size: 16px; width: 20px; height: 20px; margin-left: 4px;}
 
 .dashbd-foot .small_box {padding: 0; display: flex; flex-direction: column; gap: 20px;}
 .dashbd-foot .small_box .bg_box {flex: 1; position: relative; padding: 20px;}

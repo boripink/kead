@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="asset/aos/aos.css">
+	<link rel="stylesheet" href="asset/slick/slick.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="asset/jquery/jquery-3.7.1.min.js"></script>
+	<script src="asset/aos/aos.js"></script>
+	<script src="asset/slick/slick.js"></script>
+	<script src="js/common.js"></script>
+
+	
+	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
+	<title>모집 및 채용 | 고용가이드 | 한국장애인고용공단 장애인고용컨설팅</title>
+	
+</head>
+<body>
+	<header class="header act">
+		<div class="inner">
+			<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+			<h2 class="hidden">대메뉴</h2>
+			<ul class="gnb">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user_wrap">
+				<div class="user_info">
+					<!-- [D] 로그인 전에 안보이게 처리 -->
+					<div class="user">
+						<span class="neme"><b>홍길동</b> 님</spanclass="neme"> <span class="time">09:33</span>
+						<button class="btn_time" type="button">연장</button>
+					</div>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<button type="button" class="btn_menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="mob_wrap">
+			<div class="user_mob">
+				<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+				<div class="user">
+					<span class="neme"><b>홍길동</b> 님</span>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<ul class="gnb_mob">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+						<li><a href="sub05-2.html">단계별 고용 GUIDE</a></li>
+						<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+						<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container sub_container">
+		<div class="inner">
+			<div class="snb_wrap">
+				<h3>고용 가이드</h3>
+				<ul class="snb_list">
+					<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+					<li class="snb_depth2 on">
+						<a href="sub05-2-1체크리스트.html">단계별 고용 GUIDE</a>
+						<ul class="snb_depth3">
+							<li><a href="sub05-2-1체크리스트.html">고용과정 체크리스트</a></li>
+							<li><a href="sub05-2-2채용계획-1채용수요조사.html">채용계획 수립</a></li>
+							<li class="on"><a href="sub05-2-3모집채용-1채용공고작성.html">모집 및 채용</a></li>
+							<li><a href="sub05-2-4고용관리-1근무환경조성.html">고용관리</a></li>
+						</ul>
+					</li>
+					<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+					<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+				</ul>
+			</div>
+			<div class="contents">
+				<!-- 타이틀 -->
+				<div class="cont_tit_wrap">
+					<h4 class="cont_tit">모집 및 채용</h4>
+					<ul class="cont_lct">
+						<li class="home">홈</li>
+						<li>고용 가이드</li>
+						<li>단계별 고용 GUIDE</li>						
+						<li class="pnt_cr02"><b>모집 및 채용</b></li>
+					</ul>
+				</div>
+				<!-- 가이드 콘텐츠 -->
+				<div class="guide_wrap recruitment-process">
+					<!-- 가이드 상단 -->				
+					<div class="guide_header">
+						<div class="btn_favor">
+							<button type="button" aria-label="즐겨찾기"></button>
+						</div> 					                   
+						<div class="title_box guide">
+							<h5 class="cont_tit2"><span class="tit-icon"></span>모집 및 채용</h5>						
+							<p class="cont_txt">원활한 모집을 위해서는 장애인이 쉽게 접할 수 있도록 채용 공고를 작성해야 합니다.</p>
+						</div>
+						<ul class="guide_step step6">
+							<li>
+								<a href="sub05-2-3모집채용-1채용공고작성.html" class="step_list">
+									<span class="step">STEP1</span>
+									<span class="txt">공고작성</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-2구인신청.html" class="step_list">
+									<span class="step">STEP2</span>
+									<span class="txt">구인신청</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-3서류전형.html" class="step_list">
+									<span class="step">STEP3</span>
+									<span class="txt">서류전형</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-4필기전형.html" class="step_list">
+									<span class="step">STEP4</span>
+									<span class="txt">필기전형</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-5면접전형.html" class="step_list active">
+									<span class="step">STEP5</span>
+									<span class="txt">면접전형</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-2-3모집채용-6근로계약.html" class="step_list last">
+									<span class="step">STEP5</span>
+									<span class="txt">채용결정</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 가이드 콘텐츠 -->										
+                    <div class="guide_conts_wrap interview">
+						<div class="guide_title" >
+							<h5>면접 전형</h5>
+							<p class="title_txt">장애인 응시자 면접 전형 시 유의해야할 사항을 안내합니다.</p>
+						</div>						 						
+						<section class="guide_conts sec1">
+							<h6 class="guide_tit2"><span class="num">1.</span>장애인 채용 면접전형 개요</h6>
+							<ul class="sec_cont guide_text">
+								<li>면접장은 수험생의 편의사항을 고려하여 쾌적한 환경으로 조성되어야 합니다.</li>
+								<li>면접관의 장애에 대한 이해를 돕기 위해 사전에 면접관 교육을 실시하는 것이 바람직합니다.</li>
+								<li>면접관은 내/외부위원을 적절하게 구성하고, 외부 전문가는 해당 직무분야에 전문적인 학식과 능력을 가진 자 뿐만 아니라 장애인재활상담(직업재활), 사회복지, 심리평가 등 장애인을 이해할 수 있는 전문가 인력풀을 활용하면 좋습니다.</li>
+								<li>직무수행에 필요한 능력과 적격성을 종합적으로 고려하기 위해 면접평가표를 사전에 준비하고, 모든 점수를 계량화 하는 것이 좋습니다.</li>
+							</ul>
+						</section>
+						<section class="guide_conts sec2">
+							<h6 class="guide_tit2"><span class="num">2.</span>장애 유형 별 면접 전 준비 사항</h6>
+							<div class="sec_cont">
+								<ul class="guide_text">
+									<li>필요한 지원은 장애 유형 및 정도 등 개인에 따라 다를 수 있습니다.</li>
+								</ul>
+							</div>
+							<div class="sec_cont tab_wrap tab_style00">
+								<ul class="tab_list" role="tablist">
+									<li role="presentation"><a href="#tab1" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="true">지체,뇌병변 장애인</a></li>
+									<li role="presentation"><a href="#tab2" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="false">시각 장애인</a></li>
+									<li role="presentation"><a href="#tab3" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="false">청각,언어 장애인</a></li>
+									<li role="presentation"><a href="#tab4" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="false">안면 장애인</a></li>
+									<li role="presentation"><a href="#tab5" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="false">호흡기 장애인</a></li>
+									<li role="presentation"><a href="#tab6" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="false">지적,정신,자폐성 장애인</a></li>
+								</ul>
+								<div class="tab_cont box_type">
+									<div id="tab1" class="tab-panel" role="tabpanel" aria-labelledby="tab1-tab">
+										<ul>
+											<li>장애인 콜밴 등 응시자가 이동 서비스를 미리 예약할 수 있도록 적어도 하루 전에 면접 일정 안내</li>
+											<li>휠체어 이용 응시자에게 면접장 주소, 엘리베이터 위치, 장애물(언덕 및 계단 등)에 대해 상세한 정보 안내</li>
+											<li>면접 장소는 가능한 출입문에서 가까운 곳으로 배치</li>
+											<li>몸의 경직으로 긴장하면 땀을 많이 흘릴 수 있으므로 면접장 온도는 쾌적하게 유지</li>
+											<li>휠체어 이용 응시자에게 면접장 주소, 엘리베이터 위치, 장애물(언덕 및 계단 등)에 대해 상세한 정보 안내</li>
+										</ul>
+									</div>									
+									<div id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-tab">
+										<ul>
+											<li>당일 배부 자료가 있는 경우, 어떤 형태의 자료로 준비하면 좋은지 응시자의 의사를 미리 확인</li>
+											<li>조명이 밝은 곳을 선호하는지 묻고 명암의 대비가 심한 장소 피하기</li>
+											<li>출입문을 완전히 열어두거나 닫기</li>
+											<li>보행 시 장애가 되는 벽의 돌출 부분이나 키 높이의 공중 장애물은 가급적 제거</li>
+											<li>면접 장소 안내 시 ‘왼쪽으로 100m’ 등 구체적인 방향과 거리 안내</li>
+											<li>안내견을 동반하는지 묻고, 안내견과 함께 면접장에 입장할 수 있는 환경 마련</li>
+										</ul>
+									</div>									
+									<div id="tab3" class="tab-panel" role="tabpanel" aria-labelledby="tab3-tab">
+										<ul>
+											<li>전화통화가 어려울 수 있으므로 문자로 먼저 연락</li>
+											<li>면접 대기 시 이름을 부르면 듣지 못하는 경우도 있으므로 어떻게 알려줄 것인지 결정</li>
+											<li>응시자가 편의지원으로 수화통역사 배치를 요청하는 경우 관할지역의 농아인협회 또는 수어통역센터에 연락하여 수어통역 요청</li>
+											<li>일부 응시자 중 자신에게 익숙한 수화통역사와 의사 소통을 하기 위해 개인 수화통역사를 섭외하여 면접 장소에 동행할 수 있음.(미리 의사 확인)</li>
+											<li>안내사항, 면접 순서 등이 적힌 자료를 출력해 응시자에게 배부하거나 응시자가 잘 볼 수 있도록 게시판에 부착</li>
+											<li>밝고 소음이 적은 장소에서 면접 실시</li>
+										</ul>
+										<p class="link_btn mt10"><a href="http://www.17nsl.com/franchise/list" target="_blank" aria-label="수어통여센터 홈페이지 이동동">수어통여센터 홈페이지 바로가기</a></p>
+									</div>									
+									<div id="tab4" class="tab-panel" role="tabpanel" aria-labelledby="tab4-tab">
+										<ul>
+											<li>온도가 너무 덥거나 습하지 않은 환경으로 장소 선정</li>
+										</ul>
+									</div>									
+									<div id="tab5" class="tab-panel" role="tabpanel" aria-labelledby="tab5-tab">
+										<ul>
+											<li>냉난방기가 응시자로부터 너무 가까운 곳에 위치하지 않도록 자리 배치</li>
+										</ul>
+									</div>									
+									<div id="tab6" class="tab-panel" role="tabpanel" aria-labelledby="tab6-tab">
+										<ul>
+											<li>면접 일정과 장소 등 중요한 내용을 안내할 때 쉽고 간단한 문장으로 작성</li>
+											<li>불안감 등으로 면접 일정과 장소를 반복 확인할 수 있으니 문자로 추가 안내</li>
+											<li>낯선 장소, 사람, 예측하지 못했던 상황 등에 불안해할 수 있으니 최대한 미리 안내</li>
+										</ul>
+									</div>
+									
+								</div>
+							</div>													
+						</section>
+						<section class="guide_conts sec3">
+							<h6 class="guide_tit2"><span class="num">3.</span>면접관을 위한 장애 유형별 면접 가이드라인</h6>
+							<div class="sec_cont">
+								<!-- <ul class="guide_text">
+									<li>시자의 장애 특성에 대한 정보를 사전에 확인</li>
+									<li>직무 수행 능력 및 적합성 검증을 위한 질문 중심의 면접 진행</li>
+									<li>장애 차별적 질문 지양</li>
+									<li>지원자가 자발적으로 공개하지 않는 한, 장애에 관련된 개인적인 질문이나 건강 상태에 관한 질문 지양</li>
+								</ul> -->
+								<table class="tb_base tb_guide">
+									<caption>면접관을 위한 장애 유형별 면접 가이드라인 내용</caption>
+									<colgroup>
+									  <col style="width: 20%;">
+									  <col style="width: auto">
+									</colgroup>
+									<tbody>
+									  <tr>
+										<th rowspan="4">면접 시 면접관이<br>숙지해야 할 사항</th>
+										<td>시자의 장애 특성에 대한 정보를 사전에 확인</td>
+									  </tr>
+									  <tr>
+										<td>직무 수행 능력 및 적합성 검증을 위한 질문 중심의 면접 진행</td>
+									  </tr>
+									  <tr>
+										<td>장애 차별적 질문 지양</td>
+									  </tr>
+									  <tr>
+										<td>지원자가 자발적으로 공개하지 않는 한, 장애에 관련된 개인적인 질문이나 건강 상태에 관한 질문 지양</td>
+									  </tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="sec_cont tab_wrap tab_style00">
+								<ul class="tab_list" role="tablist">
+									<li role="presentation"><a href="#tab1" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="true">지체장애인</a></li>
+									<li role="presentation"><a href="#tab2" role="tab" id="tab2-tab" aria-controls="tab2" aria-selected="false">뇌병변장애인</a></li>
+									<li role="presentation"><a href="#tab3" role="tab" id="tab3-tab" aria-controls="tab3" aria-selected="false">시각장애인</a></li>
+									<li role="presentation"><a href="#tab4" role="tab" id="tab4-tab" aria-controls="tab4" aria-selected="false">언어장애인</a></li>
+									<li role="presentation"><a href="#tab5" role="tab" id="tab5-tab" aria-controls="tab5" aria-selected="false">안면장애인</a></li>
+									<li role="presentation"><a href="#tab6" role="tab" id="tab6-tab" aria-controls="tab6" aria-selected="false">신장장애인</a></li>
+									<li role="presentation"><a href="#tab6" role="tab" id="tab6-tab" aria-controls="tab6" aria-selected="false">청각장애인</a></li>
+									<li role="presentation"><a href="#tab6" role="tab" id="tab6-tab" aria-controls="tab6" aria-selected="false">장루요루장애인</a></li>
+									<li role="presentation"><a href="#tab6" role="tab" id="tab6-tab" aria-controls="tab6" aria-selected="false">지적장애인</a></li>
+									<li role="presentation"><a href="#tab6" role="tab" id="tab6-tab" aria-controls="tab6" aria-selected="false">자폐성장애인</a></li>
+									<li role="presentation"><a href="#tab6" role="tab" id="tab6-tab" aria-controls="tab6" aria-selected="false">정신장애인</a></li>
+								</ul>
+								<div class="tab_cont box_type">
+									<div id="tab1" class="tab-panel" role="tabpanel" aria-labelledby="tab1-tab">
+										<ul>
+											<li>장애인 콜밴 등 응시자가 이동 서비스를 미리 예약할 수 있도록 적어도 하루 전에 면접 일정 안내</li>
+											<li>목발을 사용하거나 걷는 것이 불편한 면접자가 의자에 앉기 위해서 시간이 필요할 수 있으므로 스스로 앉을 수 있도록 기다려 줍니다.</li>
+											<li>테이블이 있다면 의자는 앉기 편하게 빼놓는 것이 좋습니다.</li>
+											<li>휠체어를 타는 면접자와 오랜 시간 이야기할 때는 의자에 앉아 눈높이를 맞춰 대화하는 것이 좋습니다.</li>
+										</ul>
+									</div>
+									
+									<div id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-tab">
+										<ul>
+											<li>응시자가 휠체어, 의사소통 보조기기 등 보장구를 사용한다면 충분히 시간을 갖고 기다립니다.</li>
+											<li>언어장애와 몸의 떨림, 경직이 있다고 지능이 낮은 사람으로 섣불리 판단해서는 안됩니다.</li>
+											<li>언어장애를 동반하거나 발음이 어눌할 때는 충분한 시간을 주고 답할 수 있도록 미리 안내해 응시자의 심적 부담을 줄일 수 있습니다.</li>
+											<li>미세한 동작을 수행하는 데 어려움이 따를 수 있으므로 면접 중 글자를 적어야 할 경우 넓은 칸의 용지를 준비해 적을 수 있도록 합니다.</li>
+										</ul>
+									</div>
+									
+									<div id="tab3" class="tab-panel" role="tabpanel" aria-labelledby="tab3-tab">
+										<ul>
+											<li>면접 장소까지 안내할 경우 응시자를 뒤에서 밀거나 손을 잡지 않고, 응시자가 안내자의 팔꿈치를 잡고 이동할 수 있도록 합니다.</li>
+											<li>여러 명의 면접관이 질문할 경우, 말하는 사람이 누구인지 이름을 밝혀 응시자가 누가 이야기하는지 알 수 있도록 단서를 제공해야 합니다.</li>
+											<li>응시자가 의자에 앉을 때 한 손은 의자, 다른 한 손은 책상에 닿게 해주면 바르게 앉을 수 있습니다.</li>
+											<li>응시자가 안내견을 동반할 경우 안내견의 주의를 끌거나 만지지 않고 먹을 것을 주지 않아야 합니다.</li>
+											<li>다른 사람이 안내견에 대해 불만을 표현할 경우, 안내견 동반은 시각장애인을 보호하기 위해 법에 규정된 내용임을 공지합니다.</li>
+											<li>모든 시각장애인이 점자를 읽을 수 있는 것은 아니므로 면접 시 자료를 제공해야 하는 경우, 응시자의 정보 접근 방법에 따라 점자를 제공하거나, 자료를 읽어주거나, 응시자가 활용하는 리더기를 사용할 수 있도록 해야 합니다.</li>
+											<li>면접이 끝났거나 다른 곳으로 이동해야 할 경우 응시자에게 이러한 상황을 미리 안내합니다.</li>
+										</ul>
+									</div>
+									
+									<div id="tab4" class="tab-panel" role="tabpanel" aria-labelledby="tab4-tab">
+										<ul>
+											<li>발음이 부정확해 답변이 잘 들리지 않는다면 다시 한번 천천히 대답해달라고 요청하거나 글로 써서 내용을 확인합니다.</li>
+											<li>말의 속도가 느리다고 중간에 말을 끊지 않고 답변을 마칠 때까지 기다려줍니다.</li>
+										</ul>
+									</div>
+									
+									<div id="tab5" class="tab-panel" role="tabpanel" aria-labelledby="tab5-tab">
+										<ul>
+											<li>주변의 시선이 불편한 경우 긴 상의를 입거나 모자를 착용할 수 있으므로 빤히 쳐다보거나 무리하게 상의, 모자 탈의를 요구하지 않습니다.</li>
+										</ul>
+									</div>
+									
+									<div id="tab6" class="tab-panel" role="tabpanel" aria-labelledby="tab6-tab">
+										<ul>
+											<li>신장 투석을 받아야 하므로 투석 받는 팔이 가려지는 긴 옷을 입는 경우가 많습니다. 응시자가 계절에 맞지 않는 긴 옷을 입거나 자켓을 착용하는 것을 이해합니다.</li>
+										</ul>
+									</div>
+									
+									<div id="tab7" class="tab-panel" role="tabpanel" aria-labelledby="tab7-tab">
+										<ul>
+											<li>응시자가 말하는 사람의 입모양을 볼 수 있도록 천천히 분명하게 이야기하고, 대화 중 손이나 컵으로 입을 가리지 않아야 합니다.</li>
+											<li>모든 응시자가 입모양을 읽을 수 있는 것은 아니므로 이런 경우 수어나 필담으로 소통합니다.</li>
+											<li>면접을 위해 수화통역사를 위촉한 경우, 시간 10~15분 전에 응시자가 수화통역사와 수어를 맞춰볼 수 있도록 시간을 제공합니다.</li>
+											<li>응시자가 수화통역사와 동행할 경우 통역사를 마주 볼 수 있도록 자리 배치하고 입모양을 읽어 소통이 가능하다면 응시자의 얼굴이 잘 보이는 자리로 배치합니다.</li>
+											<li>면접관은 응시자를 응시하며 질문을 해야 합니다. 수화통역사에게 의견을 대신 묻거나 통역을 멈추게 하는 것을 삼갑니다.</li>
+										</ul>
+									</div>
+									
+									<div id="tab8" class="tab-panel" role="tabpanel" aria-labelledby="tab8-tab">
+										<ul>
+											<li>면접자가 배변 주머니를 차고 있다면 면접 시 냄새가 날 수 있으므로 이 점을 이해해야 합니다.</li>
+										</ul>
+									</div>
+									
+									<div id="tab9" class="tab-panel" role="tabpanel" aria-labelledby="tab9-tab">
+										<ul>
+											<li>존댓말을 하고 적절한 호칭(~ 씨, ~ 님)을 사용합니다.</li>
+											<li>면접 질문은 쉬운 단어와 짧은 문장으로 구성하고 추상적이거나 비유적인 표현은 사용하지 않습니다.</li>
+											<li>질문을 할 때는 누가, 언제, 어디서, 어떻게 등 구체적으로 물어보거나 양자택일할 수 있도록 질문하는 것이 좋습니다.</li>
+											<li>답변을 생각할 수 있도록 충분한 시간 동안 기다려주는 것이 필요합니다.</li>
+										</ul>
+									</div>
+									
+									<div id="tab10" class="tab-panel" role="tabpanel" aria-labelledby="tab10-tab">
+										<ul>
+											<li>상대방과 눈 맞추는 것을 어려워하거나 일정한 톤의 억양으로 말할 수 있음을 이해합니다.</li>
+											<li>불안할 경우 상동행동(몸을 앞뒤로 흔드는 등)을 보일 수 있습니다. 면접 태도가 나쁜 것이 아니라 장애 특성 중 하나라는 점을 인지합니다.</li>
+										</ul>
+									</div>
+									
+									<div id="tab11" class="tab-panel" role="tabpanel" aria-labelledby="tab11-tab">
+										<ul>
+											<li>면접 상황에 불안을 느끼지 않도록 부드럽게 대응합니다.</li>
+										</ul>
+									</div>									
+								</div>
+							</div>
+							<div class="sec_cont">
+								<a href="#" class="btn_layer gd-btn" data-id="pop1">면접 시 장애인 구직자에게 물어볼 수 있는 질문 예시<span class="arr"></span></a>
+								<a href="#" class="btn_layer gd-btn" data-id="pop2">면접 시 장애인 구직자에게 하지 말아야 할 질문 예시<span class="arr"></span></a>
+							</div>
+						</section>
+						<!-- <section class="guide_conts sec4">
+							<h6 class="guide_tit2"><span class="num">4.</span>면접 시 장애인 구직자에게 물어볼 수 있는 질문들 (예시)</h6>
+							<div class="sec_cont">
+								
+							</div>
+						</section> -->
+						<section class="guide_conts">
+							<h6 class="guide_tit2"><span class="num">4.</span>장애인 차별법 위반 사례</h6>
+							<div class="sec_cont violation-case">
+								<div class="violation-header">
+									<p>면접 시 장애인에 대한 차별적 발언 사례입니다.</p>
+								</div>
+								<div class="violation-content">
+									<p class="tit">면접 시 장애인에 대한 차별적 발언</p>
+									<p class="txt">
+										장애인 전형 행정원 채용 최종 면접에 참여한 A 씨는 면접관으로부터 “다리에 장애가 어떻게 생겼냐?”, “축구는 할 수 있냐?”라는 질문을 들었습니다. 질문에 모욕감을 느낀 A씨는 인권위에 진정을 요청하였습니다. 인권위는 질문 행위를 「장애인차별금지 및 권리구제 등에 관한 법률」 제4조 제2항에 따른 장애인 차별행위로 판단하고 피진정인에게 면접관으로 참여하는 직원에 대한 장애인 차별 방지 교육을 실시하고 면접 시 장애인 차별적 발언 예방 매뉴얼을 마련하는 등 재발 방지 대책 수립을 권고하였습니다.
+									</p>	
+								</div>
+							</div>
+						</section>
+						<section class="guide-comp-case">
+							<h6>다른 기업은 이렇게 하고 있어요.</h6>
+							<ul>
+								<li data-aos="fade-up" class="aos-init aos-animate">
+									<dl class="industCls25_1">
+										<dt><img src="/images/emp_guide/logo_comp14.png" alt="캐논코리아"></dt>
+										<dd>
+										<strong>수어통역사 채용을 통한 면접 및 근로지원</strong>
+										<p>캐논코리아는 전문 통역이 가능한 직원을 채용해, 청각장애인 직원의 면접을 진행하고 있습니다. 수화통역사 직원은 면접 지원뿐만 아니라, 청각장애인 근로자들의 애로사항이나
+											요청사항을 전달 및 상담해주는 창구 역할을 하고 있습니다.</p>
+										</dd>
+									</dl>
+								</li>
+								<li data-aos="fade-up" class="aos-init aos-animate">
+									<dl class="industCls25_2">
+										<dt><img src="/images/emp_guide/logo_comp15.png" alt="푸르메여주팜"></dt>
+										<dd>
+										<strong>면접 시 장애인 배려</strong>
+										<p>푸르메여주팜에는 발달장애인이 주로 근무하는데, 채용 면접 시 응시자에게 충분한 시간을 주고 답변하거나 행동할 수 있도록 배려합니다. 응시자가 특정 테스트를 거부한다면
+											설득하거나 기다려 주기도 합니다. 긴장하여 역량을 제대로 보여주지 못하는 경우를 고려하여 충분한 시간을 제공하면서 역량을 평가합니다.</p>
+										</dd>
+									</dl>
+								  <p class="refer_mk">출처 : 2022 공공기관 채용지원 가이드북, 2021 장애인고용 우수사례집, 2021, 한국장애인고용공단</p>
+								</li>
+								<li data-aos="fade-up" class="aos-init">
+									<dl class="industCls25_3">
+										<dt><img src="/images/emp_guide/logo_comp16.png" alt="한국가스안전공사"></dt>
+										<dd>
+										<strong>외부 전문가를 면접 위원으로 위촉</strong>
+										<p>한국가스안전공사는 비대면 온라인 면접을 도입하여 장애인 지원자들의 면접 접근성 및 참여율을 높였습니다. 또한 면접 시 한국장애인고용공단 소속 직원을 면접위원으로 위촉하여
+											면접관들의 장애 이해도를 높이고 있습니다.</p>
+										</dd>
+									</dl>
+								  	<p class="refer_mk">출처 : 2022 장애인고용 우수사례집, 2022, 한국장애인고용공단</p>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div><!-- //guide_wrap -->
+			</div><!-- //contents-->
+		</div><!-- //inner -->
+	</div>
+	<footer class="footer">
+		<div class="inner">
+			<div class="f_left">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li class="pnt_cr1"><a href="#"><b>개인정보처리방침</b></a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<a href="#" target="_blank" title="새창이동">
+					<img src="images/img_watch.png" alt="" class="watch">
+				</a>
+				<div class="f_info">
+					<p class="f_logo">한국장애인고용공단</p>
+					<div>
+						<p>주소 (13619)경기도 성남시 분당구 구미로 173번길 59(구미동)</p>
+						<p>전화번호 031-728-7001~3</p>
+						<p class="f_copy">COPYRIGHT © 2024 KEAD RIGHT RESERVED.</p>
+					</div>
+				</div>
+			</div>
+			<div class="f_right">
+				<div class="rel_wrap">
+					<a href="#">관련사이트</a>
+					<ul>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+					</ul>
+				</div>
+				<div>
+					<p class="f_number">전국대표번호<b>1588-1519</b></p>
+					<p class="f_time"><span>운영시간</span>평일 09:00 ~ 18:00</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+	$(document).ready(function(){
+		AOS.init();
+	});
+	</script>
+
+	<div class="layer_wrap pop1 layer_open">
+		<div class="layer_cont layer_lg">	
+			<!-- <div class="pop_head">
+				<span class="popup_badge">장애인 근로자 채용공고 작성 예시</span>
+				<h2 class="pop_tit">장애유형에 따른 건강관련 제도 및 교육 도입</h2>
+			</div>	 -->
+			<span class="popup_badge">장애인 채용 시 면접 질문 예시</span>
+			<div class="board-interview">				
+				<h2>장애인 구직자에게 물어볼 수 있는 질문 예시 </h2>
+				<ul class="interview-list">
+					<li class="interview-item">
+						<div class="interview-qu">
+							<span class="icon"></span>
+							일반인과 함께 협력하는 작업이 많은데 할 수 있을까요?
+						</div>
+					</li>					
+					<li class="interview-item">
+						<div class="interview-qu">
+							<span class="icon"></span>
+							자신의 장애에 대해 동료에게 알리고 싶은 부분이나, 알려지지 않았으면 하는 사항들이 있나요?
+						</div>
+					</li>
+					<li class="interview-item">
+						<div class="interview-qu">
+							<span class="icon"></span>
+							업무를 원활히 하기 위해 회사 차원에서 지원해 주었으면 하는 사항이 있으실까요?
+						</div>
+					</li>
+				</ul>
+			</div>			
+			<a class="btn_close btn_X" title="팝업창 닫기버튼"></a>
+		</div>
+	</div>
+
+	<div class="layer_wrap pop2">
+		<div class="layer_cont layer_lg">	
+			<!-- <div class="pop_head">
+				<span class="popup_badge">장애인 근로자 채용공고 작성 예시</span>
+				<h2 class="pop_tit">장애유형에 따른 건강관련 제도 및 교육 도입</h2>
+			</div>	 -->
+			<span class="popup_badge">장애인 채용 시 면접 질문 예시</span>
+			<div class="board-interview bad-case">				
+				<h2>면접 시 장애인 구직자에게 하지 말아야 할 질문 예시 </h2>
+				<div class="pop_scroll">
+					<ul class="interview-list">
+						<li class="interview-item">
+							<div class="interview-qu">
+								<span class="icon"></span>
+								일반인과 함께 협력하는 작업이 많은데 할 수 있을까요?
+							</div>
+							<div class="interview-an">
+								비장애인을 '일반인'으로 칭하는 것은 장애가 비정상적이거나 일반적이지 않다는 인상을 줄 수 있어 적절하지 않습니다.
+								대신 '비장애인'으로 표현해야 합니다.
+							</div>
+						</li>
+						<li class="interview-item">
+							<div class="interview-qu">
+								<span class="icon"></span>
+								OO장애인 지원자는 어떤 일을 하고 싶으세요?
+							</div>
+							<div class="interview-an">
+								'OO장애인' 대신에 지원자의 이름을 사용합니다.
+							</div>
+						</li>
+						<li class="interview-item">
+							<div class="interview-qu">
+								<span class="icon"></span>
+								언제부터 장애를 앓게 되었나요?
+							</div>
+							<div class="interview-an">
+								장애인이 자신의 장애를 밝히기 꺼려할 수 있으며, 장애는 앓거나 완치되는 질병이 아니기 때문에 '장애를 가지다'로 표현하는 것이 좋습니다.
+							</div>
+						</li>
+						<li class="interview-item">
+							<div class="interview-qu">
+								<span class="icon"></span>
+								몸이 불편한데 출퇴근이나 출장은 가능하신가요?
+							</div>
+							<div class="interview-an">
+								신체적인 장애에 대한 직접적인 질문은 바람직하지 않습니다.
+								대신 어떤 어려움이 있을지, 어떤 지원이 필요한지에 대해 물어보는 것이 좋습니다.
+							</div>
+						</li>
+						<li class="interview-item">
+							<div class="interview-qu">
+								<span class="icon"></span>
+								가족 중에도 장애인이 계신가요?
+							</div>
+							<div class="interview-an">
+								가족력을 묻는 것은 지원자에게 상처를 줄 수 있습니다.
+							</div>
+						</li>
+						<li class="interview-item">
+							<div class="interview-qu">
+								<span class="icon"></span>
+								말을 한 번 해보세요. 어느 정도 말씀하실 수 있나요?
+							</div>
+							<div class="interview-an">
+								장애 정도를 직접적으로 묻는 질문은 적절하지 않으며, 장애 정도는 개인차가 크기 때문에 섣불리 판단해서는 안 됩니다.
+							</div>
+						</li>
+						<li class="interview-item">
+							<div class="interview-qu">
+								<span class="icon"></span>
+								겉으로는 아무 이상이 보이지 않는데, 어디에 장애가 있나요?
+							</div>
+							<div class="interview-an">
+								신체 내부 장애나 정신적 장애와 같이 외형으로 드러나지 않는 장애 유형도 있습니다.
+								그러므로 외관만 보고 장애를 판단하는 것은 적절하지 않습니다.
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>			
+			<a class="btn_close btn_X" title="팝업창 닫기버튼"></a>
+		</div>
+	</div>
+
+</body>
+</html>

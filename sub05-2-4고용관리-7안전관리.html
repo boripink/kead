@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="asset/aos/aos.css">
+	<link rel="stylesheet" href="asset/slick/slick.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="asset/jquery/jquery-3.7.1.min.js"></script>
+	<script src="asset/aos/aos.js"></script>
+	<script src="asset/slick/slick.js"></script>
+	<script src="js/common.js"></script>
+
+	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
+	<title>고용관리 | 고용가이드 | 한국장애인고용공단 장애인고용컨설팅</title>
+	
+</head>
+<body>
+	<header class="header act">
+		<div class="inner">
+			<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+			<h2 class="hidden">대메뉴</h2>
+			<ul class="gnb">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user_wrap">
+				<div class="user_info">
+					<!-- [D] 로그인 전에 안보이게 처리 -->
+					<div class="user">
+						<span class="neme"><b>홍길동</b> 님</spanclass="neme"> <span class="time">09:33</span>
+						<button class="btn_time" type="button">연장</button>
+					</div>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<button type="button" class="btn_menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="mob_wrap">
+			<div class="user_mob">
+				<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+				<div class="user">
+					<span class="neme"><b>홍길동</b> 님</span>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<ul class="gnb_mob">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+						<li><a href="sub05-2.html">단계별 고용 GUIDE</a></li>
+						<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+						<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container sub_container">
+		<div class="inner">
+			<div class="snb_wrap">
+				<h3>고용 가이드</h3>
+				<ul class="snb_list">
+					<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+					<li class="snb_depth2 on">
+						<a href="sub05-2-1체크리스트.html">단계별 고용 GUIDE</a>
+						<ul class="snb_depth3">
+							<li><a href="sub05-2-1체크리스트.html">고용 과정 체크리스트</a></li>
+							<li><a href="sub05-2-2채용계획-1채용수요조사.html">채용 계획 수립</a></li>
+							<li><a href="sub05-2-3모집채용-1채용공고작성.html">모집 및 채용</a></li>
+							<li class="on">
+								<a href="sub05-2-4고용관리-1근무환경조성.html">고용 관리</a>
+								<ul class="snb_depth4">
+									<li><a href="sub05-2-4고용관리-1근무환경.html">근무환경 조성</a></li>
+									<li><a href="sub05-2-4고용관리-2직무배치.html">직무배치</a></li>
+									<li><a href="sub05-2-4고용관리-3임금및성과.html">임금책정 및 성과평가</a></li>
+									<li><a href="sub05-2-4고용관리-4휴직관리.html">휴가 및 휴직관리</a></li>
+									<li><a href="sub05-2-4고용관리-5교육훈련.html">교육훈련</a></li>
+									<li class="on"><a href="sub05-2-4고용관리-6갈등관리.html">근로자 갈등관리</a></li>
+									<li><a href="sub05-2-4고용관리-7안전관리.html">재난안전관리</a></li>
+									<li><a href="sub05-2-4고용관리-8해고퇴직.html">해고와 퇴직</a></li>
+								</ul>
+								
+							</li>
+						</ul>
+					</li>
+					<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+					<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+				</ul>
+			</div>
+			<div class="contents">
+				<!-- 타이틀 -->
+				<div class="cont_tit_wrap">
+					<h4 class="cont_tit">고용 관리</h4>
+					<ul class="cont_lct">
+						<li class="home">홈</li>
+						<li>고용 가이드</li>
+						<li>단계별 고용 GUIDE</li>						
+						<li class="pnt_cr02"><b>고용 관리</b></li>
+					</ul>
+				</div>
+				<!-- 가이드 콘텐츠 -->
+				<div class="guide_wrap employment-management">
+					<!-- 가이드 상단 -->				
+					<div class="guide_header">
+						<div class="btn_favor">
+							<button type="button" aria-label="즐겨찾기"></button>
+						</div> 					                   
+						<div class="title_box guide">
+							<h5 class="cont_tit2"><span class="tit-icon"></span>고용 관리</h5>						
+							<p class="cont_txt">장애인 근로자들을 위한 고용 유지 관리 노하우를 알아봅시다.</p>
+						</div>						
+					</div>					
+					<!-- 가이드 콘텐츠-->										
+                    <div class="guide_conts_wrap employment-solving">
+						<div class="guide_title" >
+							<h5>근로자 갈등관리</h5>
+							<p class="title_txt">직원 간 갈등이 발생했을 때, 어떤 도움을 줄 수 있을까요?</p>
+						</div>
+						<section class="guide_conts sec1">
+							<h6 class="guide_tit2"><span class="num">1.</span>장애인 직업생활 상담원 선임</h6>							
+							<div class="sec_cont">
+								<p class="guide_text">장애인 직원의 직장 적응을 돕기 위해 장애인 직업생활상담원을 채용하거나 양성할 수 있습니다.</p>
+								<table class="tb_base tb_guide">
+									<caption>장애인 직업생활 상담원 선임에 대한 개요와 직업생활상담원 양성교육과정을 기술한 표</caption>
+									<colgroup>
+									  <col style="width:18%">
+									  <col>
+									</colgroup>
+									<tbody>
+									  	<tr>
+											<th scope="row">개요</th>
+											<td>
+												<ul class="guide_text">
+													<li>상시 20명 이상의 장애인 근로자를 고용하는 사업주는 장애인의 직업지도, 직업적응훈련, 직업능력개발훈련, 취업 후 적응지도 등 업무를 담당하는 장애인 직업생활 상담원을 선임해야 합니다.</li>
+													<li>장애인 직업생활 상담원은 장애인고용촉진 및 직업재활법 시행규칙 제 22조에 따라 소정의 양성교육을 마친 사람이어야 합니다.</li>
+												</ul>
+											</td>
+										</tr>
+									  	<tr>
+											<th scope="row">직업생활상담원 양성교육</th>
+											<td>
+												<ul class="process-list no-box">
+													<li data-aos="fade-up" data-aos-delay="100" class="aos-init">
+														<div class="process-header">Step1</div>
+														<div class="process-icon size100 icon1"></div>
+														<div class="process-description">온라인 교육</div>
+													</li>
+													<li data-aos="fade-up" data-aos-delay="200" class="aos-init">
+														<div class="process-header">Step2</div>
+														<div class="process-icon size100 icon2"></div>
+														<div class="process-description">현장실습 및 과제 제출</div>
+													</li>
+													<li data-aos="fade-up" data-aos-delay="300" class="aos-init">
+														<div class="process-header">Step3</div>
+														<div class="process-icon size100 icon3"></div>
+														<div class="process-description">필기시험</div>
+													</li>
+												</ul>										  
+												<p class="refer_mk ml40">
+													온라인 교육 수강, 과제 제출 양식 다운로드, 필기시험은 사이버연수원(
+													<a href="http://cyedu.kead.or.kr" target="_blank" title="새창열림" class="link_underline">cyedu.kead.or.kr</a>)에서 수행 가능
+												</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+						<!-- 다른 기업은 이렇게 하고 있어요. -->
+						<section class="guide_conts guide-comp-case">
+							<h6>다른 기업은 이렇게 하고 있어요.</h6>
+							<ul>
+								<li data-aos="fade-up" class="aos-init ">
+								  <dl class="industCls12">
+									<dt><img src="/images/emp_guide/logo_comp24.png" alt="삼성전자"></dt>
+									<dd>
+									  <strong>상담심리사 채용을 통한 장애인 직원 상담</strong>
+									  <p>삼성전자는 상담심리사를 상주시켜 심리검사는 물론 직무갈등, 대인관계 등 상담을 통해 직무 및 생활 전반에 나타나는 고충을 해결하고 업무에 집중할 수 있도록 돕고 있습니다.</p>
+									</dd>
+								  </dl>
+								  <p class="refer_mk">출처 : 2019 장애인고용 우수사례집, 2019, 한국장애인고용공단</p>
+								</li>
+								<li data-aos="fade-up" class="aos-init ">
+								  <dl class="industCls12">
+									<dt><img src="/images/emp_guide/logo_comp25.png" alt="한미사이언스"></dt>
+									<dd>
+									  <strong>사회복지사 채용을 통한 관리 및 임직원 대상 수어교육 진행</strong>
+									  <p>한미사이언스는 사회복지사를 통해 장애인 근로자 근무 환경을 관리하고 있으며, 이들의 안정적 직장 생활을 위해 개별 상담 및 맞춤 교육 등을 지원하고 있습니다. 아울러 장애인과 비장애인 직원 간 원활한 소통을 위해 임직원을 대상으로 수어교육도 함께 진행하고 있습니다.</p>
+									</dd>
+								  </dl>
+								  <p class="refer_mk">출처 : 장애는 있지만 장벽은 없어야'... 제약업계, 장애인과의 '상생 활동' 앞장, 2023.08.10., 포인트데일리</p>
+								</li>
+							  </ul>
+						</section>
+						<section class="guide_conts sec2">
+							<h6 class="guide_tit2"><span class="num">2.</span>직장 내 성희롱 예방</h6>
+							<div class="sec_cont">
+								<table class="tb_base tb_guide">
+									<caption>직장 내 성희롱 예방에 대한 개요와 관련 고려사항을 기술한 표</caption>
+									<colgroup>
+										<col style="width:18%">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">개요</th>
+											<td>
+												<ul class="guide_text">
+													<li>
+														누구든지 장애인의 성적 자기결정권을 침해하거나 수치심을 자극하는 언어표현, 희롱, 장애 상태를 이용한 추행 및 강간 등을 해서는 안 됩니다(「장애인차별금지 및 권리구제 등에 관한 법률」 제32조제5항).
+													</li>
+													<li>
+														「형법」과 「성폭력범죄의 처벌 등에 관한 특례법」에서는 정신장애 상태 등을 이용한 성범죄를 처벌하는 규정을 두거나 장애인을 상대로 한 성범죄를 처벌하는 별도의 규정을 두고 있습니다.
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">성희롱 예방 관련 고려사항</th>
+											<td>
+												<ul class="guide_text">
+													<li>
+														장애인 근로자의 경우 성희롱 피해자가 될 수도 있고, 가해자가 될 수도 있기 때문에, 성희롱이 무엇인지 정확히 알 수 있도록 장애인 근로자가 가장 잘 이해할 수 있는 방법으로 성희롱 예방교육을 실시하여야 합니다.
+													</li>
+													<li>
+														예방교육 및 성희롱 사건 발생 등으로 인사위원회를 개최해야 할 경우 장애로 인해 해당 근로자의 의견 피력이 어렵지 않도록 정당한 편의를 지원해주어야 합니다.
+													</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="sec_cont">
+								<div class="guide_tit3">성희롱 사건 처리 절차</div>
+								<p class="guide_text">성희롱 사건이 발생할 경우 피해자의 요구를 기초로 다음 두 가지 중에서 해결방식을 결정할 수 있습니다.</p>
+								<ul class="box_list type2">
+									<li>										
+										<p class="head">당사자간 해결 모색의 경우</p>
+										<ul class="process-list no-box">
+											<li data-aos="fade-up" data-aos-delay="100" class="aos-init">
+												<div class="process-header">Step1</div>
+												<div class="process-icon size100 icon1"></div>
+													<div class="process-description">당사자 의견 청취</div>
+											</li>
+											<li data-aos="fade-up" data-aos-delay="200" class="aos-init">
+												<div class="process-header">Step2</div>
+												<div class="process-icon size100 icon2"></div>
+													<div class="process-description">해결방향 및<br>방안 모색</div>
+											</li>
+											<li data-aos="fade-up" data-aos-delay="300" class="aos-init">
+												<div class="process-header">Step3</div>
+												<div class="process-icon size100 icon3"></div>
+													<div class="process-description">협의안 도출</div>
+											</li>
+											<li data-aos="fade-up" data-aos-delay="400" class="aos-init">
+												<div class="process-header">Step4</div>
+												<div class="process-icon size100 icon4 sz100"></div>
+													<div class="process-description">이행 모니터링</div>
+											</li>
+										</ul>										
+									</li>
+									<li>
+										<p class="head">규정에 따른 처리 모색의 경우</p>
+										<ul class="process-list no-box">
+											<li data-aos="fade-up" data-aos-delay="100" class="aos-init">
+												<div class="process-header">Step1</div>
+												<div class="process-icon size100 icon5"></div>
+												  <div class="process-description">성희롱심의위원회<br>구성</div>
+											</li>
+											<li data-aos="fade-up" data-aos-delay="200" class="aos-init">
+												<div class="process-header">Step2</div>
+												<div class="process-icon size100 icon6"></div>
+												  <div class="process-description">사실관계 조사</div>
+											</li>
+											<li data-aos="fade-up" data-aos-delay="300" class="aos-init">
+												<div class="process-header">Step3</div>
+												<div class="process-icon size100 icon7"></div>
+												  <div class="process-description">행위자에 대한<br>조치 의결</div>
+											</li>
+											<li data-aos="fade-up" data-aos-delay="400" class="aos-init">
+												<div class="process-header">Step4</div>
+												<div class="process-icon size100 icon8 sz100"></div>
+												  <div class="process-description">후속 조치</div>
+											</li>
+										</ul>									
+									</li>
+								</ul>
+							</div>
+							<div class="sec_cont">
+								<div class="guide_tit3">성희롱 사건 발생 시 도움 기관</div>
+								<p class="guide_text">장애인 근로자 대상 성희롱 사건 발생 시 도움을 받을 수 있는 기관은 다음과 같습니다.</p>
+								<table class="tb_base tb_guide">
+									<caption>성희롱 사건 발생 시 도움 기관을 안내하는 표</caption>
+									<colgroup>
+									  <col style="width:18%">
+									  <col>
+									  <col style="width:18%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">직장 내 성희롱 근절 종합지원센터</th>
+											<td>성희롱·성폭력 사건에 대해 단계별로 자문, 제공을 제공받고 상담할 수 있는 기관입니다.</td>
+											<td class="ta_c">☎ 02-735-7544</td>
+										</tr>
+										<tr>
+											<th scope="row">장애인 성폭력상담소</th>
+											<td>장애인 근로자 성희롱과 관련해 전문적인 상담과 교육을 받고 싶다면 각 지역별로 위치한 장애인성폭력 상담소에 도움을 요청할 수 있습니다.</td>
+											<td class="ta_c">지역별로 상이</td> 	
+										</tr>
+								  </tbody>
+								</table>
+							</div>
+						</section>
+						<section class="guide_conts sec2">
+							<h6 class="guide_tit2"><span class="num">3.</span>직장 내 괴롭힘 예방</h6>
+							<div class="sec_cont">
+								<table class="tb_base tb_guide">
+									<caption>직장 내 괴롭힘 예방을 위해 직장 내 괴롭힘의 정의, 판단기준, 사건처리, 사건처리 유의사항, 예방 및 대응방법을 설명한 표</caption>
+									<colgroup>
+										<col style="width:18%">
+										<col style="width:auto">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row" class="th-subTitle2">개요</th>
+											<td>사용자 또는 근로자가 직장에서의 지위 또는 관계 등의 우위를 이용하여 업무상 적정범위를 넘어 다른 근로자에게 신체적, 정신적 및 정서적 고통을 주거나 업무환경을 악화시키는 행위를 ‘직장 내 괴롭힘’이라고 합니다.</td>
+										</tr>
+										<tr>
+											<th scope="row" class="th-subTitle2">직장 내 괴롭힘의 판단 기준</th>
+											<td>
+												<ol>
+												<li><p>1. 직장에서의 지위·관계의 우위를 이용했는지 </p></li>
+												<li><p>2. 업무상 적정 범위를 넘었는지 </p></li>
+												<li><p>3. 신체적·정신적 고통을 주거나 근무 환경을 악화시켰는지</p></li>
+												</ol>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="th-subTitle2">직장내 괴롭힘 사건 처리 흐름도</th>
+											<td>
+												<div>
+												<img src="/images/sub/gd_process.png" alt="직장내 괴롭힘 사건 처리는 신고ㆍ인지,상담(해결방향결정),조사, 조치ㆍ대응,모니터링 순서로 이루워지며,구두ㆍ서면등의 피해자 본인의 신고ㆍ고충 접수 등,목격자 등 제2의 신고와 익명제보,언론,용문 등에 의한 사용자 인를 통해 신고인 및 피해자상담(1차)를 통한 사건개요 및 피해자 요구를 파악 후 피해자의 요구를 바탕으로 1차적인 해결방식을 결정합니다. 해결방식 예시는 첫째로 법에 따른 정식 신고 및 조사 후 정식 조사, 법에 따라 당사자에 대한 적절한 조치가 실시된다. 둘째로 피해자가 정식조사가 아닌 행위자의 사과 등 당사자간 합의를 원하는 경우 약식,조사후 사용자에게 조사보고를 통해 행위자에게 피해자 요구 전달 및 합의 도출한다. 셋째로 피해자가 정식 조사나 신고사실 공개를 원하지 않고 행위자로부터 보호조치 만을 요구하는 경우는 피해자 상담보고서 작성 후 사용자 보고후 분리등 적절한 보호조치를 취한다.">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="th-subTitle2">사건 처리 시 유의 사항</th>
+											<td>장애인 근로자의 고충신고 접수 및 조사, 심의과정에 장애로 인한 불이익이 발생하지 않도록 인적, 물적 편의제공과 함께 심의 참석자에게 사전에 장애인 근로자의 장애특성에 대하여 안내하여야 합니다.</td>
+										</tr>
+										<tr>
+											<th scope="row" class="th-subTitle2">직장 내 괴롭힘 예방 및 대응 방법</th>
+											<td>
+												<ol>
+												<li>
+													<p>1. 취업 규칙 작성</p>
+													<ul class="list_ul-bul1">
+													<li><p>직장내 괴롭힘은 사업장에서 금지되는 비위행위임을 명확히 밝히고 그 내용을 직원들이 확인할 수 있도록 명시</p></li>
+													</ul>
+												</li>
+												<li>
+													<p>2. 예방을 위한 위험 요인 점검</p>
+													<ul class="list_ul-bul1">
+													<li><p>실태조사 및 조직문화/커뮤니케이션/업무의 명확성/권한과 책임의 적절성 등을 종합적으로 점검 </p></li>
+													</ul>
+												</li>
+												<li>
+													<p>3. 예방교육 실시</p>
+													<ul class="list_ul-bul1">
+													<li><p>1년에 1회 주기적으로 직원 대상 직장내 괴롭힘 예방교육 실시</p></li>
+													<li><p>교육 시 관리자와 직원 분리하여 실시</p></li>
+													</ul>
+												</li>
+												</ol>
+												<p class="refer_mk-a">고용노동부 직장 내 괴롭힘 예방·대응 매뉴얼 참조</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>								
+							</div>
+						</section>
+						<section class="guide_conts">
+							<h6 class="guide_tit2"><span class="num">4.</span>장애인근로자지원센터 화해와 치유 프로그램</h6>
+							<div class="sec_cont">
+								<table class="tb_base tb_guide">
+									<caption>장애인근로자지원센터 화해와 치유 프로그램을 설명한 표</caption>
+									<colgroup>
+										<col style="width: 18%;">
+										<col style="width: auto">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row" class="th-subTitle2">개요</th>
+											<td>직장 내 장애인 직원간 갈등 및 노동문제 등이 발생하였을 때 직원과 사업주 및 직원들을 대상으로 집단 심리치료를 제공하는 프로그램입니다.</td>
+										</tr>
+										<tr class="tr-rowspan">
+											<th scope="row" rowspan="3" class="th-subTitle2">프로그램 방향</th>
+											<td>개별치료와 집단치료 형식으로 운영</td>
+										</tr>
+										<tr class="tr-rowspan">
+											<td>심리치료사, 정신과 전문의 등 전문가 상담 지원</td>
+										</tr>
+										<tr>
+											<td>가해자 및 피해자가 있을 경우 화해와 치유 프로그램 제공</td>
+										</tr>
+										<tr class="tr-rowspan">
+											<th scope="row" rowspan="2" class="th-subTitle2">신청방법</th>
+											<td>상시 프로그램이 아닌, 일정한 시기에 대상자 모집 실시</td>
+										</tr>
+										<tr>
+											<td>신청서는 수시 접수</td>
+										</tr>
+										<tr>
+											<th scope="row" class="th-subTitle2">문의처</th>
+											<td>전국 6개 장애인근로자 지원센터 홈페이지에서 참가신청서 작성 후 온라인 접수 혹은 유선문의</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>							
+							<div class="sec_cont">
+								<!-- <p class="guide_text">장애인근로자지원센터</p> -->
+								<table class="tb_base tb_guide">
+									<caption>장애인 근로자 지원센터를 안내하는 표로 센터명, 전화번호 영상통화번호, 주소, 관할지역을 기술</caption>
+									<colgroup>
+									  <col style="width:25%;">
+									  <col style="width:15%">
+									  <col style="width:15%">
+									  <col>
+									  <col style="width:12%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">장애인근로자지원센터</th>
+											<th scope="col">전화번호</th>
+											<th scope="col">영상통화</th>
+											<th scope="col">주소</th>
+											<th scope="col">관할지역</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>서울장애인근로자지원센터<a href="http://www.sscwd.or.kr" target="_blank" title="새창열림" tabindex="0">www.sscwd.or.kr</a></td>
+											<td>02-785-5038</td>
+											<td>010-7621-5038</td>
+											<td>서울 영등포구 은행로 3 (여의도동 익스콘벤처타워 608호)</td>
+											<td>서울,강원</td>
+										</tr>
+										<tr>
+											<td>경기장애인근로자지원센터<a href="http://www.gscwd.or.kr" target="_blank" title="새창열림" tabindex="0">www.gscwd.or.kr</a></td>
+											<td>1533-5915</td>
+											<td>010-2608-7122</td>
+											<td>경기 수원시 팔달구 매산로 37 (매산로2가, 코스모수원빌딩) KT&amp;G 코스모수원빌딩 305호</td>
+											<td>경기</td>
+										</tr>
+										<tr>
+											<td>부산장애인근로자지원센터<a href="http://www.bscwd.or.kr" target="_blank" title="새창열림" tabindex="0">www.bscwd.or.kr</a></td>
+											<td>1533-5915</td>
+											<td>010-7621-5038</td>
+											<td>부산 부산진구 중앙대로 629-10 (범천동, 대휘빌딩) 10층</td>
+											<td>부산,경남</td>
+										</tr>
+										<tr>
+											<td>대구장애인근로자지원센터<a href="http://www.dgscwd.or.kr" target="_blank" title="새창열림" tabindex="0">www.dgscwd.or.kr</a></td>
+											<td>055-753-0020</td>
+											<td></td>
+											<td>대구 수성구 달구벌대로 480길 9 (범어클래시아) 407호</td>
+											<td>대구,경북</td>
+										</tr>
+										<tr>
+											<td>광주장애인근로자지원센터<a href="http://www.kscwd.or.kr" target="_blank" title="새창열림" tabindex="0">www.kscwd.or.kr</a></td>
+											<td>1533-5915</td>
+											<td></td>
+											<td>광주 북구 첨단연신로91번길 6 (신용동) 503호</td>
+											<td>광주,전라</td>
+										</tr>
+										<tr>
+											<td>대전장애인근로자지원센터<a href="http://www.dscwd.or.kr" target="_blank" title="새창열림" tabindex="0">www.dscwd.or.kr</a></td>
+											<td>042-471-9097</td>
+											<td></td>
+											<td>대전 서구 둔산대로117번길 44 (만년동) 엑스포오피스텔 414호</td>
+											<td>대전,충청</td>
+										</tr>                    
+									</tbody>
+								</table>
+							</div>							
+						</section>
+					</div>
+				</div><!-- //guide_wrap -->
+			</div><!-- //contents-->
+		</div><!-- //inner -->
+	</div>
+	<footer class="footer">
+		<div class="inner">
+			<div class="f_left">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li class="pnt_cr1"><a href="#"><b>개인정보처리방침</b></a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<a href="#" target="_blank" title="새창이동">
+					<img src="images/img_watch.png" alt="" class="watch">
+				</a>
+				<div class="f_info">
+					<p class="f_logo">한국장애인고용공단</p>
+					<div>
+						<p>주소 (13619)경기도 성남시 분당구 구미로 173번길 59(구미동)</p>
+						<p>전화번호 031-728-7001~3</p>
+						<p class="f_copy">COPYRIGHT © 2024 KEAD RIGHT RESERVED.</p>
+					</div>
+				</div>
+			</div>
+			<div class="f_right">
+				<div class="rel_wrap">
+					<a href="#">관련사이트</a>
+					<ul>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+					</ul>
+				</div>
+				<div>
+					<p class="f_number">전국대표번호<b>1588-1519</b></p>
+					<p class="f_time"><span>운영시간</span>평일 09:00 ~ 18:00</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+	$(document).ready(function(){
+		AOS.init();
+	});
+	</script>
+</body>
+</html>

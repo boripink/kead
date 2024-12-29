@@ -365,22 +365,6 @@
 		AOS.init();
 	});
 
-	$(document).ready(function() {
-		$('.list-chk-radio input[type="radio"]').on('change', function() {
-			var $recommendationButtons = $(this).closest('.list-chk-radio').next('.recommendation-btn');
-
-			if ($(this).val() === 'no' && $(this).is(':checked')) {
-			$recommendationButtons.removeClass('hidden');
-			} else {
-			$recommendationButtons.addClass('hidden');
-			}
-		});
-	});
-
-
-
-
-
 
 	</script>
 </body>

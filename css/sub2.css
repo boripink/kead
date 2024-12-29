@@ -53,18 +53,30 @@
 .guide_wrap {padding: 80px 0 100px; }
 .guide_conts_wrap {margin-top: 80px;}
 .guide_conts_wrap .guide_conts {margin-top: 80px;}
-.guide_conts_wrap .guide_title + .guide_conts {margin-top: 50px;}
-.guide_conts_wrap .sec_cont {margin-top: 40px; margin-left: 40px; }
+/* .guide_conts_wrap .guide_title + .guide_conts {margin-top: 50px;} */
+.guide_conts_wrap .sec_cont {margin-top: 80px; margin-left: 40px; }
+.guide_conts_wrap h6 + .sec_cont {margin-top: 40px;}
 
 .guide_title {text-align: center; background-color: #fff; border-radius: 40px 40px 0 0; border-bottom: 1px solid #c7c7e5; padding-bottom: 50px;}
 .guide_title h5 {font-size:40px; font-weight:600; }
 .guide_title p {font-size: 24px; font-weight: 500; margin-top: 10px; line-height: 1.4;}
 
-.guide_tit2 {font-size: 30px; font-weight: 500;}
+.guide_tit2 {font-size: 32px; font-weight: 500;}
+.guide_tit3 {font-size: 28px; font-weight: 500; margin-bottom: 40px;}
 .guide_tit2 .num {display: inline-block; margin-right: 20px;}
-.guide_text {display: flex; flex-direction: column; gap: 10px;}
-.guide_text > li {position: relative; line-height: 1.4;}
-.guide_text > li::after {content: ''; width: 4px; height: 4px; display: block; position: absolute; left: -20px; top: 12px; background-color: #222; border-radius: 4px;}
+
+.list_tit {font-size: 22px; font-weight: 500 ; margin-bottom: 40px;}
+
+
+ul.guide_text {display: flex; flex-direction: column; gap: 10px;}
+ul.guide_text > li {position: relative; line-height: 1.4;}
+ul.guide_text > li::after {content: ''; width: 4px; height: 4px; display: block; position: absolute; left: -20px; top: 12px; background-color: #222; border-radius: 4px;}
+
+table .guide_text {margin-left: 20px; padding: 10px;} 
+
+.tab_cont .guide_text {margin-left: 20px;}
+.sec_cont p.guide_text {margin-bottom: 30px;}
+
 
 .gd-btn {padding: 8px 20px; border-radius: 5px; background-color: #6672a4; color: #fff !important; font-size: 18px; box-shadow: 0 2px 2px rgba(0,0,0,0.2); margin: 0 5px; transition: all 0.3s; }
 .gd-btn:hover {background-color: #515e91; box-shadow: 0 4px 8px rgba(0,0,0,0.3);}
@@ -141,7 +153,7 @@
 .job-design .box_list .last .bg-icon {background: none; position: absolute; left: 0; top: -6px;}
 .job-design .box_list .last .txt  {padding:10px 10px 10px 80px; position: relative; }
 
-.tab_case_box {margin-top: 30px; display: flex; flex-direction: column; gap: 20px;}
+.tab_case_box {display: flex; flex-direction: column; gap: 20px;}
 .tab_case_box li {border: 1px solid #c7c7e5; border-radius: 40px 20px 40px 40px; padding: 30px;}
 .tab_case_box dl, .tab_case_box dt {display: flex; align-items: center;}
 .tab_case_box dt {flex: 0 0 250px; font-weight: 500; color: #0f298f;}
@@ -181,7 +193,7 @@
 .recruit-method .box_list .txt   {padding: 10px;}
 
 .box_list.type2 > li  {flex-direction: column; border-radius: 40px; padding: 0;}
-.box_list.type2 .head {display: flex; align-items: center; padding: 10px; padding-left: 30px; background-color: #f5f9ff; width: calc(100% - 20px); border-radius: 30px; margin: 10px;}
+.box_list.type2 .head {display: flex; align-items: center; padding: 10px; padding-left: 30px; background-color: #f5f9ff; width: calc(100% - 20px); border-radius: 30px; margin: 10px; justify-content: center;}
 .box_list.type2 .tit  {font-size: 24px; margin-right: 40px; color: #222; display: inline-block;}
 .box_list.type2 .tit > strong {display: inline-block; padding: 0 6px; color: #1953c2; font-weight: 500;}
 .box_list.type2 .body {display: flex;}
@@ -264,33 +276,134 @@
 .written-test .box_list .icon2 {background-position: -300px -100px; }
 
 
-/* 모집 및 채용 - 5면접전형 #9166a4*/
+/* 모집 및 채용 - 5면접전형 */
 .interview .btn_layer[data-id="pop2"] {background-color: #9166a4;}
+.board-interview {border: 1px solid #c7e3ff; background-color: #f7f8f9; border-radius: 100px 20px 20px 20px; padding: 30px; padding-left: 95px; margin-top: 50px; position: relative; } 
+.board-interview::before {content: 'o'; display: block; width: 50px; height: 50px; background-color: #8fc8ff; border-radius: 50px; position: absolute; top: 5px; left: 5px; display: flex; justify-content: center; font-size: 50px; font-weight: 600; color: #fff; line-height: 40px;}
+.board-interview::after {content: ''; display: block; width: 107px; height: 65px; background: url(../images/sub/gdic_ox.png); position: absolute; right: 20px; top: -65px;}
+.board-interview h2 {font-size: 24px; font-weight: 500; margin-bottom: 20px;}
+.board-interview .pop_scroll {overflow-y:auto; max-height:calc(100vh - 380px); padding-right: 10px;}
+.board-interview .interview-list {display: flex; flex-direction: column; gap: 10px;}
+.board-interview .interview-item {display: flex; flex-direction: column; gap: 10px;}
+.board-interview .interview-qu {background-color: #ebebeb; display: flex; align-items: center; position: relative; padding: 10px 0;padding-left: 75px; font-size: 19px;}
+.board-interview .interview-qu .icon {flex: 0 0 65px; display: inline-block; width: 65px; height: 100%; max-height: 60px; color: #fff; font-size: 28px; font-weight: 600; margin-right: 15px; position: absolute; overflow: hidden; left: 0;}
+.board-interview .interview-qu .icon::before {content: 'Q'; width: 80px; height: 80px; border-radius: 5px 100px 100px 5px;  background-color: #8fc8ff; position: absolute; position: absolute; top: calc(50% - 40px); left: -20px; display: flex; align-items: center; justify-content: center; text-indent: 15px;} 
+
+.board-interview.bad-case {border-color: #fdb8c0;}
+.board-interview.bad-case::before {content: 'x'; background-color: #f9adb6;}
+.board-interview.bad-case .interview-qu .icon::before {background-color: #f9adb6;}
+.board-interview.bad-case .interview-an {margin: 15px 30px 30px 80px; padding-left: 25px; font-size: 19px; position: relative;}
+.board-interview.bad-case .interview-an::before {content: ''; width: 19px; height: 19px; display: block; background: url(../images/sub/arrow_interview.png) no-repeat; position: absolute; left: 0px; top :5px}
+
+
+
+
+
+/* 모집 및 채용 - 6채용결정 */
+
+.icon-list {display: flex; flex-wrap: wrap; gap: 20px;}
+.icon-list.list4 li {flex: 0 0 calc((100% - 60px)/4);}
+.icon-list.list3 li {flex: 0 0 calc((100% - 60px)/3);}
+.icon-list.list2 li {flex: 0 0 calc((100% - 20px)/2);}
+
+.icon-list li {border: 1px solid #d9e0ef; background-color: #f7f8f9; border-radius: 10px; height: 105px;font-weight: 500; font-size: 18px; padding: 20px;  display: flex; justify-content: center; align-items: center; text-align: center; position: relative; padding-left: 100px; flex-direction: column;}
+.icon-list li::before {content: ''; display: inline-block; width: 62px; height: 62px; flex: 0 0 62px; border-radius: 62px; background: #d9e0ef url(../images/emp_guide/ico/gdic_020503_t1_1.png) no-repeat center 12px; position: absolute; left: 25px;}
+.employment-contract li.item2:before {background-image: url(../images/emp_guide/ico/gdic_020503_t1_2.png);}
+.employment-contract li.item3:before {background-image: url(../images/emp_guide/ico/gdic_020503_t1_3.png);}
+.employment-contract li.item4:before {background-image: url(../images/emp_guide/ico/gdic_020503_t1_4.png);}
+.employment-contract li.item5:before {background-image: url(../images/emp_guide/ico/gdic_020503_t1_5.png);}
+.employment-contract li.item6:before {background-image: url(../images/emp_guide/ico/gdic_020503_t1_6.png);}
+.employment-contract li.item7:before {background-image: url(../images/emp_guide/ico/gdic_020503_t1_7.png);}
+.employment-contract li.item8:before {background-image: url(../images/emp_guide/ico/gdic_020503_t1_8.png);}
+
+.employment-contract li.item9:before {background-image: url(../images/emp_guide/ico/gdic_020503_t1_8.png);}
+.employment-contract li.item10:before {background-image: url(../images/emp_guide/ico/gdic_020503_t1_8.png);}
+.employment-contract li.item11:before {background-image: url(../images/emp_guide/ico/gdic_020503_t1_8.png);}
+.employment-contract li.item12:before {background-image: url(../images/emp_guide/ico/gdic_020503_t1_8.png);}
+.employment-contract li.item13:before {background-image: url(../images/emp_guide/ico/gdic_020503_t1_8.png);}
+.employment-contract li.item14:before {background-image: url(../images/emp_guide/ico/gdic_020503_t1_8.png);}
+
 
 
 /* 고용관리 - 근무환경 */
-.employ_list {display: flex; gap: 20px; justify-content: space-between;}
-.employ_list li {flex: 1; text-align: center; background-color: #f5f9ff; padding:20px; border-radius: 30px; align-items: center;}
-.employ_list .icon {display: block; width: 50px; height: 50px;}
-.employ_list .tit  {}
-.employ_list li dd {text-align: left; font-size: 18px; line-height: 1.4;}
+.tab_style00 .txt.layout2 {display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;}
+.tab_style00 .txt.layout2 li {flex: 1 0 calc(50% - 10px); margin-bottom: 0;}
+
+.gd_support_program {display: flex; justify-content: space-between; gap: 30px;}
+.gd_support_program > li {flex: 1; display: flex; flex-direction: column; align-items: center;}
+.gd_support_program .tit {margin-bottom: 20px;}
+.gd_support_program .dcn {border: 2px solid #cfdaef; border-radius: 20px; padding: 20px; width: 100%; text-align: center; height: 100%;}
+.gd_support_program .dcn dt {text-align: center; font-weight: 500; line-height: 1.4; padding-bottom: 20px; border-bottom: 2px dashed #59a1f8; margin-bottom: 20px;}
+.gd_support_program .dcn dd {margin: 5px 0; font-size: 18px;}
+
+.gd_support_program .item1 .dcn {border-color: #59a1f8;}
+.gd_support_program .item1 .dcn dt,
+.gd_support_program .item1 .dcn dd {border-color: #59a1f8; color: #1953c2;}
+.gd_support_program .item2 .dcn {border-color: #74cdd8;}
+.gd_support_program .item2 .dcn dt,
+.gd_support_program .item2 .dcn dd {border-color: #74cdd8; color: #1689b2;}
+.gd_support_program .item3 .dcn {border-color: #9c6cef;}
+.gd_support_program .item3 .dcn dt,
+.gd_support_program .item3 .dcn dd {border-color: #9c6cef; color: #4d15a9;}
+
+      
+/* 고용관리 - 직무배치 */
+.employment-job .step-box {display: flex; gap: 30px; justify-content: space-between;}
+.employment-job .step-box .box-item { flex: 1; border-radius: 20px;}
+/* .employment-job .step-box .box-item:first-child {flex: 0 0 300px; } */
+.employment-job .step-box .box-header {display: flex; flex-direction: column; align-items: center; gap: 20px; background-color: #f7f8f9; border-radius: 20px; padding: 30px 0;}
+.employment-job .step-box .step {border: 1px solid #b9c3dd; padding: 10px 15px; border-radius: 30px; background-color: #fff;}
+.employment-job .step-box .bg-icon {background-color: #f1f5fd;}
+.employment-job .step-box .bg-icon::before {background-image: url(../images/emp_guide/gdst0302_1_1.png); width: 70px; height: 70px;}
+.employment-job .step-box .bg-icon.icon2::before {background-image: url(../images/emp_guide/gdst0302_1_2.png);}
+.employment-job .step-box .bg-icon.icon3::before {background-image: url(../images/emp_guide/gdst0302_1_3.png);}
+.employment-job .step-box .bg-icon.icon4::before {background-image: url(../images/emp_guide/gdst0302_1_4.png);}
+.employment-job .step-box .box-description {padding: 20px; font-size: 18px; line-height: 1.6;}
+
+
+/* 고용관리 - 교육훈련 */
+.employment-training .tab_case_box > li {display: flex; align-items: center;}
+.tab_case_box .train-icon {display: inline-block; width: 100px; height: 75px; background: url(../images/emp_guide/ico/ico_disabled-supprot1.png) no-repeat;}
+.tab_case_box .train-icon.icon1 {background-image: url("../images/emp_guide/ico/ico_disabled-supprot1.png");}
+.tab_case_box .train-icon.icon2 {background-image: url("../images/emp_guide/ico/ico_disabled-supprot2.png");}
+.tab_case_box .train-icon.icon3 {background-image: url("../images/emp_guide/ico/ico_disabled-supprot3.png");}
+.tab_case_box .train-icon.icon4 {background-image: url("../images/emp_guide/ico/ico_disabled-supprot4.png");}
+.tab_case_box .train-icon.icon5 {background-image: url("../images/emp_guide/ico/ico_disabled-supprot5.png");}
+.tab_case_box .train-icon.icon6 {background-image: url("../images/emp_guide/ico/ico_disabled-supprot6.png");}
+
+
+ /* {font-size: 25px; font-weight: 500; margin: 80px 0 30px; position: relative; color: #1953c2;} */
+ .employment-training .guide_tit3 {position: relative;}
+ .employment-training .guide_tit3.bg1::after {content: ''; display: block; width: 159px; height: 98px; background: url(../images/sub/gd_img8.png) no-repeat; position: absolute; right: 10px; bottom: -40px;}
+ .employment-training .guide_tit3.bg2::after {content: ''; display: block; width: 186px; height: 120px; background: url(../images/sub/gd_img9.png) no-repeat; position: absolute; right: 10px; bottom: -40px;}
+ .employment-training .guide_tit3.bg3::after {content: ''; display: block; width: 200px; height: 119px; background: url(../images/sub/gd_img10.png) no-repeat; position: absolute; right: 10px; bottom: -50px;}
+
+ .employment-training .sec_cont + .sec_cont {margin-top: 100;}
+
+.table-list {border-top: 1px solid #7b7b7b; border-bottom: 1px solid #d6deeb; padding: 30px 0;}
+.table-list > li {display: flex; line-height: 1.6;}
+.table-list > li:not(:last-child) {margin-bottom: 40px;}
+.table-list .tit {flex: 0 0 150px; font-weight: 600;}
+.table-list .refer_mk {margin-top: 0;}
+
+p.guide_text {position: relative; line-height: 1.4;}
+p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; left: -20px; top: 12px; background-color: #222; border-radius: 4px; }
 
 
 
-/* 고용관리 - 직무배치 gdst0302_1_1.png*/
-.step-box {display: flex; gap: 30px;}
-.step-box .box-item { flex: 1; border-radius: 20px;}
-.step-box .box-item:first-child {flex: 0 0 300px; }
-.step-box .box-header {display: flex; flex-direction: column; align-items: center; gap: 20px; background-color: #f7f8f9; border-radius: 20px; padding: 30px 0;}
-.step-box .step {border: 1px solid #b9c3dd; padding: 10px 15px; border-radius: 30px; background-color: #fff;}
-.step-box .bg-icon {background-color: #f1f5fd;}
-.step-box .bg-icon::before {background-image: url(../images/emp_guide/gdst0302_1_1.png); width: 70px; height: 70px;}
-.step-box .bg-icon.icon2::before {background-image: url(../images/emp_guide/gdst0302_1_2.png);}
-.step-box .bg-icon.icon3::before {background-image: url(../images/emp_guide/gdst0302_1_3.png);}
-.step-box .bg-icon.icon4::before {background-image: url(../images/emp_guide/gdst0302_1_4.png);}
-.step-box .box-description {padding: 20px; font-size: 18px; line-height: 1.6;}
-
-
+/* 고용관리 - 갈등관리 */
+.employment-solving .box_list .head {font-size: 24px; font-weight: 500; padding: 15px 0;}
+.employment-solving .sec1 .size100.icon2 {background-position-x: -100px;}
+.employment-solving .sec1 .size100.icon3 {background-position-x: -200px;}
+.employment-solving .sec2 .process-icon.size100 {background-position-y: -100px;}
+.employment-solving .sec2 .size100.icon1 {background-position-x: 0;}
+.employment-solving .sec2 .size100.icon2 {background-position-x: -100px;}
+.employment-solving .sec2 .size100.icon3 {background-position-x: -200px;}
+.employment-solving .sec2 .size100.icon4 {background-position-x: -300px;}
+.employment-solving .sec2 .size100.icon5 {background-position-x: -400px;}
+.employment-solving .sec2 .size100.icon6 {background-position-x: -500px;}
+.employment-solving .sec2 .size100.icon7 {background-position-x: -600px;}
+.employment-solving .sec2 .size100.icon8 {background-position-x: -700px;}
 
 
 
@@ -312,9 +425,10 @@
 /* 가이드 테이블 #f5f9ff */
 .tb_base.tb_guide {border-top: none;}
 .tb_guide    {background-color: #fff; }
-.tb_guide th, .tb_guide td {padding: 10px; border: 1px solid #0f298f;}
+.tb_guide th, .tb_guide td {border: 1px solid #0f298f; padding: 15px 20px; }
+.tb_guide thead th {border-bottom: none; padding: 10px; }
 .tb_guide th {text-align: center; background-color: #f1f1f9; color: #0f298f;}
-.tb_guide td {padding: 15px 20px; color: #222;}
+.tb_guide td {color: #222;}
 .guide_conts .tb_tit {font-size: 24px; margin-bottom: 20px; font-weight: 500;
 background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px center; display: inline-block; padding: 5px 23px; border-radius: 20px; padding-left: 50px;}
 .tb_guide .btn_link {background-color: #f5fffe; border: 1px solid #9ad6dc; padding: 4px 15px; border-radius: 5px;}
@@ -336,6 +450,13 @@ background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px cen
 .process-list .process-header {padding: 6px 15px; font-size: 20px; font-weight: 500; background-color: #ebf3ff; border-radius: 50px; color: #1953c2;}
 .process-list .process-icon {width: 50px; height: 50px; background: url(../images/sub/gdic_wrap.png) no-repeat 0 -50px; margin: 10px 0;}
 .process-list .process-description {font-size: 20px; font-weight: 500;}
+
+.process-list.no-box {gap: 0px;}
+.process-list.no-box li {border: none; background: none; box-shadow: none;}
+.process-list.no-box li:not(:last-child):before {content: ''; width: 40px; height: 40px; background: url(../images/svg/arrow-next.svg) no-repeat center/40px 40px; position: absolute; right: -4px; top: calc(50% - 6px)}
+
+.process-list .process-icon.size100 {width: 100px; height: 80px; background: url(../images/sub/gdic_wrap_big.png) no-repeat 0 -10px;}
+
 
 
 
@@ -405,5 +526,27 @@ background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px cen
 .worktogether-box .link_btn {position: absolute; right: 20px; bottom: 20px;}
 
 
+/* 탭 */
+.tab_style_gd .tab_list {display: flex; justify-content: space-between;}
+.tab_style_gd .tab_list > li {position: relative; flex-grow:1}
+.tab_style_gd .tab_list > li > a {font-size:20px; font-weight: 500; padding: 15px; display: block; text-align: center; border-radius: 5px 5px 0 0;}
+.tab_style_gd .tab_list > li:hover > a, 
+.tab_style_gd .tab_list > li:focus > a, 
+.tab_style_gd .tab_list > li:active > a,
+.tab_style_gd .tab_list > li.on > a {color: #fff;; background-color:#0f298f; z-index: 1;}
+.tab_style_gd .tab_list > li:first-child.on:before {background-image: url(../images/sub/tab_bg_folder.png);}
+.tab_style_gd .tab_list > li > a::after {content: ''; position: absolute; bottom: 0; left: 0; height: 2px; width: 0; background-color: #0b2f66; transition: width 0.4s ease; } 
+.tab_style_gd .tab_cont {border-top: 2px solid #0f298f; }
+.guide_wrap .tab_cont {padding-top: 20px;}
+.tab_style00 .tab_list {display: flex; flex-wrap: wrap; gap: 10px; }
+.tab_style00 .tab_list > li > a {font-size: 18px; padding: 10px 20px; display: flex; align-items: center; justify-content: center; border-radius: 50px; cursor: pointer; transition: 0.4s; background: #f7f8f9; border: 1px solid #b9c3dd; color:#333;}
+.tab_style00 .tab_list > li:hover > a, 
+.tab_style00 .tab_list > li:focus > a, 
+.tab_style00 .tab_list > li:active > a,
+.tab_style00 .tab_list > li.on > a {color: #fff;; background-color:#0f298f; z-index: 1;}
 
+.tab_cont.box_type .tab-panel ul.box {display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;}
+.tab_cont.box_type .tab-panel ul.box li {flex: 1 0 100%; border-radius: 5px; padding: 20px; background-color: #f7f8f9; position: relative; font-size: 18px;}
+.tab_cont.box_type.row2  .tab-panel ul.box li {flex: 1 0 calc(50% - 10px);}
+.tab_cont.box_type .tab-panel ul.box li::before {content: ''; display: block; width: 10px; height: 4px; background-color: #1953c2; position: absolute; left: 0; top: calc(50% - 2px);}
 

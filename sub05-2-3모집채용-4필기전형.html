@@ -13,9 +13,6 @@
 	<script src="asset/slick/slick.js"></script>
 	<script src="js/common.js"></script>
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
-<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-
 	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
 	<title>모집 및 채용 | 고용가이드 | 한국장애인고용공단 장애인고용컨설팅</title>
 	
@@ -249,9 +246,9 @@
 									<li role="presentation"><a href="#tab5" role="tab" id="tab5-tab" aria-controls="tab5" aria-selected="false">지체 장애인</a></li>
 									<li role="presentation"><a href="#tab6" role="tab" id="tab6-tab" aria-controls="tab6" aria-selected="false">장루·요루 장애인</a></li>
 								</ul>
-								<div class="tab_cont">
+								<div class="tab_cont box_type row2">
 									<div id="tab1" class="tab-panel" role="tabpanel" aria-labelledby="tab1-tab">
-										<ul>
+										<ul class="box">
 											<li>장애인 보조기구 지참 허용</li>
 											<li>필요한 경우 시험실 별도 배정(좌석간격 조정)</li>
 											<li>장애 특성에 대해 면접위원에게 사전 고지</li>
@@ -259,20 +256,20 @@
 										</ul>
 									</div>
 									<div id="tab2" class="tab-panel" role="tabpane2" aria-labelledby="tab2-tab">
-										<ul>
+										<ul class="box">
 											<li>확대 문제지 및 확대 답안지 제공</li>
 											<li>점자문제지 및 점자 답안지 제공(점자정보단말기 사용자)</li>
-											<li>장애인 응시자가 점자정보단말기 및 스크린 리더를 사용하는 경우 시험 문제지를 컴퓨터 파일 형태(한글파일 등)로 제공</li>
 											<li>독서확대기 등 장애인 보조기구 지참 허용</li>
 											<li>답안지 대필 지원</li>
 											<li>답안(자료) 작성용 컴퓨터 제공</li>
 											<li>시험기간 연장</li>
 											<li>음성지원 컴퓨터 제공</li>
 											<li>전담도우미 지원</li>
+											<li>장애인 응시자가 점자정보단말기 및 스크린 리더를 사용하는 경우 시험 문제지를 컴퓨터 파일 형태(한글파일 등)로 제공</li>
 										</ul>
 									</div>
 									<div id="tab3" class="tab-panel" role="tabpane3" aria-labelledby="tab3-tab">
-										<ul>
+										<ul class="box">
 											<li>확대 문제지 및 확대 답안지 제공</li>
 											<li>휠체어 전용책상 제공(휠체어 사용자)</li>
 											<li>시험시간 연장</li>
@@ -282,7 +279,7 @@
 										</ul>
 									</div>
 									<div id="tab4" class="tab-panel" role="tabpane4" aria-labelledby="tab4-tab">
-										<ul>
+										<ul class="box">
 											<li>수화통역사 등 의사전달 보조원 배치</li>
 											<li>응시요령 등 관련 서면자료 제공</li>
 											<li>의사전달용 컴퓨터 제공</li>
@@ -290,14 +287,14 @@
 										</ul>
 									</div>
 									<div id="tab5" class="tab-panel" role="tabpane5" aria-labelledby="tab5-tab">
-										<ul>
+										<ul class="box">
 											<li>장애인 보조기구 지참 허용</li>
 											<li>필요한 경우 시험실 별도 배정(좌석간격 조정)</li>
 											<li>장애 특성에 대해 면접위원에게 사전 고지</li>
 										</ul>
 									</div>
 									<div id="tab6" class="tab-panel" role="tabpane6" aria-labelledby="tab6-tab">
-										<ul>
+										<ul class="box">
 											<li>시험 중 배변․배뇨 보조기구 교체를 위한 지원</li>
 										</ul>
 									</div>
@@ -413,23 +410,6 @@
 	$(document).ready(function(){
 		AOS.init();
 	});
-
-	$(document).ready(function() {
-		$('.list-chk-radio input[type="radio"]').on('change', function() {
-			var $recommendationButtons = $(this).closest('.list-chk-radio').next('.recommendation-btn');
-
-			if ($(this).val() === 'no' && $(this).is(':checked')) {
-			$recommendationButtons.removeClass('hidden');
-			} else {
-			$recommendationButtons.addClass('hidden');
-			}
-		});
-	});
-
-
-
-
-
 
 	</script>
 </body>

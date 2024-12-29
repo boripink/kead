@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="asset/aos/aos.css">
+	<link rel="stylesheet" href="asset/slick/slick.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="asset/jquery/jquery-3.7.1.min.js"></script>
+	<script src="asset/aos/aos.js"></script>
+	<script src="asset/slick/slick.js"></script>
+	<script src="js/common.js"></script>
+
+	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
+	<title>고용관리 | 고용가이드 | 한국장애인고용공단 장애인고용컨설팅</title>
+	
+</head>
+<body>
+	<header class="header act">
+		<div class="inner">
+			<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+			<h2 class="hidden">대메뉴</h2>
+			<ul class="gnb">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user_wrap">
+				<div class="user_info">
+					<!-- [D] 로그인 전에 안보이게 처리 -->
+					<div class="user">
+						<span class="neme"><b>홍길동</b> 님</spanclass="neme"> <span class="time">09:33</span>
+						<button class="btn_time" type="button">연장</button>
+					</div>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<button type="button" class="btn_menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="mob_wrap">
+			<div class="user_mob">
+				<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+				<div class="user">
+					<span class="neme"><b>홍길동</b> 님</span>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<ul class="gnb_mob">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+						<li><a href="sub05-2.html">단계별 고용 GUIDE</a></li>
+						<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+						<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container sub_container">
+		<div class="inner">
+			<div class="snb_wrap">
+				<h3>고용 가이드</h3>
+				<ul class="snb_list">
+					<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+					<li class="snb_depth2 on">
+						<a href="sub05-2-1체크리스트.html">단계별 고용 GUIDE</a>
+						<ul class="snb_depth3">
+							<li><a href="sub05-2-1체크리스트.html">고용 과정 체크리스트</a></li>
+							<li><a href="sub05-2-2채용계획-1채용수요조사.html">채용 계획 수립</a></li>
+							<li><a href="sub05-2-3모집채용-1채용공고작성.html">모집 및 채용</a></li>
+							<li class="on">
+								<a href="sub05-2-4고용관리-1근무환경조성.html">고용 관리</a>
+								<ul class="snb_depth4">
+									<li><a href="sub05-2-4고용관리-1근무환경.html">근무환경 조성</a></li>
+									<li><a href="sub05-2-4고용관리-2직무배치.html">직무배치</a></li>
+									<li><a href="sub05-2-4고용관리-3임금및성과.html">임금책정 및 성과평가</a></li>
+									<li><a href="sub05-2-4고용관리-4휴직관리.html">휴가 및 휴직관리</a></li>
+									<li class="on"><a href="sub05-2-4고용관리-5교육훈련.html">교육훈련</a></li>
+									<li><a href="sub05-2-4고용관리-6갈등관리.html">근로자 갈등관리</a></li>
+									<li><a href="sub05-2-4고용관리-7안전관리.html">재난안전관리</a></li>
+									<li><a href="sub05-2-4고용관리-8해고퇴직.html">해고와 퇴직</a></li>
+								</ul>
+								
+							</li>
+						</ul>
+					</li>
+					<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+					<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+				</ul>
+			</div>
+			<div class="contents">
+				<!-- 타이틀 -->
+				<div class="cont_tit_wrap">
+					<h4 class="cont_tit">고용 관리</h4>
+					<ul class="cont_lct">
+						<li class="home">홈</li>
+						<li>고용 가이드</li>
+						<li>단계별 고용 GUIDE</li>						
+						<li class="pnt_cr02"><b>고용 관리</b></li>
+					</ul>
+				</div>
+				<!-- 가이드 콘텐츠 -->
+				<div class="guide_wrap employment-management">
+					<!-- 가이드 상단 -->				
+					<div class="guide_header">
+						<div class="btn_favor">
+							<button type="button" aria-label="즐겨찾기"></button>
+						</div> 					                   
+						<div class="title_box guide">
+							<h5 class="cont_tit2"><span class="tit-icon"></span>고용 관리</h5>						
+							<p class="cont_txt">장애인 근로자들을 위한 고용 유지 관리 노하우를 알아봅시다.</p>
+						</div>						
+					</div>					
+					<!-- 가이드 콘텐츠-->										
+                    <div class="guide_conts_wrap employment-training">
+						<div class="guide_title" >
+							<h5>교육훈련</h5>
+							<p class="title_txt">장애인 근로자를 포함한 내부 교육 진행 시 유의 사항과 재직자 역량 향상을 위한 교육 제도를 소개합니다.</p>
+						</div>
+						<section class="guide_conts sec1">
+							<h6 class="guide_tit2"><span class="num">1.</span>교육훈련 방법</h6>
+							<ul class="sec_cont guide_text">
+								<li>장애인 직원이 직무수행 향상 및 승진 기회와 관련된 교육 참여에 불이익을 받지 않도록 회의실 및 기타 교육 시설 등을 점검하고, 교육에 참여할 수 있도록 합니다.</li>
+								<li>장애인 직원이 교육 내용을 이해하기 어렵다거나, 출석 교육에 참여하는 것이 불가능하다고 여겨 교육에서 배제하지 않습니다.</li>
+							</ul>
+						</section>
+						<section class="guide_conts sec2">
+							<h6 class="guide_tit2"><span class="num">2.</span>장애유형별 직무개발 사례</h6>
+							<div class="sec_cont tab_wrap tab_style_gd">
+								<ul class="tab_list" role="tablist">
+									<li role="presentation" class="on">
+										<a href="#tab1" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="true">지체장애</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab2" role="tab" id="tab2-tab" aria-controls="tab2" aria-selected="false">시각장애</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab3" role="tab" id="tab3-tab" aria-controls="tab3" aria-selected="false">청각장애</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab4" role="tab" id="tab3-tab" aria-controls="tab4" aria-selected="false">호흡기장애</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab5" role="tab" id="tab3-tab" aria-controls="tab5" aria-selected="false">지적,자폐성장애</a>
+									</li>
+									<li role="presentation">
+										<a href="#tab6" role="tab" id="tab3-tab" aria-controls="tab5" aria-selected="false">신장장애</a>
+									</li>
+								</ul>
+								<div class="tab_cont">
+									<div id="tab1" class="on">
+										<ul class="tab_case_box">
+											<li>
+												<span class="train-icon icon1"></span>
+												휠체어를 사용하거나 운동기능 장애가 있는 경우 화장실 이용 시간이 오래 걸리므로 휴식시간을 충분히 제공합니다.
+											</li>
+										</ul>
+									</div>
+									<div id="tab2">
+										<ul class="tab_case_box">
+											<li>
+												<span class="train-icon icon2"></span>
+												저시력 장애인의 경우 직원이 원하는 글자크기와 모양 등을 미리 파악해 자료를 확대하여 제작, 제공합니다.
+											</li>											
+										</ul>
+									</div>
+									<div id="tab3">
+										<ul class="tab_case_box">
+											<li>
+												<span class="train-icon icon3"></span>
+												수어통역이나 요약 필기 등을 지원하고, 가능한 강사의 입모양을 볼 수 있는 앞자리에 착석하게 합니다.
+											</li>
+										</ul>
+									</div>
+									<div id="tab4">
+										<ul class="tab_case_box">
+											<li>
+												<span class="train-icon icon4"></span>
+												외부 환경으로 인한 감염 방지를 위해 청결한 교육 환경을 유지해야하며, 밀집된 공간을 지양하는 것이 좋습니다.
+											</li>
+										</ul>
+									</div>
+									<div id="tab5">
+										<ul class="tab_case_box">
+											<li>
+												<span class="train-icon icon5"></span>
+												쉬운 언어로 설명하고 구체적으로 지도하며, 여러번 반복하고 천천히 시간을 들여 교육을 진행합니다.
+											</li>
+										</ul>
+									</div>
+									<div id="tab6">
+										<ul class="tab_case_box">
+											<li>
+												<span class="train-icon icon6"></span>
+												주 2~3회씩 투석을 받아야 하는 상황이라면 집합교육 대신 사이버교육을 제공할 수 있습니다.
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="guide_conts sec3">
+							<h6 class="guide_tit2"><span class="num">3.</span>재직자 능력향상 교육</h6>
+							<div class="sec_cont">
+								<div class="guide_tit3 bg1">국민내일배움카드</div>
+								<ul class="table-list">
+									<li>
+										<p class="tit">개요</p>
+										<p class="txt">국민내일배움카드란 노동시장 변화에 대응하기 위해 국민 스스로 직업능력개발훈련을 실시할 수 있도록 훈련비 등을 지원하는 제도입니다.</p>
+									</li>
+									<li>
+										<p class="tit">지원대상</p>
+										<div class="txt">
+											<p>국민 누구나 신청 가능(구직자 및 재직자)</p>
+											<p class="refer_mk">자세한 지원대상 내일배움카드 홈페이지 참조</p>
+										</div>
+									</li>
+									<li>
+										<p class="tit">지원과정</p>
+										<div class="txt">
+											<p>고용노동부로부터 적합성을 인정받아 훈련비 지원 대상으로 공고된 훈련과정</p>
+											<p class="refer_mk">세부 훈련 정보는 직업훈련포털 (www.hrd.go.kr) 에서 직접 검색·확인 가능</p>
+										</div>
+									</li>
+									<li>
+										<p class="tit">지원내용</p>
+										<div class="txt">
+											<p>1인당 300~500만 원 내 훈련비 지원</p>
+											<p class="refer_mk">지원 범위 내에서 훈련비의 45~85% 지원하며, 나머지 금액은 자비부담액 발생</p>
+										</div>
+									</li>
+									<li>
+										<p class="tit">유효기간</p>
+										<p class="txt">계좌 발급일로부터 5년</p>
+									</li>
+									<li>
+										<p class="tit">신청방법</p>
+										<ul class="txt">
+											<li>직업훈련포털 또는 고용센터 방문하여 국민내일배움카드 신청 및 발급</li>
+											<li>직업훈련포털에서 희망하는 훈련과정 수강신청</li>
+											<li>훈련기관에서 교육 진행</li>
+										</ul>
+									</li>
+									<li>
+										<p class="tit">참고자료</p>
+										<p class="txt link_btn">
+											국민내일배움카드 안내 및 신청
+											<a href="https://www.hrd.go.kr/hrdp/gi/pgiao/PGIAO0302D.do?svcMngnId=13535&amp;svno=P0165&amp;pageIndex=1&amp;lawordFormatSeqNo=&amp;gover=1" target="_blank" title="새창열림" class="ml10">안내페이지 바로가기</a>
+											<a href="https://www.hrd.go.kr/hrdp/hg/phgao/PHGAO0108T.do?currentTab=1&amp;subTab=108" target="_blank" title="새창열림" class="ml10">신청페이지 바로가기</a>
+										</p>										
+									</li>
+								</ul>
+							</div>
+						</section>
+						<section class="guide_conts sec4">
+							<h6 class="guide_tit2"><span class="num">4.</span>장애인고용공단 재직자 능력향상 과정</h6>
+							<div class="sec_cont">
+								<div class="guide_tit3 bg2">재직 근로자 능력향상 훈련</div>
+								<!-- <table class="tb_base tb_guide">
+									<caption>장애인고용공단 재직자 능력향상 과정 중 재직 근로자 능력향상 훈련의 개요 및 신청방법을 기술한 표</caption>
+									<colgroup>
+									  <col style="width:18%">
+									  <col>
+									</colgroup>
+									<tbody>
+									  <tr>
+										<th class="th-subTitle2">개요</th>
+										<td>공단 훈련기관(맞춤훈련센터, 직업능력개발원 등)은 장애인 근로자 및 사업주가 희망하는 직종으로 훈련과정을 개설하여 운영하고 있으며, 훈련기간은 최대 3개월입니다.</td>
+									  </tr>
+									  <tr>
+										<th class="th-subTitle2">신청방법</th>
+										<td>사업주가 공단 훈련기관에 교육 의뢰</td>
+									  </tr>
+									</tbody>
+								  </table> -->
+								<ul class="table-list">
+									<li>
+										<p class="tit">개요</p>
+										<p class="txt">공단 훈련기관(맞춤훈련센터, 직업능력개발원 등)은 장애인 근로자 및 사업주가 희망하는 직종으로 훈련과정을 개설하여 운영하고 있으며, 훈련기간은 최대 3개월입니다.</p>
+									</li>
+									<li>
+										<p class="tit">신청방법</p>
+										<p class="txt">사업주가 공단 훈련기관에 교육 의뢰</p>
+									</li>
+								</ul>
+							</div>
+							<div class="sec_cont">
+								<div class="guide_tit3 bg3 link_btn">
+									디지털 능력 개발원
+									<a href="http://digital.kead.or.kr" target="_blank" title="새창열림" class="ml10">바로가기</a>
+								</div>
+								<ul class="table-list">
+									<li>
+										<p class="tit">개요</p>
+										<p class="txt">공단 훈련기관(맞춤훈련센터, 직업능력개발원 등)은 장애인 근로자 및 사업주가 희망하는 직종으로 훈련과정을 개설하여 운영하고 있으며, 훈련기간은 최대 3개월입니다.</p>
+									</li>	
+									<li>
+										<p class="tit">과정</p>
+										<div class="txt">
+											<table class="tb_base tb_guide">
+												<caption>장애인고용공단 재직자 능력향상 과정 중 디지털 능력 개발원의 능력향상 과정의 계열, 내용, 주요과정을 정리한 표</caption>
+												<colgroup>
+												  <col style="width:18%">
+												  <col style="width:30%">
+												  <col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col" class="">계열</th>
+														<th scope="col" class="">내용</th>
+														<th scope="col" class="">주요과정</th>
+													</tr>
+												</thead>
+												<tbody>
+												  <tr>
+													<th scope="row" class="">기능과정</th>
+													<td class="ta_c">전문기술 습득 등 취업 및 기능향상을 위한 훈련과정</td>
+													<td>(전공기술) 기계, 디자인기초 등<br>
+													  (컴퓨터활용) 파워포인트, 엑셀, 앱인벤터, 파이썬 등<br>
+													  (융복합기술) 빅데이터, 소형무인기, 3D프린터 등<br>
+													  (자격증준비) GTQ, 컴퓨터활용능력, 정보처리기능사 등</td>
+												  </tr>
+												  <tr>
+													<th scope="row" class="">시험대비과정</th>
+													<td class="ta_c">임용시험 및 전문자격 취득을 위한 훈련과정</td>
+													<td>(공무원) EBS공무원 대비 기본과정<br>
+													  (검정고시) EBS 중졸, 고졸 검정고시 과정</td>
+												  </tr>
+												  <tr>
+													<th scope="row" class="">직무관리 (직업생활과정)</th>
+													<td class="ta_c">산업안전 및 인권교육 등 직무관리능력 향상을 위한 훈련과정</td>
+													<td>(취업전략) 자기소개서 작성, 면접기술 등<br>
+													  (인권과정) 인권의 이해, 장애인차별금지, 성희롱 예방 등<br>
+													  (산업안전) 산업일반기초, 산업안전보건법 이해 등<br>
+													  (지식재산권) 지식재산개론, 저작권 및 특허과정 등</td> 
+												  </tr>
+												</tbody>
+											</table>
+										</div>
+									</li>								
+								</ul>
+								
+							</div>
+						</section>
+						<!-- 다른 기업은 이렇게 하고 있어요. -->
+						<section class="guide_conts guide-comp-case">
+							<h6>다른 기업은 이렇게 하고 있어요.</h6>
+							<ul>
+								<li data-aos="fade-up" class="aos-init">
+								  <dl class="industCls11">
+									<dt><img src="/images/emp_guide/logo_comp21.png" alt="행복채움"></dt>
+									<dd>
+									  <strong>공단 재직자 능력향상 교육 진행</strong>
+									  <p>행복채움은 설립 초반 장애인 근로자를 효율적으로 교육하는 방안을 고민하였습니다. 그 결과 공단 대구발달장애인훈련센터에서 한 달 과정으로 기초 교육부터 직무 교육, 인성 교육과 현장 평가를 진행하였습니다. 이를 통해 교육의 효과를 높이고 장애인이 직무에 잘 적응할 수 있도록 지원하였습니다.</p>
+									</dd>
+								  </dl>
+								  <p class="refer_mk">출처 : 2021 장애인고용 우수사례집, 2021, 한국장애인고용공단</p>
+								</li>
+							  </ul>
+						</section>
+					</div>
+				</div><!-- //guide_wrap -->
+			</div><!-- //contents-->
+		</div><!-- //inner -->
+	</div>
+	<footer class="footer">
+		<div class="inner">
+			<div class="f_left">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li class="pnt_cr1"><a href="#"><b>개인정보처리방침</b></a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<a href="#" target="_blank" title="새창이동">
+					<img src="images/img_watch.png" alt="" class="watch">
+				</a>
+				<div class="f_info">
+					<p class="f_logo">한국장애인고용공단</p>
+					<div>
+						<p>주소 (13619)경기도 성남시 분당구 구미로 173번길 59(구미동)</p>
+						<p>전화번호 031-728-7001~3</p>
+						<p class="f_copy">COPYRIGHT © 2024 KEAD RIGHT RESERVED.</p>
+					</div>
+				</div>
+			</div>
+			<div class="f_right">
+				<div class="rel_wrap">
+					<a href="#">관련사이트</a>
+					<ul>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+					</ul>
+				</div>
+				<div>
+					<p class="f_number">전국대표번호<b>1588-1519</b></p>
+					<p class="f_time"><span>운영시간</span>평일 09:00 ~ 18:00</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+	$(document).ready(function(){
+		AOS.init();
+	});
+	</script>
+</body>
+</html>

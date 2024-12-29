@@ -13,9 +13,6 @@
 	<script src="asset/slick/slick.js"></script>
 	<script src="js/common.js"></script>
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-
 	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
 	<title>고용관리 | 고용가이드 | 한국장애인고용공단 장애인고용컨설팅</title>
 	
@@ -155,7 +152,20 @@
 							<li><a href="sub05-2-1체크리스트.html">고용 과정 체크리스트</a></li>
 							<li><a href="sub05-2-2채용계획-1채용수요조사.html">채용 계획 수립</a></li>
 							<li><a href="sub05-2-3모집채용-1채용공고작성.html">모집 및 채용</a></li>
-							<li class="on"><a href="sub05-2-4고용관리-1근무환경조성.html">고용 관리</a></li>
+							<li class="on">
+								<a href="sub05-2-4고용관리-1근무환경조성.html">고용 관리</a>
+								<ul class="snb_depth4">
+									<li><a href="sub05-2-4고용관리-1근무환경.html">근무환경 조성</a></li>
+									<li class="on"><a href="sub05-2-4고용관리-2직무배치.html">직무배치</a></li>
+									<li><a href="sub05-2-4고용관리-3임금및성과.html">임금책정 및 성과평가</a></li>
+									<li><a href="sub05-2-4고용관리-4휴직관리.html">휴가 및 휴직관리</a></li>
+									<li><a href="sub05-2-4고용관리-5교육훈련.html">교육훈련</a></li>
+									<li><a href="sub05-2-4고용관리-6갈등관리.html">근로자 갈등관리</a></li>
+									<li><a href="sub05-2-4고용관리-7안전관리.html">재난안전관리</a></li>
+									<li><a href="sub05-2-4고용관리-8해고퇴직.html">해고와 퇴직</a></li>
+								</ul>
+								
+							</li>
 						</ul>
 					</li>
 					<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
@@ -165,7 +175,7 @@
 			<div class="contents">
 				<!-- 타이틀 -->
 				<div class="cont_tit_wrap">
-					<h4 class="cont_tit">단계별 고용 GUIDE</h4>
+					<h4 class="cont_tit">고용 관리</h4>
 					<ul class="cont_lct">
 						<li class="home">홈</li>
 						<li>고용 가이드</li>
@@ -183,57 +193,7 @@
 						<div class="title_box guide">
 							<h5 class="cont_tit2"><span class="tit-icon"></span>고용 관리</h5>						
 							<p class="cont_txt">장애인 근로자들을 위한 고용 유지 관리 노하우를 알아봅시다.</p>
-						</div>
-						<ul class="guide_step step8">
-							<li>
-								<a href="sub05-2-4고용관리-1근무환경.html" class="step_list">
-									<span class="step">STEP1</span>
-									<span class="txt">근무환경조성</span>
-								</a>
-							</li>
-							<li>
-								<a href="sub05-2-4고용관리-2직무배치.html" class="step_list active">
-									<span class="step">STEP2</span>
-									<span class="txt">직무배치</span>
-								</a>
-							</li>
-							<li>
-								<a href="sub05-2-4고용관리-3임금책정.html" class="step_list">
-									<span class="step">STEP3</span>
-									<span class="txt">임금책정 및 성과평가</span>
-								</a>
-							</li>
-							<li>
-								<a href="sub05-2-4고용관리-4휴직관리.html" class="step_list last">
-									<span class="step">STEP4</span>
-									<span class="txt">휴가및휴직관리</span>
-								</a>
-							</li>
-							<li>
-								<a href="sub05-2-4고용관리-5교육훈련.html" class="step_list">
-									<span class="step">STEP5</span>
-									<span class="txt">교육훈련</span>
-								</a>
-							</li>
-							<li>
-								<a href="sub05-2-4고용관리-6갈등관리.html" class="step_list">
-									<span class="step">STEP6</span>
-									<span class="txt">근로자 갈등관리</span>
-								</a>
-							</li>
-							<li>
-								<a href="sub05-2-4고용관리-7안전관리.html" class="step_list">
-									<span class="step">STEP7</span>
-									<span class="txt">재난안전관리</span>
-								</a>
-							</li>
-							<li>
-								<a href="sub05-2-4고용관리-8해고와퇴직.html" class="step_list last">
-									<span class="step">STEP8</span>
-									<span class="txt">해고와퇴직</span>
-								</a>
-							</li>
-						</ul>
+						</div>						
 					</div>
 					<!-- 가이드 콘텐츠 -->										
                     <div class="guide_conts_wrap employment-job">
@@ -308,416 +268,481 @@
 									<li role="presentation"><a href="#tab14" role="tab" id="tab14-tab" aria-controls="tab14" aria-selected="false">자폐성장애</a></li>
 									<li role="presentation"><a href="#tab15" role="tab" id="tab15-tab" aria-controls="tab15" aria-selected="false">정신장애</a></li>
 								</ul>
-								<div class="tab_cont">
+								<div class="tab_cont box_type">
 									<!--### 지체장애 ###-->
 									<div id="tab1" class="tab-panel" role="tabpanel" aria-labelledby="tab1-tab">
-										<ul>
-										<li>
-											
-											기본적으로 움직임에 불편함이 있으나 편의시설 확대 및 보조공학의 발달로 업무 영역이 확대되는 추세입니다.
-											
-										</li>
-					
-										<li>
-											
-											손이나 팔에 장애가 있더라도 컴퓨터를 자유롭게 조작할 수 있고, 다리에 장애가 있어도 직접 운전하는 등 이동에 제약이 없는 장애인도 많습니다.
-											
-										</li>
-					
-										<li>
-											
-											보조공학기기 외 장애인 편의시설(장애인 전용 주차장, 화장실, 엘리베이터, 경사로 등)을 사전에 확인합니다.
-											
-										</li>
-					
-										<li>
-											
-											도움을 줄 때는 먼저 장애인의 의사를 확인하여야 하며, 휠체어, 목발, 기타 보장구들을 허락 없이 만지거나 옮겨서는 안됩니다.
-											
-										</li>
-										</ul>
+									  <ul class="box">
+									  <li>
+										
+										기본적으로 움직임에 불편함이 있으나 편의시설 확대 및 보조공학의 발달로 업무 영역이 확대되는 추세입니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										손이나 팔에 장애가 있더라도 컴퓨터를 자유롭게 조작할 수 있고, 다리에 장애가 있어도 직접 운전하는 등 이동에 제약이 없는 장애인도 많습니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										보조공학기기 외 장애인 편의시설(장애인 전용 주차장, 화장실, 엘리베이터, 경사로 등)을 사전에 확인합니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										도움을 줄 때는 먼저 장애인의 의사를 확인하여야 하며, 휠체어, 목발, 기타 보장구들을 허락 없이 만지거나 옮겨서는 안됩니다.
+										
+									  </li>
+									  </ul>
 									</div>				  
 									<!--### 뇌병변장애 ###-->
 									<div id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-tab">
-										<ul>
-										<li>
-											
-											외형적으로 드러나는 장애로 직업 능력을 판단하는 것은 정확하지 않을 수 있습니다.
-											
-										</li>
-					
-										<li>
-											
-											언어장애가 동반되는 경우가 있지만, 언어장애가 있다고 지적 능력이 낮지 않습니다.
-											
-										</li>
-					
-										<li>
-											
-											신체적 떨림이나 경직, 언어 표현 제한 등으로 업무처리 속도가 느릴 수 있습니다.
-											
-										</li>
-					
-										<li>
-											
-											본인의 특성과 강점을 살릴 수 있는 직무배치 시 직업적 능력을 발휘할 수 있습니다.
-											
-										</li>
-					
-										<li>
-											
-											중증 뇌성마비, 근육이나 신경장애의 경우도 글이나 보조공학기기를 통한 의사소통이 가능합니다.
-											
-										</li>
-										</ul>
+									  <ul class="box">
+									  <li>
+										
+										외형적으로 드러나는 장애로 직업 능력을 판단하는 것은 정확하지 않을 수 있습니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										언어장애가 동반되는 경우가 있지만, 언어장애가 있다고 지적 능력이 낮지 않습니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										신체적 떨림이나 경직, 언어 표현 제한 등으로 업무처리 속도가 느릴 수 있습니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										본인의 특성과 강점을 살릴 수 있는 직무배치 시 직업적 능력을 발휘할 수 있습니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										중증 뇌성마비, 근육이나 신경장애의 경우도 글이나 보조공학기기를 통한 의사소통이 가능합니다.
+										
+									  </li>
+									  </ul>
 									</div>
 									<!--### 시각장애 ###-->
 									<div id="tab3" class="tab-panel" role="tabpanel" aria-labelledby="tab3-tab">
-										<ul>
-										<li>
-											
-											시력 및 시야 정도, 장애 진행 여부, 점자 사용 여부 등 고려가 필요합니다.
-											
-										</li>
-					
-										<li>
-											
-											중증 시각장애인의 경우 목소리로 상대방을 파악하므로, 인사와 대화 시작 시에는 자신의 이름을 먼저 알려주는 것이 좋습니다.
-											
-										</li>
-					
-										<li>
-											
-											신체적 떨림이나 경직, 언어 표현 제한 등으로 업무처리 속도가 느릴 수 있습니다.
-											
-										</li>
-					
-										<li>
-											
-											시각장애인이 사용하는 서류나 물건은 마음대로 옮겨놓지 않습니다.
-											
-										</li>
-					
-										<li>
-											
-											지팡이를 사용하는 시각장애인과 함께 이동할 때에는 지팡이의 반대편에 서서 필요시 팔을 잡을 수 있도록 합니다.
-											
-										</li>
-										</ul>
+									  <ul class="box">
+									  <li>
+										
+										시력 및 시야 정도, 장애 진행 여부, 점자 사용 여부 등 고려가 필요합니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										중증 시각장애인의 경우 목소리로 상대방을 파악하므로, 인사와 대화 시작 시에는 자신의 이름을 먼저 알려주는 것이 좋습니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										신체적 떨림이나 경직, 언어 표현 제한 등으로 업무처리 속도가 느릴 수 있습니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										시각장애인이 사용하는 서류나 물건은 마음대로 옮겨놓지 않습니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										지팡이를 사용하는 시각장애인과 함께 이동할 때에는 지팡이의 반대편에 서서 필요시 팔을 잡을 수 있도록 합니다.
+										
+									  </li>
+									  </ul>
 									</div>
 									<!--### 청각장애 ###-->
 									<div id="tab4" class="tab-panel" role="tabpanel" aria-labelledby="tab4-tab">
-										<ul>
-										<li>
-											
-											청력을 상실했거나 문제가 있어도 명확하게 말할 수 있는 경우가 있습니다.
-											
-										</li>
-					
-										<li>
-											
-											업무 특성상 직접 청취해야 하는 직무, 안전 요건으로 예리한 청력이 요구되는 업무를 제외한 대부분 직무에 배치가 가능합니다.
-											
-										</li>
-					
-										<li>
-											
-											모든 청각장애인이 수어를 하는 것은 아니기 때문에 개별 의사소통수단을 파악해서 의사소통해야 합니다.(메모, 핸드폰문자, 입모양, 보청기 등)
-											
-										</li>
-					
-										<li>
-											
-											화장실 문에 '사용중'을 알리는 표지를 설치하는 등 청각장애인을 위해 시각적 장치들을 마련하면 좋습니다.
-											
-										</li>
-					
-										<li>
-											
-											청각장애인과 대화를 시작하기 전에는 먼저 시선을 끄는 것이 중요하며, 말을 할 때는 눈을 보면서 입모양과 발음을 정확하게 하고 필요시 반복하여 말해줄 필요가 있습니다.
-											
-										</li>
-										</ul>
+									  <ul class="box">
+									  <li>
+										
+										청력을 상실했거나 문제가 있어도 명확하게 말할 수 있는 경우가 있습니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										업무 특성상 직접 청취해야 하는 직무, 안전 요건으로 예리한 청력이 요구되는 업무를 제외한 대부분 직무에 배치가 가능합니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										모든 청각장애인이 수어를 하는 것은 아니기 때문에 개별 의사소통수단을 파악해서 의사소통해야 합니다.(메모, 핸드폰문자, 입모양, 보청기 등)
+										
+									  </li>
+								  
+									  <li>
+										
+										화장실 문에 '사용중'을 알리는 표지를 설치하는 등 청각장애인을 위해 시각적 장치들을 마련하면 좋습니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										청각장애인과 대화를 시작하기 전에는 먼저 시선을 끄는 것이 중요하며, 말을 할 때는 눈을 보면서 입모양과 발음을 정확하게 하고 필요시 반복하여 말해줄 필요가 있습니다.
+										
+									  </li>
+									  </ul>
 									</div>	
 									<!--### 언어장애 ###-->
 									<div id="tab5" class="tab-panel" role="tabpanel" aria-labelledby="tab5-tab">
-										<ul>
-										<li>
-											
-											언어장애는 직업 능력과 무관한 경우가 많습니다.
-											
-										</li>
-					
-										<li>
-											
-											언어장애가 있다고 하여 지적 능력이 낮은 것은 아닙니다.
-											
-										</li>
-					
-										<li>
-											
-											청각장애인처럼 의사소통 방식이 다양합니다.
-											
-										</li>
-					
-										<li>
-											
-											전화 통화에 어려움이 있는 경우에는 이메일, 문자, 팩스 등 다른 의사소통 방법을 활용하도록 지원합니다.
-											
-										</li>
-					
-										<li>
-											
-											언어를 사용하는 일이 주된 경우가 아니라면 대부분 직종에 종사가 가능합니다.
-											
-										</li>
-										<li>
-											
-											의사소통을 지원하는 보조공학기기가 개발됨에 따라 언어장애인도 강의와 토론이 가능합니다.
-											
-										</li>
-										</ul>
+									  <ul class="box">
+									  <li>
+										
+										언어장애는 직업 능력과 무관한 경우가 많습니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										언어장애가 있다고 하여 지적 능력이 낮은 것은 아닙니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										청각장애인처럼 의사소통 방식이 다양합니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										전화 통화에 어려움이 있는 경우에는 이메일, 문자, 팩스 등 다른 의사소통 방법을 활용하도록 지원합니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										언어를 사용하는 일이 주된 경우가 아니라면 대부분 직종에 종사가 가능합니다.
+										
+									  </li>
+									  <li>
+										
+										의사소통을 지원하는 보조공학기기가 개발됨에 따라 언어장애인도 강의와 토론이 가능합니다.
+										
+									  </li>
+									  </ul>
 									</div>	
 									<!--### 안면장애 ###-->
 									<div id="tab6" class="tab-panel" role="tabpanel" aria-labelledby="tab6-tab">
-										<ul>
-										<li>
-											
-											직무수행에 큰 지장이 되지 않는 장애로 광범위한 업무수행이 가능합니다.
-											
-										</li>
-					
-										<li>
-											
-											화상으로 장애를 입은 경우 습도나 온도에 많은 영향을 받을 수 있어, 냉방이 잘 되는 곳에서 일할 수 있도록 배려합니다.
-											
-										</li>
-					
-										</ul>
+									  <ul class="box">
+									  <li>
+										
+										직무수행에 큰 지장이 되지 않는 장애로 광범위한 업무수행이 가능합니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										화상으로 장애를 입은 경우 습도나 온도에 많은 영향을 받을 수 있어, 냉방이 잘 되는 곳에서 일할 수 있도록 배려합니다.
+										
+									  </li>
+								  
+									  </ul>
 									</div>	
 									<!--### 장루·요루장애 ###-->
 									<div id="tab7" class="tab-panel" role="tabpanel" aria-labelledby="tab7-tab">
-										<ul>
-										<li>
-											
-											업무에 따른 어려움은 없으나 장애 특성상 화장실 사용이 빈번합니다.
-											
-										</li>
-					
-										<li>
-											
-											요루 장애인의 경우 소변을 자주 비워야 하므로 너무 오래 지속해야하는 작업은 피하는 것이 좋습니다.
-											
-										</li>
-										<li>
-											
-											장루 장애인의 경우 괄약근이 없어 수시로 가스가 배출될 수 있음을 이해합니다.
-											
-										</li>
-					
-										</ul>
+									  <ul class="box">
+									  <li>
+										
+										업무에 따른 어려움은 없으나 장애 특성상 화장실 사용이 빈번합니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										요루 장애인의 경우 소변을 자주 비워야 하므로 너무 오래 지속해야하는 작업은 피하는 것이 좋습니다.
+										
+									  </li>
+									  <li>
+										
+										장루 장애인의 경우 괄약근이 없어 수시로 가스가 배출될 수 있음을 이해합니다.
+										
+									  </li>
+								  
+									  </ul>
 									</div>	
 									<!--### 신장장애 ###-->
 									<div id="tab8" class="tab-panel" role="tabpanel" aria-labelledby="tab8-tab">
-										<ul>
-										<li>
-											
-											투석이 필요한 신장 장애인의 경우 투석 시간, 투석 장소에 대한 고려가 필요합니다.
-											
-										</li>
-					
-										<li>
-											
-											혈액투석을 하는 팔목에 무리가 가지 않도록 무거운 물건을 드는 등 격렬한 신체활동을 피해야 합니다.
-											
-										</li>
-					
-										</ul>
+									  <ul class="box">
+									  <li>
+										
+										투석이 필요한 신장 장애인의 경우 투석 시간, 투석 장소에 대한 고려가 필요합니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										혈액투석을 하는 팔목에 무리가 가지 않도록 무거운 물건을 드는 등 격렬한 신체활동을 피해야 합니다.
+										
+									  </li>
+								  
+									  </ul>
 									</div>
 									<!--### 호흡기 장애 ###-->
 									<div id="tab9" class="tab-panel" role="tabpanel" aria-labelledby="tab9-tab">
-										<ul>
-										<li>
-											
-											청정한 공기 등 환경 요소가 다른 장애 유형보다 더 중요합니다.
-											
-										</li>
-					
-										<li>
-											
-											이동이 많거나 노동 강도가 높은 직무는 피하는 것이 좋습니다.
-											
-										</li>
-										<li>
-											
-											냉·난방기 작동 시 호흡기 장애인의 적응 정도를 고려하여야 합니다.
-											
-										</li>
-										<li>
-											
-											간혹 천명음(쌕쌕거리는 소리)이 날 수 있으며, 소리가 날 경우 피곤한지 물어보고 쉬게 하는 것이 큰 도움이 됩니다.
-											
-										</li>
-					
-										</ul>
+									  <ul class="box">
+									  <li>
+										
+										청정한 공기 등 환경 요소가 다른 장애 유형보다 더 중요합니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										이동이 많거나 노동 강도가 높은 직무는 피하는 것이 좋습니다.
+										
+									  </li>
+									  <li>
+										
+										냉·난방기 작동 시 호흡기 장애인의 적응 정도를 고려하여야 합니다.
+										
+									  </li>
+									  <li>
+										
+										간혹 천명음(쌕쌕거리는 소리)이 날 수 있으며, 소리가 날 경우 피곤한지 물어보고 쉬게 하는 것이 큰 도움이 됩니다.
+										
+									  </li>
+								  
+									  </ul>
 									</div>
 									<!--### 간 장애 ###-->
 									<div id="tab10" class="tab-panel" role="tabpanel" aria-labelledby="tab10-tab">
-										<ul>
-										<li>
-											
-											간 장애가 안정되었다면 일상생활과 개별 특성에 맞는 직무수행이 가능합니다.
-											
-										</li>
-					
-										<li>
-											
-											복수가 있는 경우 힘을 쓰는 작업에 어려움을 느낍니다.
-											
-										</li>
-										<li>
-											
-											업무로 인해 과로나 수면부족이 되지 않도록 배려해야 합니다.
-											
-										</li>
-					
-										</ul>
+									  <ul class="box">
+									  <li>
+										
+										간 장애가 안정되었다면 일상생활과 개별 특성에 맞는 직무수행이 가능합니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										복수가 있는 경우 힘을 쓰는 작업에 어려움을 느낍니다.
+										
+									  </li>
+									  <li>
+										
+										업무로 인해 과로나 수면부족이 되지 않도록 배려해야 합니다.
+										
+									  </li>
+								  
+									  </ul>
 									</div>
 									<!-- ### 심장장애 ###-->
 									<div id="tab11" class="tab-panel" role="tabpanel" aria-labelledby="tab11-tab">
-										<ul>
-										<li>
-											
-											심장에 부담을 줄 수 있는 노동 강도와 스트레스가 높은 직무는 피해야 합니다.
-											
-										</li>
-					
-										<li>
-											
-											정기적 병원 진료에 필요한 시간이 고려되어야 합니다.
-											
-										</li>
-										</ul>
+									  <ul class="box">
+									  <li>
+										
+										심장에 부담을 줄 수 있는 노동 강도와 스트레스가 높은 직무는 피해야 합니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										정기적 병원 진료에 필요한 시간이 고려되어야 합니다.
+										
+									  </li>
+									  </ul>
 									</div>
 									<!-- ### 뇌전증장애 ###-->								  
 									<div id="tab12" class="tab-panel" role="tabpanel" aria-labelledby="tab12-tab">
-										<ul>
-										<li>
-											
-											꾸준한 약물 복용으로 통제되는 경우가 많습니다.
-											
-										</li>
-					
-										<li>
-											
-											장애 상태를 정확히 이해하고 업무에 배치하는 것이 중요합니다.
-											
-										</li>
-					
-										<li>
-											
-											발작 증상이 나타나더라도 회복이 빠르고 업무수행 능력도 충분하나, 만약을 대비해 높은 곳이나 위험한 기계 앞 배치는 피해야 합니다.
-											
-										</li>
-										<li>
-											
-											발작 시 큰 문제가 발생하지 않으나, 호흡곤란이나 외상 등 문제가 일어날 수 있어 발작 시 대처 방법을 숙지할 필요성 있습니다.
-											
-										</li>
-										<li>
-											
-											발작이 일어나면 주변의 위험한 물건을 치우고 안경을 벗겨주며, 넥타이·단추·허리띠를 풀고 기도 유지를 해 주어야 합니다.
-											
-										</li>
-										</ul>
+									  <ul class="box">
+									  <li>
+										
+										꾸준한 약물 복용으로 통제되는 경우가 많습니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										장애 상태를 정확히 이해하고 업무에 배치하는 것이 중요합니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										발작 증상이 나타나더라도 회복이 빠르고 업무수행 능력도 충분하나, 만약을 대비해 높은 곳이나 위험한 기계 앞 배치는 피해야 합니다.
+										
+									  </li>
+									  <li>
+										
+										발작 시 큰 문제가 발생하지 않으나, 호흡곤란이나 외상 등 문제가 일어날 수 있어 발작 시 대처 방법을 숙지할 필요성 있습니다.
+										
+									  </li>
+									  <li>
+										
+										발작이 일어나면 주변의 위험한 물건을 치우고 안경을 벗겨주며, 넥타이·단추·허리띠를 풀고 기도 유지를 해 주어야 합니다.
+										
+									  </li>
+									  </ul>
 									</div>	
 									<!-- ### 지적 장애 ###-->								  
 									<div id="tab13" class="tab-panel" role="tabpanel" aria-labelledby="tab13-tab">
-										<ul>
-										<li>
-											
-											반복된 교육과 훈련을 통해 업무를 습득하고 혼자서 출ㆍ퇴근이 가능하며 자신에게 적합한 직무에서 근무할 수 있습니다.
-											
-										</li>
-					
-										<li>
-											
-											작업 지시는 한 번에 한 가지씩, 익숙해질 때까지 여러번 시범을 보여주는 것이 효과적입니다.
-											
-										</li>
-					
-										<li>
-											
-											근무시간, 적절한 근무복장, 근무공간의 위치, 임금, 직속상관 및 이용 가능한 교통수단 등 업무와 관련된 일을 반복적으로 설명해 줍니다.
-											
-										</li>
+									  <ul class="box">
+									  <li>
 										
-										</ul>
+										반복된 교육과 훈련을 통해 업무를 습득하고 혼자서 출ㆍ퇴근이 가능하며 자신에게 적합한 직무에서 근무할 수 있습니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										작업 지시는 한 번에 한 가지씩, 익숙해질 때까지 여러번 시범을 보여주는 것이 효과적입니다.
+										
+									  </li>
+								  
+									  <li>
+										
+										근무시간, 적절한 근무복장, 근무공간의 위치, 임금, 직속상관 및 이용 가능한 교통수단 등 업무와 관련된 일을 반복적으로 설명해 줍니다.
+										
+									  </li>
+									  
+									  </ul>
 									</div>	
 									<!-- ### 자폐성 장애 ###-->								  
 									<div id="tab14" class="tab-panel" role="tabpanel" aria-labelledby="tab14-tab">
-										<ul>
-											<li>
-											
-												직무 변화 시 적응이 쉽지 않을 수 있는 점을 감안합니다.
-											
-											</li>
-						
-											<li>
-											
-												개인 특성과 선호도를 반영해 고정적인 직무에 배치하는 것이 좋습니다.
-											
-											</li>
-						
-											<li>
-											
-												규칙적이거나 반복적인 것에 관심을 두는 경우가 많아서 변화가 적은 업무에 적합합니다.
-											
-											</li>
-											<li>
-											
-												위험한 순간에 대한 대처능력이 떨어지므로 직접적으로 도움을 주어야 합니다.
-											
-											</li>
-											<li>
-											
-												다른 사람의 정서나 생각에 대해 제한된 수준에서만 이해할 수 있으며, 상호작용에 어려움이 있을 수 있음을 이해합니다.
-											
-											</li>
+									  <ul class="box">
+										<li>
 										
-										</ul>
+										  직무 변화 시 적응이 쉽지 않을 수 있는 점을 감안합니다.
+										
+										</li>
+								  
+										<li>
+										
+										  개인 특성과 선호도를 반영해 고정적인 직무에 배치하는 것이 좋습니다.
+										
+										</li>
+								  
+										<li>
+										
+										  규칙적이거나 반복적인 것에 관심을 두는 경우가 많아서 변화가 적은 업무에 적합합니다.
+										
+										</li>
+										<li>
+										
+										  위험한 순간에 대한 대처능력이 떨어지므로 직접적으로 도움을 주어야 합니다.
+										
+										</li>
+										<li>
+										
+										  다른 사람의 정서나 생각에 대해 제한된 수준에서만 이해할 수 있으며, 상호작용에 어려움이 있을 수 있음을 이해합니다.
+										
+										</li>
+									  
+									  </ul>
 									</div>
 									<!-- ### 정신 장애 ###-->
 									<div id="tab15" class="tab-panel" role="tabpanel" aria-labelledby="tab15-tab">
-										<ul>
-											<li>
-											
-												꾸준한 약물 복용과 스트레스 관리가 요구됩니다.
-											
-											</li>
-						
-											<li>
-											
-												정신장애인이 모든 대인·대민 서비스를 할 수 없는 것은 아니나, 복잡하고 업무 수행 시 심한 스트레스를 야기할 수 있는 업무는 피하는 것이 좋습니다.
-											
-											</li>
-						
-											<li>
-											
-												중간 중간 짧은 휴식이 큰 도움이 되며, 근무 중에도 자연스럽게 약을 복용할 수 있는 분위기를 만들어 줍니다.
-											
-											</li>
-											<li>
-											
-												초기에는 비교적 간단한 업무부터 시작하면서 작업상태 및 역량에 따라 업무를 조정하는 것이 좋습니다.
-											
-											</li>
+									  <ul class="box">
+										<li>
 										
-										</ul>
+										  꾸준한 약물 복용과 스트레스 관리가 요구됩니다.
+										
+										</li>
+								  
+										<li>
+										
+										  정신장애인이 모든 대인·대민 서비스를 할 수 없는 것은 아니나, 복잡하고 업무 수행 시 심한 스트레스를 야기할 수 있는 업무는 피하는 것이 좋습니다.
+										
+										</li>
+								  
+										<li>
+										
+										  중간 중간 짧은 휴식이 큰 도움이 되며, 근무 중에도 자연스럽게 약을 복용할 수 있는 분위기를 만들어 줍니다.
+										
+										</li>
+										<li>
+										
+										  초기에는 비교적 간단한 업무부터 시작하면서 작업상태 및 역량에 따라 업무를 조정하는 것이 좋습니다.
+										
+										</li>
+									  
+									  </ul>
 									</div>
-								
+								  
 								</div>
 							</div>							
+						</section>
+						<section class="guide_conts sec3">
+							<h6 class="guide_tit2"><span class="num">4.</span>장애인 특성별 근로유형 설정</h6>
+							<ul class="sec_cont guide_text">
+								<li>근로 유형은 비장애인과 동일하게 운영하되, 장애 특성을 고려해 아래와 같이 다양한 유연근무제를 도입할 수 있습니다.</li>
+							</ul>
+							<!-- <div class="sec_cont">
+								<ul class="box_list">
+									<li>
+										<div class="gd-bg-box tit">
+											<div class="icon icon1"></div>
+											시차 출퇴근제
+										</div>
+										<div class="txt">
+											출퇴근 시간을 근로자가 직정 정해서 근무하는 제도
+										</div>
+									</li>
+									<li>
+										<div class="gd-bg-box tit">
+											<div class="icon icon2"></div>
+											단시간 근무제
+										</div>
+										<div class="txt">
+											주 5일 미만, 일 8시간 미만으로 근무시간 지정
+										</div>
+									</li>
+									<li>
+										<div class="gd-bg-box tit">
+											<div class="icon icon3"></div>
+											재택 근무제
+										</div>
+										<div class="txt">
+											회사 출/퇴근 없이 집에서만 근무하는 제도
+										</div>
+									</li>
+								</ul>								
+							</div>
+							<div class="sec_cont tab_wrap tab_style_gd">
+								<ul class="tab_list" role="tablist">
+									<li role="presentation"><a href="#tab1" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="true">지체장애, 시각장애</a></li>
+									<li role="presentation"><a href="#tab2" role="tab" id="tab2-tab" aria-controls="tab2" aria-selected="false">정신장애, 신장장애</a></li>
+									<li role="presentation"><a href="#tab3" role="tab" id="tab3-tab" aria-controls="tab3" aria-selected="false">지체장애(중증), 장루,요루장애, 신장장애</a></li>
+								</ul>
+								<div class="tab_cont">
+									<div id="tab1" class="tab-panel" role="tabpanel" aria-labelledby="tab1-tab">
+										<div class="gd-line-box">
+											<p>시차 출퇴근제</p>
+											<p>지체장애인, 시각장애인은 출퇴근 시간이나 날씨 등으로 대중교통수단을 이용한 이동이 어렵거나 부담이 큰 경우가 있습니다. 이러한 경우에는 출퇴근시간을 유연하게 조정해 1일 근로시간을 유지하면서 출퇴근 혼잡 부담을 경감시켜 줄 수 있습니다.</p>
+										</div>
+									</div>
+									<div id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-tab">
+										<div class="gd-line-box">
+											<p>단시간 근무제</p>
+											<p>정신장애인은 풀타임 근무 보다 단시간 근무를 선호할 수 있습니다. 이러한 경우에는 1일 4시간 등 단시간 근무로 부터 시작해 서서히 근무시간을 늘려갈 수 있습니다. 혈액 투석이 필요한 신장장애인의 경우, 병원 통원을 위해 단시간 혹은 요일제 근무가 필요할 수 있습니다.</p>
+										</div>
+									</div>
+									<div id="tab3" class="tab-panel" role="tabpanel" aria-labelledby="tab3-tab">
+										<div class="gd-line-box">
+											<p>재택 근무제</p>
+											<p>이동이 불편한 장애인 근로자를 위해 재택근무나 스마트오피스근무 등으로 근로유형을 정할 수 있습니다. 재택근무를 운영할 때에는 근태를 주기적으로 파악해야 합니다.</p>
+										</div>
+									</div>
+								</div>
+							</div> -->
+							
 						</section>
 						<section class="guide-comp-case">
 							<h6>다른 기업은 이렇게 하고 있어요.</h6>
@@ -791,24 +816,6 @@
 	$(document).ready(function(){
 		AOS.init();
 	});
-
-	$(document).ready(function() {
-		$('.list-chk-radio input[type="radio"]').on('change', function() {
-			var $recommendationButtons = $(this).closest('.list-chk-radio').next('.recommendation-btn');
-
-			if ($(this).val() === 'no' && $(this).is(':checked')) {
-			$recommendationButtons.removeClass('hidden');
-			} else {
-			$recommendationButtons.addClass('hidden');
-			}
-		});
-	});
-
-
-
-
-
-
 	</script>
 </body>
 </html>

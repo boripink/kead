@@ -1,839 +1,409 @@
+<div class="tab_cont box_type">
+  <!--### 지체장애 ###-->
+  <div id="tab1" class="tab-panel" role="tabpanel" aria-labelledby="tab1-tab">
+    <ul class="box">
+    <li>
+      
+      기본적으로 움직임에 불편함이 있으나 편의시설 확대 및 보조공학의 발달로 업무 영역이 확대되는 추세입니다.
+      
+    </li>
 
+    <li>
+      
+      손이나 팔에 장애가 있더라도 컴퓨터를 자유롭게 조작할 수 있고, 다리에 장애가 있어도 직접 운전하는 등 이동에 제약이 없는 장애인도 많습니다.
+      
+    </li>
 
+    <li>
+      
+      보조공학기기 외 장애인 편의시설(장애인 전용 주차장, 화장실, 엘리베이터, 경사로 등)을 사전에 확인합니다.
+      
+    </li>
 
+    <li>
+      
+      도움을 줄 때는 먼저 장애인의 의사를 확인하여야 하며, 휠체어, 목발, 기타 보장구들을 허락 없이 만지거나 옮겨서는 안됩니다.
+      
+    </li>
+    </ul>
+  </div>				  
+  <!--### 뇌병변장애 ###-->
+  <div id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-tab">
+    <ul class="box">
+    <li>
+      
+      외형적으로 드러나는 장애로 직업 능력을 판단하는 것은 정확하지 않을 수 있습니다.
+      
+    </li>
 
+    <li>
+      
+      언어장애가 동반되는 경우가 있지만, 언어장애가 있다고 지적 능력이 낮지 않습니다.
+      
+    </li>
 
+    <li>
+      
+      신체적 떨림이나 경직, 언어 표현 제한 등으로 업무처리 속도가 느릴 수 있습니다.
+      
+    </li>
 
+    <li>
+      
+      본인의 특성과 강점을 살릴 수 있는 직무배치 시 직업적 능력을 발휘할 수 있습니다.
+      
+    </li>
 
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="ko">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatiable" content="IF=edge">
-		<meta http-equiv="Pragma" content="no-cache">
-		<meta http-equiv="Expires" content="0">
-		<meta http-equiv="Cache-control" content="no-cache">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="/css/style.css">
-		<script type="text/javascript" src="/js/jquery-1.12.4.js"></script>
-		<script src="/js/style.js"></script>
-		
-		<!-- 공동인증서 -->
-		<link type="text/css" rel="stylesheet" href="/HTML5_web/kcase/lib/css/kcase.css" />
-		<script type="text/javascript" src="/HTML5_web/kcase/lib/js/jquery-ui.js"></script>
- 
-		<script type="text/javascript" src="/HTML5_web/kcase/lib/js/kcaseagent_crypto.js"></script>
-		<script type="text/javascript" src="/HTML5_web/kcase/lib/js/kcaseagent_api.js"></script>
-		<script type="text/javascript" src="/HTML5_web/kcase/lib/js/kcaseagent_cert.js"></script>
-	
-        <script>
-            var ksign_visibleLoading = true;
-            var ksign_disableDelete = false;
-        </script>
-		
-		<title>로그인 - 장애인 고용컨설팅 포털</title>
-		
-		<script type="text/javascript">	
-			$(function() {
-			    $("#userId").focus();
-			    
-			    $(document).on("keyup", "#password", function(event) {
-			    	if (event.which == 13) actionLogin();
-			    });
-			    
-//			    $("input:radio[name=checkGovYn]").removeAttr("disabled");
-			    $("#checkGovYn").removeAttr("disabled");
-			    
-			    $(".agree_accordion .ac_btn").click(function(){
-			        $(".agree_accordion").toggleClass("on");
-		      	});
-			    
-			    $(".kead_modal_close").click(function() {
-			    	$(".kead_agreement_modal").toggleClass("on");
-			    });
-                
-				
-				kcaseagt.definePasswordExcess(function(errCode, errMsg) {});
-
-	            kcaseagt.init({
-	                debug: false,
-	                libRoot: location.protocol + "//" + location.host + "/HTML5_web/kcase/lib",
-	                sessId: 'FDEC22268A399664AB995DE590575E0E',
-	                mainTitle: "",
-	                adminTitle: "인증서 관리",
-	                position: "center",
-	                mediaOpt: kcaseagt.enable.all,                                       
-	                //maxpwdcnt: 5,
-	                keychangedate: false,
-	                chkexpiredcert: 0,
-	                success: function() {},
-	                serviceError: function() {
-	                    //alert("Module Load Fail!!");
-	                },
-	                error: function(c, msg) {
-	                    alert(c + ": " + msg);
-	                    if(c == "32797"){
-	                    	location.href = location.protocol + "//" + location.host + "/kcase/lib/download/KSignCASE_v1.3.22.exe";
-	                    }
-	                },
-	                
-	            });
-	            
-
-	            /* VID 검증 시험 */
-	            var vidBtns = $("button.certi_login_btn");
-	            var vidText = $("#kc_api_vid_test .table-input-text").find("input");
-	            
-	            vidBtns.click(function() {
-	            	
-	            	if($('#BUSIRECORD_NO_1').val() == '' || $('#BUSIRECORD_NO_2').val() == '' || $('#BUSIRECORD_NO_3').val() == '') {
-	            		alert('사업자등록번호를 입력하세요.');
-	            		return false;
-	            	}else if($('#BUSIRECORD_NO_1').val().length < 3 || $('#BUSIRECORD_NO_2').val().length < 2 || $('#BUSIRECORD_NO_3').val().length < 5){
-	            		alert('사업자등록번호가 정확히 입력되지 않았습니다.');
-	            		return false;
-	            	}
-	            	
-	            	var strBusirecordno = $('#BUSIRECORD_NO_1').val()+$('#BUSIRECORD_NO_2').val()+$('#BUSIRECORD_NO_3').val();
-	            	
-	                kcaseagt.getVidInfoWEB({
-	                    peerCert: 'MIIF1DCCBLygAwIBAgIUAMDCIbYfO8j/HW3XpvM1cS2C+GEwDQYJKoZIhvcNAQELBQAwUDELMAkGA1UEBhMCS1IxHDAaBgNVBAoME0dvdmVybm1lbnQgb2YgS29yZWExDTALBgNVBAsMBEdQS0kxFDASBgNVBAMMC0NBMTM0MTAwMDMxMB4XDTIzMDYxMzA1NTMyNVoXDTI1MDYyOTA3MzYxMlowcjELMAkGA1UEBhMCS1IxHDAaBgNVBAoME0dvdmVybm1lbnQgb2YgS29yZWExGDAWBgNVBAsMD0dyb3VwIG9mIFNlcnZlcjESMBAGA1UECwwJ6rWQ7Jyh67aAMRcwFQYDVQQDDA5TVlJaMTIzNDU2NzA5NDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANcpczyh429Wrhre9687Imj9IHMDg1LbPntrhGwfeE0WYB0JqRphwJVTccBISgQdgvvP4JuVeLu3rlSb+nZjtQKPRYSpoF3/vzX75kMWSubddAUVSP5zXagqcXjDsecZL5AW2A6RRETdGO1+ibsmLusxe22aYSsb3skbkl9AdkpoW2Qkic9paLtMORhd/BrYQAZS/f6l13PL9h+Jc/WQx1LU51H+4KmiKW8EirqAnL2CJEjD7szH0YjMRBjlF7eyu/Pi6GMZxMhhz/XdXD07cQCvgWHJ425sxIbCVS1UNCz2FfhRGNvxExviJWKVxQNkFet6QvmsGct/I+fQ0zRFEf8CAwEAAaOCAoIwggJ+MDcGCCsGAQUFBwEBBCswKTAnBggrBgEFBQcwAYYbaHR0cDovL29jc3AuZXBraS5nby5rcjo4MDgwMHkGA1UdIwRyMHCAFI5G+A2eeHaizBrkD1F/UtdNnFsboVSkUjBQMQswCQYDVQQGEwJLUjEcMBoGA1UECgwTR292ZXJubWVudCBvZiBLb3JlYTENMAsGA1UECwwER1BLSTEUMBIGA1UEAwwLR1BLSVJvb3RDQTGCAicZMB0GA1UdDgQWBBSCgvmhNz84VNm5bDisdZ5zTtArzDAOBgNVHQ8BAf8EBAMCBDAwbQYDVR0gAQH/BGMwYTBfBgoqgxqGjSEFAwEHMFEwKgYIKwYBBQUHAgEWHmh0dHA6Ly93d3cuZXBraS5nby5rci9jcHMuaHRtbDAjBggrBgEFBQcCAjAXGhVFZHVjYXRpb24gQ2VydGlmaWNhdGUwMQYDVR0SBCowKKAmBgkqgxqMmkQKAQGgGTAXDBXqtZDsnKHqs7ztlZnquLDsiKDrtoAwbAYDVR0RBGUwY6BhBgkqgxqMmkQKAQGgVDBSDA0xOTIuMTY4LjExLjEwMEEwPwYKKoMajJpECgEBATAxMAsGCWCGSAFlAwQCAaAiBCDkJbG9H89hU6jsCfhVTj2fOJsPf+v/KkVMU6CcWY8XZDCBiAYDVR0fBIGAMH4wfKB6oHiGdmxkYXA6Ly9sZGFwLmVwa2kuZ28ua3I6Mzg5L2NuPWNybDFwMWRwMjE2MzYsb3U9Q1JMLG91PUdQS0ksbz1Hb3Zlcm5tZW50IG9mIEtvcmVhLGM9a3I/Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdDtiaW5hcnkwDQYJKoZIhvcNAQELBQADggEBAK0zx2vCOcN9Xyc9gvJxWwvx0IQfjNcu++vE8nys05GVPpECOp0JJq4sCXvXp3bP1A3B9Y8dWb6SYcN+EG16glxbkNEwmRl0RDK0W4wk41X0CouxABkkWeaNv0jz622XYy8SnQKoxik6AVEglovwMPU7SifyozTidqBCACmFD2nJ4fS38d31iE4ovbZp0/n8h2uNJhgYdPwwyIMJxCaJLGYCLaq403opUaq7prBiOqWG9Q5TsWYPRR620MFFv+MR5R4PatkmCJNTalmxlHVny4ANsOnLImDbo4hEC2U+MhE79oE8bfB9N68aa+avON3T2N/vgPifnnrkNPnSVTNOL5c=',
-	                    vid: strBusirecordno,	                    
-	                    success: function(output) {
-	                    	
-	                        if(output == null || output == ""){
-	                        	alert(kcasewcrypto.getErrorMsgWEB(kcasewcrypto.getErrCodeWEB()));
-	                        	return ;
-	                        }
-	                        $('input[name=vid_request]').val(output);
-	                        //서버에서 검증
-	                        $.ajax({
-	    	                    type: "POST",
-	    	                    url: "/ksign_login.do",
-	    	                    dataType: "json",
-	    	                    data: $("form[name=loginForm]").serialize(),
-	    	                    success: function(data) {
-	    	                    	var resultData=data;
-	    	                    	if(resultData.resultCode=="200"){
-		    	                    	//세션 저장되었으니 redirect	    	                    		
-		    	                    	document.location.href="/";
-	    	                    	} else{
-	    	                    		alert(resultData.resultMessage);
-	    	                    	}
-	    	                    },
-	    	                    error: function() {
-	    	                        alert("인증서 로그인에 실패하였습니다.");
-	    	                    }
-	    	                });         
-	                    },
-	                    error: function(c, msg) {
-	                    	alert("인증서 검증에 실패했습니다. 5회실패시 로그인이 불가능합니다.")
-	                    }
-	                });
-	            	
-	            });
-			});
-			
-			function termAgree() {
-				$(".btn_apply").one("click", function() {
-					if ($("input[name=keadPrivacy]").is(":checked")) {
-						$("#trmsAgreYn").val('Y');
-						actionLogin();
-					} else {
-						alert("개인정보 수집 및 이용동의 후 로그인 가능합니다.");
-						//$(".kead_agreement_modal").toggleClass("on");
-					}
-				});
-			}
-			
-			//로그인_일반사용자
-			function actionLogin() {
-				var checkGovYn = $(":input:radio[name=checkGovYn]:checked").val();
-				
-				
-				if (document.loginForm.userId.value == "") {
-					alert("아이디를 입력하세요.");
-			    } 
-				//2024.02.16
-				else if (document.loginForm.password.value == "") {
-			    	alert("비밀번호를 입력하세요.");
-			    }
-				else if (checkGovYn == "") {
-			    	alert("공무원 여부를 선택하여 주십시오.");
-			    }
-			    else {		
-			    	
-			    	$.ajax({
-	                    type: "POST",
-	                    url: "/login/actionLogin.do",
-	                    dataType: "json",
-	                    data: $("form[name=loginForm]").serialize(),
-	                    success: function(data) {
-	                    	if(data.resultCode== "200") {    	                    		    	                    		
-    	                    	//document.location.href="/";
-    	                    	document.location.href="/";
-	                    	} else if (data.resultCode == "300") {
-	                    		$(".kead_agreement_modal").toggleClass("on");
-	                    		$("input[name=keadPrivacy]").focus();
-	                    		termAgree();
-	                    	} else{
-	                    		alert(data.resultMessage);
-	                    	}
-	                    },
-	                    error: function(e) {
-	                        alert("오류가 발생했습니다.");
-	                    }
-	                }); 
-			    }
-			}
-		</script>
-	</head>
-	
-	<body>
-		<!-- header -->
-	     
-
-
-
-<!--  운영 실제 오픈때 적용 예정 (테스트중에는 스크립트 로드로 인해 느려짐  -->
-
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-S61XYSHS1J"></script>
-	<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		
-		  gtag('config', 'G-S61XYSHS1J');
-	</script>
-
-
-
-<script type="text/javascript">
-	function actionLogout() {
-		document.selectOne.action = "/login/actionLogout.do";
-		document.selectOne.target = "_top";
-		document.selectOne.submit();
-	}
-	
-	// login popup
-    function popClose() {
-        $('html, body').css('overflow', 'auto');
-        $('html.fp-enabled, html.fp-enabled body').css('overflow','hidden'); // 메인 스크롤 되는것 방지
-        $('.login_pop').fadeOut();
-    }
-	
-    function goLogin() {
-        location.href = "/login.do";
-    }
-
-
-    $(function() {
-    	$('#util #btnUser').off().on('click', function() {
-            $('html, body').css('overflow', 'hidden');
-            $('.login_pop').fadeIn();
-        });
-    	
-    	$('.myPage').off().on('click', function() {
-            $('html, body').css('overflow', 'hidden');
-            $('.login_pop').fadeIn();
-        });
-
-        $('.login_pop .close_btn').off().on('click', function() {
-            popClose()
-        });
-
-        $('.login_pop').off().on("click", function(event){
-            if (event.target === event.currentTarget) {
-                popClose();
-            }
-        });
-    });
-    
-   
-</script>
-
-
-<!-- 상단 skip 접근성요소 -->
-<div id="topSkip">
-	<ul>
-		<li><a href="#lnb">본문 바로가기</a></li>
-		<li><a href="#gnb">주요메뉴 바로가기</a></li>
-	</ul>
-</div>
-
-
-<!-- Header -->
-<header class="sec02_bg">
-	 <form name="selectOne">
-		 <input name="vStartP" type="hidden" />
-	 	 <input name="chkURL" type="hidden" />
-	 </form>
-     <div id="header" class="wrapper">
-     	  
-     	
-         <div id="logo">
-             <a href="/" title="홈으로 페이지 이동">
-             	
-             		<img src="/images/common/logo.png" alt="한국장애인고용공단">
-             	
-             </a>
-         </div>
-         <nav>
-             <div class="gnb_wrap">
-                 <div class="gnb_bg">&nbsp;</div>
-                 <ul id="gnb" class="single ">
-                     <li>
-                         <a href="/cnsl/pwdbsEmpmCnslGuid/pwdbsEmpmCnslQstn.do">장애인 고용컨설팅</a>
-                         <ul class="subMenu">
-                             <li><a href="/cnsl/pwdbsEmpmCnslGuid/pwdbsEmpmCnslQstn.do">고용컨설팅 안내</a></li>
-		            		 <li><a href="/cnsl/pwdbsEmpmCnslGuid/empmCnslAplyMthd.do">신청방법</a></li>
-                         </ul>
-                     </li>
-                     <li>
-                         <a href="/diag/empm/diagQstn.do">고용 역량 진단</a>
-                         <ul class="subMenu">
-                         	 <li><a href="/diag/empm/diagQstn.do">고용 역량 진단 안내</a></li>
-            			 	 <li><a href="/diag/empm/diagExe.do">진단실시</a></li>
-                         </ul>
-                     </li>
-                     <li>
-                         <a href="/empm/empmCaseAndStats/empmCase.do">고용 사례 &middot; 통계</a>
-                         <ul class="subMenu">
-                             <li><a href="/empm/empmCaseAndStats/empmCase.do">채용사례</a></li>
-                             <li><a href="/empm/empmCaseAndStats/exclncCase.do">우수사례</a></li>
-                             <li><a href="/empm/empmCaseAndStats/esgMngmtCase.do">ESG 경영 사례</a></li>
-                             <li><a href="/empm/empmCaseAndStats/dtyDevCase.do">직무개발 사례</a></li>
-                             <li><a href="/empm/empmCaseAndStats/empmStats.do">고용통계</a></li>
-                         </ul>
-                     </li>
-                     <li>
-                         <a href="/empm/empmGuid/empmGuidSumry.do">고용가이드</a>
-                     </li>
-                     <li>
-                         <a href="/rcsrm/rcsrm/bbsTmpltForm.do">안내 &middot; 서식</a>
-                         <ul class="subMenu">                             
-                             <li><a href="/rcsrm/rcsrm/bbsTmpltForm.do">공지사항</a></li>
-                             <li><a href="/rcsrm/rcsrm/bulkQstnAns.do">자주 묻는 질문</a></li>
-                             <li><a href="/rcsrm/rcsrm/bbsOpnionForm.do">문의사항</a></li>                             
-                         </ul>
-                     </li>
-                 </ul>
-             </div>
-         </nav>
-
-         <div id="clickMenu">
-         	<div class="div-click-logo">
-				<img src="/images/common/click_logo.png" alt="">
-			</div>
-            <ul>
-                <li>
-                    <a href="/cnsl/pwdbsEmpmCnslGuid/pwdbsEmpmCnslQstn.do">장애인 고용컨설팅</a>
-                    <ul class="clickSub">
-                        <li><a href="/cnsl/pwdbsEmpmCnslGuid/pwdbsEmpmCnslQstn.do">고용컨설팅 안내</a></li>
-	            	 	<li><a href="/cnsl/pwdbsEmpmCnslGuid/empmCnslAplyMthd.do">신청방법</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/diag/empm/diagQstn.do">장애인 고용 역량 진단</a>
-                    <ul class="clickSub">
-                        <li><a href="/diag/empm/diagQstn.do">고용 역량 진단 안내</a></li>
-           			 	<li><a href="/diag/empm/diagExe.do">진단실시</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/empm/empmCaseAndStats/empmCase.do">고용 사례 &middot; 통계</a>
-                    <ul class="clickSub">
-                        <li><a href="/empm/empmCaseAndStats/empmCase.do">채용사례</a></li>
-                        <li><a href="/empm/empmCaseAndStats/exclncCase.do">우수사례</a></li>
-                        <li><a href="/empm/empmCaseAndStats/esgMngmtCase.do">ESG 경영 사례</a></li>
-                        <li><a href="/empm/empmCaseAndStats/empmStats.do">고용통계</a></li>
-                        <li><a href="/empm/empmCaseAndStats/dtyDevCase.do">직무개발 사례</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/empm/empmGuid/empmGuidSumry.do">고용가이드</a>
-                </li>
-                <li>
-                    <a href="/rcsrm/rcsrm/bbsTmpltForm.do">안내 &middot; 서식</a>
-                    <ul class="clickSub">                         
-                        <li><a href="/rcsrm/rcsrm/bbsTmpltForm.do">공지사항</a></li>
-                        <li><a href="/rcsrm/rcsrm/bulkQstnAns.do">자주 묻는 질문</a></li>       
-                        <li><a href="/rcsrm/rcsrm/bbsOpnionForm.do">문의사항</a></li>                  
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <ul id="util">
-       		
-         	
-         		<li><button id="btnLogin" type="button" class="e-login" onclick="goLogin();"><span>e신고 통합</span> 로그인</button></li>
-         	
-             
-             <li class="only-mob"><button type="button" class="allMenu"><span>전체메뉴열기</span></button></li>
-         </ul>
-         <div class="mobMenu">
-             <div class="mobTobFlex">
-                 <div id="moblogo">
-                     <a href="/">
-                         <img src="/images/common/logo.png" alt="한국장애인고용공단">
-                     </a>
-                 </div>
-                 <div class="util">
-                     <button class="close"><span>메뉴 닫기</span></button>
-                 </div>
-             </div>
-             <ul class="myMenu">
-                 <li>
-                     
-                 </li>
-                 <li>
-                     
-		         	
-                     		         		
-		         		<a href="javascript:goLogin()" class="logout">
-	                        로그인
-	                    </a>
-		         	
-                 </li>
-             </ul>
-             <ul class="mobgnb">
-                 <li>
-                     <a href="/cnsl/pwdbsEmpmCnslGuid/pwdbsEmpmCnslQstn.do">장애인 고용컨설팅</a>
-                     <ul class="subMenu">
-                         <li><a href="/cnsl/pwdbsEmpmCnslGuid/pwdbsEmpmCnslQstn.do">고용컨설팅 안내</a></li>
-		            	 <li><a href="/cnsl/pwdbsEmpmCnslGuid/empmCnslAplyMthd.do">신청방법</a></li>
-                     </ul>
-                 </li>
-                 <li>
-                     <a href="/diag/empm/diagQstn.do">장애인 고용 역량 진단</a>
-                     <ul class="subMenu">
-                         <li><a href="/diag/empm/diagQstn.do">고용 역량 진단 안내</a></li>
-            			 <li><a href="/diag/empm/diagExe.do">진단실시</a></li>
-                     </ul>
-                 </li>
-                 <li>
-                     <a href="/empm/empmCaseAndStats/empmCase.do">고용 사례 &middot; 통계</a>
-                     <ul class="subMenu">
-                         <li><a href="/empm/empmCaseAndStats/empmCase.do">채용사례</a></li>
-                         <li><a href="/empm/empmCaseAndStats/exclncCase.do">우수사례</a></li>
-                         <li><a href="/empm/empmCaseAndStats/esgMngmtCase.do">ESG 경영 사례</a></li>
-                         <li><a href="/empm/empmCaseAndStats/dtyDevCase.do">직무개발 사례</a></li>
-                         <li><a href="/empm/empmCaseAndStats/empmStats.do">고용통계</a></li>
-                     </ul>
-                 </li>
-                 <li>
-                     <a href="/empm/empmGuid/empmGuidSumry.do">고용가이드</a>
-                 </li>
-                 <li>
-                     <a href="/rcsrm/rcsrm/bbsTmpltForm.do">안내 &middot; 서식</a>
-                     <ul class="subMenu">                         
-                         <li><a href="/rcsrm/rcsrm/bbsTmpltForm.do">공지사항</a></li>
-                         <li><a href="/rcsrm/rcsrm/bulkQstnAns.do">자주 묻는 질문</a></li>      
-                         <li><a href="/rcsrm/rcsrm/bbsOpnionForm.do">문의사항</a></li>                   
-                     </ul>
-                 </li>
-             </ul>
-         </div>
-     </div>
-	 
-     
-     <script>
-     //로그인 팝업 탭이동(접근성)
-     $(".login_pop ul li:last-child").keydown(function(e){
-       if(e.keyCode === 9){
-         e.preventDefault();
-         $(".login_pop .close_btn").focus();
-       }
-
-     });
-     </script>
-
- </header>
- 
- 
- 
- 
-<!--// Header -->
-
-
-	    <!-- // header -->
-        
-        <!-- content -->
-	    <div class="container" id="content">
-		<div id="lnb">
-			<ul class="lnb_wrap">
-				<li class="home">
-					<a href="/index.do" style="width: 60px; height: 100%;" title="홈으로 페이지 이동"></a>
-				</li>
-				<li class="li-drop-wrap">
-					<button class="btn_lnb">로그인</button>
-				</li>
-			</ul>
-		</div>
-	        <!-- // 메뉴별 lnb  -->
-	        
-	        <!--상세 컨텐츠 start-->
-		    <div class="container" id="subContents">
-		      <div class="wrapper">
-		        <div class="div_content_box login_container">
-		        	<form name="loginForm" id="loginForm" action="/login/actionLogin.do" method="post">
-			          <ul class="ul_flex login_ul">
-			            <li class="login_side">
-			              <div class="login_bg">
-			                <img src="/images/common/login_logo.png" alt="한국장애인고용공단 로고" class="login_logo">
-			                <img src="/images/common/logo.png" alt="한국장애인고용공단 로고" class="login_logo login_mob_logo">
-			                <b>회원 가입은 <a href="#" target="_target" title="새창열림"><span>E신고포털</span></a>을 <br>통해서 가능합니다.</b>
-			                <p>
-			                  <a href="#" target="_target" title="새창열림">[장애인고용컨설팅]</a> 은 <a href="#" target="_target" title="새창열림">[E신고포털]</a>에 등록된 개인정보를
-			                  이용하며,  회원가입 시 입력하신 개인정보는 E신고포털의
-			                  <a href="#" target="_target" title="새창열림">[개인정보 보호방침]</a>에 따라 안전하게 보호됩니다.
-			                  </p>
-			              </div>
-			            </li>
-			            <li class="login_main">
-			              <h4>로그인 <span>Login</span></h4>
-			              <ul class="login_tablist">
-			                <li><a href="#none" target="_self" class="current">일반사용자</a></li>
-			              </ul>
-				          <div class="cw_sec01__agreeBox">
-				            <div>
-				              <input type="radio" name="checkGovYn" id="checkGovY" value="Y"><label for="checkGovY">공무원</label>
-				              <input type="radio" name="checkGovYn" id="checkGovN" value="N" checked> <label for="checkGovN">비공무원</label>
-				            </div>
-				          </div>	
-			              <ul class="login_input"> 
-			                <li >
-			                  <p><label for="userId">아이디</label></p>			                  
-			                  <input type="text" name="userId" id="userId" class="input_id" maxlength="20" title="아이디" placeholder="아이디를 입력하세요" />
-			                </li>
-			                <li>
-			                  <p><label for="password">비밀번호</label></p>		                  
-			                  <input type="password" name="password" id="password" class="input_pw" maxlength="20" title="비밀번호" placeholder="비밀번호를 입력하세요" />
-			                </li>
-			              </ul>
-			              <a href="https://www.esingo.or.kr/content/06_etc/idsearch.do?gbMenuId=ETC300" target="_blank" class="lost_account" title='새창열림'>계정정보를 잊으셨습니까?</a>
-			              <ul class="login_btn_wrap">
-			                <li>
-			                	<button type="button" class="login_btn" onclick="actionLogin()">로그인</button>
-			                </li>			                
-			                <li>
-			                	<a href="https://www.esingo.or.kr/content/06_etc/join_1.do?gbMenuId=ETC400" target="_blank" title='새창열림' class="join_btn">E-신고 회원가입</a>
-			                </li>
-			              </ul>
-			              <h4>공동인증서 로그인</h4>
-			              <p><label for="BUSIRECORD_NO_1">사업자등록번호</label></p>
-			              <div class="certi_input_cont">
-			                <input type="text" name="BUSIRECORD_NO_1" id="BUSIRECORD_NO_1" title="사업자등록번호 첫번째 입력창" maxlength="3" value="" />
-			                -
-			                <input type="text" name="BUSIRECORD_NO_2" id="BUSIRECORD_NO_2" title="사업자등록번호 두번째 입력창" maxlength="2" value="" />
-			                -
-			                <input type="text" name="BUSIRECORD_NO_3" id="BUSIRECORD_NO_3" title="사업자등록번호 세번째 입력창" maxlength="5" value="" />
-			                <input type="hidden" name="vid_request"/>
-			              </div>
-			              <button type="button" class="certi_login_btn" >공동인증서 로그인</button>
-			            </li>
-			          </ul>
-			          <input name="mbrSeCd" id="mbrSeCd" type="hidden" value="10"/>
-			          <input name="trmsAgreYn" id="trmsAgreYn" type="hidden" value="N"/>
-		        	</form>
-		        	
-		        	<!-- 약관 팝업  -->
-		          <div class="modal_pop kead_agreement_modal" id="agreement_modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-		            
-     
-
-
-<div class="modal_pop_inner">
-  <button type="button" aria-label="닫기" class="modal_pop_close  kead_modal_close modal_top_close"></button>                
-  <h2 id="modal-title2">한국 장애인 고용공단 약관 동의</h2>
-  <div class="modal_content">
-    
-    <p>한국 장애인 컨설팅 사이트의 이용을 위하여 필수 약관동의 확인이 필요합니다. </p>
-    <div class="agree_accordion">
-      <div class="head">
-        <div>
-          <input type="checkbox" name="keadPrivacy" id="a">
-          <label for="a">(필수)개인정보 수집 및 이용동의</label>
-        </div>
-        <button type="button" class="ac_btn">내용 펼치기</button>
-      </div>
-      <div class="body">
-        <div class="agree_box">
-          <div class="agree_info">
-            <p>제 1 장 총칙</p>
-            <div class="agree_article">
-              <strong>제 1 조 (목적)</strong>
-              <ol class="list_terms">
-                <li><p>이 이용약관은 한국장애인고용공단(이하 ‘공단’)이 운영하는 “장애인 고용컨설팅 포털”(이하 ‘포털’)에서 제공되는 모든 서비스(이하 ‘서비스’)의 이용조건 및 절차, 공단과 이용자의 권리, 의무, 기타 필요한 사항을 규정함을 목적으로 합니다.</p></li>
-                <li>
-                  <p>장애인 고용컨설팅 포털은 비회원 사용자에게도 일반적 서비스를 제공하나, 회원가입이 필요한 서비스('고용컨설팅 신청', ‘마이페이지’)는 e신고포털서비스의 회원가입 후 편리하게 이용하실 수 있습니다.</p>
-                </li>
-              </ol>          
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 2 조 (용어의 정의)</strong>
-              <ol class="list_terms">
-                <li>
-                  <p>이 약관에서 사용하는 용어의 정의는 다음과 같습니다.</p>
-                  <ol>
-                    <li><p>1. 회원: 서비스를 이용하기 위해 e신고포털서비스 및 포털 이용약관에 동의하고, 제공하는 서비스를 이용할 수 있는 자</p></li>
-                    <li><p>2. 아이디(ID): 회원 식별과 회원의 서비스 이용을 위하여 회원이 선정, e신고포털서비스에 신청하고 공단이 승인한 영문자와 숫자의 조합</p></li>
-                    <li><p>3. 비밀번호: 회원의 개인정보보호를 위해 회원자신이 e신고포털서비스에서 설정한 문자와 숫자 및 특수문자의 조합</p></li>
-                    <li> <p>4. 전자신청: 회원이 고용컨설팅 신청서를 전자적으로 작성하여 정보통신망을 이용하여 신청하는 것</p></li>
-                    <li><p>5. 전자서명: 「전자서명법」 제2조제2호 규정에 따라 서명자를 확인하고 서명자가 해당 전자문서에 서명하였음을 나타내는데 이용하기 위하여 해당 전자문서에 첨부되거나 논리적으로 결합된 전자적 형태의 정보</p></li>
-                    <li><p>6. 공동인증서: 전자서명을 생성하기 위하여 이용된 정보가 가입자에게 유일하게 속한다는 사실 등을 확인하고 이를 증명하는 전자적 정보로서 전자서명법 제15조의 규정에 따라 공인인증기관이 발급한 인증서</p></li>
-                    <li><p>7. e신고포털서비스: www.esingo.or.kr, www.esingo.kr 로 등록된 정보통신망</p></li>
-                    <li><p>8. 회원전용서비스: 고용컨설팅 신청, 마이페이지 등 e신고포털 회원가입을 필요로 하는 서비스</p></li>
-                  </ol>
-                </li>
-                <li>
-                  <p>이 약관에서 사용하는 용어의 정의는 제1항에서 정의한 것을 제외하고는 관계법령 및 서비스 안내에서 정하는 바에 의합니다.</p>
-                </li>
-              </ol>
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 3 조 (약관의 효력과 변경)</strong>
-              <ol class="list_terms">
-                <li><p>포털은 회원이 이용약관 내용에 동의하는 경우, 서비스 제공행위 및 이용자의 서비스 사용행위에 이 약관을 우선적으로 적용합니다.</p></li>
-                <li><p>포털은 본 약관을 사전 고지 없이 변경할 수 있고, 변경된 약관은 포털 내에 공지되며, 공지와 동시에 그 효력이 발생합니다. 이용자가 변경된 약관에 동의하지 않는 경우, 이용자는 e신고포털서비스에서 포털 이용약관 동의를 취소할 수 있습니다.</p></li>
-              </ol>
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 4 조 (약관외 준칙)</strong>
-              <p>본 약관에 명시되지 않은 사항은 약관의 규제에 관한 법률, 전기통신기본법, 전기통신사업법, 정보통신윤리위원회심의규정, 정보통신 윤리강령, 프로그램보호법 및 기타 관련 법령의 규정에 의하며, 그렇지 않은 경우에는 일반적인 관례에 따릅니다.</p>
-            </div>
-    
-            <p>제2장 서비스 제공 및 이용</p>
-    
-            <div class="agree_article">
-              <strong>제 5 조 (서비스의 종류)</strong>
-              <p>포털이 제공하는 서비스의 종류는 다음의 각 호와 같으며, 필요한 경우 이를 추가하거나 제한할 수 있습니다.</p>
-              <ol class="list_terms">
-                <li><p>공개서비스: 장애인 고용역량 수준 진단, 기업 채용사례(ESG 사례, 우수 사례, 직업영역개발 사례 포함) 조회, 장애인 고용가이드 조회 등</p></li>
-                <li><p>회원전용서비스: 장애인 고용컨설팅 신청, 장애인 고용역량 수준 진단 결과 조회, 장애인 고용컨설팅 신청내역 조회, 고용컨설팅 보고서 조회 등</p></li>
-              </ol>
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 6 조 (이용계약의 성립)</strong>
-              <ol class="list_terms">
-                <li>
-                  <p>이용계약은 e신고포털서비스 회원이 로그인 후 포털의 이용약관에 동의하는 것으로 성립됩니다.</p>
-                  <ol>
-                    <li><p>1. 본인이 아닌 다른 사용자의 정보를 사용하여 동의하였을 때</p></li>
-                    <li><p>2. 본인이 아닌 다른 사용자의 서비스 이용을 방해하거나 그 정보를 도용하는 등의 행위를 하였을 때</p></li>
-                    <li><p>3. 서비스를 이용하여 법령과 본 약관이 금지하는 행위를 하는 경우</p></li>
-                    <li>
-                      <p>4. 포털은 다음 각 항에 해당하는 경우 그 사유가 해소될 때까지 이용계약 성립을 유보할 수 있습니다.</p>
-                      <ol>
-                        <li><p>1) 서비스 관련 제반 용량이 부족하거나 기술상 장애 사유가 있는 경우</p></li>
-                        <li><p>2) 서비스의 효율적인 운영 등을 위하여 필요하다고 판단하는 경우</p></li>
-                      </ol>
-                    </li>
-                  </ol>
-                </li>
-                <li><p>포털은 다음 각 호에 해당하는 동의에 대하여는 계약을 취소할 수 있습니다.</p></li>
-              </ol>
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 7 조 (e신고포털서비스 정보제공 및 이용동의)</strong>
-              <ol class="list_terms">
-                <li><p>포털에서 회원전용서비스를 이용하고자 하는 회원은 포털에서 요청하는 e신고포털서비스에 등록된 제반정보(회사명, 법인등록번호, 사업자등록번호, 대표자, 연락처 등)의 제공 및 이용에 동의하여야 합니다.</p></li>
-                <li><p>회원은 반드시 회사명과 법인등록번호를 제공하여야만 회원전용서비스를 이용할 수 있으며, e신고포털서비스에 회사명, 법인등록번호, 사업자등록번호 등을 허위로 등록한 경우 회원은 일체의 권리를 주장할 수 없습니다.</p></li>
-              </ol>
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 8 조 (회원정보사항의 변경) </strong>
-              <p>회원이 제공한 정보가 변경되었을 경우 e신고포털서비스 또는 포털이 정한 별도의 방법으로 수정하여야 합니다. 회원정보의 미변경으로 인하여 발생하는 문제의 책임은 회원에게 있습니다.</p>
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 9 조 (서비스 이용시간)</strong>
-              <ol class="list_terms">
-                <li><p>서비스의 이용은 포털의 업무상 또는 기술상 특별한 지장이 없는 한 연중무휴, 1일 24시간(00:00-24:00)을 원칙으로 합니다. 다만, 정기점검, 긴급 조치 등 포털이 서비스 점검 및 조치를 필요로 하는 시간은 그러하지 않습니다.</p></li>
-                <li><p>포털은 서비스를 일정범위로 분할하여 각 범위별로 이용가능 시간을 별도로 정하거나 제한할 수 있습니다. 이 경우 그 내용을 사전에 공지합니다.</p></li>
-              </ol>
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 10 조 (서비스의 중지 및 제한)</strong>
-              <ol class="list_terms">
-                <li><p>포털은 서비스에 보관되거나 전송된 메시지 및 그 밖에 통신 메시지 등의 내용이 국가의 비상사태, 정전, 당 사이트의 관리 범위 외의 서비스 설비 장애 및 그 밖에 불가항력에 의하여 보관되지 못하였거나 삭제된 경우, 전송되지 못한 경우 및 그 밖에 통신 데이터의 손실이 있을 경우에 포털은 관련 책임을 부담하지 아니합니다.</p></li>
-                <li><p>포털은 정상적인 서비스 제공의 어려움으로 인하여 일시적으로 서비스를 중지하여야 할 경우에는 서비스 중지 고지 후 서비스를 중지할 수 있으며, 이 기간 동안 귀하가 고지내용을 인지하지 못한 데 대하여 포털은 책임을 부담하지 아니합니다. 부득이한 사정이 있을 경우 사전 고지기간은 감축되거나 생략될 수 있습니다. 또한 위 서비스 중지에 의하여 본 서비스에 보관되거나 전송된 메시지 및 그 밖에 통신 메시지 등의 내용이 보관되지 못하였거나 삭제된 경우, 전송되지 못한 경우 및 그 밖에 통신 데이터의 손실이 있을 경우에 대하여도 포털은 책임을 부담하지 아니합니다.</p></li>
-                <li><p>포털은 사전 고지 후 서비스를 일시적으로 수정, 변경 및 중단할 수 있으며, 이에 대하여 귀하 또는 제3자에게 어떠한 책임도 부담하지 아니합니다.</p></li>
-                <li><p>포털은 회원이 본 약관의 내용에 위배되는 행동을 한 경우, 임의로 서비스 사용을 제한 및 중지할 수 있습니다.</p></li>
-              </ol>
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 11 조 (이용자의 서비스 이용제한)</strong>
-              <ol class="list_terms">
-                <li><p>회원이 제공하는 정보의 내용이 허위인 것으로 판명되거나, 그러하다고 의심할 만한 합리적인 사유가 발생할 경우 귀하의 본 서비스 사용을 일부 또는 전부 중지할 수 있으며, 이로 인해 발생하는 불이익에 대해 책임을 부담하지 아니합니다.</p></li>
-                <li><p>회원이 서비스를 통하여 게시, 전송, 입수하였거나 전자메일 그 밖에 다른 수단에 의하여 게시, 전송 또는 입수한 모든 형태의 정보에 대하여는 귀하가 모든 책임을 부담하며 포털은 어떠한 책임도 부담하지 아니합니다.</p></li>
-                <li><p>포털이 제공하는 서비스가 아닌 가입자 또는 그 밖에 유관기관이 제공하는 서비스의 내용상의 정확성, 완전성 및 질에 대하여 보장하지 않습니다. 따라서 귀하가 서비스를 이용함으로 인하여 입게 된 모든 종류의 손실이나 손해에 대하여 책임을 부담하지 아니합니다.</p></li>
-                <li><p>회원은 본 서비스를 통하여 다음과 같은 행동을 하지 않을 것에 동의합니다.</p>
-                  <ol>
-                    <li><p>1. 타인의 아이디(ID)와 비밀번호를 도용하는 행위</p></li>
-                    <li><p>2. 저속, 음란, 모욕적, 위협적이거나 타인의 프라이버시를 침해할 수 있는 내용을 전송, 게시, 게재, 전자메일 또는 그 밖에 방법으로 전송하는 행위</p></li>
-                    <li><p>3. 서비스를 통하여 전송된 내용의 출처를 위장하는 행위</p></li>
-                    <li><p>4. 법률, 계약에 의하여 이용할 수 없는 내용을 게시, 게재, 전자메일 또는 그 밖에 방법으로 전송하는 행위</p></li>
-                    <li><p>5. 타인의 특허, 상표, 영업비밀, 저작권, 그 밖에 지적재산권을 침해하는 내용을 게시, 게재, 전자메일 또는 그 밖에 방법으로 전송하는 행위</p></li>
-                    <li><p>6. 공단의 승인을 받지 아니한 광고, 판촉물, 정크메일, 스팸, 행운의 편지, 피라미드 조직 그 밖에 다른 형태의 권유를 게시, 게재, 전자메일 또는 그 밖에 방법으로 전송하는 행위.</p></li>
-                    <li><p>7. 다른 사용자의 개인정보를 수집 또는 저장하는 행위</p></li>
-                  </ol>
-                </li>
-                <li><p>포털은 회원이 본 약관을 위배했다고 판단되면 서비스와 관련된 모든 정보를 이용자의 동의 없이 삭제할 수 있습니다.</p></li>
-              </ol>
-            </div>
-    
-            <p>제3장 의무 및 책임</p>
-    
-            <div class="agree_article">
-              <strong>제 12 조 (포털의 의무)</strong>
-              <ol class="list_terms">
-                <li><p>포털은 서비스 제공과 관련하여 취득한 회원의 정보를 본인의 승낙 없이 제3자에게 누설 또는 제공할 수 없으며 상업적 목적으로 사용할 수 없습니다. 단, 법률의 규정에 따른 적법한 절차에 의한 경우에는 그러하지 않습니다.</p></li>
-                <li><p>포털은 서비스 제공에 적합하도록 안정적인 설비를 유지하여야 하며 서비스용 설비에 장애 발생 시 조속히 복구하도록 노력하여야 합니다.</p></li>
-                <li><p>서비스 내용의 변경 또는 추가사항이 있는 경우 그 사항을 온라인을 통해 서비스 화면에 공지합니다.</p></li>
-              </ol>
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 13 조 (개인정보보호)</strong>
-              <ol class="list_terms">
-                <li><p>포털은 「장애인고용촉진 및 직업재활법」, 「개인정보 보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 관계법령에 따라 이용신청 시 제공받는 이용자의 개인정보, 이후에 추가로 제공받는 개인정보 및 서비스 이용 중 생성되는 개인정보를 보호하여야 합니다.</p></li>
-                <li>
-                  <p>포털은 서비스 제공과 관련해서 수집된 회원의 개인정보를 본인의 동의 없이 제3자에게 제공하지 않으며, 다음 각 호의 경우는 이용고객의 별도 동의 없이 제3자에게 등록자의 개인정보를 제공할 수 있습니다.</p>
-                  <ol>
-                    <li><p>1. 수사상 목적에 따른 수사기관의 서면 요구가 있는 경우에 수사협조의 목적으로 국가수사 기관에 성명, 주소 등 신상정보를 제공하는 경우</p></li>
-                    <li><p>2. 신용정보의 이용 및 보호에 관한 법률, 전기통신 관련법률 등 법률에 특별한 규정이 있는 경우</p></li>
-                    <li><p>3. 통계작성, 학술연구 또는 시장조사를 위하여 필요한 경우로서 특정 개인을 식별할 수 없는 형태로 제공하는 경우</p></li>
-                    <li><p>4. 그 밖에 다른 법률에 특별한 규정이 있는 경우</p></li>
-                  </ol>
-                </li>
-                <li><p>포털은 「장애인고용촉진 및 직업재활법」 제43조(한국장애인고용공단의 설립)에 따라 장애인의 고용촉진 및 직업재활에 관한 정보의 수집·분석·제공 및 조사·연구 등 공단 사업에 필요한 경우 회원의 개인정보를 활용하여 업무를 수행할 수 있습니다.</p></li>
-                <li><p>회원은 이용계약을 해지함으로써 개인정보의 수집 및 이용에 대한 동의, 목적외 사용에 대한 별도동의, 제3자 제공에 대한 별도 동의를 철회 할 수 있습니다. 해지는 회원이 원하는 경우 e신고포털서비스의 동의 철회절차를 통해 하실 수 있습니다.</p></li>
-              </ol>
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 14 조 (회원의 의무)</strong>
-              <ol class="list_terms">
-                <li>
-                  <p>회원은 서비스 이용과 관련하여 다음 각 호의 행위를 하여서는 안됩니다.</p>
-                  <ol>
-                    <li><p>1. 다른 회원의 ID를 부정 사용하는 행위</p></li>
-                    <li><p>2. 범죄행위를 목적으로 하거나 그 밖에 범죄행위와 관련된 행위</p></li>
-                    <li><p>3. 선량한 풍속, 그 밖에 사회질서를 해하는 행위</p></li>
-                    <li><p>4. 타인의 명예를 훼손하거나 모욕하는 행위</p></li>
-                    <li><p>5. 타인의 지적재산권 등의 권리를 침해하는 행위</p></li>
-                    <li><p>6. 해킹행위 또는 컴퓨터바이러스의 유포행위</p></li>
-                    <li><p>7. 타인의 의사에 반하여 광고성 정보 등 일정한 내용을 지속적으로 전송하는 행위</p></li>
-                    <li><p>8. 정보통신윤리위원회, 소비자보호단체 등 공신력 있는 기관으로부터 시정요구를 받는 행위</p></li>
-                    <li><p>9. 선거관리위원회의 중지, 경고 또는 시정명령을 받는 선거법 위반 행위</p></li>
-                    <li><p>10. 그 밖에 관계법령에 위배되는 행위</p></li>
-                  </ol>
-                </li>
-                <li><p>회원은 이 약관에서 규정하는 사항과 서비스 이용안내 또는 주의사항을 준수하여야 합니다.</p></li>
-                <li><p>회원은 내용별로 포털이 서비스 공지사항에 게시하거나 별도로 공지한 이용 제한 사항을 준수하여야 합니다.</p></li>
-                <li><p>회원은 포털의 서비스를 이용하여 영업활동을 할 수 없으며, 영업 활동의 결과와 회원이 약관을 위반한 영업 활동을 이용하여 발생한 결과에 대하여 포털은 책임을 지지 않습니다.</p></li>
-                <li><p>회원은 이와 같은 영업활동과 관련하여 포털에 대하여 손해배상의무를 집니다.</p></li>
-                <li><p>회원은 서비스의 이용권한, 그 밖에 이용 계약상 지위를 타인에게 양도, 증여할 수 없으며, 이를 담보로 제공할 수 없습니다.</p></li>
-                <li><p>회원은 포털의 사전승낙 없이는 서비스의 전부 또는 일부 내용 및 기능을 전용할 수 없습니다.</p></li>
-              </ol>
-            </div>
-    
-            <p>제4장 보칙</p>
-    
-            <div class="agree_article">
-              <strong>제 15 조 (게재된 자료에 대한 권리)</strong>
-              <ol class="list_terms">
-                <li>
-                  <p>포털에 게재된 자료에 대한 권리는 다음 각 호와 같습니다.</p>
-                  <ol>
-                    <li><p>1. 게시물에 대한 권리와 책임은 게시자에게 있으며, 포털은 게시자의 동의 없이는 이를 영리적 목적으로 사용할 수 없습니다. 단, 비영리적 목적인 경우 포털은 게시자의 동의 없이도 이를 사용할 수 있으며 서비스 내의 게재권을 갖습니다.</p></li>
-                    <li><p>2. 게시자의 사전 동의가 없이는 이용자는 서비스를 이용하여 얻은 정보를 가공, 판매하는 행위 등 서비스에 게재된 자료를 상업적 목적으로 이용할 수 없습니다.</p></li>
-                  </ol>
-                </li>
-              </ol>
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 16 조 (손해배상)</strong>
-              <p>포털은 무료로 제공되는 서비스와 관련하여 회원에게 발생한 어떠한 손해에 대하여 책임을 지지 않습니다. 회원이 서비스를 이용함에 있어 행한 불법행위로 인하여 포털이 당해 회원 이외의 제3자로부터 손해배상청구, 소송을 비롯한 각종의 이의제기를 받는 경우 당해 회원은 포털의 면책을 위하여 노력하여야 하며, 만일 포털이 면책되지 못한 경우는 당해 회원은 그로 인하여 포털에 발생한 모든 손해를 배상하여야 합니다.</p>
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 17 조 (면책조항)</strong>
-              <ol>
-                <li><p>포털은 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 제공에 관한 책임이 면제됩니다.</p></li>
-                <li><p>포털은 회원의 귀책사유로 인한 서비스의 이용장애에 대하여 책임을 지지 않습니다.</p></li>
-                <li><p>포털은 회원이 서비스를 이용하여 기대하는 수익을 상실한 것에 대하여 책임을 지지 않으며 그 밖에 서비스를 통하여 얻은 자료로 인한 손해 등에 대하여도 책임을 지지 않습니다.</p></li>
-              </ol>
-            </div>
-    
-            <div class="agree_article">
-              <strong>제 18 조 (재판관할)</strong>
-              <p>포털과 회원간에 발생한 서비스 이용에 관한 분쟁에 대하여는 대한민국 법을 적용하며, 본 분쟁으로 인한 소는 대한민국의 법원에 제기합니다.</p>
-            </div>
-    
-            <div class="agree_article">
-              <strong>부 칙</strong>
-              <p>1. 이 약관은 2024년 2월 1일부터 시행합니다.</p>
-            </div>
-    
-          </div>
-        </div>                    
-      </div>
-    </div>
-
-    <div class="sb_btnWrap">
-      <button class="sb-btn-style btn_apply">확인</button>
-    </div>
-    
+    <li>
+      
+      중증 뇌성마비, 근육이나 신경장애의 경우도 글이나 보조공학기기를 통한 의사소통이 가능합니다.
+      
+    </li>
+    </ul>
   </div>
-  
+  <!--### 시각장애 ###-->
+  <div id="tab3" class="tab-panel" role="tabpanel" aria-labelledby="tab3-tab">
+    <ul class="box">
+    <li>
+      
+      시력 및 시야 정도, 장애 진행 여부, 점자 사용 여부 등 고려가 필요합니다.
+      
+    </li>
+
+    <li>
+      
+      중증 시각장애인의 경우 목소리로 상대방을 파악하므로, 인사와 대화 시작 시에는 자신의 이름을 먼저 알려주는 것이 좋습니다.
+      
+    </li>
+
+    <li>
+      
+      신체적 떨림이나 경직, 언어 표현 제한 등으로 업무처리 속도가 느릴 수 있습니다.
+      
+    </li>
+
+    <li>
+      
+      시각장애인이 사용하는 서류나 물건은 마음대로 옮겨놓지 않습니다.
+      
+    </li>
+
+    <li>
+      
+      지팡이를 사용하는 시각장애인과 함께 이동할 때에는 지팡이의 반대편에 서서 필요시 팔을 잡을 수 있도록 합니다.
+      
+    </li>
+    </ul>
+  </div>
+  <!--### 청각장애 ###-->
+  <div id="tab4" class="tab-panel" role="tabpanel" aria-labelledby="tab4-tab">
+    <ul class="box">
+    <li>
+      
+      청력을 상실했거나 문제가 있어도 명확하게 말할 수 있는 경우가 있습니다.
+      
+    </li>
+
+    <li>
+      
+      업무 특성상 직접 청취해야 하는 직무, 안전 요건으로 예리한 청력이 요구되는 업무를 제외한 대부분 직무에 배치가 가능합니다.
+      
+    </li>
+
+    <li>
+      
+      모든 청각장애인이 수어를 하는 것은 아니기 때문에 개별 의사소통수단을 파악해서 의사소통해야 합니다.(메모, 핸드폰문자, 입모양, 보청기 등)
+      
+    </li>
+
+    <li>
+      
+      화장실 문에 '사용중'을 알리는 표지를 설치하는 등 청각장애인을 위해 시각적 장치들을 마련하면 좋습니다.
+      
+    </li>
+
+    <li>
+      
+      청각장애인과 대화를 시작하기 전에는 먼저 시선을 끄는 것이 중요하며, 말을 할 때는 눈을 보면서 입모양과 발음을 정확하게 하고 필요시 반복하여 말해줄 필요가 있습니다.
+      
+    </li>
+    </ul>
+  </div>	
+  <!--### 언어장애 ###-->
+  <div id="tab5" class="tab-panel" role="tabpanel" aria-labelledby="tab5-tab">
+    <ul class="box">
+    <li>
+      
+      언어장애는 직업 능력과 무관한 경우가 많습니다.
+      
+    </li>
+
+    <li>
+      
+      언어장애가 있다고 하여 지적 능력이 낮은 것은 아닙니다.
+      
+    </li>
+
+    <li>
+      
+      청각장애인처럼 의사소통 방식이 다양합니다.
+      
+    </li>
+
+    <li>
+      
+      전화 통화에 어려움이 있는 경우에는 이메일, 문자, 팩스 등 다른 의사소통 방법을 활용하도록 지원합니다.
+      
+    </li>
+
+    <li>
+      
+      언어를 사용하는 일이 주된 경우가 아니라면 대부분 직종에 종사가 가능합니다.
+      
+    </li>
+    <li>
+      
+      의사소통을 지원하는 보조공학기기가 개발됨에 따라 언어장애인도 강의와 토론이 가능합니다.
+      
+    </li>
+    </ul>
+  </div>	
+  <!--### 안면장애 ###-->
+  <div id="tab6" class="tab-panel" role="tabpanel" aria-labelledby="tab6-tab">
+    <ul class="box">
+    <li>
+      
+      직무수행에 큰 지장이 되지 않는 장애로 광범위한 업무수행이 가능합니다.
+      
+    </li>
+
+    <li>
+      
+      화상으로 장애를 입은 경우 습도나 온도에 많은 영향을 받을 수 있어, 냉방이 잘 되는 곳에서 일할 수 있도록 배려합니다.
+      
+    </li>
+
+    </ul>
+  </div>	
+  <!--### 장루·요루장애 ###-->
+  <div id="tab7" class="tab-panel" role="tabpanel" aria-labelledby="tab7-tab">
+    <ul class="box">
+    <li>
+      
+      업무에 따른 어려움은 없으나 장애 특성상 화장실 사용이 빈번합니다.
+      
+    </li>
+
+    <li>
+      
+      요루 장애인의 경우 소변을 자주 비워야 하므로 너무 오래 지속해야하는 작업은 피하는 것이 좋습니다.
+      
+    </li>
+    <li>
+      
+      장루 장애인의 경우 괄약근이 없어 수시로 가스가 배출될 수 있음을 이해합니다.
+      
+    </li>
+
+    </ul>
+  </div>	
+  <!--### 신장장애 ###-->
+  <div id="tab8" class="tab-panel" role="tabpanel" aria-labelledby="tab8-tab">
+    <ul class="box">
+    <li>
+      
+      투석이 필요한 신장 장애인의 경우 투석 시간, 투석 장소에 대한 고려가 필요합니다.
+      
+    </li>
+
+    <li>
+      
+      혈액투석을 하는 팔목에 무리가 가지 않도록 무거운 물건을 드는 등 격렬한 신체활동을 피해야 합니다.
+      
+    </li>
+
+    </ul>
+  </div>
+  <!--### 호흡기 장애 ###-->
+  <div id="tab9" class="tab-panel" role="tabpanel" aria-labelledby="tab9-tab">
+    <ul class="box">
+    <li>
+      
+      청정한 공기 등 환경 요소가 다른 장애 유형보다 더 중요합니다.
+      
+    </li>
+
+    <li>
+      
+      이동이 많거나 노동 강도가 높은 직무는 피하는 것이 좋습니다.
+      
+    </li>
+    <li>
+      
+      냉·난방기 작동 시 호흡기 장애인의 적응 정도를 고려하여야 합니다.
+      
+    </li>
+    <li>
+      
+      간혹 천명음(쌕쌕거리는 소리)이 날 수 있으며, 소리가 날 경우 피곤한지 물어보고 쉬게 하는 것이 큰 도움이 됩니다.
+      
+    </li>
+
+    </ul>
+  </div>
+  <!--### 간 장애 ###-->
+  <div id="tab10" class="tab-panel" role="tabpanel" aria-labelledby="tab10-tab">
+    <ul class="box">
+    <li>
+      
+      간 장애가 안정되었다면 일상생활과 개별 특성에 맞는 직무수행이 가능합니다.
+      
+    </li>
+
+    <li>
+      
+      복수가 있는 경우 힘을 쓰는 작업에 어려움을 느낍니다.
+      
+    </li>
+    <li>
+      
+      업무로 인해 과로나 수면부족이 되지 않도록 배려해야 합니다.
+      
+    </li>
+
+    </ul>
+  </div>
+  <!-- ### 심장장애 ###-->
+  <div id="tab11" class="tab-panel" role="tabpanel" aria-labelledby="tab11-tab">
+    <ul class="box">
+    <li>
+      
+      심장에 부담을 줄 수 있는 노동 강도와 스트레스가 높은 직무는 피해야 합니다.
+      
+    </li>
+
+    <li>
+      
+      정기적 병원 진료에 필요한 시간이 고려되어야 합니다.
+      
+    </li>
+    </ul>
+  </div>
+  <!-- ### 뇌전증장애 ###-->								  
+  <div id="tab12" class="tab-panel" role="tabpanel" aria-labelledby="tab12-tab">
+    <ul class="box">
+    <li>
+      
+      꾸준한 약물 복용으로 통제되는 경우가 많습니다.
+      
+    </li>
+
+    <li>
+      
+      장애 상태를 정확히 이해하고 업무에 배치하는 것이 중요합니다.
+      
+    </li>
+
+    <li>
+      
+      발작 증상이 나타나더라도 회복이 빠르고 업무수행 능력도 충분하나, 만약을 대비해 높은 곳이나 위험한 기계 앞 배치는 피해야 합니다.
+      
+    </li>
+    <li>
+      
+      발작 시 큰 문제가 발생하지 않으나, 호흡곤란이나 외상 등 문제가 일어날 수 있어 발작 시 대처 방법을 숙지할 필요성 있습니다.
+      
+    </li>
+    <li>
+      
+      발작이 일어나면 주변의 위험한 물건을 치우고 안경을 벗겨주며, 넥타이·단추·허리띠를 풀고 기도 유지를 해 주어야 합니다.
+      
+    </li>
+    </ul>
+  </div>	
+  <!-- ### 지적 장애 ###-->								  
+  <div id="tab13" class="tab-panel" role="tabpanel" aria-labelledby="tab13-tab">
+    <ul class="box">
+    <li>
+      
+      반복된 교육과 훈련을 통해 업무를 습득하고 혼자서 출ㆍ퇴근이 가능하며 자신에게 적합한 직무에서 근무할 수 있습니다.
+      
+    </li>
+
+    <li>
+      
+      작업 지시는 한 번에 한 가지씩, 익숙해질 때까지 여러번 시범을 보여주는 것이 효과적입니다.
+      
+    </li>
+
+    <li>
+      
+      근무시간, 적절한 근무복장, 근무공간의 위치, 임금, 직속상관 및 이용 가능한 교통수단 등 업무와 관련된 일을 반복적으로 설명해 줍니다.
+      
+    </li>
+    
+    </ul>
+  </div>	
+  <!-- ### 자폐성 장애 ###-->								  
+  <div id="tab14" class="tab-panel" role="tabpanel" aria-labelledby="tab14-tab">
+    <ul class="box">
+      <li>
+      
+        직무 변화 시 적응이 쉽지 않을 수 있는 점을 감안합니다.
+      
+      </li>
+
+      <li>
+      
+        개인 특성과 선호도를 반영해 고정적인 직무에 배치하는 것이 좋습니다.
+      
+      </li>
+
+      <li>
+      
+        규칙적이거나 반복적인 것에 관심을 두는 경우가 많아서 변화가 적은 업무에 적합합니다.
+      
+      </li>
+      <li>
+      
+        위험한 순간에 대한 대처능력이 떨어지므로 직접적으로 도움을 주어야 합니다.
+      
+      </li>
+      <li>
+      
+        다른 사람의 정서나 생각에 대해 제한된 수준에서만 이해할 수 있으며, 상호작용에 어려움이 있을 수 있음을 이해합니다.
+      
+      </li>
+    
+    </ul>
+  </div>
+  <!-- ### 정신 장애 ###-->
+  <div id="tab15" class="tab-panel" role="tabpanel" aria-labelledby="tab15-tab">
+    <ul class="box">
+      <li>
+      
+        꾸준한 약물 복용과 스트레스 관리가 요구됩니다.
+      
+      </li>
+
+      <li>
+      
+        정신장애인이 모든 대인·대민 서비스를 할 수 없는 것은 아니나, 복잡하고 업무 수행 시 심한 스트레스를 야기할 수 있는 업무는 피하는 것이 좋습니다.
+      
+      </li>
+
+      <li>
+      
+        중간 중간 짧은 휴식이 큰 도움이 되며, 근무 중에도 자연스럽게 약을 복용할 수 있는 분위기를 만들어 줍니다.
+      
+      </li>
+      <li>
+      
+        초기에는 비교적 간단한 업무부터 시작하면서 작업상태 및 역량에 따라 업무를 조정하는 것이 좋습니다.
+      
+      </li>
+    
+    </ul>
+  </div>
+
 </div>
-		          </div>
-             	  <script>
-				   //약관동의 팝업 탭이동(접근성)
-				   $("#agreement_modal .btn_apply").keydown(function(e){
-				     if(e.keyCode === 9){
-				       e.preventDefault();
-				       $("#agreement_modal .modal_top_close").focus();
-				     }
-				
-				   });
-		 		  </script>
-		          
-		          
-		           <!-- 약관 팝업 end -->
-		        </div>
-		      </div>
-		    </div>
-		    <!--// 상세 컨텐츠 end-->    
-		        
-	    </div>
-			
-		<!-- footer -->
-	    
-
-
-
-	    <!-- // footer -->
-	</body>
-</html>
-

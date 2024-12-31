@@ -870,13 +870,7 @@ position: absolute; top: 4px; right: -14px;}
 .story_point .tit .num::after {content: ''; position: absolute; width: 36px; height: 36px; background-color: #3e8bff; border-radius: 50%; z-index: -1;}
 
 .story_point .qu_list {margin-left: 60px; margin-top: 30px; }
-.qu_list {border: 1px solid #d9e0ef; background-color: #fff; border-radius: 20px; padding: 30px; }
-.qu_list > li:not(:last-child) {margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px dashed #d9e0ef;}
 
-.qu_list > li .qu {padding-left: 40px; margin-bottom: 20px; position: relative; font-weight: 500;}
-.qu_list > li .qu::before {content: 'Q'; display: inline-block; color: #7cb0ff; font-size: 30px; font-weight: 500; position: absolute; left: 0; top: -7px; }
-.qu_list > li .an {background-color: #e8effb; border-radius: 15px; padding: 20px; padding-left: 50px; position: relative; margin-left: 40px; font-size: 18px; line-height: 1.6; }
-.qu_list > li .an::before {content: ''; width: 19px; height: 19px; display: block; background: url(../images/sub/arrow_story.png) no-repeat; position: absolute; left: 20px; top :25px}
 
 .story_point .point_list {margin-left: 50px; margin-top: 30px; position: relative;}
 .story_point .point_item {margin-top: 40px; position: relative;}

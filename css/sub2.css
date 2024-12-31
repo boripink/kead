@@ -55,6 +55,7 @@
 .guide_conts_wrap .guide_conts {margin-top: 80px;}
 /* .guide_conts_wrap .guide_title + .guide_conts {margin-top: 50px;} */
 .guide_conts_wrap .sec_cont {margin-top: 80px; margin-left: 40px; }
+.guide_conts_wrap .sec_cont2 {margin-top: 40px; margin-left: 40px; }
 .guide_conts_wrap h6 + .sec_cont {margin-top: 40px;}
 
 .guide_title {text-align: center; background-color: #fff; border-radius: 40px 40px 0 0; border-bottom: 1px solid #c7c7e5; padding-bottom: 50px;}
@@ -65,6 +66,10 @@
 .guide_tit3 {font-size: 28px; font-weight: 500; margin-bottom: 40px;}
 .guide_tit2 .num {display: inline-block; margin-right: 20px;}
 
+.tab_cont2 {margin-top: 80px;}
+.tab_cont2.first {margin-top: 30px;}
+.tab_cont2_tit {font-size:30px; font-weight:500; margin-bottom: 30px;}
+
 .list_tit {font-size: 22px; font-weight: 500 ; margin-bottom: 40px;}
 
 
@@ -73,9 +78,13 @@ ul.guide_text > li {position: relative; line-height: 1.4;}
 ul.guide_text > li::after {content: ''; width: 4px; height: 4px; display: block; position: absolute; left: -20px; top: 12px; background-color: #222; border-radius: 4px;}
 
 table .guide_text {margin-left: 20px; padding: 10px;} 
+.guide_text.inbox {margin-left: 20px; } 
 
 .tab_cont .guide_text {margin-left: 20px;}
 .sec_cont p.guide_text {margin-bottom: 30px;}
+
+p.guide_text {position: relative; line-height: 1.4;}
+p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; left: -20px; top: 12px; background-color: #222; border-radius: 4px; }
 
 
 .gd-btn {padding: 8px 20px; border-radius: 5px; background-color: #6672a4; color: #fff !important; font-size: 18px; box-shadow: 0 2px 2px rgba(0,0,0,0.2); margin: 0 5px; transition: all 0.3s; }
@@ -90,6 +99,8 @@ table .guide_text {margin-left: 20px; padding: 10px;}
 .title_box {background-color: #ededf4; height: 90px; display: flex; align-items: center; justify-content: center; gap: 30px; font-size: 24px; font-weight: 500; border-radius: 10px}
 .title_box.guide h5 {font-size: 35px; font-weight: 600; position: relative; padding-left: 40px;}
 .title_box.guide h5::before {content: ''; width: 18px; height: 18px; display: block; background: url(../images/sub/blet_guide_tit.png); position: absolute; top: 12px; left: 0;}
+.title_box.guide.left {justify-content: left; padding-left: 60px;}
+
 
 .guide_step {margin-top: 30px; display: flex; justify-content: space-between; gap: 20px;}
 .guide_step > li {flex: 1;}
@@ -375,7 +386,7 @@ table .guide_text {margin-left: 20px; padding: 10px;}
  /* {font-size: 25px; font-weight: 500; margin: 80px 0 30px; position: relative; color: #1953c2;} */
  .employment-training .guide_tit3 {position: relative;}
  .employment-training .guide_tit3.bg1::after {content: ''; display: block; width: 159px; height: 98px; background: url(../images/sub/gd_img8.png) no-repeat; position: absolute; right: 10px; bottom: -40px;}
- .employment-training .guide_tit3.bg2::after {content: ''; display: block; width: 186px; height: 120px; background: url(../images/sub/gd_img9.png) no-repeat; position: absolute; right: 10px; bottom: -40px;}
+ .employment-training .guide_tit3.bg2::after {content: ''; display: block; width: 186px; height: 120px; background: url(../images/sub/gd_img9.png) no-repeat; position: absolute; right: 35px; bottom: -40px;}
  .employment-training .guide_tit3.bg3::after {content: ''; display: block; width: 200px; height: 119px; background: url(../images/sub/gd_img10.png) no-repeat; position: absolute; right: 10px; bottom: -50px;}
 
  .employment-training .sec_cont + .sec_cont {margin-top: 100;}
@@ -385,10 +396,6 @@ table .guide_text {margin-left: 20px; padding: 10px;}
 .table-list > li:not(:last-child) {margin-bottom: 40px;}
 .table-list .tit {flex: 0 0 150px; font-weight: 600;}
 .table-list .refer_mk {margin-top: 0;}
-
-p.guide_text {position: relative; line-height: 1.4;}
-p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; left: -20px; top: 12px; background-color: #222; border-radius: 4px; }
-
 
 
 /* 고용관리 - 갈등관리 */
@@ -404,6 +411,29 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .employment-solving .sec2 .size100.icon6 {background-position-x: -500px;}
 .employment-solving .sec2 .size100.icon7 {background-position-x: -600px;}
 .employment-solving .sec2 .size100.icon8 {background-position-x: -700px;}
+
+
+/* 함께일하기가이드 - 스텝1 - 장애유형 알아보기 */
+
+.law_box {background-color: #f7f8f9; padding: 30px; position: relative;}
+.law_box::before {content: ''; width: 76px; height: 74px; background: url(../images/sub/gd_img_law.png); position: absolute; right: 40px; top: -74px;}
+.law_box .law_tit {font-size: 24px; font-weight: 500; margin-bottom: 30px;}
+
+.table_legend {margin: 10px 0;  display: flex; align-items: center; justify-content: end;}
+.legend_circle { display: inline-block; width: 15px; height: 15px; border-radius: 50%; margin: 0 4px;}
+.legend_circle.severe { background-color: #333; }
+.legend_circle.mild { background-color: #fff; border: 1px solid #333; }
+
+.illust_box_list {border: 1px solid #d9e0ef; background-color: #fff; border-radius: 20px; padding: 30px; }
+.illust_box_list > li:not(:last-child) {margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px dashed #d9e0ef;}
+.illust_box_list > li .tit {margin-bottom: 20px; position: relative; font-weight: 500;}
+.illust_box_list > li .dsc {background-color: #e8effb; border-radius: 15px; padding: 20px; padding-left: 50px; position: relative; font-size: 18px; line-height: 1.6; }
+.illust_box_list > li .dsc::before {content: ''; width: 19px; height: 19px; display: block; background: url(../images/sub/arrow_story.png) no-repeat; position: absolute; left: 20px; top :25px}
+
+
+/* 함께일하기가이드 - 스텝2 - 장애인식 개선하기 */
+
+.table_inbox {}
 
 
 
@@ -425,9 +455,10 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 /* 가이드 테이블 #f5f9ff */
 .tb_base.tb_guide {border-top: none;}
 .tb_guide    {background-color: #fff; }
+.tb_guide tr.center td {text-align: center;}
 .tb_guide th, .tb_guide td {border: 1px solid #0f298f; padding: 15px 20px; }
 .tb_guide thead th {border-bottom: none; padding: 10px; }
-.tb_guide th {text-align: center; background-color: #f1f1f9; color: #0f298f;}
+.tb_guide th {text-align: center; background-color: #f1f1f9; color: #0f298f; }
 .tb_guide td {color: #222;}
 .guide_conts .tb_tit {font-size: 24px; margin-bottom: 20px; font-weight: 500;
 background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px center; display: inline-block; padding: 5px 23px; border-radius: 20px; padding-left: 50px;}
@@ -436,11 +467,14 @@ background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px cen
 .tb_guide.type1 th {background-color: #f5faff;}
 .tb_guide.type1 td {vertical-align: top;}
 
+.tb_guide.type2 tbody th:first-child {border-left: none;}
+.tb_guide.type2 tbody td:last-child {border-right: none;}
+
 .guide_conts table ul li:not(:last-child) {margin-bottom: 6px; }
 
-.link_underline {background-color: #f1f1f9; color: #0f298f !important; position: relative;}
-.link_underline::before {content: ''; display: block; position: absolute; bottom: -5px; left: 0; right: 0; height: 2px; background-color: #bdc4ed;}
-
+.link_underline {color: #0f298f !important; position: relative; transition: all 0.3s;}
+.link_underline::before {content: ''; display: block; position: absolute; bottom: -1px; left: 0; right: 0; height: 1px; background-color: #7e8bbe;}
+.link_underline:hover {background-color: #e7e9f0;}
 
 
 /* 리스트타입 - 단계 */
@@ -471,9 +505,9 @@ background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px cen
 .box_list.type1 > li .tit {padding: 20px; background-color: #f5f9ff; border-radius: 15px;display: flex; flex-direction: column; justify-content:center; margin-right: 40px;}
 
 .box_list.list2 {gap: 30px; } 
-.box_list.list2 li {flex: 1 0 calc(50% - 15px); }
+.box_list.list2 > li {flex: 1 0 calc(50% - 15px); }
 
-.box_list.type-header li {padding: 10px;}
+.box_list.type-header > li {padding: 10px;}
 .box_list .box-header {flex: 0 0 240px; justify-content: center; align-items: center; display: flex; flex-direction: column; border-radius: 30px; padding: 10px; height: 100%; background-color: #f9fbff; margin-right: 30px; gap: 10px;} 
 
 .box_list .box-description {padding: 10px 0; flex: 1;}
@@ -518,8 +552,8 @@ background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px cen
 .worktogether-box .box-description li {line-height: 1.4; margin-bottom: 10px;}
 .worktogether-box .box-description li:last-child {margin-bottom: 40px;}
 .worktogether-box .link_btn {position: absolute; right: 20px; bottom: 20px;} */
-.worktogether-box {border-radius: 30px; padding: 20px; display: flex;position: relative; background-color: #f9fbff;}
-.worktogether-box .box-header {flex: 0 0 300px; background-color: #fff; border: 1px solid #edeeee;border-radius: 20px; overflow: hidden; margin-right: 20px; display: flex; align-items: center; justify-content: center;}
+.worktogether-box {border-radius: 30px; padding: 20px; display: flex;position: relative; background-color: #f9fbff; border: 1px solid #d9e0ef;}
+.worktogether-box .box-header {flex: 0 0 300px; background-color: #fff; border: 1px solid #bddc99;border-radius: 20px; overflow: hidden; margin-right: 20px; display: flex; align-items: center; justify-content: center;}
 .worktogether-box .box-description {font-size: 18px; line-height: 1.8; padding:5px;}
 .worktogether-box .box-description li {line-height: 1.4; margin-bottom: 10px;}
 .worktogether-box .box-description li:last-child {margin-bottom: 40px;}
@@ -549,4 +583,28 @@ background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px cen
 .tab_cont.box_type .tab-panel ul.box li {flex: 1 0 100%; border-radius: 5px; padding: 20px; background-color: #f7f8f9; position: relative; font-size: 18px;}
 .tab_cont.box_type.row2  .tab-panel ul.box li {flex: 1 0 calc(50% - 10px);}
 .tab_cont.box_type .tab-panel ul.box li::before {content: ''; display: block; width: 10px; height: 4px; background-color: #1953c2; position: absolute; left: 0; top: calc(50% - 2px);}
+
+/* 리스트 타입 - 자동 넘버 */
+/* .num_list { margin: 2rem auto; padding: 0; list-style: none; counter-reset: custom-counter; }
+.num_list li { margin-bottom: 1rem; padding-left: 2rem; position: relative; font-size: 1rem; color: #333; }
+.num_list li::before { content: counter(custom-counter) ". "; counter-increment: custom-counter; position: absolute; left: 0; top: 0; font-weight: bold; font-size: 1.2rem; color: #0056b3; }
+
+.sec_cont.num_list { margin: 2rem auto; padding: 0; list-style: none; counter-reset: custom-counter; }
+.sec_cont.num_list li { margin-bottom: 1rem; padding-left: 2.5rem; position: relative; font-size: 1rem; color: #333; }
+.sec_cont.num_list li::before { content: counter(custom-counter); counter-increment: custom-counter; position: absolute; left: 0; top: 0.2rem; width: 1.5rem; height: 1.5rem; border-radius: 50%; background-color: #fff; color: #fff; font-size: 1rem; font-weight: bold; text-align: center; line-height: 1.5rem; } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

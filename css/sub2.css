@@ -13,12 +13,12 @@
 .bg-icon {display: inline-block; width: 60px; height: 60px; background-color: #e8effb; border-radius: 20px; position: relative;}
 .bg-icon::before {content: ''; display: block; width: 50px; height: 50px; background: url(../images/sub/gdic_wrap.png) no-repeat 0 0 ; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
-.gd-fs-16 {font-size: 16px; color: #2d6fd1;}
+.gd-fs-16 {font-size: 16px; font-weight: 400;}
 .guide_ex {color: #2d6fd1}
 .refer_mk {font-size: 18px; color: #2d6fd1; margin-top: 10px; margin-left: 20px; position: relative;} 
 .refer_mk::before {content: ''; display: block; width: 11px; height: 9px; background: url(../images/sub/blet_guide_chk.png); position: absolute; left: -20px; top: 9px;}
 
-.guide_text .heighlingt {color: #052a71; background-color: #f1f1f9;}
+.guide_text .heighlingt {color: #0f298f; background-color: #f1f1f9;}
 
 /* 고용가이드 - 장애인 고용 가이드란? */
 
@@ -52,11 +52,10 @@
 /* 가이드 레이아웃 */
 .guide_wrap {padding: 80px 0 100px; }
 .guide_conts_wrap {margin-top: 80px;}
-.guide_conts_wrap .guide_conts {margin-top: 80px;}
+.guide_conts_wrap .guide_conts {margin-top: 100px;}
 /* .guide_conts_wrap .guide_title + .guide_conts {margin-top: 50px;} */
-.guide_conts_wrap .sec_cont {margin-top: 80px; margin-left: 40px; }
+.guide_conts_wrap .sec_cont {margin-top: 60px; margin-left: 40px; }
 .guide_conts_wrap .sec_cont2 {margin-top: 40px; margin-left: 40px; }
-.guide_conts_wrap h6 + .sec_cont {margin-top: 40px;}
 
 .guide_title {text-align: center; background-color: #fff; border-radius: 40px 40px 0 0; border-bottom: 1px solid #c7c7e5; padding-bottom: 50px;}
 .guide_title h5 {font-size:40px; font-weight:600; }
@@ -73,30 +72,33 @@
 .list_tit {font-size: 22px; font-weight: 500 ; margin-bottom: 40px;}
 
 
-ul.guide_text {display: flex; flex-direction: column; gap: 10px;}
-ul.guide_text > li {position: relative; line-height: 1.4;}
-ul.guide_text > li::after {content: ''; width: 4px; height: 4px; display: block; position: absolute; left: -20px; top: 12px; background-color: #222; border-radius: 4px;}
+ul.guide_text {display: flex; flex-direction: column; gap: 10px; margin-left: 20px;}
+ul.guide_text > li {position: relative; line-height: 1.6;}
+ul.guide_text > li::after {content: ''; width: 4px; height: 4px; display: block; position: absolute; left: -20px; top: 14px; background-color: #222; border-radius: 4px;}
 
 table .guide_text {margin-left: 20px; padding: 10px;} 
 .guide_text.inbox {margin-left: 20px; } 
 
 .tab_cont .guide_text {margin-left: 20px;}
-.sec_cont p.guide_text {margin-bottom: 30px;}
+/* .sec_cont p.guide_text {margin-bottom: 30px;} */
 
-p.guide_text {position: relative; line-height: 1.4;}
-p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; left: -20px; top: 12px; background-color: #222; border-radius: 4px; }
+p.guide_text {position: relative; line-height: 1.6; margin-left: 20px;}
+p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; left: -20px; top: 14px; background-color: #222; border-radius: 4px; }
 
+/* 팝업 버튼 */
+.gd-btn {padding: 8px 20px; border-radius: 5px; background-color: #236cdb; color: #fff !important; font-size: 18px; box-shadow: 0 2px 2px rgba(0,0,0,0.2); transition: all 0.3s; display: inline-flex; align-items: center;}
+.gd-btn:hover {background-color: #1953c2; box-shadow: 0 4px 8px rgba(0,0,0,0.3);}
+.gd-btn .arr {background-size: 20px; background-image: url(../images/icon/arrow-up-right-wh.svg);}
 
-.gd-btn {padding: 8px 20px; border-radius: 5px; background-color: #6672a4; color: #fff !important; font-size: 18px; box-shadow: 0 2px 2px rgba(0,0,0,0.2); margin: 0 5px; transition: all 0.3s; }
-.gd-btn:hover {background-color: #515e91; box-shadow: 0 4px 8px rgba(0,0,0,0.3);}
-.gd-btn .arr {background-size: 20px; background-position-y: 4px; background-image: url(../images/icon/arrow-up-right-wh.svg);}
+.btn_group {display: flex; gap: 10px;}
+
 
 /* 가이드 상단  */
 .btn_favor {display: flex; justify-content: end; margin-bottom: 10px;}
 .btn_favor button {width:35px; height: 35px; background: #ffd96d url(../images/sub/icon_favor.png) no-repeat center; border-radius: 5px;}
 .btn_favor button.on {background-image: url(../images/sub/icon_favor_on.png);}
 
-.title_box {background-color: #ededf4; height: 90px; display: flex; align-items: center; justify-content: center; gap: 30px; font-size: 24px; font-weight: 500; border-radius: 10px}
+.title_box {background-color: #f7f8f9; height: 90px; display: flex; align-items: center; justify-content: center; gap: 30px; font-size: 24px; font-weight: 500; border-radius: 10px}
 .title_box.guide h5 {font-size: 35px; font-weight: 600; position: relative; padding-left: 40px;}
 .title_box.guide h5::before {content: ''; width: 18px; height: 18px; display: block; background: url(../images/sub/blet_guide_tit.png); position: absolute; top: 12px; left: 0;}
 .title_box.guide.left {justify-content: left; padding-left: 60px;}
@@ -104,11 +106,11 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 
 .guide_step {margin-top: 30px; display: flex; justify-content: space-between; gap: 20px;}
 .guide_step > li {flex: 1;}
-.guide_step .step_list { display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid #0f298f; border-radius: 30px; background-color: #f1f1f9; gap: 5px; position: relative; padding: 0 20px; text-align: center; height: 100px;}  
+.guide_step .step_list { display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid #1953c2; border-radius: 30px; background-color: #fff; gap: 5px; position: relative; padding: 0 20px; text-align: center; height: 100px;}  
 .guide_step .step_list:not(.last)::after {content: ''; display: block; background-color: #b8d4ff; height: 1px; position: absolute; left: 0; right: -50px; top: 50%; z-index: -1;} 
-.guide_step .step_list span {font-size: 24px; color: #0f298f;}
+.guide_step .step_list span {font-size: 24px; color: #1953c2;}
 .guide_step .step_list span.step {font-size: 20px; font-weight: 600;}
-.guide_step .step_list.active {background-color: #0f298f;;} 
+.guide_step .step_list.active {background-color: #1953c2; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);} 
 .guide_step .step_list.active span {color: #fff; font-weight: 500;}
 
 .guide_step.step8 {flex-wrap: wrap; gap: 10px 20px;}
@@ -117,11 +119,16 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 
 /* 채용계획 수립 - 1채용수요조사 */
 .gdic_plan {display: flex; justify-content: space-between; }
-.gdic_plan > ul {display: flex; justify-content: space-between; position: relative;}
+.gdic_plan > ul {display: flex; justify-content: space-between; position: relative; }
 .gdic_plan > ul::before {content: ''; display: block; width: 41px; height: 100%; background: url(../images/sub/gdic_arrow1.png) no-repeat center; position:absolute; right: -100px; top: 0;}
-.gdic_plan > div {border: 2px solid #87b1fb; font-size: 24px; font-weight: 500; background-color: #e8effb; gap: 20px; border-radius: 40px; color: #1953c2;}
+.gdic_plan > div {border: 2px solid #4876ce; font-size: 24px; font-weight: 500; background-color: #f4f7ff; border-radius: 40px; color: #1953c2;}
+.gdic_plan > div.plan-item {gap: 30px; } 
 
-.gdic_plan .bg-icon {width: 70px; height: 70px;}
+.gdic_plan.type01 > ul {border: 1px solid #a6d0f6;}
+.gdic_plan.type02 > ul > li {border: 1px solid #a6d0f6;}
+.gdic_plan .bg-icon {background-color: #fff;}
+
+.gdic_plan .bg-icon {width: 70px; height: 70px; }
 .gdic_plan .bg-icon.icon2:before {background-position-x: -50px;}
 .gdic_plan .bg-icon.icon3:before {background-position-x: -100px;}
 .gdic_plan .bg-icon.icon4:before {background-position-x: -150px;}
@@ -135,10 +142,10 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .gdic_plan .plan-item {padding: 30px 0; display: flex; flex-direction: column; gap: 15px; align-items: center; color: #1953c2; text-align: center;}
 .gdic_plan div.plan-item {color:#033cb4}
 .gdic_plan.type01 {gap: 110px;}
-.gdic_plan.type01 .plan-item {width: 220px; height: 180px; } 
+.gdic_plan.type01 .plan-item {width: 220px; } 
 .gdic_plan.type01 .plan-item:not(:last-child)::before {content: ''; width: 1px; display: block; position: absolute; right: 0; top: 30px; bottom: 30px; background-color: #a6d0f6;}
 .gdic_plan.type02 ul {gap: 15px;}
-.gdic_plan.type02 ul::before {left: -60px;}
+.gdic_plan.type02 ul::before {left: -58px;}
 .gdic_plan.type02 div.plan-item {width: 190px;}
 .gdic_plan.type02 ul .plan-item {width: 180px;}
 
@@ -152,7 +159,7 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 
 .job-design .box_list li {border-radius: 20px 40px; flex-direction: column; border-color: #82b2e4; color: #222;}
 .job-design .box_list li.odd {border-radius: 40px 20px;}
-.job-design .box_list .tit {margin-bottom: 25px; color: #0f298f;}
+.job-design .box_list .tit {margin-bottom: 25px; color: #1953c2;}
 .job-design .box_list .bg-icon {border-radius: 100px; background-color: #d7e9ff;}
 .job-design .box_list .bg-icon::before {background-position: -250px -50px;}
 .job-design .box_list .bg-icon.icon2::before {background-position-x: -300px;}
@@ -167,7 +174,7 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .tab_case_box {display: flex; flex-direction: column; gap: 20px;}
 .tab_case_box li {border: 1px solid #c7c7e5; border-radius: 40px 20px 40px 40px; padding: 30px;}
 .tab_case_box dl, .tab_case_box dt {display: flex; align-items: center;}
-.tab_case_box dt {flex: 0 0 250px; font-weight: 500; color: #0f298f;}
+.tab_case_box dt {flex: 0 0 250px; font-weight: 500; color: #1953c2;}
 .tab_case_box dd {flex: 1;}
 .tab_case_box .disability__icon {flex: 0 0 60px; height: 60px; margin-right: 30px; display: block; border-radius: 60px; background: #f1f1f9 url("../images/emp_guide/ico/ico_disabled-job1.png") no-repeat center;}
 .tab_case_box .disability__icon.ico01 {background-image: url("../images/emp_guide/ico/ico_disabled-job1.png");}
@@ -203,6 +210,8 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .recruit-method .box_list .icon3 {background-position-x:-450px ;}
 .recruit-method .box_list .txt   {padding: 10px;}
 
+.recruit-method .box_list.type2 .head {justify-content: flex-start;}
+
 .box_list.type2 > li  {flex-direction: column; border-radius: 40px; padding: 0;}
 .box_list.type2 .head {display: flex; align-items: center; padding: 10px; padding-left: 30px; background-color: #f5f9ff; width: calc(100% - 20px); border-radius: 30px; margin: 10px; justify-content: center;}
 .box_list.type2 .tit  {font-size: 24px; margin-right: 40px; color: #222; display: inline-block;}
@@ -210,8 +219,8 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .box_list.type2 .body {display: flex;}
 .box_list.type2 .body li {flex: 1 0 calc(50% - 90px); padding: 20px 40px 30px; display: flex; flex-direction: column; gap: 20px; position: relative;}
 .box_list.type2 .body li:first-child::after {content: ''; display: block; border-right: 1px dashed #c7c7e5; position: absolute; top: 20px; bottom: 20px; left: 0; right: 10px;}
-.box_list.type2 .body .tag {font-size: 24px; align-self: flex-start; }
-.box_list.type2 .body .description {line-height: 1.6;}
+.box_list.type2 .body li .tag {align-self: flex-start; }
+.box_list.type2 .body li .description {line-height: 1.6;}
 
 
 /* 채용계획 수립 - 5근로조건확정 */
@@ -221,14 +230,14 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .work-condition .process-list .icon3 {background-position-x: -650px;}
 .work-condition .process-list .icon4 {background-position-x: -700px;}
 .work-condition .process-list .icon5 {background-position-x: -750px;}
-.work-condition .process-list .process-header {font-size: 21px;}
+.work-condition .process-list .process-header {font-size: 24px; }
 .work-condition .process-list .process-description {font-size: 18px; font-weight: 400; line-height: 1.4;}
 
 
 /* 모집 및 채용 - 1채용공고작성 */
 .recruitment-posting .guide_text {gap: 15px; }
 .recruitment-posting .guide_text li {line-height: 1.6;}
-.recruitment-posting .sec1 .guide_text {padding-right: 300px; position: relative;}
+.recruitment-posting .sec1 .guide_text {padding-right: 350px; position: relative;}
 .recruitment-posting .sec1 .guide_text::after {content: ''; display: block; width: 277px; height: 292px; background: url(../images/sub/gd_img1.png) no-repeat; position: absolute; top: -20px; right:0 ;}
 .recruitment-posting .gd-line-box {display: flex; background-color: #f9fbff; margin: 20px 0; position: relative;}
 .recruitment-posting .gd-line-box .box-header {flex: 0 0 330px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
@@ -262,7 +271,7 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .application-item .app-description p {text-align: center; line-height: 30px; font-size: 18px;}
 .application-item .badge {font-size: 18px; font-weight: 600; margin-bottom: 20px;}
 .application-item .badge span {display: inline-block; font-weight: 400; width: 70px; padding: 0 10px; border-radius: 50px; background-color: #f3f8ef; color: #1a7b58; margin: 0 5px;}
-.application-item .badge span.kead {background-color: #d9e0ef; color: #0f298f;}
+.application-item .badge span.kead {background-color: #d9e0ef; color: #1953c2;}
 .application-item .app-description p.icon {font-size: 20px; display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 40px;}
 
 
@@ -288,7 +297,7 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 
 
 /* 모집 및 채용 - 5면접전형 */
-.interview .btn_layer[data-id="pop2"] {background-color: #9166a4;}
+/* .interview .btn_layer[data-id="pop2"] {background-color: #9166a4;} */
 .board-interview {border: 1px solid #c7e3ff; background-color: #f7f8f9; border-radius: 100px 20px 20px 20px; padding: 30px; padding-left: 95px; margin-top: 50px; position: relative; } 
 .board-interview::before {content: 'o'; display: block; width: 50px; height: 50px; background-color: #8fc8ff; border-radius: 50px; position: absolute; top: 5px; left: 5px; display: flex; justify-content: center; font-size: 50px; font-weight: 600; color: #fff; line-height: 40px;}
 .board-interview::after {content: ''; display: block; width: 107px; height: 65px; background: url(../images/sub/gdic_ox.png); position: absolute; right: 20px; top: -65px;}
@@ -371,6 +380,18 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .employment-job .step-box .bg-icon.icon4::before {background-image: url(../images/emp_guide/gdst0302_1_4.png);}
 .employment-job .step-box .box-description {padding: 20px; font-size: 18px; line-height: 1.6;}
 
+.employment-job .exp_process .icon {background-position: 0 -200px;}
+.employment-job .exp_process .icon.icon2 {background-position-x: -100px;}
+.employment-job .exp_process .icon.icon3 {background-position-x: -200px;}
+.employment-job .exp_process .icon.icon4 {background-position-x: -300px;}
+
+.work_system_box {background: #f7f8f9; padding: 10px; border-radius: 10px; position: relative; display: flex; flex-direction: column; gap: 5px;}
+.work_system_box li {display: flex; background-color: #fff; border-radius: 10px; padding: 15px;}
+.work_system_box .tit {flex: 0 0 150px; text-align:center; margin-right: 30px; font-weight: 500; color: #1953c2;}
+
+.tab_cont .line-box {border: 1px solid #d9e0ef; padding: 30px; border-radius: 30px; line-height: 1.6;}
+.tab_cont .line-box .cont_tit4 {color: #1953c2;}
+
 
 /* 고용관리 - 교육훈련 */
 .employment-training .tab_case_box > li {display: flex; align-items: center;}
@@ -398,7 +419,7 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .table-list .refer_mk {margin-top: 0;}
 
 
-/* 고용관리 - 갈등관리 */
+/* 고용관리 - 근로자 갈등관리 */
 .employment-solving .box_list .head {font-size: 24px; font-weight: 500; padding: 15px 0;}
 .employment-solving .sec1 .size100.icon2 {background-position-x: -100px;}
 .employment-solving .sec1 .size100.icon3 {background-position-x: -200px;}
@@ -411,6 +432,30 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .employment-solving .sec2 .size100.icon6 {background-position-x: -500px;}
 .employment-solving .sec2 .size100.icon7 {background-position-x: -600px;}
 .employment-solving .sec2 .size100.icon8 {background-position-x: -700px;}
+
+
+/* 고용관리 - 재난안전관리 */
+.safe_process {display: flex; flex-direction: column; gap: 20px;}
+.safe_process > li {border: 1px solid #dfe8fe; border-radius: 50px; padding: 10px; display: flex; } 
+/* .safe_process .safe-header {flex: 0 0 230px; background-color: #f7f8f9; border-radius: 42px; padding: 20px; display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center; } */
+.safe_process .safe-header {flex: 0 0 230px; background-color: #f9fbff; border-radius: 42px; padding: 20px; display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center; }
+
+.safe_process .step {background-color: #ebf3ff; color: #1953c2; font-size: 18px; border-radius: 20px; padding: 10px 16px; }
+.safe_process .icon {width: 100px; height: 90px; background: url(../images/sub/gdic_wrap_big.png) no-repeat -300px 0;}
+.safe_process .icon.icon2 {background-position-x: -400px;}
+.safe_process .icon.icon3 {background-position-x: -500px;}
+.safe_process .tit  {font-size: 24px; font-weight: 500; color: #1953c2; text-align: center; line-height: 1.6;}
+.safe_process .safe-dscp {padding: 20px; padding-left: 40px; line-height: 1.4;}
+.safe_process .safe_list li:not(:first-child) {margin-top: 20px;}
+
+
+
+
+
+/* 고용관리 - 해고와 퇴직 */
+
+
+
 
 
 /* 함께일하기가이드 - 스텝1 - 장애유형 알아보기 */
@@ -426,28 +471,43 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 
 .illust_box_list {border: 1px solid #d9e0ef; background-color: #fff; border-radius: 20px; padding: 30px; }
 .illust_box_list > li:not(:last-child) {margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px dashed #d9e0ef;}
-.illust_box_list > li .tit {margin-bottom: 20px; position: relative; font-weight: 500;}
+.illust_box_list > li .tit {margin-bottom: 20px; position: relative; font-weight: 500; }
 .illust_box_list > li .dsc {background-color: #e8effb; border-radius: 15px; padding: 20px; padding-left: 50px; position: relative; font-size: 18px; line-height: 1.6; }
 .illust_box_list > li .dsc::before {content: ''; width: 19px; height: 19px; display: block; background: url(../images/sub/arrow_story.png) no-repeat; position: absolute; left: 20px; top :25px}
+
+.illust_box_list > li .tit .before {font-size: 18px; color:#555; display: inline-block; margin-right: 10px;}
+.illust_box_list > li .tit .after {font-size: 24px; color: #1953c2; display: inline-block; margin-left: 10px;}
+
+
 
 
 /* 함께일하기가이드 - 스텝2 - 장애인식 개선하기 */
 
-.table_inbox {}
+.cr_process { display: flex; flex-wrap: wrap; gap: 10px 57px; margin-bottom: 10px; }
+.cr_process__item { position: relative; flex: 0 0 calc(20% - 40px); background: #f9fbff; border-radius: 10px; font-size: 17px; text-align: center; border: 1px solid #d9e0ef;}
+.cr_process__item:after { content: ""; position: absolute; right: calc(50% - 118px); top: 50%; z-index: 1; transform: translateY(-50%); width: 21px; height: 1px; background: #1953c2; }
+.cr_process__item:last-child::after { content: none; }
+.cr_process__item .ttl { position: relative; display: flex; align-items: center; justify-content: center; border-radius: 10px 10px 0 0; background: #e8effb; color: #1953c2; height: 50px; }
+.cr_process__item .ttl + div { display: flex; justify-content: center; height: calc(100% - 50px); padding: 10px 10px; align-self: center; min-width: 162px; }
+.cr_process__item .ttl + div > span { }
+.cr_process__item small { display: block; font-size: 16px; text-align: left; }
+
+.disability_awareness table.type3 .ta_l li:not(:last-child) {margin-bottom: 10px;}
 
 
 
+/* 함께일하기가이드 - 스텝3 - 장애직원 배려하기 */
+
+.tab_cont.box_type .tab-panel ul.box li.box_tip::before {top: 29px;}
+.tab_cont.box_type .tab-panel ul.box li.box_tip .tip {margin-top: 20px;}
 
 
+.box_tip .tip {position: relative; display: flex; align-items: center; border: 1px solid #d9e0ef; padding: 10px; border-radius: 10px; padding-left: 100px; background-color: #fff; min-height: 64px; line-height: 1.6;}
+.box_tip .tip::before {content: ''; display: inline-block; width: 72px; height: 42px; background: url(../images/sub/gdic_tip.png); position: absolute; left:10px; top: 10px;}
+.box_tip .tip .num {display: inline-block; margin: 0 5px 0 15px; color: #236cdb;}
 
-
-
-
-
-
-
-
-
+.box_tip.sign_language .tip {min-height: 120px; align-items: flex-start;padding-top: 18px;}
+.box_tip.sign_language .tip::after {content: ''; width: 350px; height: 110px; background: url(../images/sub/gd_img_sign.png); position: absolute; right: 10px; bottom: 0;}
 
 
 
@@ -456,41 +516,43 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .tb_base.tb_guide {border-top: none;}
 .tb_guide    {background-color: #fff; }
 .tb_guide tr.center td {text-align: center;}
-.tb_guide th, .tb_guide td {border: 1px solid #0f298f; padding: 15px 20px; }
+.tb_guide th, .tb_guide td {border: 1px solid #d5dbef; padding: 15px 20px; }
 .tb_guide thead th {border-bottom: none; padding: 10px; }
-.tb_guide th {text-align: center; background-color: #f1f1f9; color: #0f298f; }
+.tb_guide th {text-align: center; background-color: #f7f9ff; color: #666B82; }
 .tb_guide td {color: #222;}
 .guide_conts .tb_tit {font-size: 24px; margin-bottom: 20px; font-weight: 500;
 background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px center; display: inline-block; padding: 5px 23px; border-radius: 20px; padding-left: 50px;}
-.tb_guide .btn_link {background-color: #f5fffe; border: 1px solid #9ad6dc; padding: 4px 15px; border-radius: 5px;}
-.tb_guide.type1 th, .tb_guide.type1 td {border-color: #9abadc;}
-.tb_guide.type1 th {background-color: #f5faff;}
+.tb_guide .btn_link {background-color: #f7f9ff; border: 1px solid #7cb0ff; padding: 4px 15px; border-radius: 5px;}
+.tb_guide.type1 th, .tb_guide.type1 td {border-color: #d5dbef;}
+.tb_guide.type1 th {background-color: #f7f9ff;}
 .tb_guide.type1 td {vertical-align: top;}
 
 .tb_guide.type2 tbody th:first-child {border-left: none;}
 .tb_guide.type2 tbody td:last-child {border-right: none;}
 
-.guide_conts table ul li:not(:last-child) {margin-bottom: 6px; }
+.tb_base.tb_guide.type3 thead th {padding: 20px 0;}
+.tb_base.tb_guide.type3 tbody td {text-align: center;}
 
-.link_underline {color: #0f298f !important; position: relative; transition: all 0.3s;}
-.link_underline::before {content: ''; display: block; position: absolute; bottom: -1px; left: 0; right: 0; height: 1px; background-color: #7e8bbe;}
-.link_underline:hover {background-color: #e7e9f0;}
+
+
+.link_underline {color: #1953c2 !important; position: relative; transition: all 0.3s;}
+.link_underline::before {content: ''; display: block; position: absolute; bottom: -1px; left: 0; right: 0; height: 1px; background-color: #7cb0ff;}
+.link_underline:hover {background-color: #f7f9ff;}
 
 
 /* 리스트타입 - 단계 */
 .process-list {display: flex; justify-content: space-between; word-break:keep-all; gap: 20px;}
 .process-list.list5 {gap: 25px;}
-.process-list > li {flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; border-radius: 50px; padding: 20px; background-color: #f9fbff; border: 1px solid #dfe8fe; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
-.process-list .process-header {padding: 6px 15px; font-size: 20px; font-weight: 500; background-color: #ebf3ff; border-radius: 50px; color: #1953c2;}
-.process-list .process-icon {width: 50px; height: 50px; background: url(../images/sub/gdic_wrap.png) no-repeat 0 -50px; margin: 10px 0;}
-.process-list .process-description {font-size: 20px; font-weight: 500;}
+.process-list > li {flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; border-radius: 50px; padding: 20px; background-color: #f9fbff; border: 1px solid #dfe8fe; gap: 10px;}
+.process-list .process-header {padding: 6px 15px; font-size: 18px; background-color: #ebf3ff; border-radius: 50px; color: #1953c2;}
+.process-list .process-icon {width: 50px; height: 50px; background: url(../images/sub/gdic_wrap.png) no-repeat 0 -50px; }
+.process-list .process-description {font-size: 18px; font-weight: 400;}
 
 .process-list.no-box {gap: 0px;}
 .process-list.no-box li {border: none; background: none; box-shadow: none;}
 .process-list.no-box li:not(:last-child):before {content: ''; width: 40px; height: 40px; background: url(../images/svg/arrow-next.svg) no-repeat center/40px 40px; position: absolute; right: -4px; top: calc(50% - 6px)}
 
 .process-list .process-icon.size100 {width: 100px; height: 80px; background: url(../images/sub/gdic_wrap_big.png) no-repeat 0 -10px;}
-
 
 
 
@@ -515,8 +577,31 @@ background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px cen
 .box_list .link_btn {display: flex; justify-content: end; margin-right: 10px;}
 
 
+
+
+
+
+/* 리스트타입 - 설명포함 형 */
+.exp_process {display: flex; gap: 20px;}
+.exp_process > li {flex: 1; border-radius: 50px; padding: 10px; display: flex; flex-direction: column; background-color: #f7f8f9;} 
+/* .exp_process .safe-header {flex: 0 0 230px; background-color: #f7f8f9; border-radius: 42px; padding: 20px; display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center; } */
+.exp_process .exp-header {flex: 0 0 230px; border-radius: 42px; display: flex; flex-direction: column; gap: 10px; align-items: center; }
+
+.exp_process .step {font-size: 20px; font-weight: 500; padding-top: 20px;}
+.exp_process .icon {width: 100px; height: 100px; background: url(../images/sub/gdic_wrap_big.png) no-repeat 0 0;}
+.exp_process .icon.icon2 {background-position-x: -400px;}
+.exp_process .icon.icon3 {background-position-x: -500px;}
+.exp_process .tit  {font-size: 24px; font-weight: 500; text-align: center; line-height: 1.2; padding: 0;}
+.exp_process .exp-dscp {text-align: center; padding: 10px; font-size: 18px; line-height: 1.5;}
+.exp_process .exp_list li:not(:first-child) {margin-top: 20px;}
+
+
+
+
+
+
 /* 다른기업은은 */
-.guide-comp-case {margin-top: 100px; margin-left: 35px; border-bottom: 1px solid #c7c7e5;}
+.guide-comp-case {margin-top: 150px; margin-left: 35px; border-bottom: 1px solid #c7c7e5;}
 .guide-comp-case h6 {font-size: 30px; font-weight: 600; color: #0f298f; letter-spacing: -1px; padding-left: 50px; border-bottom: 2px solid #6672a4; position: relative; padding-bottom: 20px;}
 .guide-comp-case h6::before {content: ''; width: 36px; height: 32px; display: block; background: url(../images/sub/gdic_quotes.png) no-repeat; position: absolute; left: 0; top: -4px;}
 .guide-comp-case h6::after {content: ''; width: 126px; height: 98px; display: block; background: url(../images/sub/gdic_quotes_bg.png) no-repeat; position: absolute; right: 0; bottom: 0px;}
@@ -552,12 +637,10 @@ background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px cen
 .worktogether-box .box-description li {line-height: 1.4; margin-bottom: 10px;}
 .worktogether-box .box-description li:last-child {margin-bottom: 40px;}
 .worktogether-box .link_btn {position: absolute; right: 20px; bottom: 20px;} */
-.worktogether-box {border-radius: 30px; padding: 20px; display: flex;position: relative; background-color: #f9fbff; border: 1px solid #d9e0ef;}
-.worktogether-box .box-header {flex: 0 0 300px; background-color: #fff; border: 1px solid #bddc99;border-radius: 20px; overflow: hidden; margin-right: 20px; display: flex; align-items: center; justify-content: center;}
+.worktogether-box {border-radius: 30px; padding: 20px; display: flex; background-color: #f9fbff; border: 1px solid #d9e0ef;}
+.worktogether-box .box-header {flex: 0 0 300px; background-color: #fff; border-radius: 20px; overflow: hidden; margin-right: 20px; display: flex; align-items: center; justify-content: center;}
 .worktogether-box .box-description {font-size: 18px; line-height: 1.8; padding:5px;}
-.worktogether-box .box-description li {line-height: 1.4; margin-bottom: 10px;}
-.worktogether-box .box-description li:last-child {margin-bottom: 40px;}
-.worktogether-box .link_btn {position: absolute; right: 20px; bottom: 20px;}
+.worktogether-box .link_btn {display: flex; align-items: end; margin-left: 30px;}
 
 
 /* 탭 */
@@ -567,20 +650,20 @@ background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px cen
 .tab_style_gd .tab_list > li:hover > a, 
 .tab_style_gd .tab_list > li:focus > a, 
 .tab_style_gd .tab_list > li:active > a,
-.tab_style_gd .tab_list > li.on > a {color: #fff;; background-color:#0f298f; z-index: 1;}
+.tab_style_gd .tab_list > li.on > a {color: #fff;; background-color:#1953c2; z-index: 1;}
 .tab_style_gd .tab_list > li:first-child.on:before {background-image: url(../images/sub/tab_bg_folder.png);}
-.tab_style_gd .tab_list > li > a::after {content: ''; position: absolute; bottom: 0; left: 0; height: 2px; width: 0; background-color: #0b2f66; transition: width 0.4s ease; } 
-.tab_style_gd .tab_cont {border-top: 2px solid #0f298f; }
+.tab_style_gd .tab_list > li > a::after {content: ''; position: absolute; bottom: 0; left: 0; height: 2px; width: 0; background-color: #1953c2; transition: width 0.4s ease; } 
+.tab_style_gd .tab_cont {border-top: 2px solid #1953c2; }
 .guide_wrap .tab_cont {padding-top: 20px;}
 .tab_style00 .tab_list {display: flex; flex-wrap: wrap; gap: 10px; }
-.tab_style00 .tab_list > li > a {font-size: 18px; padding: 10px 20px; display: flex; align-items: center; justify-content: center; border-radius: 50px; cursor: pointer; transition: 0.4s; background: #f7f8f9; border: 1px solid #b9c3dd; color:#333;}
+.tab_style00 .tab_list > li > a {font-size: 18px; padding: 10px 20px; display: flex; align-items: center; justify-content: center; border-radius: 50px; cursor: pointer; transition: 0.4s; background: #f7f8f9; border: 1px solid #d5dff0; color:#333;}
 .tab_style00 .tab_list > li:hover > a, 
 .tab_style00 .tab_list > li:focus > a, 
 .tab_style00 .tab_list > li:active > a,
-.tab_style00 .tab_list > li.on > a {color: #fff;; background-color:#0f298f; z-index: 1;}
+.tab_style00 .tab_list > li.on > a {color: #fff;; background-color:#1953c2; z-index: 1; border-color: #1953c2;}
 
 .tab_cont.box_type .tab-panel ul.box {display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;}
-.tab_cont.box_type .tab-panel ul.box li {flex: 1 0 100%; border-radius: 5px; padding: 20px; background-color: #f7f8f9; position: relative; font-size: 18px;}
+.tab_cont.box_type .tab-panel ul.box li {flex: 1 0 100%; border-radius: 5px; padding: 20px; padding-left: 30px; background-color: #f7f8f9; position: relative; font-size: 18px;}
 .tab_cont.box_type.row2  .tab-panel ul.box li {flex: 1 0 calc(50% - 10px);}
 .tab_cont.box_type .tab-panel ul.box li::before {content: ''; display: block; width: 10px; height: 4px; background-color: #1953c2; position: absolute; left: 0; top: calc(50% - 2px);}
 

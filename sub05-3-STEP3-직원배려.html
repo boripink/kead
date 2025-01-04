@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="asset/aos/aos.css">
+	<link rel="stylesheet" href="asset/slick/slick.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="asset/jquery/jquery-3.7.1.min.js"></script>
+	<script src="asset/aos/aos.js"></script>
+	<script src="asset/slick/slick.js"></script>
+	<script src="js/common.js"></script>
+
+	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
+	<title>고용관리 | 고용가이드 | 한국장애인고용공단 장애인고용컨설팅</title>
+	
+</head>
+<body>
+	<header class="header act">
+		<div class="inner">
+			<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+			<h2 class="hidden">대메뉴</h2>
+			<ul class="gnb">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user_wrap">
+				<div class="user_info">
+					<!-- [D] 로그인 전에 안보이게 처리 -->
+					<div class="user">
+						<span class="neme"><b>홍길동</b> 님</spanclass="neme"> <span class="time">09:33</span>
+						<button class="btn_time" type="button">연장</button>
+					</div>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<button type="button" class="btn_menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="mob_wrap">
+			<div class="user_mob">
+				<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+				<div class="user">
+					<span class="neme"><b>홍길동</b> 님</span>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<ul class="gnb_mob">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+						<li><a href="sub05-2.html">단계별 고용 GUIDE</a></li>
+						<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+						<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container sub_container">
+		<div class="inner">
+			<div class="snb_wrap">
+				<h3>고용 가이드</h3>
+				<ul class="snb_list">
+					<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+					<li class="snb_depth2"><a href="sub05-2-1체크리스트.html">단계별 고용 GUIDE</a></li>
+					<li class="on"><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+					<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+				</ul>
+			</div>
+			<div class="contents together_guide">
+				<!-- 타이틀 -->
+				<div class="cont_tit_wrap">
+					<h4 class="cont_tit">함께 일하기 GUIDE</h4>
+					<ul class="cont_lct">
+						<li class="home">홈</li>
+						<li>고용 가이드</li>				
+						<li class="pnt_cr02"><b>함께 일하기 GUIDE</b></li>
+					</ul>
+				</div>
+				<!-- 가이드 콘텐츠 -->
+				<div class="guide_wrap">
+					<!-- 가이드 상단 -->				
+					<div class="guide_header">
+						<div class="btn_favor">
+							<button type="button" aria-label="즐겨찾기"></button>
+						</div> 					                   
+						<div class="title_box guide left">
+							<h5 class="cont_tit2"><span class="tit-icon"></span>장애인 직원과 함께 일하기</h5>
+						</div>
+						<ul class="guide_step step5">
+							<li>
+								<a href="sub05-3.html" class="step_list">
+									<span class="step">STEP1</span>
+									<span class="txt">장애유형 알아보기</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-3-STEP2-장애인식.html" class="step_list">
+									<span class="step">STEP2</span>
+									<span class="txt">장애인식 개선하기</span>
+								</a>
+							</li>
+							<li>
+								<a href="sub05-3-STEP3-직원배려.html" class="step_list last  active">
+									<span class="step">STEP3</span>
+									<span class="txt">장애 직원 배려하기</span>
+								</a>
+							</li>
+						</ul>						
+					</div>
+					<!-- 가이드 콘텐츠-->										
+                    <div class="guide_conts_wrap disability_support">
+						<div class="guide_title" >
+							<h5>장애 직원 배려하기</h5>	
+							<p class="title_txt">장애 유형별 직장 내 장애인 동료를 대하는 배려사항을 안내해 드립니다.</p>
+						</div>
+						<section class="guide_conts sec1">
+							<h6 class="guide_tit2"><span class="num">1.</span>장애 유형에 따른 직장 내 배려 사항</h6>
+							<div class="sec_cont">
+								<div class="tab_wrap tab_style00">
+									<ul class="tab_list" role="tablist">									
+										<li role="presentation" class="on"><a href="#tab1" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="true">지체장애</a></li>
+										<li role="presentation"><a href="#tab2" role="tab" id="tab2-tab" aria-controls="tab2" aria-selected="false">뇌병변장애</a></li>
+										<li role="presentation"><a href="#tab3" role="tab" id="tab3-tab" aria-controls="tab3" aria-selected="false">시각장애</a></li>
+										<li role="presentation"><a href="#tab4" role="tab" id="tab4-tab" aria-controls="tab4" aria-selected="false">언어장애</a></li>
+										<li role="presentation"><a href="#tab5" role="tab" id="tab5-tab" aria-controls="tab5" aria-selected="false">안면장애</a></li>
+										<li role="presentation"><a href="#tab6" role="tab" id="tab6-tab" aria-controls="tab6" aria-selected="false">신장장애</a></li>
+										<li role="presentation"><a href="#tab7" role="tab" id="tab7-tab" aria-controls="tab7" aria-selected="false">청각장애</a></li>
+										<li role="presentation"><a href="#tab8" role="tab" id="tab8-tab" aria-controls="tab8" aria-selected="false">심장장애</a></li>
+										<li role="presentation"><a href="#tab9" role="tab" id="tab9-tab" aria-controls="tab9" aria-selected="false">호흡기장애</a></li>
+										<li role="presentation"><a href="#tab10" role="tab" id="tab10-tab" aria-controls="tab10" aria-selected="false">간장애</a></li>
+										<li role="presentation"><a href="#tab11" role="tab" id="tab11-tab" aria-controls="tab11" aria-selected="false">장루·요루장애</a></li>
+										<li role="presentation"><a href="#tab12" role="tab" id="tab12-tab" aria-controls="tab12" aria-selected="false">뇌전증장애</a></li>
+										<li role="presentation"><a href="#tab13" role="tab" id="tab13-tab" aria-controls="tab13" aria-selected="false">지적장애</a></li>
+										<li role="presentation"><a href="#tab14" role="tab" id="tab14-tab" aria-controls="tab14" aria-selected="false">자폐성장애</a></li>
+										<li role="presentation"><a href="#tab15" role="tab" id="tab15-tab" aria-controls="tab15" aria-selected="false">정신장애</a></li>
+									</ul>
+									<div class="tab_cont box_type">
+										<div id="tab1" class="tab-panel" role="tabpanel" aria-labelledby="tab1-tab">
+										<ul class="box">
+											<li>책장이나 캐비닛 등 높은 곳에 위치한 물건은 미리 낮은 위치에 놓기</li>
+											<li class="box_tip">단체 식사 시, 휠체어로 이동 가능한지 장소인지 미리 확인하기
+												<p class="tip" >건물에 계단이나 단차가 없어야 하고, 좌식 테이블보다는 입식 테이블이 휠체어로 이동하기 편리합니다.</p>
+											</li>
+										</ul>
+										</div>
+										<div id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-tab">
+										<ul class="box">
+											<li>신체적인 경직이나 흔들림으로 업무처리 속도가 늦을 수 있으므로, 업무 수행을 위한 충분한 시간 주기</li>
+											<li>발음이 어눌하여 말하는 내용을 알아듣기 어려울 때는 다시 한 번 이야기해달라고 요청하기</li>
+											<li>필요할 경우 메신저 프로그램을 활용하여 소통하기</li>
+										</ul>
+										</div>
+										<div id="tab3" class="tab-panel" role="tabpanel" aria-labelledby="tab3-tab">
+										<ul class="box">
+											<li class="box_tip">
+												중증 시각 장애 근로자의 경우, 사무실 환경, 주요 편의시설 위치를 익힐 수 있는 충분한 시간 주기
+												<p class="tip">시각 장애인 동료가 사무실 환경이 바뀐 것을 알아차리기 어렵다면, 바뀐 후의 배치에 대해 충분히 설명해줍니다.</p>
+											</li>
+											<li class="box_tip">
+												회의 중이거나 말을 시작할 때 누가 말하는지 알 수 있도록 이름 밝히기
+												<p class="tip">새로운 장소나 낯선 환경으로 안내하거나, 물건을 전해줄 때는 간단히 설명을 덧붙입니다.</p>
+											</li>
+										</ul>
+										</div>
+										<div id="tab4" class="tab-panel" role="tabpanel" aria-labelledby="tab4-tab">
+										<ul class="box">
+											<li>전화가 어려운 경우, 메신저 등 다른 의사소통 방법을 활용하기</li>
+											<li>대화 시 주의를 기울이고, 동료가 말을 끝마칠 때까지 기다리기</li>
+										</ul>
+										</div>
+										<div id="tab5" class="tab-panel" role="tabpanel" aria-labelledby="tab5-tab">
+										<ul class="box">
+											<li>화상으로 장애를 입은 경우, 피부가 습도나 온도에 많은 영향을 받으므로, 냉방이 잘 되는 곳으로 업무 배치하기</li>
+											<li>술은 모세혈관을 확장 시켜 흉터에 색소침착이 남게 만들 수 있으므로, 회식 자리 등에서 무리하게 술 권하지 않기</li>
+										</ul>
+										</div>
+										<div id="tab6" class="tab-panel" role="tabpanel" aria-labelledby="tab6-tab">
+										<ul class="box">
+											<li>피로를 쉽게 느끼고 고혈압, 부종 등의 증상을 겪을 수 있기 때문에 야근이 잦거나 육체적으로 힘든 직무 주의 하기</li>
+											<li>혈액 투석이 필요한 동료는 근무 시간 조정해 주기(평균 주2~4회, 1회 당 4~5시간 소요)</li>
+											<li>혈액투석을 하는 신체 부위(팔목 등)에 무리가 가지 않도록 하고, 복막투석을 하는 복부에 압박되지 않도록 주의하기</li>
+										</ul>
+										</div>
+										<div id="tab7" class="tab-panel" role="tabpanel" aria-labelledby="tab7-tab">
+										<ul class="box">
+											<li>소통 시 기본적으로 문자화된 문서를 활용하고 추가적으로 수어나 구화 등 방법 사용하기</li>
+											<li class="box_tip sign_language">
+												동료가 사용하는 주된 언어가 무엇인지 파악하기
+												<p class="tip">주된 언어 종류 : <span class="num">①</span> 수어 사용<span class="num">②</span> 구화 사용<span class="num">③</span> 수어,구화 모두 사용</p>
+											</li>
+											<li>동료가 수어 사용 시, 수화통역사와 동행하기</li>
+											<li>업무 관련 내용은 시각적으로 확인할 수 있는 문서 활용하기</li>
+											<li>동료가 구화 사용 시 입모양을 또박또박하게 말하고, 추가적으로 문서를 제시하기</li>
+											<li>대화를 마친 후에는 명확하게 전달되었는지 확인하기</li>
+											<li>업무에 변경 사항이 있을 경우, 메신저나 메모를 통해 상황을 즉시 공유하기</li>
+											<li>보청기, 인공와우를 착용하는 동료는 조용하고 잡음과 진동이 없는 환경으로 배치하기</li>
+										</ul>
+										</div>
+										<div id="tab8" class="tab-panel" role="tabpanel" aria-labelledby="tab8-tab">
+										<ul class="box">
+											<li class="box_tip">
+												단체 식사 시 건강에 무리가 되지 않는 메뉴 선택하기
+												<p class="tip">고혈압을 유발시킬 수 있는 염분이나 당분이 많은 음식을 피해야 합니다.</p>
+											</li>
+											<li>심장에 전기 자극을 주는 장치(인공 심장박동기)를 삽입한 경우가 있으므로, 근처에서 과도한 전파를 유발하는 기계·장치를 사용하지 않기</li>
+										</ul>
+										</div>
+										<div id="tab9" class="tab-panel" role="tabpanel" aria-labelledby="tab9-tab">
+										<ul class="box">
+											<li>기관지염이나 폐렴으로 악화될 수 있기 때문에 감기 옮기지 않도록 주의하기</li>
+											<li>담배를 권하거나 함께 있는 자리에서 흡연 하지 않기</li>
+										</ul>
+										</div>
+										<div id="tab10" class="tab-panel" role="tabpanel" aria-labelledby="tab10-tab">
+										<ul class="box">
+											<li>간 이식을 받은 경우, 면역억제제로 인해 쉽게 감염될 수 있으므로, 위생 관리(손 씻기 등)를 철저히 할 수 있도록 도와주기</li>
+											<li>술, 담배 강요하지 않기</li>
+										</ul>
+										</div>
+										<div id="tab11" class="tab-panel" role="tabpanel" aria-labelledby="tab11-tab">
+										<ul class="box">
+											<li>배설 기능에 장애가 있기 때문에 스스로 장애를 알리는 것을 꺼려할 수 있으므로, 장애에 관한 불필요한 질문을 하지 않기</li>
+											<li class="box_tip">
+												동료가 편안하게 화장실을 사용할 수 있도록 배려하기
+												<p class="tip">배변 봉투를 차고 있는 경우, 하루에 3~5번 정도 주기적으로 비워야 합니다.</p>
+											</li>
+										</ul>
+										</div>
+										<div id="tab12" class="tab-panel" role="tabpanel" aria-labelledby="tab12-tab">
+										<ul class="box">
+											<li>조명이 현란하지 않고 소음이 적은 근무 환경으로 배치하기</li>
+											<li>전신발작을 하는 동료를 발견했을 때는 다칠 수 있는 주변의 물건을 치우고 혀를 깨물거나 질식하지 않도록 고개를 돌려주는 등의 조치 취하기</li>
+											<li>발작이 멈춰 환자의 의식이 깨어나면 편안한 장소로 이동하여 안정을 취하도록 도와주기</li>
+										</ul>
+										</div>
+										<div id="tab13" class="tab-panel" role="tabpanel" aria-labelledby="tab13-tab">
+										<ul class="box">
+											<li>인지적인 능력이 낮더라도 자신의 욕구를 알고 표현할 수 있으므로 동료 개인의 의사 존중하기</li>
+											<li>OO 씨, OO 사원과 같은 호칭을 사용하고 존중하는 어투 사용하기</li>
+										</ul>
+										</div>
+										<div id="tab14" class="tab-panel" role="tabpanel" aria-labelledby="tab14-tab">
+										<ul class="box">
+											<li>일과의 변동, 예상치 못한 상황에 취약하므로, 일의 변동이 생길 때에는 미리 상황을 설명하기</li>
+										</ul>
+										</div>
+										<div id="tab15" class="tab-panel" role="tabpanel" aria-labelledby="tab15-tab">
+										<ul class="box">
+											<li>질환명, 과거력, 가족력과 같은 개인 정보는 공개적으로 묻지 않기</li>
+											<li>만약 평소와 다른 행동을 보일 경우, 약물관리 및 증상에 대해 논의할 사람이 필요하기 때문에 장애 직원의 주치의, 가족, 사례관리자의 정보를 미리 확인하기</li>
+											<li>약물복용에 따른 증상(졸음, 갈증 등)이 나타날 수 있으므로, 업무 수행에 큰 지장을 주지 않는 선에서 근무 시간을 조정하거나 휴식 시간 제공하기</li>
+											<li>지속적인 약 복용과 통원 치료(외래 보통 월 1회)는 정신질환을 관리하기 위해서 매우 중요하므로, 직장 내에서 자연스럽게 약을 복용할 수 있는 분위기 조성하기</li>
+										</ul>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</section>				
+					</div>
+				</div><!-- //guide_wrap -->
+			</div><!-- //contents-->
+		</div><!-- //inner -->
+	</div>
+	<footer class="footer">
+		<div class="inner">
+			<div class="f_left">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li class="pnt_cr1"><a href="#"><b>개인정보처리방침</b></a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<a href="#" target="_blank" title="새창이동">
+					<img src="images/img_watch.png" alt="" class="watch">
+				</a>
+				<div class="f_info">
+					<p class="f_logo">한국장애인고용공단</p>
+					<div>
+						<p>주소 (13619)경기도 성남시 분당구 구미로 173번길 59(구미동)</p>
+						<p>전화번호 031-728-7001~3</p>
+						<p class="f_copy">COPYRIGHT © 2024 KEAD RIGHT RESERVED.</p>
+					</div>
+				</div>
+			</div>
+			<div class="f_right">
+				<div class="rel_wrap">
+					<a href="#">관련사이트</a>
+					<ul>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+					</ul>
+				</div>
+				<div>
+					<p class="f_number">전국대표번호<b>1588-1519</b></p>
+					<p class="f_time"><span>운영시간</span>평일 09:00 ~ 18:00</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+	$(document).ready(function(){
+		AOS.init();
+	});
+	</script>
+</body>
+</html>

@@ -13,9 +13,6 @@
 	<script src="asset/slick/slick.js"></script>
 	<script src="js/common.js"></script>
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
-<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-
 	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
 	<title>진단실시2 | 고용 역량 진단 | 한국장애인고용공단 장애인고용컨설팅</title>
 	
@@ -176,82 +173,91 @@
 				<div class="guide_wrap recruitment-process">
 					<!-- 가이드 상단 -->				
 					<div class="guide_header">
-						<div class="intro">
-							<div class="cont_txt">단계별 체크리스트를 통해 장애인 고용과정에서 필요한 사항을 사전에 점검해 보세요.</div>
+						<div class="btn_favor">
+							<button type="button" aria-label="즐겨찾기"></button>
+						</div> 					                   
+						<div class="title_box guide">
+							<h5 class="cont_tit2"><span class="tit-icon"></span>고용과정 체크리스트</h5>						
+							<p class="cont_txt">장애인 고용과정에서 필요한 사항을 사전에 점검해 보세요.</p>
 						</div>
-						<ul class="guide_step02">
+						<ul class="guide_step step5">
 							<li>
-								<a href="sub05-2-1체크리스트2.html" class="step_list active">
+								<a href="#" class="step_list active">
 									<span class="step">STEP1</span>
 									<span class="txt">채용계획수립</span>
 								</a>
 							</li>
 							<li>
-								<a href="" class="step_list">
+								<a href="#" class="step_list">
 									<span class="step">STEP2</span>
 									<span class="txt">모집준비</span>
 								</a>
 							</li>
 							<li>
-								<a href="" class="step_list">
+								<a href="#" class="step_list">
 									<span class="step">STEP3</span>
 									<span class="txt">채용실시</span>
 								</a>
 							</li>
 							<li>
-								<a href="" class="step_list">
+								<a href="#" class="step_list">
 									<span class="step">STEP4</span>
 									<span class="txt">직무배치</span>
 								</a>
 							</li>
 							<li>
-								<a href="" class="step_list last">
+								<a href="#" class="step_list last">
 									<span class="step">STEP5</span>
 									<span class="txt">고용관리</span>
 								</a>
 							</li>
 						</ul>
 					</div>
-					<!-- contents -->
+					<!-- 체크리스트 -->
 					<div class="cont_wrap">									
-						<ul class="recruitment-process_checklist">
+						<ul class="employment_checklist">
 							<li>
-								<div class="txt">
-									<b>채용계획수립</b>
-									<p>장애인 고용을 위한 첫 걸음으로 고용의 목표와 방향을 설정하는 단계입니다. 장애인 고용을 시작하기 위해 필요한 사항들을 점검해 보세요.</p>
-								</div>
+								<div class="list-item">
+									<div class="list-question">
+										<span class="number">01.</span>
+										<span class="question">부서별로 채용할 인원을 산정하였나요?</span>
+									</div>  
+									<div class="list-chk-radio">
+										<input type="radio" name="question1" id="yes1" value="yes">
+										<label for="yes1">Yes</label>
+										<input type="radio" name="question1" id="no1" value="no">
+										<label for="no1">No</label>
+									</div> 
+								</div>           
+								<div class="recommendation-btn hidden">
+									<button type="button" class="recommend">추천</button>
+									<button type="button" class="demand-survey">채용수요조사</button>
+								</div>              
 							</li>
 							<li>
-								<div class="txt">
-									<b>모집준비</b>
-									<p>지원자 모집을 위해 준비할 사항을안내합니다. 장애인 구직자에게 공정한 기회를 제공하기위해 어떤 요소를 준비해야할지 살펴보세요.</p>
-								</div>
-							</li>
-							<li>
-								<div class="txt">
-									<b>채용실시</b>
-									<p>장애인 지원자를 평가하고 선발하는 단계입니다. 전형절차-합격자 결정 단계에서 참고할 사항을 점검해보세요.</p>
-								</div>
-							</li>
-							<li>
-								<div class="txt">
-									<b>직무배치</b>
-									<p>지원자의 역량과 적성에 맞춰 적절한 직무를 배치하는 단계입니다. 장애인 근로자의 유형과 특성을 파악하여 최적의 직무에 배치될 수 있도록 점검해 보세요.</p>
-								</div>
-							</li>
-							<li>
-								<div class="txt">
-									<b>고용관리</b>
-									<p>장애인 근로자가 안정적으로 근무할수 있도록 관리하는 단계입니다. 장기적인 근무만족도를 높일수 있도록 근로자에게 필요한 지원이 무엇인지
-										점검해보세요.</p>
-								</div>
+								<div class="list-item">
+									<div class="list-question">
+										<span class="number">01.</span>
+										<span class="question">부서별로 채용할 인원을 산정하였나요?</span>
+									</div>  
+									<div class="list-chk-radio">
+										<input type="radio" name="question2" id="yes2" value="yes">
+										<label for="yes2">Yes</label>
+										<input type="radio" name="question2" id="no2" value="no">
+										<label for="no2">No</label>
+									</div> 
+								</div>           
+								<div class="recommendation-btn hidden">
+									<button type="button" class="recommend">추천</button>
+									<button type="button" class="demand-survey">채용수요조사</button>
+								</div>              
 							</li>
 						</ul>
 						
 						<!-- 영역별 문항 완료일 때 다음 단계로 진행 버튼 show -->
-						<div class="bt_btn">						
+						<!-- <div class="bt_btn">						
 							<a href="sub02-3-2.html" class="btn_cr_def surv_result">다음 단계</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div><!-- //contents-->

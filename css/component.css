@@ -6,6 +6,9 @@ label {position:relative; display:inline-block; vertical-align:middle;}
 input[type="text"], input[type="password"], input[type="number"], input[type="date"], input[type="month"], input[type="time"], input[type="email"],
 select, .datalist, textarea, input[type="radio"], input[type="checkbox"], input[type="file"] 
 {width:100%; height: 40px; font-family:'Pretendard', Sans-serif; font-size:18px; font-weight:400; color:#333; background-color:#fff; outline:none; box-sizing:border-box;border:1px solid #d9e0ef; border-radius:10px;padding:0 10px; font-feature-settings: "tnum"; font-variant-numeric: tabular-nums;}
+input[type="number"] {padding: 0; text-align: center;}
+input[type="number"]::-webkit-inner-spin-button {appearance: none; -moz-appearance: none; -webkit-appearance: none;}
+
 
 input[type="text"]:hover, input[type="text"]:focus, input[type="text"]:active,
 input[type="password"]:hover, input[type="password"]:focus, input[type="password"]:active,
@@ -157,6 +160,7 @@ button:disabled {color:#cfd1d9 !important; border-color:#cfd1d9 !important; curs
 .icon-add {display: block; width: 18px; height: 4px; background: url(../images/icon/ico_add.png); }
 
 button {border-radius: 4px; position: relative; transition:all .5s;}
+button.base {min-width: 80px; height: 36px; padding: 0 20px; font-size: 18px;}
 button.line {border: 1px solid #0f298f; color: #0f298f;}
 button.full {background: #0f298f; color: #fff;}
 button.cancel {background-color: #999; color: #fff;}
@@ -187,8 +191,8 @@ button.cancel {background-color: #999; color: #fff;}
 .td_btn:hover {box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: #e9f0ff; transition: all 0.2s;}
 .td_btn:link, .td_btn:visited {color: #236cdb;} /*a 태그*/
 
-.td_btn.del {border-color: #555; color: #555;}
-.td_btn.del:hover {background-color: #ddd;}
+.td_btn.del {border-color: #555; color: #222; background-color: #d7d7d7;}
+.td_btn.del:hover {background-color: #555; color: #fff;}
 .td_btn.link {padding-right: 28px;}
 .td_btn.link::before {content: ''; display: block; width: 8px; height: 14px; position: absolute; top: 8px; background: url(../images/sub/svg-btn-go.svg) no-repeat center; right: 12px; background-size: 8px 14px;} 
 
@@ -253,8 +257,8 @@ button.cancel {background-color: #999; color: #fff;}
 
 /* 테이블 컨텐츠 */
 .table-container > section:not(:first-child) {padding-top: 100px;}
-.table-container .table_tit {font-size:30px; font-weight:600; }
-.table-container .table_tit + table {margin-top: 20px;}
+.table-container .table_tit {font-size:30px; font-weight:600; margin-bottom: 20px;}
+
 
 /* 테이블 y-스크롤 */
 .scroll_container {overflow-y: auto; border-top: 1px solid #1953c2; border-bottom: 1px solid #d5dbef; max-height: 300px;}
@@ -306,6 +310,7 @@ button.cancel {background-color: #999; color: #fff;}
 tbody {counter-reset: row-number; /* 번호 초기화 */}  
 .auto-number::before {counter-increment: row-number; /* 번호 증가 */content: counter(row-number); /* 번호 표시 */ }
 
+
 /* 페이징 */
 .pagenation {position:relative; margin-top:30px; text-align:center;}
 .pagenation > a {position:relative; display:inline-block; min-width:30px; height:30px; padding:0 8px; line-height:30px;}
@@ -319,6 +324,7 @@ tbody {counter-reset: row-number; /* 번호 초기화 */}
 
 /* 페이징 추가 */
 .paging { margin-top:80px; display: flex; width: 100%; justify-content: center; }
+.layer_wrap .paging {margin-top: 30px;}
 .page_list { display: flex; margin:0 15px }
 .page_btn  {color:#8B8D97; background-color:#F2F3F3; width:30px; height:30px; display:flex; align-items:center; justify-content:center; border-radius:8px; margin:0 4px; position: relative;}
 .page_btn.active { background:#236CDB; color:#fff;}

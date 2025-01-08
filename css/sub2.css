@@ -43,10 +43,13 @@
 .list-chk-radio input:checked + label:after {background-image: url(../images/sub/radio_sq_chk.png);}
 .list-chk-radio input[type="radio"] {position: absolute; opacity: 0; width: 0; height: 0; }
 
-.recommendation-btn {display: flex; gap: 5px; margin-top:20px; justify-content:end;}
+.recommendation-btn {display: flex; gap: 5px; margin-top:20px; justify-content:end; position: relative;}
 .recommendation-btn button {border: 2px solid #236cdb; border-radius: 20px; padding: 6px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
 .recommendation-btn button.recommend {padding: 6px 30px 6px 8px; background: #fff url(../images/sub/chk_list_icon.png) no-repeat 46px center;}
 .recommendation-btn button.demand-survey {background-color: #236cdb; color: #fff;}
+.recommendation-btn .dscp-box {position: absolute; padding: 20px; padding-left:50px; background-color: #e1e5fb;  border-radius: 10px; right: 0; top: 50px;  z-index: 1; display: none;}
+.recommendation-btn .dscp-box::before {content: ''; display: block; width: 13px; height: 13px; background: url(../images/sub/arrow_story.png); position: absolute; left: 20px; top: calc(50% - 7px);}
+.recommendation-btn button:hover + .dscp-box {display: block;}
 
 
 /* 가이드 레이아웃 */
@@ -419,8 +422,15 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .table-list .refer_mk {margin-top: 0;}
 
 
+
 /* 고용관리 - 근로자 갈등관리 */
-.employment-solving .box_list .head {font-size: 24px; font-weight: 500; padding: 15px 0;}
+.employment-solving .guide_title {border: none;}
+.employment-solving .tab_list {margin-top: 30px;}
+
+.box_list.sexual_help .icon1 {background-position: -350px -100px;}
+.box_list.sexual_help .icon2 {background-position: -400px -100px;}
+
+/* .employment-solving .box_list .head {font-size: 24px; font-weight: 500; padding: 15px 0;} */
 .employment-solving .sec1 .size100.icon2 {background-position-x: -100px;}
 .employment-solving .sec1 .size100.icon3 {background-position-x: -200px;}
 .employment-solving .sec2 .process-icon.size100 {background-position-y: -100px;}
@@ -432,6 +442,11 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .employment-solving .sec2 .size100.icon6 {background-position-x: -500px;}
 .employment-solving .sec2 .size100.icon7 {background-position-x: -600px;}
 .employment-solving .sec2 .size100.icon8 {background-position-x: -700px;}
+
+
+
+
+
 
 
 /* 고용관리 - 재난안전관리 */
@@ -570,7 +585,7 @@ background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px cen
 .box_list.list2 > li {flex: 1 0 calc(50% - 15px); }
 
 .box_list.type-header > li {padding: 10px;}
-.box_list .box-header {flex: 0 0 240px; justify-content: center; align-items: center; display: flex; flex-direction: column; border-radius: 30px; padding: 10px; height: 100%; background-color: #f9fbff; margin-right: 30px; gap: 10px;} 
+.box_list .box-header {flex: 0 0 240px; justify-content: center; align-items: center; display: flex; flex-direction: column; border-radius: 30px; padding: 10px; height: 100%; background-color: #f9fbff; margin-right: 30px; gap: 10px; text-align: center;} 
 
 .box_list .box-description {padding: 10px 0; flex: 1;}
 .box_list .box-description .refer_mk {margin-left: 20px;}

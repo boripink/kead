@@ -8,8 +8,8 @@
 .fs-14      {font-size: 14px !important;}
 .required   {color: red; } /*  필수라벨<span class="required">*</span> */
 .hover-line:hover {text-decoration: underline;}
-
-
+a.link {text-decoration: underline}
+a.link:hover {color: #0f298f;}
 
 /* 박스 스타일 */
 [class$="_box"] {border-radius: 10px;}
@@ -54,6 +54,7 @@ display: inline-block;
 /* 정렬 */
 .fl_center {display: flex; align-items: center; }
 .fl_c_center {display: flex; align-items: center; justify-content: center;}
+.fl_between {display: flex; justify-content: space-between;}
 .inp_list  {display: flex; align-items: center; gap: 8px;}
 .td_list {display: flex; align-items: center; justify-content: center; gap: 4px;}
 
@@ -98,6 +99,7 @@ display: inline-block;
 
 .cont_wrap > section {padding-top: 100px;}
 .cont_wrap .cont_sub {margin-top: 80px;}
+.cont_wrap .cont_sub2 {margin-top: 40px;}
 .cont_wrap2 {padding: 60px 0 100px; position: relative;}
 .cont_form {margin-top: 80px;}
 

@@ -665,7 +665,7 @@ padding: 35px 20px 20px;}
 
 /* 고용 성공 스토리 */
 .company_filter {text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 50px;}
-.company_filter > li {display: inline-flex; width: 160px; height: 50px; border: 1px solid #222; border-radius: 4px; align-items: center; justify-content: center; font-size: 24px; cursor: pointer; position: relative;}
+.company_filter > li {display: inline-flex; min-width: 160px; height: 50px; padding: 0 30px; border: 1px solid #222; border-radius: 4px; align-items: center; justify-content: center; font-size: 24px; cursor: pointer; position: relative;}
 .company_filter > li.active {background-color: #3e8bff; border: none; color: #fff;} 
 .company_filter .sub_filter {position: absolute; bottom: -50px; display: flex; gap: 26px;}
 .company_filter .sub_filter li {font-size: 22px; position: relative; color: #333;}
@@ -717,17 +717,18 @@ position: absolute; top: 4px; right: -14px;}
 
 /* 고용 성공 스토리 - 성공스토리 */
 .employment_story_intro .company-intro {padding-top: 0;}
-.employment_story_intro .company-info {padding-right: 20px; padding-bottom: 20px; padding-left: 440px;}
-.employment_story_intro .intro-box {border: 1px solid #d9e0ef; border-radius: 80px 20px 80px 80px ; min-height: 290px; background-color: #f7f8f9; margin-top: 105px; position: relative; }
+.employment_story_intro .company-info {padding-left: 440px;}
+.employment_story_intro .intro-box { margin-top: 105px; position: relative; z-index: 0;}
+.employment_story_intro .intro-box::before {content: ''; display: block; border: 1px solid #d9e0ef; border-radius: 80px 20px 80px 80px ; min-height: 290px; background-color: #f7f8f9; position: absolute; top: 0; right: 0; left: 20px; bottom: -10px; z-index: -1;}
 .employment_story_intro .company-img { width: 400px; height: 300px; border-radius: 80px 50px 50px 50px; position: absolute; top: -65px; box-shadow: 0 3px 8px rgba(0,0,0,0.2);}
 .employment_story_intro .company-logo {width: 125px; height: 52px; position: absolute; top: -55px; right: 0; text-align: right;}
 .employment_story_intro .company-logo > img {width: 80%; position: absolute; bottom: 10px; right: 10px;}
 
 /* 성공스토리 NEW */
 .employment_story_intro.new .company-info {padding-left: 640px; min-height: 400px;}
-.employment_story_intro.new .company-img  {width: 600px; height: 500px;}
+.employment_story_intro.new .company-img  {width: 600px; height: 450px;}
 .employment_story_intro.new .company-dcn  {padding: 40px; line-height: 1.6;}
-.employment_story_intro.new .name {font-size: 30px; font-weight: 500; margin-top: 30px; padding-bottom: 30px; border-bottom: 2px solid #222; margin-bottom: 30px;}
+.employment_story_intro.new .name {font-size: 30px; font-weight: 500; padding: 30px 0; border-bottom: 2px solid #222; margin-bottom: 30px;}
 
 .company-info .info-head {display: flex; justify-content: space-between; align-items: center; padding: 35px 0; border-bottom: 2px solid #222;}
 .company-info .info-head .name {font-size: 30px; font-weight: 500; }
@@ -736,13 +737,13 @@ position: absolute; top: 4px; right: -14px;}
 .company-info .info-head .meta > span::before {content: ''; width: 32px; height: 32px; background: #cdddf5 url(../images/icon/calendar-03.svg) no-repeat center; display: inline-block; margin-right: 8px; border-radius: 30px; background-size: 20px;}
 .company-info .info-head .meta > span.type::before {background-image: url(../images/svg/office.svg);}
 
-.company-keyword    {display: flex; flex-wrap: wrap; gap: 6px; margin: 20px 0; padding-right: 35px;}
+.company-keyword    {display: flex; flex-wrap: wrap; gap: 6px; margin: 20px 0; margin-right: 30px;}
 .company-keyword li {display: inline-block; border: 1px solid #cdddf5; border-radius: 10px; padding: 6px 12px; font-size: 16px; background-color: #fff; }
-.company-info-list {display: flex; flex-direction: column; gap: 10px;}
+.company-info-list {display: flex; flex-direction: column; gap: 10px; margin-right: 30px;}
 .company-info-list li {display: flex; gap: 10px; font-size: 16px; line-height: 30px;}
 .company-info-list li .title {flex: 0 0 120px; height: 30px; background-color: #d9e0ef; text-align: center; font-size: 16px; line-height: 30px; border-radius: 50px;}
 
-.company-desc {padding: 50px; line-height: 1.6;}
+.company-desc {padding: 30px; padding-left: 70px; line-height: 1.6;}
 
 
 .ico01 {background-image: url("../images/best_company/emp/emp_ico01.png");}
@@ -824,27 +825,45 @@ position: absolute; top: 4px; right: -14px;}
 
 
 /* 성공스토리 - New */
-.story_tab .tab_list {display: flex; justify-content: center; gap: 10px; margin-bottom: 100px;}
-.story_tab .tab_list > li > a {display: inline-flex; width: 300px; height: 50px; border: 1px solid #222; border-radius: 4px; align-items: center; justify-content: center; font-size: 24px; cursor: pointer; position: relative;}
-.story_tab .tab_list > li.on a {background-color: #3e8bff; border: none; color: #fff;} 
-.story_tab h5 {text-align: center;}
+.employment_story_intro.new {padding-bottom: 0;}
+
+.sticky_wrap {padding: 110px 0 80px; position: relative;}
+.sticky_wrap:before {content:""; position:absolute; top:0; left:0; width:200vw; height:100%; margin-left:-100vw; background:#fff; z-index:0;}
+.sticky_wrap.fixed { position: sticky; top: 50px; z-index: 1; background-color: #fff; }
+
+.quick_list {text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px;}
+.quick_list > li {display: inline-flex; min-width: 160px; height: 50px; padding: 0 30px; border: 1px solid #222; border-radius: 4px; align-items: center; justify-content: center; font-size: 24px; cursor: pointer; position: relative;}
+.quick_list > li.active {background-color: #3e8bff; border: none; color: #fff;} 
+
+.sticky_cont {position: relative; z-index: -1;}
+.sticky_cont > div {position: relative; }
+.sticky_cont h5 {display: flex; align-items: center; justify-content: center; margin-bottom: 80px;}
+
+.sticky_cont .sec1 {padding-bottom: 80px;}
+.sticky_cont .sec2 {padding: 80px 0; margin-bottom: 80px;}
+.sticky_cont .sec2:before {content:""; position:absolute; top:0; left:0; width:200vw; height:100%; margin-left:-100vw; background:#f7f8f9; z-index:-1;}
+.sticky_cont .sec3 {padding-bottom: 100px;}
 
 .story-tab-list > li:not(:last-child) {margin-bottom: 50px;}
-.story-tab-list > li .tit {font-size: 30px; font-weight: 500;}
+.story-tab-list > li .tit {font-size: 30px; font-weight: 500; margin-bottom: 10px;}
 .story-tab-list > li .tit .num {display: inline-block; margin-right: 20px;}
-.story-tab-list > li .desc {margin-top: 10px; margin-left: 55px;}
+.story-tab-list > li .desc {margin-left: 55px;}
+
 .story-tab-list .job-list {display: flex; flex-wrap: wrap; justify-content: center; text-align: center; gap:20px; transition: flex 0.3s ease}
-.story-tab-list .job-list li {display: flex; flex-direction: column; gap: 20px; background-color:#ffff; border: 1px solid #d9e0ef; padding: 25px; border-radius: 20px; width: 330px;}
+.story-tab-list .job-list li {display: flex; flex-direction: column; gap: 20px; background-color:#ffff; border: 1px solid #d9e0ef; padding: 25px; border-radius: 20px; width: 310px;}
 .story-tab-list .job-list li .icon-bg {position: relative; left: 50%; transform: translateX(-50%); width: 44px; height: 44px; background-color: #d9e0ef; border-radius: 30px;}
 .story-tab-list .job-list li .job-icon {position: absolute; top: 4px; left: 4px; width: 36px; height: 36px; background-size: 35px;}
 .story-tab-list .job-list li .job-name {font-size: 30px; font-weight: 500;}
 
-.story_solution {display: flex; justify-content: space-between; gap: 70px;}
-.story_solution .issue_box {flex: 1; background-color: #fff; border-radius: 10px; padding: 10px;}
-.story_solution .tit {font-size: 30px; color: #ed1c24; font-weight: 500; margin: 15px;}
+.story_solution {display: flex; justify-content: space-between; gap: 70px; }
+.story_solution .issue_box {flex: 1; background-color: #fff; border-radius: 10px; padding: 10px; position: relative;}
 .story_solution .issue_box li {background-color: #fff5f5; padding: 20px; border-radius: 20px; margin-bottom: 10px; display: flex; align-items: center; position: relative;}
 .story_solution .issue_box li .icon {width: 50px; height: 22px; display: inline-block; background: url(../images/sub/gdic_solution_icon1.png) no-repeat center;}
-.story_solution .illust {width: 469px; height: 75px; background: url(../images/sub/gdic_solution1.png) no-repeat; }
+
+.story_solution .tit {font-size: 30px; color: #ed1c24; font-weight: 500; margin: 15px;}
+.story_solution .illust {width: 470px; height: 140px; background: url(../images/sub/gdic_solution1.png) no-repeat; }
+
+.issue_box.fix::before {content: ''; display: block; width: 27px; height: 29px; background: url(../images/sub/arrow_tab2.png); position: absolute; top: calc(50% - 15px); left: -50px;}
 
 .story_solution .fix .tit {color: #1953c2;}
 .story_solution .fix li {background-color: #ebf3ff;}

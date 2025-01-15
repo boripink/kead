@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="asset/aos/aos.css">
+	<link rel="stylesheet" href="asset/slick/slick.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="asset/jquery/jquery-3.7.1.min.js"></script>
+	<script src="asset/aos/aos.js"></script>
+	<script src="asset/slick/slick.js"></script>
+	<script src="js/common.js"></script>
+
+	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
+	<title>장애인 고용서비스 GUIDE | 고용가이드 | 한국장애인고용공단 장애인고용컨설팅</title>
+	
+</head>
+<body>
+	<header class="header act">
+		<div class="inner">
+			<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+			<h2 class="hidden">대메뉴</h2>
+			<ul class="gnb">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user_wrap">
+				<div class="user_info">
+					<!-- [D] 로그인 전에 안보이게 처리 -->
+					<div class="user">
+						<span class="neme"><b>홍길동</b> 님</span> <span class="time">09:33</span>
+						<button class="btn_time" type="button">연장</button>
+					</div>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<button type="button" class="btn_menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="mob_wrap">
+			<div class="user_mob">
+				<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+				<div class="user">
+					<span class="neme"><b>홍길동</b> 님</span>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<ul class="gnb_mob">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+						<li><a href="sub05-2.html">단계별 고용 GUIDE</a></li>
+						<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+						<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container sub_container">
+		<div class="inner">
+			<div class="snb_wrap">
+				<h3>고용 가이드</h3>
+				<ul class="snb_list">
+					<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+					<li class="snb_depth2">
+						<a href="sub05-2-1체크리스트.html">단계별 고용 GUIDE</a>						
+					</li>
+					<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+					<li class="snb_depth2 on">
+						<a href="sub05-4.html">장애인 고용서비스 GUIDE</a>
+						<ul class="snb_depth3">
+							<li><a href="sub05-4.html">장애인 고용의무제도</a></li>
+							<li><a href="sub05-4-2고용지원.html">장애인 고용지원</a></li>
+							<li><a href="sub05-4-3금융지원.html">금융 및 환경개선지원</a></li>
+							<li class="on"><a href="sub05-4-4표준사업장.html">자회사형 장애인 표준사업장 설립가이드</a></li>
+							<li><a href="sub05-4-5연계고용.html">연계고용 추진가이드</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="contents">
+				<!-- 타이틀 -->
+				<div class="cont_tit_wrap">
+					<h4 class="cont_tit">장애인 고용서비스 GUIDE</h4>
+					<ul class="cont_lct">
+						<li class="home">홈</li>
+						<li>고용 가이드</li>						
+						<li class="pnt_cr02"><b>장애인 고용서비스 GUIDE</b></li>
+					</ul>
+				</div>
+				<!-- 가이드 콘텐츠 -->
+				<div class="guide_wrap service_guide">
+					<!-- 가이드 상단 -->				
+					<div class="guide_header">
+						<div class="btn_favor">
+							<button type="button" aria-label="즐겨찾기"></button>
+						</div> 					                   
+						<div class="title_box guide center">
+							<h5 class="cont_tit2"><span class="tit-icon"></span>자회사형 장애인 표준사업장 설립가이드</h5>						
+							<p class="cont_txt">자회사형 장애인 표준사업장을 향한 기업들의 관심이 크게 높아지고 있습니다.</p>
+						</div>						
+					</div>
+					<!-- 가이드 콘텐츠 -->										
+                    <div class="guide_conts_wrap workplace">
+						<div class="tab_wrap tab_style03">
+							<ul class="tab_list" role="tablist">
+								<li role="presentation"><a href="#tab1" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="true">설립 가이드</a></li>
+								<li role="presentation"><a href="#tab2" role="tab" id="tab2-tab" aria-controls="tab2" aria-selected="false">설립 프로세스</a></li>
+								<li role="presentation"><a href="#tab3" role="tab" id="tab3-tab" aria-controls="tab3" aria-selected="false">운영 가이드</a></li>
+							</ul>
+							<div class="tab_cont">
+								<!-- 탭 1 -->
+								<div id="tab1" class="tab-panel" role="tabpanel" aria-labelledby="tab1-tab">
+									<section class="guide_conts">
+										<h6 class="guide_tit2"><span class="num">1.</span>장애인 표준사업장의 정의</h6>
+										<div class="sec_cont">
+											<p class="guide_text"><span class="fc-blue">「장애인고용촉진 및 직업재활법」 제22조, 시행규칙 3조</span>에 따른 장애인 표준사업장 기준을 충족하여 공단으로부터 인증을 받은 사업장을 말합니다.</p>
+										</div>	
+										<div class="sec_cont2">
+											<ul class=" table-list">
+												<li>
+													<p class="tit">장애인 표준사업장 요건</p>
+													<div class="txt">	
+														<ul class="guide_text">
+															<li>장애인 근로자 수가 10명 이상일 것</li>
+															<li>장애인 및 중증장애인을 다음의 기준에 따라 산정한 인원 이상을 고용할 것</li>
+															<li>「장애인ㆍ노인ㆍ임산부 등의 편의증진 보장에 관한 법률」에 따른 편의시설을 갖출 것</li>
+															<li>장애인 근로자에게 「최저임금법」 제5조에 따른 최저임금액 이상의 임금을 지급할 것</li>
+															<li>모회사가 자회사형 장애인 표준사업장의 발행주식 총수 또는 출자총액의 50%를 초과할것
+																<p class="refer_mk">자회사형 장애인 표준사업장의 경우에만 해당</p>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<p class="tit">장애인 고용인원 기준</p>
+													<div class="txt">
+														<table class="tb_base tb_guide td_center">
+															<caption>장애인 표준사업장 장애인 고용인원 기준의 상시근로자수, 장애인 고용인원, 중증장애인 고용인원을 기술한 표</caption>
+															<colgroup>
+																<col style="width: 33%;">
+																<col style="width: auto;">
+																<col style="width: 33%;">
+															</colgroup>
+															<thead>
+																<tr>
+																	<th scope="col">상시근로자수</th>
+																	<th scope="col">장애인 고용인원</th>
+																	<th scope="col">중증장애인 고용인원</th>
+																</tr>
+																</thead>
+																<tbody>
+																<tr>
+																	<td>100명 미만</td>
+																	<td rowspan="3">상시 근로자수의 100분의 30</td>
+																	<td>상시근로자수의 15%</td>
+																</tr>
+																<tr>
+																	<td>100명 이상 300명 미만</td>
+																	<td>상시근로자수의 10% + 5명</td>
+																</tr>
+																<tr>
+																	<td>300명 이상</td>
+																	<td>상시근로자수의 5% + 20명</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</li>
+											</ul>
+										</div>							
+									</section>
+									<section class="guide_conts tab1-sec2">
+										<h6 class="guide_tit2"><span class="num">2.</span>장애인 표준사업장의 현황</h6>
+										<div class="sec_cont">
+											<p class="guide_text">우리나라의 장애인 표준사업장은 빠른 속도록 증가하여 2013년 140개소에서 2022년 622개소로 늘었습니다.</p>
+										</div>
+										<div class="sec_cont2">
+											<ul class="img_graph">
+												<li>
+													<p class="tb_tit">장애인 표준사업장 추이</p>
+													<div class="img">
+														<img src="/images/emp_guide/img_grap1.png" alt="2013년 : 140개소, 2014년 : 169개소,2015년 : 213개소,2016년 : 270개소,2017년 : 287개소, 2018년 : 331개소, 2019년 : 391개소, 2020년 : 473개소, 2021년 : 566개소, 2022년 : 622개소">
+													</div>
+												</li>
+												<li>
+													<p class="tb_tit">자회사형 장애인 표준사업장 추이</p>
+													<div class="img">
+														<img src="/images/emp_guide/img_grap2.png" alt="2013년 : 31, 2014년 : 36, 2015년 : 39, 2016년 : 50,2017년 : 60, 2018년 : 78, 2019년 : 97, 2020년 : 112, 2021년 : 126, 2022년 : 128">
+													</div>
+												</li>
+											</ul>
+										</div>
+									</section>
+									<section class="guide_conts tab1-sec3">
+										<h6 class="guide_tit2"><span class="num">3.</span>자회사형 장애인 표준사업장 설립 시 유의사항</h6>
+										<div class="sec_cont">
+											<p class="guide_tit3"><span class="num">1)</span>적자경영 탈피 노력</p>
+											<ul class="sec_cont2 guide_text">
+												<li>자회사가 적자경영이 되지 않도록 경영합리화를 위한 손익계산과 경영계획 수립해 추진토록 합니다.</li>
+												<li>모회사의 위탁업무 수주량을 늘리고 고정비를 줄이는 등 사업 기반을 강화하는 노력을 기울여야 합니다.</li>
+											</ul>
+										</div>
+										<div class="sec_cont">
+											<p class="guide_tit3"><span class="num">2)</span>포용적인 직장문화를 조성</p>
+											<ul class="sec_cont2 guide_text">
+												<li>전 사원을 대상으로 사전에 장애와 장애인에 대한 올바른 인식과 편견해소를 위한 인식개선 교육을 실시해, 접근성과 포용성이 있는 직장문화를 조성합니다.
+													<P class="refer_mk">장애인차별, 학대, 성희롱, 성폭력, 직장 내 괴롭힘 등 인권 침해가 발생하지 않도록 합니다.</P>
+												</li>
+											</ul>
+										</div>
+										<div class="sec_cont">
+											<p class="guide_tit3"><span class="num">3)</span>다양한 직무개발</p>
+											<ul class="guide_text  in40">
+												<li>자회사형 장애인 표준사업장은 중증장애인에게 초점을 맞춘 사업장이기 때문에, 중증 장애인에 적합한 다양한 직무를 개발하는 것이 필요합니다.</li>
+												<li>유지관리에 있어서 직무지도원 및 직업생활상담원 등의 세심한 전문인력의 지도가 중요합니다.</li>
+											</ul>
+										</div>
+										<div class="sec_cont">
+											<p class="guide_tit3"><span class="num">4)</span>다양한 근무 형태 제공</p>
+											<p class="sec_cont2 guide_text">장애 유형별로 가능한 노동 강도와 이동 용이성이 다르기 때문에 이를 고려하여 다양한 근무 형태 (파트 타임, 재택 근무 등)를 제공할 필요성이 있습니다.</p>
+										</div>
+										<div class="sec_cont">
+											<p class="guide_tit3"><span class="num">5)</span>모회사 고용률 산입 적용</p>
+											<div class="sec_cont2">
+												<div class="system_box warn">
+													<p>자회사형 장애인 표준사업장 인증 후 적용 가능</p>
+												</div>
+											</div>											
+											<ul class="sec_cont2 guide_text">
+												<li>상시근로자 100인 이상인 모회사는 설립 이후 매년 다음 연도 1월 31일까지 고용노동부장관에게 부담금 산출에 필요한 사항을 신고하고 해당 연도의 부담금을 납부하여야 합니다.
+													<p class="refer_mk mb20">연도 중 사업을 그만두거나 끝낸 경우 : 그 사업을 그만두거나 끝낸 날부터 60일이내</p>
+												</li>
+												<li>그 신고사항 중 하나로 해당 연도의 매월 별로 16일 이상 고용한 근로자 수 및 16일 이상 고용한 장애인 근로자 수가 포함됩니다.
+													<p class="refer_mk mb20">해당 연도 도중에 사업을 개시한 경우에는 사업 개시일이 속하는 달의 다음달 이후의 매월, 해당 연도 도중에 사업을 폐업한 경우에는 폐업일이 속하는 달의 전월까지의 매월을 뜻함</p>
+												</li>
+												<li>장애인 고용의무가 있는 사업주가 장애인 표준사업장의 발행주식 총수 또는 출자총액의 100분의 50을 초과하여 소유하는 경우에는 그 장애인 표준사업장에 고용된 근로자를 해당 사업주가 고용하는 근로자 수에 포함하고, 해당 장애인 표준사업장을 해당 사업주의 사업장으로 봅니다.
+													<p class="refer_mk mb20">다만, 여성ㆍ중증장애인을 제외한 장애인은 그 총수의 2분의 1에 해당하는 수를 말하며, 그 수에서 소수점 이하는 올린다</p>
+												</li>
+												<li>장애인 고용의무가 있는 둘 이상의 사업주가 장애인 표준사업장의 주식을 소유하거나 출자한 경우에는 그 비율에 해당하는 근로자 수를 해당 사업주가 고용하고 있는 근로자 수에 포함합니다.
+													<p class="refer_mk">근로자 수에 소수점이 있는 경우에는 버림</p>
+												</li>
+											</ul>
+										</div>
+									</section>
+								</div>
+								<!-- 탭 2 -->
+								<div id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-tab">
+									<div class="guide_conts tab_wrap">
+										<!-- 탭 2 : 탭리스트 -->
+										<ul class="tab_list workplace_step" role="tablist">
+											<li role="presentation">
+												<a href="#tab2-1" role="tab" id="tab2-1-tab" aria-controls="tab2-1" aria-selected="true" class="step_list">
+													<span class="step">STEP1</span>
+													<span class="icon_100"></span>
+													<span class="dscp">설립의사결정 및 특별전담조직 구성</span>
+												</a>
+											</li>
+											<li role="presentation">
+												<a href="#tab2-2" role="tab" id="tab2-2-tab" aria-controls="tab2-2" aria-selected="false" class="step_list">
+													<span class="step">STEP2</span>
+													<span class="icon_100 icon2"></span>
+													<span class="dscp">법인 설립</span>
+												</a>
+											</li>
+											<li role="presentation">
+												<a href="#tab2-3" role="tab" id="tab2-3-tab" aria-controls="tab2-3" aria-selected="false" class="step_list">
+													<span class="step">STEP3</span>
+													<span class="icon_100 icon3"></span>
+													<span class="dscp">인사제도 및 시스템 구축</span>
+												</a>
+											</li>
+											<li role="presentation">
+												<a href="#tab2-4" role="tab" id="tab2-4-tab" aria-controls="tab2-4" aria-selected="false" class="step_list">
+													<span class="step">STEP4</span>
+													<span class="icon_100 icon4"></span>
+													<span class="dscp">투자계획 수립</span>
+												</a>
+											</li>
+											<li role="presentation">
+												<a href="#tab2-5" role="tab" id="tab2-5-tab" aria-controls="tab2-5" aria-selected="false" class="step_list last">
+													<span class="step">STEP5</span>
+													<span class="icon_100 icon5"></span>
+													<span class="dscp">무상지원금수령 사업장 운영</span>
+												</a>
+											</li>
+										</ul>										
+										<div class="tab_cont">
+											<!-- 탭 2-1 -->
+											<div id="tab2-1" class="tab-panel" role="tabpanel" aria-labelledby="tab2-1-tab">
+												<div class="guide_tit_center"><span class="num">STEP-1</span>설립 의사결정 및 특별전담조직(TFT) 구성</div>
+												<section class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">1.</span>설립에 따른 손익 분석</h6>
+													<div class="sec_cont2">
+														<ul class="guide_text">
+															<li>장애인 미고용 업체에서 고용의무 준수업체로의 전환에 따른 다양한 경제적 혜택(다양한 설립지원, 부담금 감소, 장려금 지원 등)을 분석합니다.</li>
+															<li>장애인 미고용 또는 의무고용불이행의 불명예를 벗고 사회적 공헌 등 기업이미지를 제고시킬 수 있습니다.</li>
+															<li>적자경영 등의 가능성을 분석해 타당성을 검토합니다.</li>
+														</ul>	
+													</div>														
+												</section>
+												<section class="tab_cont2">													
+													<h6 class="guide_tit3"><span class="num">2.</span>설립요건 등 법률적 제약조건 검토</h6>
+													<div class="sec_cont2">
+														<ul class="guide_text">
+															<li>장애인 고용촉진 및 직업재활법상 자회사형 장애인 표준사업장 설립 요건에 충족하는지 여부를</li>
+															<li>업종 선택에 따른 타 법률의 제한사항 해당여부를 판단합니다.</li>
+														</ul>
+													</div>															
+												</section>
+												<section class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">3.</span>업종 선택 및 자회사 설립방법 결정</h6>
+													<div class="sec_cont2">
+														<p class="guide_text">자회사의 업종은 모회사의 업무와 어떠한 관계를 갖는가에 따라 달라집니다.</p>
+														<p class="refer_mk ml40 mt10">대부분은 모회사 업무의 일부를 분사하거나 위탁/용역하고 있습니다.</p>
+													</div>
+													<div class="sec_cont2">
+														<p class="tb_tit">자회사형 장애인 표준사업장의 업종 선택 방법</p>
+														<table class="tb_base tb_guide">
+															<caption>자회사형 장애인 표준사업장의 업종 선택 방법을 업종선택, 내용으로 기술한 표</caption>
+															<colgroup>
+															  <col style="width: 30%;">
+															  <col style="width: auto;">
+															</colgroup>
+														<thead>
+															<tr class="tr-title">
+																<th scope="col">업종선택</th>
+																<th scope="col">내용</th>
+															</tr>
+														</thead>
+														<tbody>
+															  <tr>
+																<td>모회사 업무와 독립</td>
+																<td>모회사의 현재업무와 관계없는 업무를 창출합니다.</td>
+															  </tr>
+															  <tr>
+																<td>모회사 업무의 분사</td>
+																<td>모회사의 일부 업무를 분사합니다.</td>
+															  </tr>
+															  <tr>
+																<td>모회사 위탁/용역 업무</td>
+																<td>모회사가 기존 위탁/용역을 주던 업무를 수탁합니다. </td>
+															  </tr>
+															</tbody>
+														</table>															
+													</div>
+													<div class="sec_cont2">
+														<p class="tb_tit">자회사 설립 방법</p>
+														<table class="tb_base tb_guide">
+															<caption>자회사형 장애인 표준사업장의 업종 선택 방법을 업종선택, 내용으로 기술한 표</caption>
+															<colgroup>
+															  <col style="width: 30%;">
+															  <col style="width: auto;">
+															</colgroup>
+															<thead>
+																<tr>
+																	<th scope="col">방법선택</th>
+																	<th scope="col">내용</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>신규 설립</td>
+																	<td>자회사를 신규로 설립합니다.</td>
+																</tr>
+																<tr>
+																	<td>공동출자</td>
+																	<td>계열사․유사업종 기업과 공동출자 형태로 설립합니다. (출자비율만큼 장애인 고용률 산입)</td>
+																</tr>
+																<tr>
+																	<td>협력업체 전환</td>
+																	<td>기존의 자회사 또는 협력업체를 전환합니다.</td>
+																</tr>
+																<tr>
+																	<td>기존 사업장 전환</td>
+																	<td>기존에 장애인을 다수 고용한 사업장을 자회사로 전환합니다.</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</section>													
+												<section class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">4.</span>적합 장애유형 및 장애정도 결정</h6>
+													<div class="sec_cont">
+														<ul class="guide_text">
+															<li>결정된 업종(업무)를 수행하기에 적합한 장애인의 장애유형과 장애정도(등급) 및 숙련정도를 결정합니다.</li>
+															<li>해당 업무(직무)를 수행할 적합인력(장애유형과 장애정도, 숙련정도)의 공급이 가능한지, 또 단기간 내에 신규로 인력양성이 가능한지를 파악합니다.</li>
+														</ul>
+													</div>
+												</section>
+												<section class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">5.</span>우수사례 참조하기</h6>
+													<div class="sec_cont">
+														<p class="guide_text">유사업종의 우수사례 기업을 참고합니다. 한국장애인고용공단 지역본부 및 지사를 통해 우수사례 기업에 대한 견학을 요청할 수 있습니다.</p>
+													</div>
+												</section>
+												<section class="tab_cont2">													
+													<h6 class="guide_tit3"><span class="num">6.</span>특별전담조직(TFT) 구성</h6>
+													<div class="sec_cont">
+														<ul class="guide_text">
+															<li>설립 특별전담조직(TFT)는 모회사에 근무하는 직원으로 구성합니다.</li>
+															<li>법인설립, 투자계획 수립, 인적자원관리 등 직무를 담당하는 직원으로 선정하고, 자회사 설립 이후에는 그 직원들이 이직하여 연속성을 갖고 해당업무를 수행하게 하는 것이 바람직합니다.</li>
+															<li>설립 특별전담조직(TFT)가 수행할 사전 준비는 인력계획(직무분석, 인력계획 수립, 모집 및 선발, 맞춤훈련 계획), 자본금 및 손익분석(인건비, 외주단가, 예상 자본금 규모 등), 시설투자 계획(건축, 임대, 매입, 편의시설 등) 수립, 모회사의 자회사 지원계획(인건비, 사업운영 지원 방안 등) 등이 있습니다.</li>
+														</ul>	
+													</div>														
+												</section>											
+											</div>
+											<!-- 탭 2-2 -->
+											<div id="tab2-2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-2-tab">
+												<div class="guide_tit_center"><span class="fc-blue mr20">STEP-2</span>법인 설립</div>
+												<section class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">1.</span>공단과 양해각서(MOU) 체결</h6>
+													<div class="sec_cont2">
+														<ul class="guide_text">
+															<li>법인 설립에 앞서 공단과 모기업간 설립 MOU를 체결하면 정부 및 공단에서 제공하는 다양한 지원을 체계적으로 지원받을 수 있고, 설립절차상 어려움도 해소할 수 있으며, 장애인 채용에 있어서도 도움을 받을 수 있습니다.</li>
+															<li>자회사형 장애인 표준사업장은 모회사가 설립주체가 되기 때문에 대부분 모회사의 취업규칙을 그대로 채택해 신고하고 있습니다.</li>
+														</ul>
+													</div>															
+												</section>
+												<section class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">2.</span>법인설립 절차</h6>
+													<ul class="emp-process corporate">
+														<li>
+															<div class="step">STEP1</div>														
+															<div class="icon_100 icon1"></div>
+															<div class="dscp">
+																법인명(CI) 및 자본금 확정
+																<div class="dscp2">(규모 및 출자방식)</div>
+															</div>
+															
+														</li>
+														<li>
+															<div class="step">STEP2</div>														
+															<div class="icon_100 icon2"></div>
+															<div class="dscp">
+																발기인 결정
+																<div class="dscp2">(대표이사,임원,운영 스태프 결정)</div>
+															</div>
+															
+														</li>
+														<li>
+															<div class="step">STEP3</div>														
+															<div class="icon_100 icon3"></div>
+															<div class="dscp">정관 작성 및<br>이사회 개최</div>
+														</li>
+														<li>
+															<div class="step">STEP4</div>														
+															<div class="icon_100 icon4"></div>
+															<div class="dscp">법무사 선임 및<br>구비서류 준비</div>
+														</li>
+														<li>
+															<div class="step">STEP5</div>														
+															<div class="icon_100 icon5"></div>
+															<div class="dscp">주금 납입 및 법인 설립<br>등기신고 완료</div>
+														</li>
+														<li>
+															<div class="step">STEP6</div>														
+															<div class="icon_100 icon6"></div>
+															<div class="dscp">임대차계약 및 사업장 등록,<br>4대 보험 신고</div>
+														</li>
+														<li>
+															<div class="step">STEP7</div>														
+															<div class="icon_100 icon7"></div>
+															<div class="dscp">각종 사업인허가 등록</div>
+														</li>
+														<li>
+															<div class="step">STEP8</div>														
+															<div class="icon_100 icon8"></div>
+															<div class="dscp">
+																계열사 편입 신고
+																<div class="dscp2">(출자완료 후 30일 이내,공정위 지정기업집단)</div>
+															</div>
+															
+														</li>
+													</ul>															
+												</section>
+												<section class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">3.</span>신규 법인 설립 시 절차</h6>	
+													<img src="/images/sub/gd_img19.png" alt="발기인구성(상법 제 288조) 상호결정 정관작성(상법 제289조) 주식발행사항결정(상법 제291조) 발기설립 발기인의 주식연수(상법 제293조) 주금납입(상법 제305조) 임원선임(상법 제312조) 설립경과조사 모집설립 발기인의 주식연수(상법 제293조) 주주의 모집(상법 제301조) 모집주주 청약(상법 제302조) 모집주주 청약(상법 제302조) 발기인의 주식배정(상법 제304조) 주금 납입(상법 제306조) 창립총회(상법 제308조) 임원선임(상법 제312조) 설립경과조사 등록세 납부 설립등기(상법 제317조) 법인설립 신고 및 사업자 등록">
+												</section>
+											</div>
+											<!-- 탭 2-3 -->
+											<div id="tab2-3" class="tab-panel" role="tabpanel" aria-labelledby="tab2-3-tab">
+												<div class="guide_tit_center"><span class="fc-blue mr20">STEP-3</span>인사제도 및 시스템 구축</div>
+												<section class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">1.</span>취업규칙 작성 및 신고</h6>
+													<div class="sec_cont2">
+														<ul class="guide_text">
+															<li>자회사형 장애인 표준사업장은 설립조건상 장애인 근로자수가 10명 이상이어야 하기 때문에 취업규칙 신고의무 사업장에 속합니다.
+																<span class="fc-blue">(고용촉진 및 직업재활법 시행규칙 제3조 제1호)</span></li>
+															<li>특히 자회사형 장애인 표준사업장의 경우 MOU 체결을 근거로 외부 전문기관 평가를 거쳐 무상지원금 지원대상 여부를 결정하고 있습니다.</li>
+															<li>다만 모회사에 장애인 근로자가 없어서 관련 규정이 없었다면, 장애인 근로자의 직무수행과 관련 변경해야 할 사항(근로시간과 휴게 시간, 재난안전 및 보건관리 등)만 개정할 수도 있습니다.</li>
+														</ul>
+														<div class="law_box type2">
+															<ul class="guide_text">
+																<li>근로기준법 제93조는 상시 10명 이상의 근로자를 사용하는 사용자는 취업규칙을 작성해 고용노동부장관에게 신고해야 한다고 규정하고 있습니다.</li>
+																<li>여기서 상시 10명 이상이라고 판단하는 기준은 근로기준법 시행령 제7조의 2에 따른 것으로 근로기준법 적용사유 발생일 전 1개월 동안 사용한 근로자의 연인원을 같은 기간 중의 가동 일수로 나눠 산정합니다.</li>
+															</ul>
+														</div>
+													</div>
+												</section>												
+												<section class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">2.</span>인사제도와 복리후생제도 마련</h6>
+													<ul class="guide_text">
+														<li>자회사형 장애인 표준사업장은 모회사가 설립주체가 되기 때문에 모회사의 인사제도를 그대로 채택해 사용할 수 있습니다.</li>
+														<li>장애인 다수 사업장으로서의 특수성(장애 편의제공 등)을 제외하고는 입사부터 퇴직까지의 전체 인사관리제도를 동일하게 적용할 수 있습니다.</li>
+													</ul>															
+												</section>
+												<section class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">3.</span>편의제공 및 장애유형별 고용관리 기준 마련</h6>
+													<ul class="guide_text">
+														<li>장애인 편의시설에 대한 기준은 장애인․노인․임산부 등 편의증진 보장에 관한 법률에 따라야 합니다.</li>
+														<li>장애유형별 합리적 편의제공에 대해서는 공단의 장애인 고용가이드를 참조할 수 있습니다.</li>
+													</ul>															
+												</section>
+												<section class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">4.</span>회계재무시스템 수립</h6>
+													<ul class="guide_text">
+														<li>자회사형 장애인 표준사업장은 모회사가 설립주체이고 모회사와 주로 거래를 하기 때문에 모회사의 회계 및 재무 시스템을 그대로 채택해 사용할 수 있습니다.</li>
+													</ul>															
+												</section>
+												<section class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">5.</span>홈페이지 구축</h6>
+													<ul class="guide_text">
+														<li>자회사형 장애인 표준사업장의 사업은 모회사와 거래를 많이 하지만 모회사 이외의 기업이나 고객들과 거래하는 경우도 있고 인력 채용, 지역사회 연계 등 기업 외부 이해관계자와 빈번한 교류가 이루어지므로 외부와의 소통을 위해 홈페이지를 개설해 운영할 필요가 있습니다.</li>
+													</ul>															
+												</section>
+											</div>
+											<!-- 탭 2-4 -->
+											<div id="tab2-4" class="tab-panel" role="tabpanel" aria-labelledby="tab2-4-tab">
+												<div class="guide_tit_center"><span class="fc-blue mr20">STEP-4</span>투자계획 수립(투자계획서 작성)</div>
+												<div class="tab_cont2 first">
+													<h6 class="guide_tit3"><span class="num">1.</span>사업장 위치선정 및 건물입주 계획 수립</h6>
+													<p class="sec_cont2 guide_text">사업장의 위치를 선정합니다. 사업장 건축물의 소유여부(소유, 임차), 용도 종류(판매, 교육연구, 업무, 숙박 등)을 결정하고 그에 따른 건축비, 매입비 등 세부내역서를 산정합니다.</p>														
+												</div>
+												<div class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">2.</span>장애인 편의시설 조사 및 확정</h6>
+													<p class="sec_cont2 guide_text">표준사업장의 업무를 수행하는 데 적합한 장애인(장애유형/정도별 인원수, 직업능력 수준 등)에 대한 채용(시기, 방법 등) 및 직무교육 계획을 수립합니다.</h6>
+												</div>
+												<div class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">3.</span>모회사와 위탁/용역계약 체결</h6>
+													<p class="sec_cont2 guide_text">자회사형 장애인 표준사업장의 경우 대부분 모회사의 위탁/용역 거래에 대한 의존도가 높은 만큼, 위탁/용역 업무를 최대한 확보하고 그 위탁/용역 계약을 체결합니다. 아울러 중장기적인 위탁/용역 업무확대 계획을 수립해 추진할 수 있게 하는 것이 좋습니다.</p>
+													<p class="refer_mk ml65">장애인고용촉진 및 직업재활법 제 22조의 2(불공정거래행위 금지에 대한 특례)조항의 적용여부도 확인합니다.</p>
+												</div>
+											</div>
+											<!-- 탭 2-5 -->
+											<div id="tab2-5" class="tab-panel" role="tabpanel" aria-labelledby="tab2-5-tab">
+												<div class="guide_tit_center"><span class="fc-blue mr20">STEP-5</span>무상지원금 신청 및 수령</div>
+												<div class="tab_cont2 first">
+													<h6 class="guide_tit3"><span class="num">1.</span>무상지원금 신청 및 수령절차</h6>
+													<p class="sec_cont2 guide_text">장애인 표준사업장에 대한 지원규정(고용노동부고시)에 따른 장애인 표준사업장 무상지원금의 신청 및 수령절차는 다음과 같습니다.</p>
+													<div class="sec_cont2">
+														<img src="/images/sub/gd_img20.png" alt="신청서접수(사업주->지역본부 및 지사) → 현장확인조사(지역본부 및 지사) → 외부전문기관 평가(시용평가기관) → 경정심사(심사위원회) → 선정통보(지역본부 및 지사 -> 사업주) → 약정체결 이행담보 (지역본부 및 지사 지원 대상자 ) → 1차 지원금 지급 (지원결정액 90% )→투자완료 및 신규 고용 인원의 1/2 고용 (지원대상자) → 투자 확인(지역본부 및 지사)→2차 지원금 지급(지원결정액 10%)→1년 이내 나머지 1/2  고용등 인증요건 충족(지원 대상자)→인증→사후관리*(지역본부 및 지사)">
+													</div>
+												</div>
+												<div class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">2.</span>자회사법인 지원금 신청서 제출</h6>
+													<ul class="sec_cont2 guide_text">
+														<li>무상지원금을 받으려는 사업주는 장애인 표준사업장 지원금 신청서(이하 "무상지원금 신청서"라 한다)에 다음의 서류를 첨부하여 공단에 제출하여야 합니다.</li>
+														<li>투자계획서, 청렴서약서, 장애인용 편의시설 설치 동의서(임차사업장의 경우만 해당)</li>
+													</ul>
+												</div>
+												<div class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">3.</span>지원대상자 결정</h6>
+													<p class="sec_cont2 guide_text">무상지원금 신청서를 받으면 공단은 법인 등기사항증명서(개인인 경우에는 주민등록표 등본)와 사업자등록증을 확인(신청인이 동의하지 아니하는 경우에는 그 사본을 첨부)하고, 무상지원금 지원신청서를 접수한 날부터 90일 이내에 무상지원금 지원신청을 심사해 지원대상자를 선정하고 해당 지원대상자에게 그 결과를 통보합니다.</p>
+												</div>
+												<div class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">4.</span>공단 및 기업간 지원금 약정서 체결</h6>
+													<p class="sec_cont2 guide_text">공단은 무상지원금 지급을 위하여 선정된 지원대상자와 장애인 표준사업장 운영에 관한 약정을 체결합니다.</p>
+												</div>
+												<div class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">5.</span>지원금에 대한 이행담보 제출</h6>
+													<ul class="sec_cont2 guide_text">
+														<li> 지원대상자는 지원대상자임을 통보받은 날부터 30일 이내에 장애인 고용의무 이행을 담보하기 위하여 공단에 이행보증 보험증권을 제출하거나 부동산 근저당을 설정ㆍ제공하여야 합니다.</li>
+														<li>다만, 공단이 정당한 사유가 있다고 인정하는 경우에는 15일 이내의 기간을 정하여 1회에 한하여 이행담보 제출 기한을 연장할 수 있습니다.</li>
+													</ul>
+												</div>
+												<div class="tab_cont2">
+													<h6 class="guide_tit3"><span class="num">6.</span>지원금 수령</h6>
+													<ul class="sec_cont2 guide_text">
+														<li>무상지원금은 2회에 걸쳐 지급됩니다. 1차 무상지원금은 무상지원금의 90%가 지급되고, 2차 무상지원금은 이행을 완료한 것으로 확인된 경우 나머지 금액이 지급됩니다.</li>
+														<li>다만, 장애인 근로자의 고용 및 인사 등 관리를 위하여 전문가를 새로 고용하는 경우 지급되는 임금에 대한 무상지원금은 지원대상자가 해당 전문가를 고용한 이후 매 분기 종료 후 지급신청을 하면 지급됩니다.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 탭 3 운영가이드 -->
+								<div id="tab3" class="tab-panel" role="tabpanel" aria-labelledby="tab3-tab">
+									<section class="guide_conts tab3-sec1">
+										<h6 class="guide_tit2"><span class="num">1.</span>스태프 구성 및 장애인 채용</h6>
+										<div class="sec_cont">
+											<p class="guide_tit3"><span class="num">1)</span>운영 스태프 구성</p>
+											<div class="sec_cont2">
+												<ul class="guide_text">
+													<li>인사, 재무, 마케팅, 장애인고용관리 등 장애인 표준사업장 운영을 위한 스태프를 구성합니다.</li>
+													<li>업무 연속성과 전문성을 위해 설립 특별전담조직(TFT) 구성원을 가급적 흡수하는 것이 바람직 합니다.</li>
+												</ul>
+											</div>
+										</div>
+										<div class="sec_cont">
+											<p class="guide_tit3"><span class="num">2)</span>장애인 근로자 채용</p>
+											<div class="sec_cont2">
+												<ul class="guide_text">
+													<li>이미 확정된 직무별 채용인원에 대해 회사의 소정의 모집 및 선발 절차에 따라 장애인 근로자를 채용합니다.</li>
+													<li>장애인 근로자 모집 및 선발 절차는 공단의 장애인 근로자 고용가이드를 참조할 수 있습니다.</li>
+												</ul>
+											</div>
+										</div>
+										<div class="sec_cont">
+											<p class="guide_tit3"><span class="num">3)</span>근로계약서 체결</p>
+											<div class="sec_cont2">
+												<ul class="guide_text">
+													<li>모회사가 적용하고 있는 취업규칙을 그대로 활용한다면 근로계약서도 모회사의 것을 그대로 활용해 근로계약서를 체결하면 됩니다.</li>
+													<li>만약 자회사 설립후 취업규칙을 새로 작성해 신고했다면 고용노동부가 제시한 표준 근로계약서에 취업규칙 주요내용으로 수정해 근로계약서를 체결하면 됩니다.</li>
+													<li>필요한 경우 공단의 직무별 맞춤훈련을 통해 인력을 채용할 수도 있습니다.</li>
+												</ul>
+											</div>
+										</div>
+										<div class="sec_cont">
+											<p class="guide_tit3"><span class="num">4)</span>직무별 맞춤훈련 실시</p>
+											<div class="sec_cont2">
+												<p class="guide_text">기업의 실제 훈련수요에 맞게 학생을 모집하고, 공단과 사업주 또는 사업주 단체가 훈련 직종·수준·방법 등에 관한 사항에 대하여 약정을 체결하여 훈련을 실시하고, 약정업체가 수료생을 우선 채용하는 훈련입니다.</p>
+											</div>
+											<div class="sec_cont2">
+												<p class="tb_tit">맞춤훈련 절차</p>
+												<ul class="emp-process training">
+													<li>
+														<div class="step">STEP1</div>														
+														<div class="icon_50 icon1"></div>
+														<div class="dscp">맞춤훈련<br>업체개발</div>
+													</li>
+													<li>
+														<div class="step">STEP2</div>														
+														<div class="icon_50 icon2"></div>
+														<div class="dscp">직무분석교육<br>훈련계획수립</div>
+													</li>
+													<li>
+														<div class="step">STEP3</div>														
+														<div class="icon_50 icon3"></div>
+														<div class="dscp">맞춤훈련<br>약정체결</div>
+													</li>
+													<li>
+														<div class="step">STEP4</div>														
+														<div class="icon_50 icon4"></div>
+														<div class="dscp">훈련생선발채용<br>약정체결</div>
+													</li>
+													<li>
+														<div class="step">STEP5</div>														
+														<div class="icon_50 icon5"></div>
+														<div class="dscp">맞춤훈련<br>약정체결</div>
+													</li>
+													<li>
+														<div class="step">STEP6</div>														
+														<div class="icon_50 icon6"></div>
+														<div class="dscp">수료 및<br>취업</div>
+													</li>
+													<li>
+														<div class="step">STEP7</div>														
+														<div class="icon_50 icon7"></div>
+														<div class="dscp">수료생<br>사후지원</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</section>
+									<section class="guide_conts tab3-sec2">
+										<h6 class="guide_tit2"><span class="num">2.</span>출범식 개최</h6>
+										<div class="sec_cont">
+											<p class="guide_text">자회사형 장애인 표준사업장 설립을 알리기 위해 출범식을 개최하고 언론 등을 통해 이를 홍보할 수 있습니다. 출범식 준비시 내외빈 초청범위 등을 포함한 행사계획을 수립해 진행하는 것이 필요합니다.</p>
+										</div>										
+									</section>
+									<section class="guide_conts tab3-sec3">
+										<h6 class="guide_tit2"><span class="num">3.</span>표준사업장 인증</h6>
+										<div class="sec_cont">
+											<ul class="guide_text">
+												<li>장애인 표준사업장을 운영하려는 자는 상기 표준사업장 정의의 설립기준을 갖추고, 상기 2차 무상 지원금을 받은 날부터 1년이 지나기 전까지 장애인 표준사업장 인증을 받아야 합니다.
+													<p class="fc-blue">(고용 촉진 및 직업재활법 제22조의4, 장애인 표준사업장에 대한 지원규정 제8조 제7항)</p>
+												</li>
+												<li> 인증을 받지 아니한 자는 장애인 표준사업장 또는 이와 유사한 명칭을 사용하여서는 아니 되며, 인증을 받은 자는 다른 사람에게 자기의 성명 또는 상호를 사용하여 장애인 표준사업장을 운영하게 하거나 인증서를 대여할 수 없습니다.</li>
+												<li>장애인 표준사업장 인증의 접수는 한국장애인고용공단 지역본부 및 지사에 수시로 할 수 있습니다.</li>
+												<li>제출서류는 인증신청서, 신청 전월 임금대장, 장애인 근로자 명부이며, 신청서 서식은 공단 홈페이지<a href="www.kead.or.kr" target="_blank" title="새창열림" class="link_underline">(www.kead.or.kr)</a>서식 자료실에서 다운로드 받을 수 있습니다.</li>
+												<li>표준사업장 인증을 받은 월부터(인증일로부터 월말까지 상시근로요건 충족 시) 모회사 고용률 산입이 적용됩니다.</li>
+											</ul>
+										</div>										
+									</section>
+									<section class="guide_conts tab3-sec4">
+										<h6 class="guide_tit2"><span class="num">4.</span>사후 관리</h6>
+										<div class="sec_cont">
+											<p class="guide_text">무상지원금 지급 및 인증을 받은 사업장은 분기 1회 이상 공단으로부터 점검을 받으면서 필요한 자료 제출을 요청받거나 고용의무 및 투자시설, 편의시설 유지 의무 등 이행실태를 확인받습니다.</p>
+										</div>										
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- //guide_wrap -->
+			</div><!-- //contents-->
+		</div><!-- //inner -->
+	</div>
+	<footer class="footer">
+		<div class="inner">
+			<div class="f_left">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li class="pnt_cr1"><a href="#"><b>개인정보처리방침</b></a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<a href="#" target="_blank" title="새창이동">
+					<img src="images/img_watch.png" alt="" class="watch">
+				</a>
+				<div class="f_info">
+					<p class="f_logo">한국장애인고용공단</p>
+					<div>
+						<p>주소 (13619)경기도 성남시 분당구 구미로 173번길 59(구미동)</p>
+						<p>전화번호 031-728-7001~3</p>
+						<p class="f_copy">COPYRIGHT © 2024 KEAD RIGHT RESERVED.</p>
+					</div>
+				</div>
+			</div>
+			<div class="f_right">
+				<div class="rel_wrap">
+					<a href="#">관련사이트</a>
+					<ul>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+					</ul>
+				</div>
+				<div>
+					<p class="f_number">전국대표번호<b>1588-1519</b></p>
+					<p class="f_time"><span>운영시간</span>평일 09:00 ~ 18:00</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+	$(document).ready(function(){
+		AOS.init();
+	});
+
+	$(document).ready(function() {
+		$('.list-chk-radio input[type="radio"]').on('change', function() {
+			var $recommendationButtons = $(this).closest('.list-chk-radio').next('.recommendation-btn');
+
+			if ($(this).val() === 'no' && $(this).is(':checked')) {
+			$recommendationButtons.removeClass('hidden');
+			} else {
+			$recommendationButtons.addClass('hidden');
+			}
+		});
+	});
+
+	</script>
+
+
+
+</body>
+</html>

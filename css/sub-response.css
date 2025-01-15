@@ -149,6 +149,7 @@
   .table_info_count{font-size: 16px;}
   .table_info_count .count{font-size: 22px;}
 
+  .sub_container{padding: 100px 30px 0 30px;}
   .cont_wrap{padding: 80px 0;}
   .cont_tit{font-size: 42px;}
   .cont_tit2{font-size: 32px;}
@@ -156,7 +157,7 @@
   .title_box{flex-wrap: wrap; justify-content: flex-start; height: 100%; padding: 20px; font-size: 22px;}
 	.snb_wrap {display: none;}
 	.contents {width: 100%; float: unset;}
-  .sub_container{padding: 80px 30px 0 30px;}
+
 
   .bt_btn button,
   .bt_btn a{height: 56px; line-height: 1.5;}
@@ -524,6 +525,7 @@
   .form_group li{width: 100%;}
   .title_box{font-size: 20px;}
 
+  .sub_container {padding-top: 50px;}
   .cont_wrap{padding: 50px 0;}
   .cont_tit_wrap {flex-direction: column;}
   .cont_tit_wrap .cont_lct{margin-top: 14px; margin-right: 3px; font-size: 16px;}

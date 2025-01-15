@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="asset/aos/aos.css">
+	<link rel="stylesheet" href="asset/slick/slick.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="asset/jquery/jquery-3.7.1.min.js"></script>
+	<script src="asset/aos/aos.js"></script>
+	<script src="asset/slick/slick.js"></script>
+	<script src="js/common.js"></script>
+
+	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
+	<title>장애인 고용서비스 GUIDE | 고용가이드 | 한국장애인고용공단 장애인고용컨설팅</title>
+	
+</head>
+<body>
+	<header class="header act">
+		<div class="inner">
+			<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+			<h2 class="hidden">대메뉴</h2>
+			<ul class="gnb">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user_wrap">
+				<div class="user_info">
+					<!-- [D] 로그인 전에 안보이게 처리 -->
+					<div class="user">
+						<span class="neme"><b>홍길동</b> 님</span> <span class="time">09:33</span>
+						<button class="btn_time" type="button">연장</button>
+					</div>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<button type="button" class="btn_menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="mob_wrap">
+			<div class="user_mob">
+				<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+				<div class="user">
+					<span class="neme"><b>홍길동</b> 님</span>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<ul class="gnb_mob">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+						<li><a href="sub05-2.html">단계별 고용 GUIDE</a></li>
+						<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+						<li><a href="sub05-4.html">장애인 고용서비스 GUIDE</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container sub_container">
+		<div class="inner">
+			<div class="snb_wrap">
+				<h3>고용 가이드</h3>
+				<ul class="snb_list">
+					<li><a href="sub05-1.html">장애인 고용 가이드란?</a></li>
+					<li class="snb_depth2">
+						<a href="sub05-2-1체크리스트.html">단계별 고용 GUIDE</a>						
+					</li>
+					<li><a href="sub05-3.html">함께	일하기 GUIDE</a></li>
+					<li class="snb_depth2 on">
+						<a href="sub05-4.html">장애인 고용서비스 GUIDE</a>
+						<ul class="snb_depth3">
+							<li><a href="sub05-4.html">장애인 고용의무제도</a></li>
+							<li class="on"><a href="sub05-4-2고용지원.html">장애인 고용지원</a></li>
+							<li><a href="sub05-4-3금융지원.html">금융 및 환경개선지원</a></li>
+							<li><a href="sub05-4-4표준사업장.html">자회사형 장애인 표준사업장 설립가이드</a></li>
+							<li><a href="sub05-4-5연계고용.html">연계고용 추진가이드</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="contents">
+				<!-- 타이틀 -->
+				<div class="cont_tit_wrap">
+					<h4 class="cont_tit">장애인 고용서비스 GUIDE</h4>
+					<ul class="cont_lct">
+						<li class="home">홈</li>
+						<li>고용 가이드</li>						
+						<li class="pnt_cr02"><b>장애인 고용서비스 GUIDE</b></li>
+					</ul>
+				</div>
+				<!-- 가이드 콘텐츠 -->
+				<div class="guide_wrap service_guide">
+					<!-- 가이드 상단 -->				
+					<div class="guide_header">
+						<div class="btn_favor">
+							<button type="button" aria-label="즐겨찾기"></button>
+						</div> 					                   
+						<div class="title_box guide">
+							<h5 class="cont_tit2"><span class="tit-icon"></span>장애인 고용지원</h5>						
+							<p class="cont_txt">한국장애인고용공단의 고용지원 서비스를 안내해 드립니다.</p>
+						</div>						
+					</div>
+					<!-- 가이드 콘텐츠 -->										
+                    <div class="guide_conts_wrap emp-support">
+						<div class="tab_wrap tab_style03">
+							<ul class="tab_list" role="tablist">
+								<li role="presentation"><a href="#tab1" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="true">고용컨설팅</a></li>
+								<li role="presentation"><a href="#tab2" role="tab" id="tab2-tab" aria-controls="tab2" aria-selected="false">구인서비스</a></li>
+								<li role="presentation"><a href="#tab3" role="tab" id="tab3-tab" aria-controls="tab3" aria-selected="false">지원고용</a></li>
+								<li role="presentation"><a href="#tab4" role="tab" id="tab4-tab" aria-controls="tab4" aria-selected="false">맞춤훈련</a></li>
+								<li role="presentation"><a href="#tab5" role="tab" id="tab5-tab" aria-controls="tab5" aria-selected="false">고용종사자 교육</a></li>
+							</ul>
+							<div class="tab_cont">
+								<!-- 탭1 -->
+								<div id="tab1" class="tab-panel sec1" role="tabpanel" aria-labelledby="tab1-tab">									
+									<section class="guide_conts tab1">	
+										<h6 class="guide_tit2"><span class="num">1.</span>장애인 고용컨설팅</h6>								
+										<div class="sec_cont">
+											<p class="guide_text">사업체의 장애인 고용 여건을 진단하여 고용 부진 요인을 분석하여 기업 맞춤 고용지원 서비스를 제공하는 사업</p>
+										</div>
+										<ul class="sec_cont2 table-list">
+											<li>
+												<p class="tit">지원내용</p>
+												<div class="txt">
+													<ul class="guide_text">
+														<li>사업체의 장애인 고용 환경 분석</li>
+														<li>부진요인 도출 / 고용확대제안서 제공.</li>
+														<li>단기 및 중장기적으로 실행 가능한 장애인 고용 계획 수립 지원</li>
+														<li>장애인 고용 계획 실현을 위한 공단 지원사업 연계</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<p class="tit">처리절차</p>
+												<div class="txt">
+													<ul class="emp-process">
+														<li>
+															<div class="step">STEP1</div>
+															<div class="dscp">서비스 신청</div>
+															<div class="icon_50 icon1"></div>
+															<div class="dscp2">
+																<span class="user1">사업주</span>→<span class="user2">공단</span>
+															</div>
+														</li>
+														<li>
+															<div class="step">STEP2</div>
+															<div class="dscp">고용 진단 실시</div>
+															<div class="icon_50 icon2"></div>
+															<div class="dscp2">
+																<span class="user2">공단</span>
+															</div>
+														</li>
+														<li>
+															<div class="step">STEP3</div>
+															<div class="dscp">결과 공유 및 제안</div>
+															<div class="icon_50 icon3"></div>
+															<div class="dscp2">
+																<span class="user2">공단</span>
+															</div>
+														</li>
+														<li>
+															<div class="step">STEP4</div>
+															<div class="dscp">고용계획 수립지원</div>
+															<div class="icon_50 icon4"></div>
+															<div class="dscp2">
+																<span class="user2">공단</span>
+															</div>
+														</li>
+														<li>
+															<div class="step">STEP5</div>
+															<div class="dscp">고용 계획 수립</div>
+															<div class="icon_50 icon5"></div>
+															<div class="dscp2">
+																<span class="user1">사업주</span>
+															</div>
+														</li>
+														<li>
+															<div class="step">STEP6</div>
+															<div class="dscp">맞춤서비스 제공</div>
+															<div class="icon_50 icon6"></div>
+															<div class="dscp2">
+																<span class="user2">공단</span>
+															</div>
+														</li>
+													</ul>
+												</div>											
+											</li>
+											<li>
+												<p class="tit">문의처</p>
+												<p class="txt">공단 지역본부 및 지사(☎1588-1519), 공단 본부 고용컨설팅부</p>
+											</li>
+										</ul>
+										<div class="sec_cont2 service-case case1">
+											<div class="content">
+												<p class="tit">고용컨설팅사례</p>
+												<p class="dscp">ASML은 공단의 심화형 컨설팅 중 하나인 퍼실리테이션을 통하여 ‘오피스 바리스타’ 직무를 도출하였으며, 발달장애인 10명을 사내카페 1호점의 바리스타로 채용하였습니다.</p>
+											</div>
+										</div>
+									</section>
+								</div>
+								<!-- 탭2 -->
+								<div id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-tab">
+									<section class="guide_conts tab2">	
+										<h6 class="guide_tit2"><span class="num">2.</span>구인서비스 (모집대행 등)</h6>								
+										<div class="sec_cont">
+											<p class="guide_text">사업주에게 다양한 고용정보를 제공하고 적합 인력을 추천하는 모집 대행 서비스</p>
+										</div>
+										<ul class="sec_cont2 table-list">
+											<li>
+												<p class="tit">지원내용</p>
+												<div class="txt">
+													<span class="tb_tit">모집 홍보 및 구직장애인 추천</span>
+													<ul class="guide_text in40">
+														<li>공고문을 공단 홈페이지와 워크투게더를 통해 홍보</li>
+														<li>장애인 유관기관 및 네트워크 기관에게 홍보</li>
+														<li>구직장애인에게 안내 및 상담을 통해 적합인력 추천</li>
+														<li>필요한 경우 동행면접 지원</li>
+													</ul>
+													<div class="txt2">
+														<span class="tb_tit">적응지도</span>
+														<ul class="guide_text in40">
+															<li>입사 후 1개월 이내 적응지도 실시</li>
+															<li>근무에 필요한 보조공학기기, 근로지원인 지원 등</li>
+														</ul>
+													</div>
+												</div>												
+											<li>
+												<p class="tit">신청방법</p>
+												<div class="txt">													
+													구인 신청서를 지역 본부 및 지사 담당자에게 제출하거나 장애인 고용 포털 사이트 워크 투게더 <a href="http://www.worktogether.or.kr" title="새창열림" target="_blank" class="link_underline">www.worktogether.or.kr</a> 를 통해 온라인으로 구인 신청
+												</div>											
+											</li>
+											<li>
+												<p class="tit">문의처</p>
+												<p class="txt">공단 지역본부 및 지사(☎1588-1519), 공단 본부 고용컨설팅부</p>
+											</li>
+										</ul>
+									</section>
+								</div>
+								<!-- 탭3 -->
+								<div id="tab3" class="tab-panel" role="tabpanel" aria-labelledby="tab3-tab">
+									<section class="guide_conts tab3">
+										<h6 class="guide_tit2"><span class="num">3.</span>중증장애인 지원고용</h6>
+										<div class="sec_cont">											
+											<ul class="guide_text">
+												<li>3~7주간 사업체 현장훈련을 거쳐 취업으로 연계하는 프로그램</li>
+												<li>원활한 훈련 진행을 위해 훈련기간동안 업무코칭을 위한 직무지도원 배치</li>
+											</ul>
+										</div>
+										<div class="sec_cont2">
+											<ul class="table-list">
+												<li>
+													<p class="tit">지원내용</p>
+													<div class="txt">
+														<ul class="guide_text">
+															<li>장애인 - 훈련준비금(40,000원)과 일비(1일 18,000원) 지급, 단체 상해보험 가입</li>
+															<li>사업주 - 훈련보조금(1인당 1일 19,340원)지급, 훈련 기간동안 직무지도원 배치</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<p class="tit">처리절차</p>
+													<div class="txt">
+														<ul class="emp-process">
+															<li>
+																<div class="step">STEP1</div>								
+																<div class="icon_50 icon11"></div>
+																<div class="dscp2">
+																	<span class="user1">사업체</span>
+																</div>
+																<div class="dscp">구인 신청</div>
+															</li>
+															<li>
+																<div class="step">STEP2</div>
+																<div class="icon_50 icon12"></div>
+																<div class="dscp2">
+																	<span class="user2">공단</span>
+																</div>
+																<div class="dscp">사업장<br> 직무분석</div>
+															</li>
+															<li>
+																<div class="step">STEP3</div>
+																<div class="icon_50 icon13"></div>
+																<div class="dscp2">
+																	<span class="user2">공단</span>
+																</div>
+																<div class="dscp">훈련생<br> 모집</div>
+															</li>
+															<li>
+																<div class="step">STEP4</div>
+																<div class="icon_50 icon14"></div>
+																<div class="dscp2">
+																	<span class="user2">공단</span>
+																</div>
+																<div class="dscp">직무지도원<br> 배치</div>
+															</li>
+															<li>
+																<div class="step">STEP5</div>
+																<div class="icon_50 icon15"></div>
+																<div class="dscp2">
+																	<span class="user1">사업체</span>
+																</div>
+																<div class="dscp">사전훈련<p class="fs-14">(6일이내)</p></div>
+															</li>
+															<li>
+																<div class="step">STEP6</div>
+																<div class="icon_50 icon16"></div>
+																<div class="dscp2">
+																	<span class="user1">사업체</span>
+																</div>
+																<div class="dscp">현장훈련<p class="fs-14">(최대6개월)</p></div>
+															</li>
+															<li>
+																<div class="step">STEP7</div>			
+																<div class="icon_50 icon17"></div>
+																<div class="dscp2">
+																	<span class="user1">사업체</span>
+																</div>
+																<div class="dscp">고용<p class="fs-14">(훈련평가 후)</p></div>
+															</li>
+															<li>
+																<div class="step">STEP8</div>
+																<div class="icon_50 icon18"></div>
+																<div class="dscp2">
+																	<span class="user2">공단</span>
+																</div>
+																<div class="dscp">적응지도</div>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<p class="tit">제출서류</p>
+													<p class="txt">지원고용 실시 동의서</p>
+												</li>
+												<li>
+													<p class="tit">문의처</p>
+													<p class="txt">공단 지역본부 및 지사(☎1588-1519), 공단 본부 취업지원부</p>
+												</li>
+											</ul>
+										</div>
+									</section>
+									<div class="sec_cont2 service-case case2">										
+										<div class="content">
+											<p class="tit">중증장애인 지원고용 사례</p>
+											<p class="dscp">가톨릭대 성빈센트병원은 공단의 지원고용 서비스를 활용하여 병원 무인수납기 관리, 의무기록 자료 스캔 등 직무로 중증장애인을 다수 채용하였습니다.</p>
+										</div>
+									</div>
+									<section class="guide_conts tab1">	
+										<h6 class="guide_tit2"><span class="num">4.</span>장애인 인턴제</h6>								
+										<div class="sec_cont">
+											<p class="guide_text">특정 유형 중증장애인과 만 50세 이상 장년 장애인을 대상으로 인턴 근무 기회를 제공할 경우 사업체에 지원금을 지급하는 제도</p>
+										</div>
+										<ul class="sec_cont2 table-list">
+											<li>
+												<p class="tit">지원내용</p>
+												<div class="txt">
+													<ul class="guide_text">
+														<li>인턴지원금 - 약정 임금의 80% 지원, 최대 월 100만원(인턴 기간 최대 6개월)</li>
+														<li>정규직 전환지원금 - 인턴 종료 후 정규직 전환 시 약정 임금의 80% 지원(최대 월 80만원)</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<p class="tit">신청자격</p>
+												<div class="txt">
+													<p class="tb_tit">대상장애인</p>
+													<ul class="guide_text">
+														<li>중증장애인 : 10가지 유형 (뇌병변, 정신, 심장, 신장, 언어, 호흡기, 뇌전증, 자폐성, 지체(척수손상 또는 근육병증 등 운동기능장애), 시각장애)</li>
+														<li>장년장애인 : 만 50세 이상</li>
+														<li>고용 필요도 판정검사 등을 통해 지원이 필요하다고 판단된 만 49세 이하 장애인</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<p class="tit">제출서류</p>
+												<p class="txt">인턴 채용 신청서, 사업자등록증 사본</p>
+											</li>
+											<li>
+												<p class="tit">문의처</p>
+												<p class="txt">공단 지역본부 및 지사(☎1588-1519), 공단 본부 취업지원부</p>
+											</li>
+										</ul>
+									</section>
+								</div>
+								<!-- 탭4 -->
+								<div id="tab4" class="tab-panel" role="tabpanel" aria-labelledby="tab4-tab">
+									<section class="guide_conts tab4">
+										<h6 class="guide_tit2"><span class="num">5.</span>맞춤훈련</h6>
+										<div class="sec_cont">
+											<p class="guide_text">기업 수요에 맞는 훈련 방법, 내용을 설계하여 맞춤형 훈련 실시 후 채용으로 연계하는 프로그램</p>
+										</div>
+										<div class="sec_cont2">
+											<ul class="table-list">
+												<li>
+													<p class="tit">지원내용 및 절차</p>
+													<div class="txt">
+														<ul class="emp-process">
+															<li>
+																<div class="step">STEP1</div>								
+																<div class="icon_50 icon1"></div>
+																<div class="dscp2">
+																	<span class="user1">사업체</span>
+																</div>
+																<div class="dscp">맞춤훈련 의뢰</div>
+															</li>
+															<li>
+																<div class="step">STEP2</div>
+																<div class="icon_50 icon2"></div>
+																<div class="dscp2">
+																	<span class="user2">공단</span>
+																</div>
+																<div class="dscp">훈련 직무분석 <br>및 과정설계</div>
+															</li>
+															<li>
+																<div class="step">STEP3</div>
+																<div class="icon_50 icon3"></div>
+																<div class="dscp2">
+																	<span class="user2">공단</span>→<span class="user1">사업체</span>
+																</div>
+																<div class="dscp">맞춤훈련<br> 약정체결</div>
+															</li>
+															<li>
+																<div class="step">STEP4</div>
+																<div class="icon_50 icon4"></div>
+																<div class="dscp2">
+																	<span class="user2">공단</span>
+																</div>
+																<div class="dscp">훈련생 모집</div>
+															</li>
+															<li>
+																<div class="step">STEP5</div>
+																<div class="icon_50 icon5"></div>
+																<div class="dscp2">
+																	<span class="user2">공단</span>→<span class="user1">사업체</span>
+																</div>
+																<div class="dscp">맞춤훈련<br> 실시 및 평가</div>
+															</li>
+															<li>
+																<div class="step">STEP6</div>
+																<div class="icon_50 icon6"></div>
+																<div class="dscp2">
+																	<span class="user1">사업체</span>
+																</div>
+																<div class="dscp">채용 및 직무배치</div>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<p class="tit">제출서류</p>
+													<div class="txt">맞춤훈련 의뢰서</div>
+												</li>
+												<li>
+													<p class="tit">운영안내</p>
+													<div class="txt">
+														<p class="tb_tit">공단 지역본부/지사 맞춤·디지털훈련센터</p>
+														<table class="tb_base tb_guide">
+															<caption></caption>
+															<colgroup>
+																<col style="width: 50%;">
+																<col style="width: 50%;">
+															</colgroup>
+															<tbody>
+																<tr>
+																	<th scope="row">서울지역본부 서울맞춤훈련센터</th>
+																	<td>☎ 02-2262-0900, <span class="fs-18">(fax)</span> 0503-470-0012</td>
+																</tr>
+																<tr>
+																	<th scope="row">인천지사 인천맞춤훈련센터</th>
+																	<td>☎ 032-363-1400, <span class="fs-18">(fax)</span> 0503-470-0061</td>
+																</tr>
+																<tr>
+																	<th scope="row">충남지사 천안아산맞춤훈련센터</th>
+																	<td>☎ 041-537-5600, <span class="fs-18">(fax)</span> 0503-470-0077</td>
+																</tr>
+																<tr>
+																	<th scope="row">전북지사 전주맞춤훈련센터</th>
+																	<td>☎ 063-219-4000, <span class="fs-18">(fax)</span> 0503-470-0062</td>
+																</tr>
+																<tr>
+																	<th scope="row">경남지사 창원맞춤훈련센터 </th>
+																	<td>☎ 055-220-7200, <span class="fs-18">(fax)</span> 0503-470-0707</td>
+																</tr>
+																<tr>
+																	<th scope="row">제주지사 제주맞춤훈련센터</th>
+																	<td>☎ 064-717-6700, <span class="fs-18">(fax)</span> 0503-470-0063</td>
+																</tr>
+																<tr>
+																	<th scope="row">광주지역본부 광주디지털훈련센터</th>
+																	<td>☎ 062-448-1188, <span class="fs-18">(fax)</span> 0503-470-0154</td>
+																</tr>
+																<tr>
+																	<th scope="row">서울남부지사 구로디지털훈련센터</th>
+																	<td>☎ 02-6343-5700, <span class="fs-18">(fax)</span> 0503-470-0117</td>
+																</tr>
+																<tr>
+																	<th scope="row">경기동부지사 판교디지털훈련센터</th>
+																	<td>☎ 031-290-3800, <span class="fs-18">(fax)</span> 0503-470-0370</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</section>
+									<div class="sec_cont2 service-case case3">
+										<div class="content">
+											<p class="tit">맞춤훈련 사례</p>
+											<p class="dscp">직군(설비엔지니어직·연구개발직·제조직)에 따른 기업중심의 맞춤훈련 과정을 개설·운영하여 70명을 채용하였습니다.</p>
+										</div>
+									</div>
+									<div class="sec_cont2 service-case case4">
+										<div class="content">
+											<p class="tit">맞춤훈련 사례</p>
+											<p class="dscp">자율주행 및 자동관제를 위한 IT맞춤 직무훈련(AI 이미지 처리)을 실시하여 데이터 라벨링 직무 3명을 채용하였습니다.</p>
+										</div>
+									</div>
+									<div class="sec_cont2 service-case case5">
+										<div class="content">
+											<p class="tit">맞춤훈련 사례</p>
+											<div class="dscp">
+												<p>기관 특성 및 직무에 부합한 인재 양성을 위해 지적측량 직무 관련 맞춤 훈련 과정을 운영하여 10명 이상의 장애인을 채용하였습니다.</p> 
+												<ul>
+													<li>지적기능사 등 지적측량 관련 필수 자격증 취득 과정 운영</li>
+													<li>자격증 미소지자 대상 맞춤훈련을 실시하고 훈련 수료를 통해 채용 연계</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="sec_cont2 service-case case6">
+										<div class="content">
+											<p class="tit">맞춤훈련 사례</p>
+											<p class="dscp">전국에 산재한 연구기관들의 현장 수요에 부합한 인재 채용을 위해 지역 내 공단 훈련기관과 연계한 맞춤훈련 과정을 개설·운영하였습니다.전국 과학기술분야 연구기관을 대상으로 수요 조사를 실시하고, 국가 과학기술연구회(NST) 등과의 협업을 통해 연구기관 적합 훈련직무를 선정하고 운영하였습니다. 그 결과, ‘22년 한국에너지기술연구원, 한국생명공학연구원, 한국과학기술연구원 등 8개 기관에서 연구 및 행정지원 직무로 총 37명을 채용하였습니다.</p>
+										</div>
+									</div>
+								</div>
+								<!-- 탭5 -->
+								<div id="tab5" class="tab-panel" role="tabpanel" aria-labelledby="tab5-tab">
+									<section class="guide_conts tab5">
+										<h6 class="guide_tit2"><span class="num">6.</span>장애인고용종사자 교육 등 지원</h6>
+										<div class="sec_cont">
+											<p class="guide_text">장애인 고용 관련 전문인력 양성을 위한 교육 프로그램</p>
+										</div>
+										<div class="sec_cont2">
+											<ul class="table-list">
+												<li>
+													<p class="tit">지원내용</p>
+													<div class="txt">
+														<p class="tb_tit">교육과정</p>
+														<ul class="guide_text">
+															<li>장애인직업생활상담원 양성과정</li>
+															<li>근로지원인 양성과정</li>
+															<li>직무지도원 양성과정</li>
+															<li>장애인 직업능력평가도구 활용 교육</li>
+															<li>장애의 이해 등 40여 개 사이버교육</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<p class="tit">신청자격</p>
+													<p class="txt">장애인 고용 관련 종사자, 사업체 임직원, 일반인 누구나 신청 가능</p>
+												</li>
+												<li>
+													<p class="tit">문의처</p>
+													<p class="txt">
+														공단 고용개발원 교육연수부, 공단 지역본부 및 지사(☎1588-1519)<br>
+														공단 EDI 사이버연수원 홈페이지 <a href="http://cyedu.kead.or.kr" target="_blank" title="새창열림" class="link_underline">http://cyedu.kead.or.kr</a>	
+													</p>
+												</li>
+											</ul>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div><!-- //guide_wrap -->
+			</div><!-- //contents-->
+		</div><!-- //inner -->
+	</div>
+	<footer class="footer">
+		<div class="inner">
+			<div class="f_left">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li class="pnt_cr1"><a href="#"><b>개인정보처리방침</b></a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<a href="#" target="_blank" title="새창이동">
+					<img src="images/img_watch.png" alt="" class="watch">
+				</a>
+				<div class="f_info">
+					<p class="f_logo">한국장애인고용공단</p>
+					<div>
+						<p>주소 (13619)경기도 성남시 분당구 구미로 173번길 59(구미동)</p>
+						<p>전화번호 031-728-7001~3</p>
+						<p class="f_copy">COPYRIGHT © 2024 KEAD RIGHT RESERVED.</p>
+					</div>
+				</div>
+			</div>
+			<div class="f_right">
+				<div class="rel_wrap">
+					<a href="#">관련사이트</a>
+					<ul>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+					</ul>
+				</div>
+				<div>
+					<p class="f_number">전국대표번호<b>1588-1519</b></p>
+					<p class="f_time"><span>운영시간</span>평일 09:00 ~ 18:00</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+	$(document).ready(function(){
+		AOS.init();
+	});
+
+	$(document).ready(function() {
+		$('.list-chk-radio input[type="radio"]').on('change', function() {
+			var $recommendationButtons = $(this).closest('.list-chk-radio').next('.recommendation-btn');
+
+			if ($(this).val() === 'no' && $(this).is(':checked')) {
+			$recommendationButtons.removeClass('hidden');
+			} else {
+			$recommendationButtons.addClass('hidden');
+			}
+		});
+	});
+
+	</script>
+
+
+
+</body>
+</html>

@@ -7,9 +7,7 @@
 .gd-icon-bg::before {content: ''; display: block; width: 50px; height: 50px; position: absolute; top: calc(50% - 25px); left: calc(50% - 25px); background: url(../images/sub/gdic_wrap.png) no-repeat 0 0; }
 .gd-tag-bg {background-color: #adb9ff; border-radius: 50px; color: #1953c2; position: relative;}
 .gd-step-bg {background-color: #adb9ff; border-radius: 50px; color: #1953c2; position: relative;}
-
 .gd-line-box {border: 1px solid #82b2e4; border-radius: 30px; padding: 10px;}
-
 .bg-icon {display: inline-block; width: 60px; height: 60px; background-color: #e8effb; border-radius: 20px; position: relative;}
 .bg-icon::before {content: ''; display: block; width: 50px; height: 50px; background: url(../images/sub/gdic_wrap.png) no-repeat 0 0 ; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
@@ -65,12 +63,18 @@
 .guide_title p {font-size: 24px; font-weight: 500; margin-top: 10px; line-height: 1.4;}
 
 .guide_tit2 {font-size: 32px; font-weight: 500;}
-.guide_tit3 {font-size: 28px; font-weight: 500; margin-bottom: 40px;}
 .guide_tit2 .num {display: inline-block; margin-right: 20px;}
+
+.guide_tit_center {font-size:32px; font-weight:500; text-align: center; padding-bottom: 20px; border-bottom: 1px solid #1953c2; margin: 60px 0 80px;}
+.guide_tit_center .num {display: inline-block; margin-right: 20px; color: #1953c2;}
+
+.guide_tit3 {font-size: 28px; font-weight: 500; margin-bottom: 40px;}
+.guide_tit3 .num {display: inline-block; margin-right: 15px;}
 
 .tab_cont2 {margin-top: 80px;}
 .tab_cont2.first {margin-top: 30px;}
-.tab_cont2_tit {font-size:30px; font-weight:500; margin-bottom: 30px;}
+.tab_cont2_tit {font-size:26px; font-weight:500; margin-bottom: 40px;}
+.tab_cont2_tit .num {display: inline-block; margin-right: 15px;}
 
 .list_tit {font-size: 22px; font-weight: 500 ; margin-bottom: 40px;}
 
@@ -78,15 +82,22 @@
 ul.guide_text {display: flex; flex-direction: column; gap: 10px; margin-left: 20px;}
 ul.guide_text > li {position: relative; line-height: 1.6;}
 ul.guide_text > li::after {content: ''; width: 4px; height: 4px; display: block; position: absolute; left: -20px; top: 14px; background-color: #222; border-radius: 4px;}
+ol.guide_text {display: flex; flex-direction: column; gap: 10px; }
+ol.guide_text > li {position: relative; line-height: 1.6;}
 
 table .guide_text {margin-left: 20px; padding: 10px;} 
 .guide_text.inbox {margin-left: 20px; } 
-
-.tab_cont .guide_text {margin-left: 20px;}
-/* .sec_cont p.guide_text {margin-bottom: 30px;} */
+.guide_text.in40 {margin-left: 40px !important; } 
 
 p.guide_text {position: relative; line-height: 1.6; margin-left: 20px;}
 p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; left: -20px; top: 14px; background-color: #222; border-radius: 4px; }
+
+.guide_text.type_mk {margin-top: 10px; gap: 8px; }
+.guide_text.type_mk > li {font-size: 18px; color: #2d6fd1; line-height: 1.4;}
+.guide_text.type_mk > li::after  {content: ''; display: block; width: 11px; height: 9px; background: url(../images/sub/blet_guide_chk.png); position: absolute; left: -20px; top: 9px;}
+
+.table-list .guide_text.type_mk {margin-left: 20px;} /* 고용서비스가이드-장애인 고용의무제도*/
+
 
 /* 팝업 버튼 */
 .gd-btn {padding: 8px 20px; border-radius: 5px; background-color: #236cdb; color: #fff !important; font-size: 18px; box-shadow: 0 2px 2px rgba(0,0,0,0.2); transition: all 0.3s; display: inline-flex; align-items: center;}
@@ -418,9 +429,15 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .table-list {border-top: 1px solid #7b7b7b; border-bottom: 1px solid #d6deeb; padding: 30px 0;}
 .table-list > li {display: flex; line-height: 1.6;}
 .table-list > li:not(:last-child) {margin-bottom: 40px;}
-.table-list .tit {flex: 0 0 150px; font-weight: 600;}
-.table-list .refer_mk {margin-top: 0;}
+.table-list .tit {flex: 0 0 150px; font-weight: 500;}
+.table-list .txt {flex: 1; }
+.table-list .txt2 {margin-top: 20px;}
+/* .table-list .refer_mk {margin-top: 0;} */
+.table-list .txt p:not(.tb_tit) + ul {margin-top: 20px;}
 
+.workplace .table-list .tit {flex: 0 0 250px;}
+.obligation .table-list .tit {flex: 0 0 200px;}
+.linked .table-list .tit {flex: 0 0 200px;}
 
 
 /* 고용관리 - 근로자 갈등관리 */
@@ -466,18 +483,18 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 
 
 
-
 /* 고용관리 - 해고와 퇴직 */
 
 
 
 
 
-/* 함께일하기가이드 - 스텝1 - 장애유형 알아보기 */
+/* 함께 일하기 GUIDE - 스텝1 - 장애유형 알아보기 */
 
-.law_box {background-color: #f7f8f9; padding: 30px; position: relative;}
+.law_box {background-color: #f7f8f9; padding: 30px; position: relative; border-radius: 10px;}
 .law_box::before {content: ''; width: 76px; height: 74px; background: url(../images/sub/gd_img_law.png); position: absolute; right: 40px; top: -74px;}
 .law_box .law_tit {font-size: 24px; font-weight: 500; margin-bottom: 30px;}
+
 
 .table_legend {margin: 10px 0;  display: flex; align-items: center; justify-content: end;}
 .legend_circle { display: inline-block; width: 15px; height: 15px; border-radius: 50%; margin: 0 4px;}
@@ -496,7 +513,7 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 
 
 
-/* 함께일하기가이드 - 스텝2 - 장애인식 개선하기 */
+/* 함께 일하기 GUIDE - 스텝2 - 장애인식 개선하기 */
 
 .cr_process { display: flex; flex-wrap: wrap; gap: 10px 57px; margin-bottom: 10px; }
 .cr_process__item { position: relative; flex: 0 0 calc(20% - 40px); background: #f9fbff; border-radius: 10px; font-size: 17px; text-align: center; border: 1px solid #d9e0ef;}
@@ -511,7 +528,7 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 
 
 
-/* 함께일하기가이드 - 스텝3 - 장애직원 배려하기 */
+/* 함께 일하기 GUIDE - 스텝3 - 장애직원 배려하기 */
 
 .tab_cont.box_type .tab-panel ul.box li.box_tip::before {top: 29px;}
 .tab_cont.box_type .tab-panel ul.box li.box_tip .tip {margin-top: 20px;}
@@ -525,6 +542,129 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .box_tip.sign_language .tip::after {content: ''; width: 350px; height: 110px; background: url(../images/sub/gd_img_sign.png); position: absolute; right: 10px; bottom: 0;}
 
 
+/* 장애인 고용서비스 GUIDE - 장애인 고용의무제도 */
+.obligation .card_list {justify-content: space-between;}
+.obligation .card_list.list4 > li  {flex: 0 0 calc(25% - 30px); border: 1px solid #5b6fe9; border-radius: 50px; padding: 30px 20px; margin-top: 40px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;} 
+.obligation .icon_100 {background-position: -400px -210px;}
+.obligation .icon2 {background-position-x: -500px;}
+.obligation .icon3 {background-position-x: -600px;}
+.obligation .icon4 {background-position-x: -700px;}
+
+
+
+
+/* 장애인 고용서비스 GUIDE - 장애인 고용지원 */
+.emp-support .emp-process li {justify-content: unset;}
+.emp-support .emp-process .icon_50 {background-position: 0 -150px;}
+.emp-support .emp-process .icon2  {background-position-x: -50px;}
+.emp-support .emp-process .icon3  {background-position-x: -100px;}
+.emp-support .emp-process .icon4  {background-position-x: -150px;}
+.emp-support .emp-process .icon5  {background-position-x: -200px;}
+.emp-support .emp-process .icon6  {background-position-x: -250px;}
+.emp-support .emp-process .icon11 {background-position-x: -300px;}
+.emp-support .emp-process .icon12 {background-position-x: -350px;}
+.emp-support .emp-process .icon13 {background-position-x: -400px;}
+.emp-support .emp-process .icon14 {background-position-x: -450px;}
+.emp-support .emp-process .icon15 {background-position-x: -500px;}
+.emp-support .emp-process .icon16 {background-position-x: -550px;}
+.emp-support .emp-process .icon17 {background-position-x: -600px;}
+.emp-support .emp-process .icon18 {background-position-x: -650px;}
+.emp-support .tab4 .emp-process .icon_50 {background-position: -450px -200px;}
+.emp-support .tab4 .emp-process .icon2  {background-position-x: -500px;}
+.emp-support .tab4 .emp-process .icon3  {background-position-x: -550px;}
+.emp-support .tab4 .emp-process .icon4  {background-position-x: -600px;}
+.emp-support .tab4 .emp-process .icon5  {background-position-x: -650px;}
+.emp-support .tab4 .emp-process .icon6  {background-position-x: -700px;}
+
+
+
+/* 장애인 고용서비스 GUIDE - 장애인 금융지원 */
+.financial .emp-process .dscp {height: 60px; display: inline-flex; align-items: center;}
+.financial .emp-process .icon_50 {background-position: -300px -150px;}
+.financial .emp-process .icon2 {background-position-x: -350px;}
+.financial .emp-process .icon3 {background-position-x: -400px;}
+.financial .emp-process .icon4 {background-position-x: -450px;}
+.financial .emp-process .icon5 {background-position-x: -500px;}
+
+
+
+/* 장애인 고용서비스 GUIDE - 표준사업장 설립가이드 */
+.title_box.guide.center {flex-direction: column; padding: 30px 0; height: auto; gap: 20px;}
+.guide_conts_wrap .tab_wrap .guide_conts:first-child {margin-top: 80px;}
+
+
+.workplace .img_graph {display: flex; gap: 40px;}
+.workplace .img_graph .tb_tit {margin-bottom: 40px;}
+.workplace .img_graph li img {width: 100%;}
+.workplace .tab_cont2_tit .fc-blue {font-size: 20px; font-weight: 400;}
+
+.workplace_step {display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px;}
+.workplace_step li {flex: 0 0 calc(100% / 5 - 24px) }
+.workplace_step .step_list {position: relative; display: flex; align-items: center; flex-direction: column; text-align: center; gap: 15px; border:1px solid #a0c0f9; border-radius: 40px; transition: all 0.3s; background: #fff; padding: 20px; height: 220px;}
+.workplace_step .on .step_list,
+.workplace_step .step_list:hover ,
+.workplace_step .step_list:focus{border-color: #236cdb; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+.workplace_step .on .step_list::before {content: ''; display: block; border: 2px solid #236cdb; position: absolute; top: -1px; left: -1px; right: -1px; bottom: -2px;border-radius: 40px;}
+.workplace_step .step_list:not(.last)::after {content: ''; display: block; background-color: #b8d4ff; height: 1px; position: absolute; left: 0; right: -50px; top: 50%; z-index: -1;} 
+.workplace_step .step{padding: 6px 20px; font-weight: 500; color: #236cdb; border-radius: 17.5px; background: #e8effb;}
+.workplace_step .dscp{font-size: 18px; color: #6d6f78;}
+.workplace_step .icon_100 {height: 80px; background-position: 0 -315px;}
+.workplace_step .icon2 {background-position-x: -100px;}
+.workplace_step .icon3 {background-position-x: -200px;}
+.workplace_step .icon4 {background-position-x: -300px;}
+.workplace_step .icon5 {background-position-x: -400px;}
+
+.law_box.type2 {font-size: 18px; line-height: 1.4; padding: 20px 30px; margin-top: 20px; padding-right: 190px;}
+.law_box.type2::before {top: unset; bottom: 0;}
+
+.emp-process.corporate {gap: 40px 20px; margin-top: 60px; flex-wrap: wrap;}
+.emp-process.corporate li {flex: 0 0 calc(25% - 25px);  }
+.emp-process.corporate li::before {right: -20px;}
+.emp-process.corporate .icon_100 {background-position: 0 -400px;}
+.emp-process.corporate .icon2 {background-position-x: -100px;}
+.emp-process.corporate .icon3 {background-position-x: -200px;}
+.emp-process.corporate .icon4 {background-position-x: -300px;}
+.emp-process.corporate .icon5 {background-position-x: -400px;}
+.emp-process.corporate .icon6 {background-position-x: -500px;}
+.emp-process.corporate .icon7 {background-position-x: -600px;}
+.emp-process.corporate .icon8 {background-position-x: -700px;}
+.emp-process.corporate .dscp2 {font-size: 16px; color: #555}
+
+.emp-process.training .icon_50 {background-position: -250px -250px;}
+.emp-process.training .icon2   {background-position-x: -300px;}
+.emp-process.training .icon3   {background-position-x: -350px;}
+.emp-process.training .icon4   {background-position-x: -400px;}
+.emp-process.training .icon5   {background-position-x: -450px;}
+.emp-process.training .icon6   {background-position-x: -500px;}
+.emp-process.training .icon7   {background-position-x: -550px;}
+.emp-process.training .dscp {font-size: 16px;}
+
+
+
+
+
+
+
+
+
+
+
+/* 장애인 고용서비스 GUIDE - 연계고용 */
+.linked_process {display: flex; justify-content: space-between; }
+.linked_process li {flex: 1; display: flex; flex-direction: column; gap: 20px; align-items: center; text-align: center;}
+.linked_process .tit {font-size: 22px; font-weight: 500; color: #1953c2}
+.linked_process .item2 .tit {color: #11a59b}
+.linked_process .item3 .tit {color: #35169d}
+
+strong.dscp_tit {font-size: 20px;}
+.linked .sec7 .emp-process .icon_50 {background-position: 0 -200px;}
+.linked .sec7 .emp-process .icon2 {background-position-x: -50px;}
+.linked .sec7 .emp-process .icon3 {background-position-x: -100px;}
+.linked .sec7 .emp-process .icon4 {background-position-x: -150px;}
+.linked .sec7 .emp-process .icon5 {background-position-x: -200px;}
+.linked .sec7 .emp-process .icon6 {background-position-x: -250px;}
+.linked .sec7 .emp-process .icon7 {background-position-x: -300px;}
+.linked .sec7 .emp-process .icon8 {background-position-x: -350px;}
 
 
 /* 가이드 테이블 #f5f9ff */
@@ -535,12 +675,14 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .tb_guide thead th {border-bottom: none; padding: 10px; }
 .tb_guide th {text-align: center; background-color: #f7f9ff; color: #666B82; }
 .tb_guide td {color: #222;}
-.guide_conts .tb_tit {font-size: 24px; margin-bottom: 20px; font-weight: 500;
-background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px center; display: inline-block; padding: 5px 23px; border-radius: 20px; padding-left: 50px;}
+.guide_conts_wrap .tb_tit {font-size: 20px; margin-bottom: 20px; font-weight: 500;
+background: #f7f8f9 url(../images/icon/notification-square.png) no-repeat left 12px center; display: inline-block; padding: 5px 23px; border-radius: 20px; padding-left: 46px;}
 .tb_guide .btn_link {background-color: #f7f9ff; border: 1px solid #7cb0ff; padding: 4px 15px; border-radius: 5px;}
 .tb_guide.type1 th, .tb_guide.type1 td {border-color: #d5dbef;}
 .tb_guide.type1 th {background-color: #f7f9ff;}
 .tb_guide.type1 td {vertical-align: top;}
+
+table.td_center td {text-align: center;}
 
 .tb_guide.type2 tbody th:first-child {border-left: none;}
 .tb_guide.type2 tbody td:last-child {border-right: none;}
@@ -645,6 +787,20 @@ background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px cen
 .violation-content .tit {font-size: 22px; font-weight: 500; margin-bottom: 20px;}
 .violation-content .txt {font-size: 18px; line-height: 1.6;}
 
+/* 강애인 고용서비스 가이드 사례*/
+.service-case {display: flex; gap: 20px; background-color: #f7f8f9; border-radius: 50px; align-items: flex-start; overflow: hidden; position: relative; z-index: -2; padding: 50px; padding-left: 270px;}
+.service-case::before {content: ''; display: block; width: 300px; height: 350px; background: url(../images/sub/gdic_service_bg.png) no-repeat; position: absolute; top: 50%; transform: translateY(-50%); left: -50px; z-index: -1;}
+.service-case .tit {font-size: 24px; font-weight: 600; margin-bottom: 20px;}
+.service-case .dscp {line-height: 1.6;}
+
+.service-case::after {content: ''; display: block; width: 200px; height: 200px; background: url(../images/sub/gd_img_case.png) 0 0; position: absolute; top: 50%; transform: translateY(-50%); left: 20px; z-index: 0;}
+.service-case.case2::after {background-position-x: -200px;}
+.service-case.case3::after {background-position-x: -400px;}
+.service-case.case4::after {background-position-x: -600px;}
+.service-case.case5::after {background-position-x: -800px;}
+.service-case.case6::after {background-position-x: -1000px;}
+
+
 /* 워크투게더 background-color: #f9fbff; border-color: #dfe8fe;*/
 /* .worktogether-box {border: 1px solid #dfe8fe; border-radius: 30px; padding: 20px; display: flex; background-color: #f9fbff; position: relative;}
 .worktogether-box .box-header {flex: 0 0 300px; background-color: #fff; border-radius: 20px; overflow: hidden; margin-right: 20px; display: flex; align-items: center; justify-content: center;}
@@ -692,14 +848,15 @@ background: #e1f3f4 url(../images/sub/icon_tb_guide.png) no-repeat left 18px cen
 .sec_cont.num_list li::before { content: counter(custom-counter); counter-increment: custom-counter; position: absolute; left: 0; top: 0.2rem; width: 1.5rem; height: 1.5rem; border-radius: 50%; background-color: #fff; color: #fff; font-size: 1rem; font-weight: bold; text-align: center; line-height: 1.5rem; } */
 
 
-
-
-
-
-
-
-
-
+/* 고용서비스 가이드 처리절차 */
+.emp-process {display: flex; justify-content: space-between; }
+.emp-process li {flex: 1; display: flex; flex-direction: column; gap: 10px; align-items: center; text-align: center; line-height: 1.2; font-size: 18px; font-weight: 500; position: relative;}
+.emp-process li::before {content: ''; display: block; width: 19px; height: 20px; background: url(../images/sub/arr_process.png); position: absolute; top: 4px; right: -10px;}
+.emp-process li:last-child:before {display: none;}
+.emp-process .step {background-color: #eaf2ff; font-size: 16px; padding: 4px 16px; border-radius: 20px; color: #236cdb;}
+.emp-process .dscp2 {background-color: #f7f8f9; padding: 4px 16px; border-radius: 5px; font-size: 16px; font-weight: 500;}
+.emp-process .dscp2 .user1 {color: #2e770a;}
+.emp-process .dscp2 .user2 {color: #0f298f;}
 
 
 

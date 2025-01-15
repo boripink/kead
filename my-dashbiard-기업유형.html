@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="asset/aos/aos.css">
+	<link rel="stylesheet" href="asset/slick/slick.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="asset/jquery/jquery-3.7.1.min.js"></script>
+	<script src="asset/aos/aos.js"></script>
+	<script src="asset/slick/slick.js"></script>
+	<script src="js/common.js"></script>
+	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
+	<title>마이페이지 | 장애인 고용컨설팅 | 한국장애인고용공단 장애인고용컨설팅</title>
+</head>
+<body>
+	<header class="header act">
+		<div class="inner">
+			<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+			<h2 class="hidden">대메뉴</h2>
+			<ul class="gnb">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user_wrap">
+				<div class="user_info">
+					<!-- [D] 로그인 전에 안보이게 처리 -->
+					<div class="user">
+						<span class="neme"><b>홍길동</b> 님</span> <span class="time">09:33</span>
+						<button class="btn_time" type="button">연장</button>
+					</div>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<button type="button" class="btn_menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="mob_wrap">
+			<div class="user_mob">
+				<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+				<div class="user">
+					<span class="neme"><b>홍길동</b> 님</span>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<ul class="gnb_mob">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container sub_container">
+		<div class="inner">
+			<div class="snb_wrap">
+				<h3>마이페이지</h3>
+				<ul class="snb_list">
+					<!-- <li class="on"><a href="sub0.html">대시보드</a></li> -->
+					<li><a href="sub0.html">고용역량 진단조회</a></li>
+					<li><a href="sub0.html">고용컨설팅 진행상황</a></li>
+					<li><a href="sub0.html">명단공표 진행상황</a></li>
+					<li><a href="sub0.html">나의 문의</a></li>
+					<li><a href="sub0.html">즐겨찾기</a></li>
+				</ul>
+			</div>
+			<div class="contents">
+				<!-- 타이틀 -->
+				<div class="cont_tit_wrap">
+					<h4 class="cont_tit">마이페이지</h4>
+					<ul class="cont_lct">
+						<li class="home">홈</li>
+						<li>마이페이지</li>
+						<li class="pnt_cr02"><b>대시보드</b></li>
+					</ul>
+				</div>
+                <!-- 콘텐츠 -->
+				<div class="cont_wrap dashboard_wrap">
+					<!-- 상단 -->
+					<div class="dashboard dashbd-top">
+						<div class="bg_box welcome">
+							<h5 class="name">한국공항공사</h5>
+							<p class="txt">담당자님, 환영합니다.</p>
+						</div>
+						<div class="bg_box employment">
+							<h6>장애인 고용현황</h6>
+							<p class="rate">장애인 고용률 <span>2.1%</span></p>
+							<p class="status">의무이행현황 <span>미이행</span></p>
+						</div>
+						<div class="bg_box assessment">
+							<h6>고용역량 진단수준 <span class="date">24.10.28</span></h6>
+							<p class="score">60점 <span>미흡</span></p>
+							<p class="status">개선필요영역 <span>조직문화</span></p>
+							<a class="dash_btn" href="#" aria-label="페이지 이동">진단 목록 보기</a>
+						</div>
+						<div class="bg_box consulting">
+							<h6>컨설팅 진행상황 <span class="date">24.10.28</span></h6>
+							<div class="progress_bar">
+								<div class="progress_step">
+									<span class="progress_icon" aria-label="hidden"></span>
+									<span class="progress_label">대기</span>
+								</div>
+								<div class="progress_step active">
+									<span class="progress_icon" aria-label="hidden"></span>
+									<span class="progress_label">접수</span>
+								</div>
+								<div class="progress_step">
+									<span class="progress_icon" aria-label="hidden"></span>
+									<span class="progress_label">진행</span>
+								</div>
+								<div class="progress_step">
+									<span class="progress_icon" aria-label="hidden"></span>
+									<span class="progress_label">종료</span>
+								</div>
+							</div>
+							<a class="dash_btn" href="#" aria-label="페이지 이동">신청 목록 보기</a>
+						</div>
+					</div>
+					<!-- 미들 -->
+					<div class="dashboard dashbd-mid">
+						<div class="line_box chart-box progress">
+							<div class="box-head">
+								<h6>장애인 고용 이행</h6>
+								<p>목표달성까지 <strong class="fc-blue">81%</strong> 남았어요.</p>
+							</div>							
+							<div class="circle-chart" data-percentage="81">
+								<div class="circle-content">
+									<span class="percentage">81%</span>
+									<span class="label">목표달성</span>
+								</div>
+							</div>
+							<div class="chart-info progress">
+								<div class="info-item">
+									<span class="info-title">고용 의무인원</span>
+									<span class="info-value">20명</span>
+								</div>
+								<div class="info-item">
+									<span class="info-title">장애인 근로자</span>
+									<span class="info-value fc-blue">5명</span>
+								</div>
+								<div class="info-item">
+									<span class="info-title">고용 필요인원</span>
+									<span class="info-value fc-red">15명</span>
+								</div>
+							</div>
+						</div>
+						<script>
+							$(document).ready(function () {
+								$('.circle-chart').each(function () {
+									// data-percentage 속성 값 가져오기
+									const percentage = $(this).data('percentage');							
+									// 차트 배경 업데이트
+									$(this).css('background', `conic-gradient(#007bff 0% ${percentage}%, #d9e0ef ${percentage}% 100%)`);							
+									// 텍스트 업데이트
+									$(this).find('.percentage').text(`${percentage}%`);
+								});
+							});							
+						</script>
+						<!-- 막대그래프 -->
+						<div class="line_box chart-box comparison">
+							<div class="box-head">
+								<h6>장애인 고용 수준</h6>
+								<p>동종업계 평균보다 <strong class="fc-blue">20점</strong> 낮아요.</p>
+							</div>
+							<!-- 막대 높이 3단계 low,medium,hight  -->
+							<div class="bar-chart">
+								<div class="bar-item low">
+									<span class="label">미흡</span>
+									<div class="bar"></div>
+								</div>
+								<div class="bar-item medium">
+									<span class="label">보통</span>
+									<div class="bar"></div>
+								</div>
+							</div>							
+							<div class="chart-info">
+								<div class="info-item">
+									<span class="info-title">우리기업</span>
+									<span class="info-value">50점</span>
+								</div>
+								<div class="info-item">
+									<span class="info-title">동종업계(평균)</span>
+									<span class="info-value fc-blue">70점</span>
+								</div>
+							</div>
+						</div>
+						<!-- 그래프 -->
+						<div class="line_box burden-reduction">
+							<div class="box-head">
+								<h6>추가 채용 시 고용 편익</h6>
+								<p>장애인 고용을 하면 부담금이 얼마나 감면될까요?</p>
+							</div>
+							<div class="chart-placeholder">[그래프 영역]</div>
+							<div class="chart-info">
+								<div class="info-item">
+									<span class="info-title">추가고용인원</span>
+									<span class="info-value">5명</span>
+								</div>
+								<div class="info-item">
+									<span class="info-title">부담금 감면액</span>
+									<span class="info-value fc-blue">175,159,200원</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 하단 -->
+					<div class="dashboard dashbd-foot">
+						<div class="line_box example">
+							<div class="box-head">
+								<h6>추천 사례</h6>
+								<p>동종(유사) 업종의 다른기업은 이렇게 고용하고 있어요.</p>
+							</div>
+							<div class="company-logo">
+								<a class="logo-box" href="#">
+									<div class="logo">
+										<img src="images/best_company/53/ec_logo.png" alt="SK 로고" aria-hidden="true">
+									</div>
+									<div class="name">SK 쉘더스</div>
+								</a>
+								<a class="logo-box" href="#">
+									<div class="logo">
+										<img src="images/best_company/56/ec_logo.png" alt="Google 로고">
+									</div>
+									<div class="name">구글 GOOGLE</div>
+								</a>
+							</div>
+							<a class="dash_btn" href="#" aria-label="페이지 이동">사례 더보기</a>
+						</div>
+						<div class="line_box guide">
+							<div class="box-head">
+								<h6>추천 가이드</h6>
+								<p>장애인 고용을 위한 길잡이가 되어드립니다.</p>
+							</div>
+							<ul class="guide-list">
+								<li>
+									<a href="#" aria-label="페이지 이동">고용단계별 유의사항이 궁금하다면? 
+									<span class="arr"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#" aria-label="페이지 이동">장애인 기준과 유형별 특성이 궁금하다면? <span class="arr"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#" aria-label="페이지 이동">공단 지원서비스가 궁금하다면? <span class="arr"></span>
+									</a>
+								</li>
+							</ul>							
+							<a class="dash_btn" href="#" aria-label="페이지 이동">사례 더보기</a>
+						</div>
+						<div class="small_box">
+							<div class="bg_box">
+								<div class="box-head">
+									<h6>나의 문의사항</h6>
+								</div>
+								<div class="inquiry">
+									<div class="wh-box">
+										<div class="label"><span class="qu"></span>문의</div>
+										<div class="value">10건</div>
+									</div>
+									<div class="wh-box">
+										<span class="label an"><span class="qu"></span>답변</span>
+										<span class="value">10건</span>
+									</div>
+								</div>
+								<a class="btn_icon_plus" href="#"><span class="sr-only">문의사항 바로가기</span></a>
+							</div>
+							<div class="bg_box mbti">
+								<div class="box-head">
+									<h6>기업 MBTI</h6>
+									<p>우리기업 유형은?</p>
+								</div>
+								<div class="mbti-box">
+									<!-- <div class="wh-box">
+										<div class="mbti-type">MBTI 형</div>
+										<span class="mbti-value">(000000형)</span>
+									</div> -->
+									<a class="dash_btn" href="#" aria-label="페이지 이동">MBTI 바로가기</a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					
+				</div>  
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="inner">
+			<div class="f_left">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li class="pnt_cr1"><a href="#"><b>개인정보처리방침</b></a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<a href="#" target="_blank" title="새창이동">
+					<img src="images/img_watch.png" alt="" class="watch">
+				</a>
+				<div class="f_info">
+					<p class="f_logo">한국장애인고용공단</p>
+					<div>
+						<p>주소 (13619)경기도 성남시 분당구 구미로 173번길 59(구미동)</p>
+						<p>전화번호 031-728-7001~3</p>
+						<p class="f_copy">COPYRIGHT © 2024 KEAD RIGHT RESERVED.</p>
+					</div>
+				</div>
+			</div>
+			<div class="f_right">
+				<div class="rel_wrap">
+					<a href="#">관련사이트</a>
+					<ul>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+					</ul>
+				</div>
+				<div>
+					<p class="f_number">전국대표번호<b>1588-1519</b></p>
+					<p class="f_time"><span>운영시간</span>평일 09:00 ~ 18:00</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+	$(document).ready(function(){
+		AOS.init();
+
+	});
+	</script>
+
+<!-- 기업유형검사 팝업 -->
+<div class="layer_wrap popSample2 layer_open">
+	<div class="layer_cont layer_xl">
+		<div class="pop_head">
+			<div class="pop_tit">기업 유형 검사
+				<div class="tooltip_wrap tooltip_list">
+					<button type="button" class="pop_tooltip">기업분석유형</button>
+					<div class="tooltip_cont">
+						<span>16가지 기업 분석 유형</span>
+						<ul>
+							<li>
+								<b>SEHB</b>
+								<p>안정성을 추구하며, 외부 성장 전략을 통해 수직적 구조를 가진 B2B기업</p>
+							</li>
+							<li>
+								<b>SEFB</b>
+								<p>안정성을 추구하며, 외부 성장 전략을 통해 수평적 구조를 가진 B2B기업</p>
+							</li>
+							<li>
+								<b>SDFB</b>
+								<p>안정성을 추구하며, 내부 성장 전략을 통해 수평적 구조를 가진 B2B기업업</p>
+							</li>
+							<li>
+								<b>SDHB</b>
+								<p>안정성을 추구하며, 내부 성장 전략을 통해 수직적 구조를 가진 B2B기업</p>
+							</li>
+							<li>
+								<b>SEHC</b>
+								<p>안정성을 추구하며, 외부 성장 전략을 통해 수직적 구조를 가진 B2C기업</p>
+							</li>
+							<li>
+								<b>SDFC</b>
+								<p>안정성을 추구하며, 외부 성장 전략을 통해 수평적 구조를 가진 B2C기업</p>
+							</li>
+							<li>
+								<b>SDFC</b>
+								<p>안정성을 추구하며, 내부 성장 전략을 통해 수평적 구조를 가진 B2C기업</p>
+							</li>
+							<li>
+								<b>SDHC</b>
+								<p>안정성을 추구하며, 내부 성장 전략을 통해 수직적 구조를 가진 B2C기업</p>
+							</li>
+							<li>
+								<b>IEHC</b>
+								<p>혁신을 추구하며, 외부 성장 전략을 통해 수직적 구조를 가진 B2C기업</p>
+							</li>
+							<li>
+								<b>IEFC</b>
+								<p>혁신을 추구하며, 외부 성장 전략을 통해 수평적 구조를 가진 B2C기업</p>
+							</li>
+							<li>
+								<b>IDFC</b>
+								<p>혁신을 추구하며, 내부 성장 전략을 통해 수평적 구조를 가진 B2C기업</p>
+							</li>
+							<li>
+								<b>IDHC</b>
+								<p>혁신을 추구하며, 내부 성장 전략을 통해 수직적 구조를 가진 B2C기업</p>
+							</li>
+							<li>
+								<b>IEHB</b>
+								<p>혁신을 추구하며, 외부 성장 전략을 통해 수직적 구조를 가진 B2B기업</p>
+							</li>
+							<li>
+								<b>IEFB</b>
+								<p>혁신을 추구하며, 외부 성장 전략을 통해 수평적 구조를 가진 B2B기업</p>
+							</li>
+							<li>
+								<b>IDFB</b>
+								<p>혁신을 추구하며, 내부 성장 전략을 통해 수평적 구조를 가진 B2B기업</p>
+							</li>
+							<li>
+								<b>IDHB</b>
+								<p>혁신을 추구하며, 내부 성장 전략을 통해 수직적 구조를 가진 B2B기업</p>
+							</li>
+						</ul>
+						<button type="button" class="tooltip_close">닫기</button>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn_close">닫기</button>
+		</div>
+		<div class="pop_body">
+			<div class="idx_pop">
+				<div class="pop_select wd52">
+					<p>우리회사는 어떤 유형이고, 어떤 서비스가 필요한지 알아보세요.</p>
+					<ul class="pop_list pop_list_check">
+						<li>
+							<dl class="pop_list_tit">
+								<dt>경영목표</dt>
+								<dd>우리회사의 주된 목표는 무엇인가요?</dd>
+							</dl>
+							<div class="pop_list_btn">
+								<button type="button"><b>S 안정성</b>(Stability)</button>
+								<button type="button"><b>I 혁신</b>(Innovation)</button>
+							</div>
+						</li>
+						<li>
+							<dl class="pop_list_tit">
+								<dt>성장방향</dt>
+								<dd>우리회사는 주로 어떤 방식으로 성정하나요?</dd>
+							</dl>
+							<div class="pop_list_btn">
+								<button type="button"><b>E 외부성장성</b>(Expansion)</button>
+								<button type="button"><b>D 내부성장</b>(Development)</button>
+							</div>
+						</li>
+						<li>
+							<dl class="pop_list_tit">
+								<dt>경영목표</dt>
+								<dd>우리회사의 조직은 어떻게 구성되어 있나요?</dd>
+							</dl>
+							<div class="pop_list_btn">
+								<button type="button"><b>H 수직적</b>(Hierarchy)</button>
+								<button type="button"><b>F 수평적</b>(Flat)</button>
+							</div>
+						</li>
+						<li>
+							<dl class="pop_list_tit">
+								<dt>주 고객</dt>
+								<dd>우리회사의 주된 거래 상대는 누구인가요?</dd>
+							</dl>
+							<div class="pop_list_btn">
+								<button type="button"><b>B 기업</b>(B2B)</button>
+								<button type="button"><b>C 소비자</b>(B2C)</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<button type="button" class="btn_result">결과 보기</button>
+				<div class="pop_result pop_result_check wd40">
+					<div class="result_category">
+						<span class="result_stat">기업유형 : <b>안정추구형</b></span>
+						<h4 class="result_tit">SDFC</h4>
+						<img src="images/img_sdfc.png" alt="">
+						<p>안정성을 추구하며 내부 성장 전략을 통해 수평적 구조를 가진 B2C 기업</p>
+					</div>
+					<ul class="result_sample">
+						<li class="on">
+							<span>추천 서비스</span>
+							<p class="result_name">지원고용</p>
+							<p class="result_info">채용 전 현장 훈련으로 직장-직무 적응지원 사전훈련(6일), 현장훈련(3주 ~ 7주)</p>
+						</li>
+						<li>
+							<a href="">
+								<span>추천 사례</span>
+								<p class="result_name">코리아세븐</p>
+								<img src="images/@result_logo1.png" alt="7-ELEVEN">
+								<p class="result_info">점포관리 보조 지원고용, 장애대학생 채용 설명회</p>
+							</a>
+						</li>
+					</ul>
+					<!--[D] 선택하지 않았을 때 보여주세요. -->
+					<p class="result_none" style="display:none">우리기업 유형은?</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
+</body>
+</html>

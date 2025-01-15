@@ -74,7 +74,7 @@
 				<div class="user_info">
 					<!-- [D] 로그인 전에 안보이게 처리 -->
 					<div class="user">
-						<span class="neme"><b>홍길동</b> 님</spanclass="neme"> <span class="time">09:33</span>
+						<span class="neme"><b>홍길동</b> 님</span> <span class="time">09:33</span>
 						<button class="btn_time" type="button">연장</button>
 					</div>
 					<button type="button" class="btn_login">로그아웃</button>
@@ -246,15 +246,17 @@
 								</tbody>
 							</table>
 						</section>
-						<!-- 테이블형 리스트트 -->
+						<!-- 테이블형 리스트 -->
 						<section class="guide_conts sec1">
 							<h6 class="guide_tit2"><span class="num">1.</span>직장 내 장애인 인식개선 교육</h6>
-							<ul class="sec_cont table-list">
-								<li>
-									<p class="tit"></p>
-									<p class="txt"></p>
-								</li>
-							</ul>
+							<div class="sec_cont">
+								<ul class="table-list">
+									<li>
+										<p class="tit"></p>
+										<div class="txt"></div>
+									</li>
+								</ul>
+							</div>
 						</section> 
 						<!-- 가이드 콘텐츠 : 프로세스 리스트트 -->
 						<section class="guide_conts">
@@ -297,25 +299,27 @@
 						<!-- 탭 :박스타입입 -->
 						<section class="guide_conts">
 							<h6 class="guide_tit2"><span class="num">1.</span></h6>
-							<div class="sec_cont tab_wrap tab_style_gd">
-								<ul class="tab_list" role="tablist">
-									<li role="presentation"><a href="#tab1" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="true"></a></li>
-									<li role="presentation"><a href="#tab2" role="tab" id="tab2-tab" aria-controls="tab2" aria-selected="false"></a></li>
-									<li role="presentation"><a href="#tab3" role="tab" id="tab3-tab" aria-controls="tab3" aria-selected="false"></a></li>
-									<li role="presentation"><a href="#tab4" role="tab" id="tab4-tab" aria-controls="tab4" aria-selected="false"></a></li>
-									<li role="presentation"><a href="#tab5" role="tab" id="tab5-tab" aria-controls="tab5" aria-selected="false"></a></li>
-									<li role="presentation"><a href="#tab6" role="tab" id="tab6-tab" aria-controls="tab6" aria-selected="false"></a></li>
-								</ul>
-								<div class="tab_cont box_type">
-									<div id="tab1" class="tab-panel" role="tabpanel" aria-labelledby="tab1-tab">
-										<ul class="box">
-											<li></li>
-										</ul>
-									</div>
-									<div id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-tab">
-										<ul class="box">
-											<li></li>
-										</ul>
+							<div class="sec_cont">
+								<div class="tab_wrap tab_style_gd">
+									<ul class="tab_list" role="tablist">
+										<li role="presentation"><a href="#tab1" role="tab" id="tab1-tab" aria-controls="tab1" aria-selected="true"></a></li>
+										<li role="presentation"><a href="#tab2" role="tab" id="tab2-tab" aria-controls="tab2" aria-selected="false"></a></li>
+										<li role="presentation"><a href="#tab3" role="tab" id="tab3-tab" aria-controls="tab3" aria-selected="false"></a></li>
+										<li role="presentation"><a href="#tab4" role="tab" id="tab4-tab" aria-controls="tab4" aria-selected="false"></a></li>
+										<li role="presentation"><a href="#tab5" role="tab" id="tab5-tab" aria-controls="tab5" aria-selected="false"></a></li>
+										<li role="presentation"><a href="#tab6" role="tab" id="tab6-tab" aria-controls="tab6" aria-selected="false"></a></li>
+									</ul>
+									<div class="tab_cont box_type">
+										<div id="tab1" class="tab-panel" role="tabpanel" aria-labelledby="tab1-tab">
+											<ul class="box">
+												<li></li>
+											</ul>
+										</div>
+										<div id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-tab">
+											<ul class="box">
+												<li></li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -341,6 +345,53 @@
 								</div>
 							</div>
 						</section>
+						<!-- 탭 : 고용서비스가이드 탭 콘텐츠 table-list -->
+						<div id="tab" class="tab-panel tab" role="tabpanel" aria-labelledby="tab-tab">
+							<section class="guide_conts tab-sec1">
+								<h6 class="guide_tit2"><span class="num">.</span></h6>
+								<div class="sec_cont">
+									<p class="guide_text"></p>
+								</div>
+								<div class="sec_cont2">
+									<ul class="table-list">
+										<li>
+											<p class="tit"></p>
+											<div class="txt"></div>
+										</li>
+										<li>
+											<p class="tit"></p>
+											<div class="txt"></div>
+										</li>
+										<li>
+											<p class="tit"></p>
+											<div class="txt"></div>
+										</li>
+										<li>
+											<p class="tit"></p>
+											<div class="txt"></div>
+										</li>
+										<li>
+											<p class="tit"></p>
+											<div class="txt"></div>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div id="tab" class="tab-panel" role="tabpanel" aria-labelledby="tab">
+							<div class="guide_tit_center"><span class="fc-blue mr20">STEP-</span></div>
+							<section class="tab_cont2">
+								<h6 class="guide_tit3"><span class="num">.</span></h6>
+								<div class="sec_cont2">
+									<ul class="guide_text">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+							</section>	
+						</div>
 						<!-- 가이드 콘텐츠 : 차별법 위반 사례 -->
 						<section class="guide_conts">
 							<h6 class="guide_tit2"><span class="num">4.</span>장애인 차별법 위반 사례</h6>
@@ -356,6 +407,25 @@
 								</div>
 							</div>
 						</section>
+						<!-- 고용지원 사례 -->
+						<div class="service-case">
+							<div class="bg"></div>
+							<div class="content">
+								<p class="tit">고용컨설팅사례</p>
+								<p class="dscp">ASML은 공단의 심화형 컨설팅 중 하나인 퍼실리테이션을 통하여 ‘오피스 바리스타’ 직무를 도출하였으며, 발달장애인 10명을 사내카페 1호점의 바리스타로 채용하였습니다.</p>
+							</div>
+						</div>
+						<!-- 지원가이드 프로세스 -->
+						<ul class="emp-process">
+							<li>
+								<div class="step">STEP</div>
+								<div class="dscp"></div>
+								<div class="icon_50 icon1"></div>
+								<div class="dscp2">
+									<span class="user1">사업주</span>→<span class="user2">공단</span>
+								</div>
+							</li>							
+						</ul>
 						<!-- 박스타입 리스트  -->
 						<section class="guide_conts">
 							<div class="sec_cont">

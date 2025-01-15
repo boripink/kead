@@ -622,15 +622,15 @@
 .case-board .benefit .bg_box li {background-color: #fff; padding: 0 10px; border-radius: 20px; }
 .case-board .benefit .icon-add {position: absolute; bottom: 12px; left: calc(50% - 9px); }
 
-.recruit-step {display: flex; justify-content: space-between; align-items: center; background-color: #f7f8f9; padding: 5px;}
-.recruit-step li {font-size: 13px; padding: 4px; border-radius: 4px; line-height: 1.2; position: relative;}
-.recruit-step li .icon { display: block; height: 25px; background: url(../images/icon/recruit-step-documents.png) no-repeat center top;}
+.recruit-step {display: flex; justify-content: center; align-items: center; background-color: #f7f8f9; padding: 5px;}
+.recruit-step li {flex: 0 1 80px; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 13px; padding: 4px; border-radius: 4px; line-height: 1.2; position: relative;}
+.recruit-step li .icon {display: block; width: 25px; height: 25px; background: url(../images/icon/recruit-step-documents.png) no-repeat center top;}
 .recruit-step li.step-written .icon {background-image: url(../images/icon/recruit-step-written.png);}
 .recruit-step li.step-practical .icon {background-image: url(../images/icon/recruit-step-practical.png);}
 .recruit-step li.step-interview .icon {background-image: url(../images/icon/recruit-step-interview.png);}
 .recruit-step li.step-medical .icon {background-image: url(../images/icon/recruit-step-medical.png);}
 .recruit-step li.step-aptitude .icon {background-image: url(../images/icon/recruit-step-aptitude.png);}
-.recruit-step li:not(:last-child)::after {content: ''; width: 5px; height: 9px; position: absolute; right: -8px; top: 9px; background: url(../images/icon/recruit-step-arrow.png);}
+.recruit-step li:not(:last-child)::after {content: ''; width: 5px; height: 9px; position: absolute; right: -4px; top: 9px; background: url(../images/icon/recruit-step-arrow.png);}
 
 .case-board .agency {flex: 1;display: flex; flex-direction: column; }
 .case-board .agency .tit {font-size: 16px; font-weight: 600; margin-bottom: 10px;}
@@ -686,6 +686,29 @@ position: absolute; top: 4px; right: -14px;}
 .theme_filter .title { font-size: 24px; font-weight: 500; display: flex; align-items: center; justify-content: center; height: 60px;}
 .theme_filter li:hover, .theme_filter li.active{border-color: #1953c2; background-color: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1); color: #1953c2;}
 
+
+/* .story_filter {display: flex; margin-top: 20px; flex-wrap: wrap; gap: 20px}
+.story_filter li {width: calc((100% - 40px)/3); height: 300px; border-radius: 30px; overflow: hidden; position: relative;}
+.story_filter li::before {content: ''; display: block; background: url(../images/company/bg_blackg.png); position: absolute; bottom: 0; left: 0; right: 0; top: 50px;}
+.story_filter .bg-img > img {width: 100%; height: 300px;} */
+
+.story_filter { display: flex; flex-wrap: wrap; gap: 30px; }
+.story_filter .story_item { flex: 1 1 calc(33.333% - 30px); display: flex; flex-direction: column; border-radius: 30px; overflow: hidden; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); position: relative; cursor: pointer; transition: all 0.3s;}
+.story_filter .story_item::before {content: ''; display: block; background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)); position: absolute; bottom: 0; left: 0; right: 0; top: 40%;}
+.story_filter .story_item:hover {box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); transform: scale(103%);}
+
+.story_filter .story_image { width: 100%; aspect-ratio: 1 / 0.99; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #f5f5f5 url(../images/sub/no-image.png) no-repeat center; }
+.story_filter .story_image img { width: 100%; height: 100%; object-fit: cover; }
+.story_filter .story_info {padding: 15px; color: #fff; text-align: left; position: absolute; bottom: 10px; left: 10px; right: 10px;}
+.story_filter .story_info h6 {font-size: 30px; font-weight: 400; margin-bottom: 5px;}
+.story_filter .story_info p {font-size: 16px; line-height: 1.5; }
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .company_item { flex: 1 1 calc(100% - 20px); }
+}
+
+/* 북타입 
 .story_filter {display: flex; justify-content: space-between; margin-top: 20px; flex-wrap: wrap; gap: 50px 0;}
 .story_filter > li {position: relative; width: 520px; height: 330px; display: flex; gap: 30px; transition: all 0.3s; cursor: pointer;}
 .story_filter > li::before {content: ''; display: block; width: 555px; height: 330px; background: url(../images/sub/story_list_book.png) no-repeat; position: absolute; left: -18px; z-index: -1; }
@@ -696,11 +719,12 @@ position: absolute; top: 4px; right: -14px;}
 .book_right li {font-size: 22px; background: url(../images/svg/search-visual.svg) no-repeat 0 center; padding-left: 25px; background-size: 18px;}
 .book_link {width: 50px; height: 50px; background: url(../images/btn_wrap.png) no-repeat -185px 10px; position: absolute; right: 30px; bottom: 45px;}
 .story_filter > li:hover::before {background-image: url(../images/sub/story_list_book_hover.png);}
-
+*/
 
 /* 고용 성공 스토리 - 고용스토리(웹진) */
 .webzine {font-family:'NanumSquareR', Sans-serif; line-height: 1.6;}
-.webzine-intro .tit-content{position: relative; margin-bottom: 30px; } 
+.webzine-intro .tit-content{position: relative; margin-bottom: 30px; width: 100%; height: 520px; background: #f5f5f5 url(../images/sub/no-image.png) no-repeat center;} 
+.webzine-intro .tit-content > img {width: 100%; height: 100%; object-fit: fill}
 .webzine-intro .tit { padding:30px; position: absolute; bottom: 0px; left: 50px; font-family: 'MapoGoldenPier', Sans-serif; font-size: 40px; color: #f1602c; line-height: 1.4; font-weight: 400; z-index: 5; width: 450px;}
 .webzine-intro .tit::before {content: ''; display: block; position: absolute; left: -15px; top: -15px; right: -15px; bottom: 0; background-color: #fff; opacity: 0.5; z-index: -1;}
 .webzine-intro .tit::after {content: ''; display: block; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0; background-color: #fff; opacity: 0.9; z-index: -1;}
@@ -719,14 +743,14 @@ position: absolute; top: 4px; right: -14px;}
 .employment_story_intro .company-intro {padding-top: 0;}
 .employment_story_intro .company-info {padding-left: 440px;}
 .employment_story_intro .intro-box { margin-top: 105px; position: relative; z-index: 0;}
-.employment_story_intro .intro-box::before {content: ''; display: block; border: 1px solid #d9e0ef; border-radius: 80px 20px 80px 80px ; min-height: 290px; background-color: #f7f8f9; position: absolute; top: 0; right: 0; left: 20px; bottom: -10px; z-index: -1;}
+.employment_story_intro .intro-box::before {content: ''; display: block; border: 1px solid #d9e0ef; border-radius: 80px 20px 80px 80px ; min-height: 290px; background-color: #f7f8f9; position: absolute; top: 0; right: 0; left: 20px; bottom: 0; z-index: -1;}
 .employment_story_intro .company-img { width: 400px; height: 300px; border-radius: 80px 50px 50px 50px; position: absolute; top: -65px; box-shadow: 0 3px 8px rgba(0,0,0,0.2);}
 .employment_story_intro .company-logo {width: 125px; height: 52px; position: absolute; top: -55px; right: 0; text-align: right;}
 .employment_story_intro .company-logo > img {width: 80%; position: absolute; bottom: 10px; right: 10px;}
 
 /* 성공스토리 NEW */
-.employment_story_intro.new .company-info {padding-left: 640px; min-height: 400px;}
-.employment_story_intro.new .company-img  {width: 600px; height: 450px;}
+.employment_story_intro.new .company-info {padding-left: 640px;}
+.employment_story_intro.new .company-img  {width: 600px; height: 360px;}
 .employment_story_intro.new .company-dcn  {padding: 40px; line-height: 1.6;}
 .employment_story_intro.new .name {font-size: 30px; font-weight: 500; padding: 30px 0; border-bottom: 2px solid #222; margin-bottom: 30px;}
 
@@ -835,14 +859,11 @@ position: absolute; top: 4px; right: -14px;}
 .quick_list > li {display: inline-flex; min-width: 160px; height: 50px; padding: 0 30px; border: 1px solid #222; border-radius: 4px; align-items: center; justify-content: center; font-size: 24px; cursor: pointer; position: relative;}
 .quick_list > li.active {background-color: #3e8bff; border: none; color: #fff;} 
 
-.sticky_cont {position: relative; z-index: -1;}
+.sticky_cont {position: relative; z-index: 0;}
 .sticky_cont > div {position: relative; }
 .sticky_cont h5 {display: flex; align-items: center; justify-content: center; margin-bottom: 80px;}
 
-.sticky_cont .sec1 {padding-bottom: 80px;}
-.sticky_cont .sec2 {padding: 80px 0; margin-bottom: 80px;}
-.sticky_cont .sec2:before {content:""; position:absolute; top:0; left:0; width:200vw; height:100%; margin-left:-100vw; background:#f7f8f9; z-index:-1;}
-.sticky_cont .sec3 {padding-bottom: 100px;}
+.sticky_cont > div {padding-bottom: 100px;}
 
 .story-tab-list > li:not(:last-child) {margin-bottom: 50px;}
 .story-tab-list > li .tit {font-size: 30px; font-weight: 500; margin-bottom: 10px;}
@@ -856,7 +877,7 @@ position: absolute; top: 4px; right: -14px;}
 .story-tab-list .job-list li .job-name {font-size: 30px; font-weight: 500;}
 
 .story_solution {display: flex; justify-content: space-between; gap: 70px; }
-.story_solution .issue_box {flex: 1; background-color: #fff; border-radius: 10px; padding: 10px; position: relative;}
+.story_solution .issue_box {flex: 1; background-color: #fff; border-radius: 10px; padding: 10px; position: relative; border: 1px solid #fdb8c0;}
 .story_solution .issue_box li {background-color: #fff5f5; padding: 20px; border-radius: 20px; margin-bottom: 10px; display: flex; align-items: center; position: relative;}
 .story_solution .issue_box li .icon {width: 50px; height: 22px; display: inline-block; background: url(../images/sub/gdic_solution_icon1.png) no-repeat center;}
 
@@ -865,6 +886,7 @@ position: absolute; top: 4px; right: -14px;}
 
 .issue_box.fix::before {content: ''; display: block; width: 27px; height: 29px; background: url(../images/sub/arrow_tab2.png); position: absolute; top: calc(50% - 15px); left: -50px;}
 
+.story_solution .fix {border-color: #9ec5ff;}
 .story_solution .fix .tit {color: #1953c2;}
 .story_solution .fix li {background-color: #ebf3ff;}
 .story_solution .fix li .icon {background-image: url(../images/sub/gdic_solution_icon2.png);}
@@ -915,7 +937,7 @@ border: 1px solid #d9e0ef; background-color: #fff; border-radius: 20px;
 .point_item .icon-list li::before {background-color: transparent;}
 
 
-
+.story_point .link_btn {display: flex; justify-content: end; margin-top: 10px;}
 
 
 
@@ -1097,11 +1119,11 @@ border: 1px solid #d9e0ef; background-color: #fff; border-radius: 20px;
 .jobType_88 { background-image: url('../images/ico/jobType_88.png'); }
 .jobType_89 { background-image: url('../images/ico/jobType_89.png'); }
 .jobType_90 { background-image: url('../images/ico/jobType_90.png'); }
-.location { background-image: url('../images/ico/location.png'); }
+.location   { background-image: url('../images/ico/location.png'); }
 
 
 /* 미디어 채용사례 */
-.media_case .img {width: 100%; height: 150px; background: #f5f5f5 url(../images/sub/no-image.png) no-repeat center; background-size: 60px; }
+.media_case .img {width: 100%; height: 150px; background: #f5f5f5 url(../images/sub/no-image.png) no-repeat center; background-size: 60px; object-fit: cover;}
 .media_case .txt {margin: 15px;} 
 .media_case .txt ul  {display: flex; flex-wrap: wrap; gap: 6px; font-size: 15px;}
 .media_case .tag_list li {display: inline-block; background-color: #e9f0ff; font-size: 15px; font-weight: 500; color: #1953c2; padding: 4px 8px; border-radius: 20px;}

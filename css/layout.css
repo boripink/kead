@@ -8,7 +8,11 @@
 
 /* css import */
 @import url("base.css");
+@import url("base-asis.css");
 @import url("component.css");
+@import url('sub-common.css');
+@import url('sub1.css');
+@import url('sub2.css');
 
 /* 공통 */
 .inner {position:relative; width:100%; max-width:1400px; margin:0 auto; }
@@ -87,7 +91,7 @@
 .login_box .find_link:hover:after {width: calc(100% - 26px);}
 .login_box .find_link .icon_care {width: 26px; height: 26px; position: absolute; left: -8px; top: -2px;}
 
-.user_type {display: flex; margin: 0 auto; width: 300px; }
+.user_type {display: flex; margin: 0 auto; width: 400px; }
 .user_type .label {flex: 1; text-align: center; font-size: 30px; cursor: pointer; padding-bottom: 10px; border-bottom: 1px solid #e3e7f0; color: #666;}
 .user_type input[type="radio"] { position: absolute; opacity: 0; width: 0; height: 0; }
 .user_type input[type="radio"]:checked + label { color: #111; border-bottom: 3px solid #0056b3; }

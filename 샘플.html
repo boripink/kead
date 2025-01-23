@@ -1,409 +1,285 @@
-<div class="tab_cont box_type">
-  <!--### 지체장애 ###-->
-  <div id="tab1" class="tab-panel" role="tabpanel" aria-labelledby="tab1-tab">
-    <ul class="box">
-    <li>
-      
-      기본적으로 움직임에 불편함이 있으나 편의시설 확대 및 보조공학의 발달로 업무 영역이 확대되는 추세입니다.
-      
-    </li>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="asset/aos/aos.css">
+	<link rel="stylesheet" href="asset/slick/slick.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="asset/jquery/jquery-3.7.1.min.js"></script>
+	<script src="asset/aos/aos.js"></script>
+	<script src="asset/slick/slick.js"></script>
+	<script src="js/common.js"></script>
+	<!-- [D] 2차 메뉴-1차 메뉴-사이트명 순으로 배치해주세요 -->
+	<title>장애인 채용사례 | 장애인 고용컨설팅 | 한국장애인고용공단 장애인고용컨설팅</title>
+</head>
+<body>
+	<header class="header act">
+		<div class="inner">
+			<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+			<h2 class="hidden">대메뉴</h2>
+			<ul class="gnb">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user_wrap">
+				<div class="user_info">
+					<!-- [D] 로그인 전에 안보이게 처리 -->
+					<div class="user">
+						<span class="neme"><b>홍길동</b> 님</span> <span class="time">09:33</span>
+						<button class="btn_time" type="button">연장</button>
+					</div>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<button type="button" class="btn_menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<div class="mob_wrap">
+			<div class="user_mob">
+				<h1 class="logo"><a href="index.html">한국장애인고용공단 장애인고용컨설팅</a></h1>
+				<div class="user">
+					<span class="neme"><b>홍길동</b> 님</span>
+					<button type="button" class="btn_login">로그아웃</button>
+				</div>
+			</div>
+			<ul class="gnb_mob">
+				<li><a href="#">장애인 고용컨설팅</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub01-1.html">고용컨설팅이란?</a></li>
+						<li><a href="sub01-2.html">신청방법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용 역량 진단</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub02-1.html">고용역량 진단이란?</a></li>
+						<li><a href="sub02-2.html">고용역량진단</a></li>
+					</ul>
+				</li>
+				<li><a href="#">장애인 채용사례</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+						<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+						<li><a href="sub03-3.html">고용성공 스토리</a></li>
+						<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+						<li><a href="sub03-5.html">직무개발 갤러리</a></li>
+						<li><a href="sub03-6.html">미디어 채용사례</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용현황 리포트</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub04-1.html">장애인 인구구조</a></li>
+						<li><a href="sub04-2.html">기관유형별 고용현황</a></li>
+						<li><a href="sub04-3.html">규모/업종별 고용현황</a></li>
+						<li><a href="sub04-4.html">장애인고용역량 진단현황</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고용가이드</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub05-1.html">고용가이드란?</a></li>
+						<li><a href="sub05-2.html">고용체크리스트</a></li>
+					</ul>
+				</li>
+				<li><a href="#"> 알림마당</a>
+					<ul class="gnb_2dpt">
+						<li><a href="sub06-1.html">공지사항/오늘의뉴스</a></li>
+						<li><a href="sub06-2.html">FAQ</a></li>
+						<li><a href="sub06-3.html">문의사항</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container sub_container">
+		<div class="inner">
+			<div class="snb_wrap">
+				<h3>장애인 채용사례</h3>
+				<ul class="snb_list">
+					<li><a href="sub03-1.html">장애인 채용사례란?</a></li>
+					<li><a href="sub03-2.html">사례 맞춤 검색</a></li>
+					<li class="on"><a href="sub03-3.html">고용 성공 스토리</a></li>
+					<li><a href="sub03-4.html">ESG 경영의 길</a></li>
+					<li><a href="sub03-5.html">직무 개발 갤러리</a></li>
+					<li><a href="sub03-6.html">미디어 채용사례</a></li>
+				</ul>
+			</div>
+			<div class="contents">
+				<!-- 타이틀 -->
+				<div class="cont_tit_wrap">
+					<h4 class="cont_tit">고용 성공 스토리</h4>
+					<ul class="cont_lct">
+						<li class="home">홈</li>
+						<li>장애인 채용사례</li>
+						<li class="pnt_cr02"><b>고용 성공 스토리</b></li>
+					</ul>
+				</div>
+        <!-- 인트로 -->
+				<div class="cont_wrap">
+					<section class="company-intro">
+						<h5 class="cont_tit2">회사소개</h5>
+							<p class="company-desc">
+								롯데칠성음료는 1989년 산업통상자원부(당시 상공부) 산하 생산기술연구원으로 설립되었으며, 생산기술 분야의 연구
+								개발 및 실용화, 중소․중견기업의 기술 지원 및 성과확산  등을 목적으로 하는 기관입니다
+							</p>
+					</section>	
+				</div>				
+				<div class="sticky_wrap">
+          <ul class="quick_list">
+            <li class="active"><a href="#tab1">장애인 고용 여정</a></li>
+            <li><a href="#tab2">고용 과정 Issue & Solution</a></li>
+            <li><a href="#tab3">우리기업의 성공POINT</a></li>
+          </ul>					
+					<!-- 탭1 -->
+					<div id="tab1" class="sec1">
+						탭1내용
+					</div>
+					<!-- 탭2 -->
+					<div id="tab2" class="sec2">
+						탭2내용
+					</div>
+					<!-- 탭3 -->
+					<div id="tab3" class="sec3">
+						탭3내용
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="inner">
+			<div class="f_left">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li class="pnt_cr1"><a href="#"><b>개인정보처리방침</b></a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<a href="#" target="_blank" title="새창이동">
+					<img src="images/img_watch.png" alt="" class="watch">
+				</a>
+				<div class="f_info">
+					<p class="f_logo">한국장애인고용공단</p>
+					<div>
+						<p>주소 (13619)경기도 성남시 분당구 구미로 173번길 59(구미동)</p>
+						<p>전화번호 031-728-7001~3</p>
+						<p class="f_copy">COPYRIGHT © 2024 KEAD RIGHT RESERVED.</p>
+					</div>
+				</div>
+			</div>
+			<div class="f_right">
+				<div class="rel_wrap">
+					<a href="#">관련사이트</a>
+					<ul>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+						<li><a href="#">관련사이트1</a></li>
+					</ul>
+				</div>
+				<div>
+					<p class="f_number">전국대표번호<b>1588-1519</b></p>
+					<p class="f_time"><span>운영시간</span>평일 09:00 ~ 18:00</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+	$(document).ready(function(){
+		AOS.init();
 
-    <li>
-      
-      손이나 팔에 장애가 있더라도 컴퓨터를 자유롭게 조작할 수 있고, 다리에 장애가 있어도 직접 운전하는 등 이동에 제약이 없는 장애인도 많습니다.
-      
-    </li>
+		var $quickList = $(".sticky_wrap");
+  var offset = $quickList.offset().top; // quick_list의 초기 위치
+  var fixedTop = 100; // 고정 위치
 
-    <li>
-      
-      보조공학기기 외 장애인 편의시설(장애인 전용 주차장, 화장실, 엘리베이터, 경사로 등)을 사전에 확인합니다.
-      
-    </li>
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > offset - fixedTop) {
+      $quickList.css({
+        position: "fixed",
+        top: fixedTop + "px",
+        zIndex: 1000
+      });
+    } else {
+      $quickList.css({
+        position: "static"
+      });
+    }
+  });
 
-    <li>
-      
-      도움을 줄 때는 먼저 장애인의 의사를 확인하여야 하며, 휠체어, 목발, 기타 보장구들을 허락 없이 만지거나 옮겨서는 안됩니다.
-      
-    </li>
-    </ul>
-  </div>				  
-  <!--### 뇌병변장애 ###-->
-  <div id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab2-tab">
-    <ul class="box">
-    <li>
-      
-      외형적으로 드러나는 장애로 직업 능력을 판단하는 것은 정확하지 않을 수 있습니다.
-      
-    </li>
+	})
+	</script>
+	<div class="layer_wrap story_solution_pop1">
+		<div class="layer_cont layer_lg">
+			<!-- <div class="pop_head"></div> -->
+			<div class="pop_body">
+				<div class="pop-issue">
+					<span class="badge">Issue</span>			
+					<p class="tit">상이한 장애특성으로 인해 근로자간 갈등 발생 </p>
+					<ul class="issue-list">
+						<li>초기에는 지적장애 고용을 위해 직무를 개발하고 채용을 실시함</li>
+						<li>이후 채용된 지체장애인 근로자들이 지적장애인에게 편향된 업무환경, 지원 정책 등에 대한 불만 제기</li>
+						<li>지체장애인 특성을 고려한 직무 및 지원정책 개발 필요</li>
+					</ul>
+				</div>
+				<div class="pop-issue solution">
+					<span class="badge">Solution</span>			
+					<p class="tit">직무매뉴얼 및 지원정책을 장애특성에 맞게 개정하여 업무 불평등 해소 </p>
+					<ul class="issue-list">
+						<li>지체장애인 근로자를 위한 보조기구 도입 및 업무매뉴얼 개정</li>
+						<li>출퇴근에 어려움이 있는 근로자에게 스타렉스 등 차량을 통해 출퇴근 지원</li>
+						<li>리프트기(건조된 야채 재료를 포장반으로 옮길 때 이용)장비 도입을 통해 지체장애인 근로자의 업무 부담 경감</li>
+					</ul>
+				</div>
+			</div> 			
+			<a class="btn_close btn_X" title="팝업창 닫기버튼"></a>
+		</div>
+	</div>
 
-    <li>
-      
-      언어장애가 동반되는 경우가 있지만, 언어장애가 있다고 지적 능력이 낮지 않습니다.
-      
-    </li>
 
-    <li>
-      
-      신체적 떨림이나 경직, 언어 표현 제한 등으로 업무처리 속도가 느릴 수 있습니다.
-      
-    </li>
-
-    <li>
-      
-      본인의 특성과 강점을 살릴 수 있는 직무배치 시 직업적 능력을 발휘할 수 있습니다.
-      
-    </li>
-
-    <li>
-      
-      중증 뇌성마비, 근육이나 신경장애의 경우도 글이나 보조공학기기를 통한 의사소통이 가능합니다.
-      
-    </li>
-    </ul>
-  </div>
-  <!--### 시각장애 ###-->
-  <div id="tab3" class="tab-panel" role="tabpanel" aria-labelledby="tab3-tab">
-    <ul class="box">
-    <li>
-      
-      시력 및 시야 정도, 장애 진행 여부, 점자 사용 여부 등 고려가 필요합니다.
-      
-    </li>
-
-    <li>
-      
-      중증 시각장애인의 경우 목소리로 상대방을 파악하므로, 인사와 대화 시작 시에는 자신의 이름을 먼저 알려주는 것이 좋습니다.
-      
-    </li>
-
-    <li>
-      
-      신체적 떨림이나 경직, 언어 표현 제한 등으로 업무처리 속도가 느릴 수 있습니다.
-      
-    </li>
-
-    <li>
-      
-      시각장애인이 사용하는 서류나 물건은 마음대로 옮겨놓지 않습니다.
-      
-    </li>
-
-    <li>
-      
-      지팡이를 사용하는 시각장애인과 함께 이동할 때에는 지팡이의 반대편에 서서 필요시 팔을 잡을 수 있도록 합니다.
-      
-    </li>
-    </ul>
-  </div>
-  <!--### 청각장애 ###-->
-  <div id="tab4" class="tab-panel" role="tabpanel" aria-labelledby="tab4-tab">
-    <ul class="box">
-    <li>
-      
-      청력을 상실했거나 문제가 있어도 명확하게 말할 수 있는 경우가 있습니다.
-      
-    </li>
-
-    <li>
-      
-      업무 특성상 직접 청취해야 하는 직무, 안전 요건으로 예리한 청력이 요구되는 업무를 제외한 대부분 직무에 배치가 가능합니다.
-      
-    </li>
-
-    <li>
-      
-      모든 청각장애인이 수어를 하는 것은 아니기 때문에 개별 의사소통수단을 파악해서 의사소통해야 합니다.(메모, 핸드폰문자, 입모양, 보청기 등)
-      
-    </li>
-
-    <li>
-      
-      화장실 문에 '사용중'을 알리는 표지를 설치하는 등 청각장애인을 위해 시각적 장치들을 마련하면 좋습니다.
-      
-    </li>
-
-    <li>
-      
-      청각장애인과 대화를 시작하기 전에는 먼저 시선을 끄는 것이 중요하며, 말을 할 때는 눈을 보면서 입모양과 발음을 정확하게 하고 필요시 반복하여 말해줄 필요가 있습니다.
-      
-    </li>
-    </ul>
-  </div>	
-  <!--### 언어장애 ###-->
-  <div id="tab5" class="tab-panel" role="tabpanel" aria-labelledby="tab5-tab">
-    <ul class="box">
-    <li>
-      
-      언어장애는 직업 능력과 무관한 경우가 많습니다.
-      
-    </li>
-
-    <li>
-      
-      언어장애가 있다고 하여 지적 능력이 낮은 것은 아닙니다.
-      
-    </li>
-
-    <li>
-      
-      청각장애인처럼 의사소통 방식이 다양합니다.
-      
-    </li>
-
-    <li>
-      
-      전화 통화에 어려움이 있는 경우에는 이메일, 문자, 팩스 등 다른 의사소통 방법을 활용하도록 지원합니다.
-      
-    </li>
-
-    <li>
-      
-      언어를 사용하는 일이 주된 경우가 아니라면 대부분 직종에 종사가 가능합니다.
-      
-    </li>
-    <li>
-      
-      의사소통을 지원하는 보조공학기기가 개발됨에 따라 언어장애인도 강의와 토론이 가능합니다.
-      
-    </li>
-    </ul>
-  </div>	
-  <!--### 안면장애 ###-->
-  <div id="tab6" class="tab-panel" role="tabpanel" aria-labelledby="tab6-tab">
-    <ul class="box">
-    <li>
-      
-      직무수행에 큰 지장이 되지 않는 장애로 광범위한 업무수행이 가능합니다.
-      
-    </li>
-
-    <li>
-      
-      화상으로 장애를 입은 경우 습도나 온도에 많은 영향을 받을 수 있어, 냉방이 잘 되는 곳에서 일할 수 있도록 배려합니다.
-      
-    </li>
-
-    </ul>
-  </div>	
-  <!--### 장루·요루장애 ###-->
-  <div id="tab7" class="tab-panel" role="tabpanel" aria-labelledby="tab7-tab">
-    <ul class="box">
-    <li>
-      
-      업무에 따른 어려움은 없으나 장애 특성상 화장실 사용이 빈번합니다.
-      
-    </li>
-
-    <li>
-      
-      요루 장애인의 경우 소변을 자주 비워야 하므로 너무 오래 지속해야하는 작업은 피하는 것이 좋습니다.
-      
-    </li>
-    <li>
-      
-      장루 장애인의 경우 괄약근이 없어 수시로 가스가 배출될 수 있음을 이해합니다.
-      
-    </li>
-
-    </ul>
-  </div>	
-  <!--### 신장장애 ###-->
-  <div id="tab8" class="tab-panel" role="tabpanel" aria-labelledby="tab8-tab">
-    <ul class="box">
-    <li>
-      
-      투석이 필요한 신장 장애인의 경우 투석 시간, 투석 장소에 대한 고려가 필요합니다.
-      
-    </li>
-
-    <li>
-      
-      혈액투석을 하는 팔목에 무리가 가지 않도록 무거운 물건을 드는 등 격렬한 신체활동을 피해야 합니다.
-      
-    </li>
-
-    </ul>
-  </div>
-  <!--### 호흡기 장애 ###-->
-  <div id="tab9" class="tab-panel" role="tabpanel" aria-labelledby="tab9-tab">
-    <ul class="box">
-    <li>
-      
-      청정한 공기 등 환경 요소가 다른 장애 유형보다 더 중요합니다.
-      
-    </li>
-
-    <li>
-      
-      이동이 많거나 노동 강도가 높은 직무는 피하는 것이 좋습니다.
-      
-    </li>
-    <li>
-      
-      냉·난방기 작동 시 호흡기 장애인의 적응 정도를 고려하여야 합니다.
-      
-    </li>
-    <li>
-      
-      간혹 천명음(쌕쌕거리는 소리)이 날 수 있으며, 소리가 날 경우 피곤한지 물어보고 쉬게 하는 것이 큰 도움이 됩니다.
-      
-    </li>
-
-    </ul>
-  </div>
-  <!--### 간 장애 ###-->
-  <div id="tab10" class="tab-panel" role="tabpanel" aria-labelledby="tab10-tab">
-    <ul class="box">
-    <li>
-      
-      간 장애가 안정되었다면 일상생활과 개별 특성에 맞는 직무수행이 가능합니다.
-      
-    </li>
-
-    <li>
-      
-      복수가 있는 경우 힘을 쓰는 작업에 어려움을 느낍니다.
-      
-    </li>
-    <li>
-      
-      업무로 인해 과로나 수면부족이 되지 않도록 배려해야 합니다.
-      
-    </li>
-
-    </ul>
-  </div>
-  <!-- ### 심장장애 ###-->
-  <div id="tab11" class="tab-panel" role="tabpanel" aria-labelledby="tab11-tab">
-    <ul class="box">
-    <li>
-      
-      심장에 부담을 줄 수 있는 노동 강도와 스트레스가 높은 직무는 피해야 합니다.
-      
-    </li>
-
-    <li>
-      
-      정기적 병원 진료에 필요한 시간이 고려되어야 합니다.
-      
-    </li>
-    </ul>
-  </div>
-  <!-- ### 뇌전증장애 ###-->								  
-  <div id="tab12" class="tab-panel" role="tabpanel" aria-labelledby="tab12-tab">
-    <ul class="box">
-    <li>
-      
-      꾸준한 약물 복용으로 통제되는 경우가 많습니다.
-      
-    </li>
-
-    <li>
-      
-      장애 상태를 정확히 이해하고 업무에 배치하는 것이 중요합니다.
-      
-    </li>
-
-    <li>
-      
-      발작 증상이 나타나더라도 회복이 빠르고 업무수행 능력도 충분하나, 만약을 대비해 높은 곳이나 위험한 기계 앞 배치는 피해야 합니다.
-      
-    </li>
-    <li>
-      
-      발작 시 큰 문제가 발생하지 않으나, 호흡곤란이나 외상 등 문제가 일어날 수 있어 발작 시 대처 방법을 숙지할 필요성 있습니다.
-      
-    </li>
-    <li>
-      
-      발작이 일어나면 주변의 위험한 물건을 치우고 안경을 벗겨주며, 넥타이·단추·허리띠를 풀고 기도 유지를 해 주어야 합니다.
-      
-    </li>
-    </ul>
-  </div>	
-  <!-- ### 지적 장애 ###-->								  
-  <div id="tab13" class="tab-panel" role="tabpanel" aria-labelledby="tab13-tab">
-    <ul class="box">
-    <li>
-      
-      반복된 교육과 훈련을 통해 업무를 습득하고 혼자서 출ㆍ퇴근이 가능하며 자신에게 적합한 직무에서 근무할 수 있습니다.
-      
-    </li>
-
-    <li>
-      
-      작업 지시는 한 번에 한 가지씩, 익숙해질 때까지 여러번 시범을 보여주는 것이 효과적입니다.
-      
-    </li>
-
-    <li>
-      
-      근무시간, 적절한 근무복장, 근무공간의 위치, 임금, 직속상관 및 이용 가능한 교통수단 등 업무와 관련된 일을 반복적으로 설명해 줍니다.
-      
-    </li>
-    
-    </ul>
-  </div>	
-  <!-- ### 자폐성 장애 ###-->								  
-  <div id="tab14" class="tab-panel" role="tabpanel" aria-labelledby="tab14-tab">
-    <ul class="box">
-      <li>
-      
-        직무 변화 시 적응이 쉽지 않을 수 있는 점을 감안합니다.
-      
-      </li>
-
-      <li>
-      
-        개인 특성과 선호도를 반영해 고정적인 직무에 배치하는 것이 좋습니다.
-      
-      </li>
-
-      <li>
-      
-        규칙적이거나 반복적인 것에 관심을 두는 경우가 많아서 변화가 적은 업무에 적합합니다.
-      
-      </li>
-      <li>
-      
-        위험한 순간에 대한 대처능력이 떨어지므로 직접적으로 도움을 주어야 합니다.
-      
-      </li>
-      <li>
-      
-        다른 사람의 정서나 생각에 대해 제한된 수준에서만 이해할 수 있으며, 상호작용에 어려움이 있을 수 있음을 이해합니다.
-      
-      </li>
-    
-    </ul>
-  </div>
-  <!-- ### 정신 장애 ###-->
-  <div id="tab15" class="tab-panel" role="tabpanel" aria-labelledby="tab15-tab">
-    <ul class="box">
-      <li>
-      
-        꾸준한 약물 복용과 스트레스 관리가 요구됩니다.
-      
-      </li>
-
-      <li>
-      
-        정신장애인이 모든 대인·대민 서비스를 할 수 없는 것은 아니나, 복잡하고 업무 수행 시 심한 스트레스를 야기할 수 있는 업무는 피하는 것이 좋습니다.
-      
-      </li>
-
-      <li>
-      
-        중간 중간 짧은 휴식이 큰 도움이 되며, 근무 중에도 자연스럽게 약을 복용할 수 있는 분위기를 만들어 줍니다.
-      
-      </li>
-      <li>
-      
-        초기에는 비교적 간단한 업무부터 시작하면서 작업상태 및 역량에 따라 업무를 조정하는 것이 좋습니다.
-      
-      </li>
-    
-    </ul>
-  </div>
-
-</div>
+</body>
+</html>

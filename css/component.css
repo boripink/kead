@@ -247,7 +247,6 @@ button.cancel {background-color: #999; color: #fff;}
 .tab_style04 .tab_list > li > a::after {content: ''; position: absolute; bottom: 0; left: 0; height: 2px; width: 0; background-color: #0b2f66; transition: width 0.4s ease; } 
 
 
-
 /* 조회 */
 .srch_wrap {display:flex; flex-wrap:wrap; justify-content:space-between; padding:20px; border-radius:5px; background:#e5e7f3;}
 .srch_inner {display:flex; flex-wrap:wrap; gap:5px 0; width:calc(100% - 180px);}
@@ -255,21 +254,23 @@ button.cancel {background-color: #999; color: #fff;}
 .srch_inner > dl dt {display:inline-block; width:100px; padding:0 10px; font-weight:600; text-align:right; box-sizing:border-box;}
 .srch_inner > dl dd {display:inline-block; width:calc(100% - 105px);}
 
+
 /* 테이블 컨텐츠 */
 .table-container > section:not(:first-child) {padding-top: 100px;}
 .table-container .table_tit {font-size:30px; font-weight:600; margin-bottom: 20px;}
 
-
-/* 테이블 y-스크롤 */
+/* 테이블 - 스크롤 */
 .scroll_container {overflow-y: auto; border-top: 1px solid #1953c2; border-bottom: 1px solid #d5dbef; max-height: 300px;}
 .scroll_container > table {border-top: none;}
 .scroll_container > table.tb_list tr:last-child td {border-bottom: none;}
+.scroll-x {overflow-x: auto;}
+.scroll-x table {width: 100%; min-width: 500px;}
 
 /* 테이블 */
 .tb_base {width:100%; table-layout:fixed; border-top:1px solid #1953c2; border-collapse:collapse; box-sizing:border-box; }
 .tb_base th, .tb_base td {font-size: 18px; text-align:left; color:#666B82; line-height:1.4; word-break:keep-all; background-color: #fff;} 
-
 .tb_base th {background: #f7f9ff; font-weight:500; color:#666B82; }
+
 .tb_base.tb_list th, 
 .tb_base.tb_list td {padding:12px 4px; text-align:center; border-bottom: 1px solid #d5dbef;}
 .tb_base.tb_list .ta_l {padding:12px 6px;}
@@ -298,7 +299,10 @@ button.cancel {background-color: #999; color: #fff;}
 .tb_base.tb_line.tb_form td {padding: 4px 4px;}
 .tb_base.tb_list .td_form {padding: 4px 4px;}
 
+.tb_base.tb_view.tb_conts {border-top : 1px solid #ccd4df;}
 .tb_conts th, .tb_conts td {padding:12px; border-bottom:1px solid #ccd4df; }
+.tb_base.tb_view.tb_conts td{border-bottom: none;}
+
 .pop_table .tb_base {font-size: 16px;}
 
 .tb_base.tb_tab {border-top: 1px solid #d5dbef;}

@@ -17,6 +17,7 @@
 .refer_mk::before {content: ''; display: block; width: 11px; height: 9px; background: url(../images/sub/blet_guide_chk.png); position: absolute; left: -20px; top: 9px;}
 
 .guide_text .heighlingt {color: #0f298f; background-color: #f1f1f9;}
+.only_img > img {width: 100%;}
 
 /* 고용가이드 - 장애인 고용 가이드란? */
 
@@ -100,7 +101,7 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 
 
 /* 팝업 버튼 */
-.gd-btn {padding: 8px 20px; border-radius: 5px; background-color: #236cdb; color: #fff !important; font-size: 18px; box-shadow: 0 2px 2px rgba(0,0,0,0.2); transition: all 0.3s; display: inline-flex; align-items: center;}
+.gd-btn {padding: 8px 20px; border-radius: 5px; background-color: #236cdb; color: #fff !important; font-size: 18px; box-shadow: 0 2px 2px rgba(0,0,0,0.2); transition: all 0.3s; display: inline-flex; align-items: center; justify-content: center;}
 .gd-btn:hover {background-color: #1953c2; box-shadow: 0 4px 8px rgba(0,0,0,0.3);}
 .gd-btn .arr {background-size: 20px; background-image: url(../images/icon/arrow-up-right-wh.svg);}
 
@@ -308,9 +309,24 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 /* 모집 및 채용 - 4필기전형 */
 .written-test .box_list .icon1 {background-position: -250px -100px; }
 .written-test .box_list .icon2 {background-position: -300px -100px; }
+.box_list .box-description.row {display: flex; flex-direction: column; gap: 10px;}
+
 
 
 /* 모집 및 채용 - 5면접전형 */
+/* .interview-case {display: flex; gap: 20px; background-color: #fff; border: 1px solid #edeeee; border-radius: 50px; align-items: flex-start; overflow: hidden; position: relative; z-index: -1;}
+.interview-case::before {content: ''; display: block; width: 224px; height: 331px; background: url(../images/sub/gdic_violation_bg.png) no-repeat; position: absolute; bottom: 0; left: 0; z-index: 0;}
+.interview-header {flex: 0 0 224px; text-align: left; padding: 40px; overflow: hidden; }
+.interview-header p {font-size: 22px; font-weight: 500; line-height: 1.4; z-index: 5;}
+.interview-content {padding: 30px;}
+.interview-content li {line-height: 1.4; font-size: 18px;} */
+.interview-case {border: 1px solid #edeeee; border-radius: 50px; padding: 30px; position: relative; overflow: hidden;}
+.interview-case::after {content: ''; display: block; width: 154px; height: 370px; background: url(../images/sub/gd_img_meeting.png); position: absolute; top: 60px; left: 20px;}
+.interview-case .tit {background-color: #e8effb; padding: 15px; border-radius: 15px; margin-left: 110px; display: inline-block; margin-bottom: 30px;}
+.interview-case .guide_text {margin-left: 190px;}
+
+
+
 /* .interview .btn_layer[data-id="pop2"] {background-color: #9166a4;} */
 .board-interview {border: 1px solid #c7e3ff; background-color: #f7f8f9; border-radius: 100px 20px 20px 20px; padding: 30px; padding-left: 95px; margin-top: 50px; position: relative; } 
 .board-interview::before {content: 'o'; display: block; width: 50px; height: 50px; background-color: #8fc8ff; border-radius: 50px; position: absolute; top: 5px; left: 5px; display: flex; justify-content: center; font-size: 50px; font-weight: 600; color: #fff; line-height: 40px;}
@@ -328,9 +344,6 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .board-interview.bad-case .interview-qu .icon::before {background-color: #f9adb6;}
 .board-interview.bad-case .interview-an {margin: 15px 30px 30px 80px; padding-left: 25px; font-size: 19px; position: relative;}
 .board-interview.bad-case .interview-an::before {content: ''; width: 19px; height: 19px; display: block; background: url(../images/sub/arrow_interview.png) no-repeat; position: absolute; left: 0px; top :5px}
-
-
-
 
 
 /* 모집 및 채용 - 6채용결정 */
@@ -403,13 +416,19 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .work_system_box li {display: flex; background-color: #fff; border-radius: 10px; padding: 15px;}
 .work_system_box .tit {flex: 0 0 150px; text-align:center; margin-right: 30px; font-weight: 500; color: #1953c2;}
 
+.table-list2 {background: #f7f8f9; padding: 10px; border-radius: 10px; position: relative; display: flex; flex-direction: column; gap: 5px;}
+.table-list2 li {display: flex; background-color: #fff; border-radius: 10px; padding: 15px;}
+.table-list2 .tit {flex: 0 0 150px; text-align:center; margin-right: 30px; font-weight: 500; color: #1953c2;}
+.table-list2.w50 .tit {flex: 0 0 50%;}
+
+
 .tab_cont .line-box {border: 1px solid #d9e0ef; padding: 30px; border-radius: 30px; line-height: 1.6;}
 .tab_cont .line-box .cont_tit4 {color: #1953c2;}
 
 
 /* 고용관리 - 교육훈련 */
 .employment-training .tab_case_box > li {display: flex; align-items: center;}
-.tab_case_box .train-icon {display: inline-block; width: 100px; height: 75px; background: url(../images/emp_guide/ico/ico_disabled-supprot1.png) no-repeat;}
+.tab_case_box .train-icon {display: inline-block; flex: 0 0 100px; height: 75px; background: url(../images/emp_guide/ico/ico_disabled-supprot1.png) no-repeat;}
 .tab_case_box .train-icon.icon1 {background-image: url("../images/emp_guide/ico/ico_disabled-supprot1.png");}
 .tab_case_box .train-icon.icon2 {background-image: url("../images/emp_guide/ico/ico_disabled-supprot2.png");}
 .tab_case_box .train-icon.icon3 {background-image: url("../images/emp_guide/ico/ico_disabled-supprot3.png");}
@@ -420,9 +439,9 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 
  /* {font-size: 25px; font-weight: 500; margin: 80px 0 30px; position: relative; color: #1953c2;} */
  .employment-training .guide_tit3 {position: relative;}
- .employment-training .guide_tit3.bg1::after {content: ''; display: block; width: 159px; height: 98px; background: url(../images/sub/gd_img8.png) no-repeat; position: absolute; right: 10px; bottom: -40px;}
- .employment-training .guide_tit3.bg2::after {content: ''; display: block; width: 186px; height: 120px; background: url(../images/sub/gd_img9.png) no-repeat; position: absolute; right: 35px; bottom: -40px;}
- .employment-training .guide_tit3.bg3::after {content: ''; display: block; width: 200px; height: 119px; background: url(../images/sub/gd_img10.png) no-repeat; position: absolute; right: 10px; bottom: -50px;}
+ .employment-training .guide_tit3.bg::after {content: ''; display: block; width: 159px; height: 98px; background: url(../images/sub/gd_img8.png) no-repeat; position: absolute; right: 10px; bottom: -40px;} 
+ .employment-training .guide_tit3.bg2::after {width: 186px; height: 120px; background: url(../images/sub/gd_img9.png) no-repeat; position: absolute; right: 35px; bottom: -40px;}
+ .employment-training .guide_tit3.bg3::after {width: 200px; height: 119px; background: url(../images/sub/gd_img10.png) no-repeat; position: absolute; right: 10px; bottom: -50px;}
 
  .employment-training .sec_cont + .sec_cont {margin-top: 100;}
 
@@ -434,33 +453,30 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 .table-list .txt2 {margin-top: 20px;}
 /* .table-list .refer_mk {margin-top: 0;} */
 .table-list .txt p:not(.tb_tit) + ul {margin-top: 20px;}
-
-.workplace .table-list .tit {flex: 0 0 250px;}
-.obligation .table-list .tit {flex: 0 0 200px;}
-.linked .table-list .tit {flex: 0 0 200px;}
-
+.table-list.w200 .tit {flex: 0 0 200px;}
+.table-list.w250 .tit {flex: 0 0 250px;}
+.table-list.w350 .tit {flex: 0 0 350px;}
 
 /* 고용관리 - 근로자 갈등관리 */
 .employment-solving .guide_title {border: none;}
 .employment-solving .tab_list {margin-top: 30px;}
+.employment-solving .process-list .process-icon {background-position: 0px 0px;}
+.employment-solving .process-list .process-icon.icon2 {background-position-x: -100px;}
+.employment-solving .process-list .process-icon.icon3 {background-position-x: -200px;}
+
+/* .employment-solving .box_list .head {font-size: 24px; font-weight: 500; padding: 15px 0;} */
+.employment-solving .sec3 .process-icon.size100 {background-position-y: -100px;}
+.employment-solving .sec3 .process-icon.icon1 {background-position-x: 0;}
+.employment-solving .sec3 .process-icon.icon2 {background-position-x: -100px;}
+.employment-solving .sec3 .process-icon.icon3 {background-position-x: -200px;}
+.employment-solving .sec3 .process-icon.icon4 {background-position-x: -300px;}
+.employment-solving .sec3 .process-icon.icon5 {background-position-x: -400px;}
+.employment-solving .sec3 .process-icon.icon6 {background-position-x: -500px;}
+.employment-solving .sec3 .process-icon.icon7 {background-position-x: -600px;}
+.employment-solving .sec3 .process-icon.icon8 {background-position-x: -700px;}
 
 .box_list.sexual_help .icon1 {background-position: -350px -100px;}
 .box_list.sexual_help .icon2 {background-position: -400px -100px;}
-
-/* .employment-solving .box_list .head {font-size: 24px; font-weight: 500; padding: 15px 0;} */
-.employment-solving .sec1 .size100.icon2 {background-position-x: -100px;}
-.employment-solving .sec1 .size100.icon3 {background-position-x: -200px;}
-.employment-solving .sec2 .process-icon.size100 {background-position-y: -100px;}
-.employment-solving .sec2 .size100.icon1 {background-position-x: 0;}
-.employment-solving .sec2 .size100.icon2 {background-position-x: -100px;}
-.employment-solving .sec2 .size100.icon3 {background-position-x: -200px;}
-.employment-solving .sec2 .size100.icon4 {background-position-x: -300px;}
-.employment-solving .sec2 .size100.icon5 {background-position-x: -400px;}
-.employment-solving .sec2 .size100.icon6 {background-position-x: -500px;}
-.employment-solving .sec2 .size100.icon7 {background-position-x: -600px;}
-.employment-solving .sec2 .size100.icon8 {background-position-x: -700px;}
-
-
 
 
 
@@ -543,18 +559,18 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 
 
 /* 장애인 고용서비스 GUIDE - 장애인 고용의무제도 */
-.obligation .card_list {justify-content: space-between;}
-.obligation .card_list.list4 > li  {flex: 0 0 calc(25% - 30px); border: 1px solid #5b6fe9; border-radius: 50px; padding: 30px 20px; margin-top: 40px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;} 
+.obligation .card_list {justify-content: space-between; margin-top: 40px; }
+.obligation .card_list.list4 > li  {flex: 1 0 calc(25% - 20px); border: 1px solid #5b6fe9; border-radius: 50px; padding: 30px 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;} 
 .obligation .icon_100 {background-position: -400px -210px;}
 .obligation .icon2 {background-position-x: -500px;}
 .obligation .icon3 {background-position-x: -600px;}
 .obligation .icon4 {background-position-x: -700px;}
 
 
-
-
 /* 장애인 고용서비스 GUIDE - 장애인 고용지원 */
-.emp-support .emp-process li {justify-content: unset;}
+.emp-support .emp-process {justify-content: unset; flex-wrap: wrap; gap: 20px 0;}
+.emp-support .emp-process li {flex: 0 0 calc(100% / 6); min-width: 140px;}
+
 .emp-support .emp-process .icon_50 {background-position: 0 -150px;}
 .emp-support .emp-process .icon2  {background-position-x: -50px;}
 .emp-support .emp-process .icon3  {background-position-x: -100px;}
@@ -578,8 +594,10 @@ p.guide_text::after {content: ''; width: 4px; height: 4px; position: absolute; l
 
 
 
-/* 장애인 고용서비스 GUIDE - 장애인 금융지원 */
-.financial .emp-process .dscp {height: 60px; display: inline-flex; align-items: center;}
+/* 장애인 고용서비스 GUIDE - 금융 및 환경개선지원 */
+.financial .emp-process {}
+.financial .emp-process li {flex: 0 0 calc(20% - 20px); min-width: 150px;}
+.financial .emp-process .dscp {min-height: 60px; display: inline-flex; align-items: center;}
 .financial .emp-process .icon_50 {background-position: -300px -150px;}
 .financial .emp-process .icon2 {background-position-x: -350px;}
 .financial .emp-process .icon3 {background-position-x: -400px;}
@@ -668,14 +686,14 @@ strong.dscp_tit {font-size: 20px;}
 
 
 /* 가이드 테이블 #f5f9ff */
-.tb_base.tb_guide {border-top: none;}
+.tb_base.tb_guide {border-top: 1px solid #f7f9ff;}
 .tb_guide    {background-color: #fff; }
 .tb_guide tr.center td {text-align: center;}
 .tb_guide th, .tb_guide td {border: 1px solid #d5dbef; padding: 15px 20px; }
 .tb_guide thead th {border-bottom: none; padding: 10px; }
 .tb_guide th {text-align: center; background-color: #f7f9ff; color: #666B82; }
 .tb_guide td {color: #222;}
-.guide_conts_wrap .tb_tit {font-size: 20px; margin-bottom: 20px; font-weight: 500;
+.tb_tit {font-size: 20px; margin-bottom: 20px; font-weight: 500;
 background: #f7f8f9 url(../images/icon/notification-square.png) no-repeat left 12px center; display: inline-block; padding: 5px 23px; border-radius: 20px; padding-left: 46px;}
 .tb_guide .btn_link {background-color: #f7f9ff; border: 1px solid #7cb0ff; padding: 4px 15px; border-radius: 5px;}
 .tb_guide.type1 th, .tb_guide.type1 td {border-color: #d5dbef;}
@@ -849,7 +867,7 @@ table.td_center td {text-align: center;}
 
 
 /* 고용서비스 가이드 처리절차 */
-.emp-process {display: flex; justify-content: space-between; }
+.emp-process {display: flex; flex-wrap: wrap;}
 .emp-process li {flex: 1; display: flex; flex-direction: column; gap: 10px; align-items: center; text-align: center; line-height: 1.2; font-size: 18px; font-weight: 500; position: relative;}
 .emp-process li::before {content: ''; display: block; width: 19px; height: 20px; background: url(../images/sub/arr_process.png); position: absolute; top: 4px; right: -10px;}
 .emp-process li:last-child:before {display: none;}
@@ -859,7 +877,22 @@ table.td_center td {text-align: center;}
 .emp-process .dscp2 .user2 {color: #0f298f;}
 
 
+/* 화재발생 전 리스트 */
+.fire-list {display: flex; flex-wrap: wrap; gap: 30px; align-items: stretch;}
+.fire-list li {flex: 1 0 calc(25% - 30px); text-align: center; border: 1px solid #e8effb; border-radius: 30px; padding: 18px; font-size: 18px; line-height: 1.4;}
+.fire-list img {width: 100%; max-width: 200px; height: auto; margin-bottom: 15px;}
 
 
+/* 추가 테이블 */
+.tb_guide2 { border-bottom: 1px solid #ccd4df;}
+.tb_base.tb_guide2 {border-top: none;}
+.tb_guide2 th, .tb_guide2 td {padding: 10px; border:1px solid #ccd4df; border-bottom: none; text-align: center;}
 
-
+@media screen and (max-width: 768px) {
+    .tb_guide2 { display: block; }
+    .tb_guide2 thead { display: none; }
+    .tb_guide2 tbody th {display: block;}
+    .tb_guide2 tbody td { display: block; text-align: right; position: relative; }
+    .tb_guide2 tbody td::before { content: attr(data-label); position: absolute; left: 10px; text-align: left; font-weight: bold; }
+    .no-tablet {display: none;}
+}
